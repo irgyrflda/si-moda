@@ -70,10 +70,10 @@ app.use(
 /**
  * routes
  */
-app.use("/si-bela/api-auth/v1/", authorization, apiRoutes);
-app.use("/si-bela/api-noauth/v1/", apiRoutes);
-app.use("/si-bela/web/", authorization, webRoutes);
-app.use("/si-bela/mobile/", authorization, mobileRoutes);
+app.use("/si-plang/api-auth/v1/", authorization, apiRoutes);
+app.use("/si-plang/api-noauth/v1/", apiRoutes);
+app.use("/si-plang/web/", authorization, webRoutes);
+app.use("/si-plang/mobile/", authorization, mobileRoutes);
 
 /**
  * not found
@@ -114,7 +114,7 @@ try {
     console.log(
       `${String.fromCodePoint(
         0x1f525
-      )} SERVER SI-BELA ON PORT : ${getConfig(
+      )} SERVER SI-PLANG ON PORT : ${getConfig(
         "PORT_SERVER"
       )} ${String.fromCodePoint(0x1f525)}`
     );
