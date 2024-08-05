@@ -18,7 +18,7 @@ LIBRARY
     "moment": "^2.30.1",
     "moment-timezone": "^0.5.43",
     "multer": "^1.4.5-lts.1",
-    "postgres": "^3.4.3",
+    "mysql2": "^3.6.1",
     "puppeteer": "^21.3.7",
     "sequelize": "^6.33.0",
     "socket.io": "^4.7.2",
