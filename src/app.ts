@@ -13,14 +13,13 @@ import webRoutes from "@routes/web";
 import mobileRoutes from "@routes/mobile";
 
 // import db from "@config/database";
-import license from "@utils/promise";
+import license from "@utils/si-moda";
 import getConfig from "@config/dotenv";
 import { initSocketIO } from "@config/socket";
 import limiter from "@middleware/rate-limit";
 import logger, { errorLogger } from "@config/logger";
 import { notFound } from "@middleware/error-notfound";
 import { errorhandler } from "@middleware/error-handler";
-import authorization from "@middleware/authorization";
 
 const app: Application = express();
 log4js.configure(logger);
@@ -28,10 +27,6 @@ log4js.configure(logger);
 /**
  * certificate keys
  */
-const key = fs.readFileSync("src/certificate/ut.key", "utf-8");
-const cert = fs.readFileSync("src/certificate/full-bundle.crt", "utf-8");
-
-const options = { key: key, cert: cert };
 
 /**
  * body parser
@@ -62,18 +57,18 @@ app.use(limiter);
 /**
  * dokumen path
  */
-app.use(
-  "/public/dokumen",
-  express.static(path.resolve(__dirname, "../public/dokumen"))
-);
+// app.use(
+//   "/public/dokumen",
+//   express.static(path.resolve(__dirname, "../public/dokumen"))
+// );
 
 /**
  * routes
  */
-app.use("/si-plang/api-auth/v1/", authorization, apiRoutes);
+app.use("/si-plang/api-auth/v1/", apiRoutes);
 app.use("/si-plang/api-noauth/v1/", apiRoutes);
-app.use("/si-plang/web/", authorization, webRoutes);
-app.use("/si-plang/mobile/", authorization, mobileRoutes);
+app.use("/si-plang/web/", webRoutes);
+app.use("/si-plang/mobile/", mobileRoutes);
 
 /**
  * not found
@@ -85,36 +80,14 @@ app.use(notFound);
  */
 app.use(errorhandler);
 
-/**
- * sync database
- */
-// db.sync()
-//   .then(() => {
-//     const server = https.createServer(options, app);
-//     server.listen(getConfig("PORT_SERVER"), () => {
-//       console.log(license);
-//       console.log(
-//         `${String.fromCodePoint(
-//           0x1f525
-//         )} SERVER SI-PPAN ON PORT : ${getConfig(
-//           "PORT_SERVER"
-//         )} ${String.fromCodePoint(0x1f525)}`
-//       );
-//       initSocketIO(server);
-//     });
-//   })
-//   .catch((error) => {
-//     errorLogger.error(`SERVER ERROR: ${error}`);
-//   });
-
 try {
-  const server = https.createServer(options, app);
+  const server = https.createServer(app);
   server.listen(getConfig("PORT_SERVER"), () => {
     console.log(license);
     console.log(
       `${String.fromCodePoint(
         0x1f525
-      )} SERVER SI-PLANG ON PORT : ${getConfig(
+      )} SERVER SI-MODA ON PORT : ${getConfig(
         "PORT_SERVER"
       )} ${String.fromCodePoint(0x1f525)}`
     );
