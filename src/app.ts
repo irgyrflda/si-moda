@@ -20,6 +20,7 @@ import limiter from "@middleware/rate-limit";
 import logger, { errorLogger } from "@config/logger";
 import { notFound } from "@middleware/error-notfound";
 import { errorhandler } from "@middleware/error-handler";
+import documentationApi from "./public/documentation-api";
 
 const app: Application = express();
 log4js.configure(logger);
@@ -57,6 +58,7 @@ app.use(limiter);
 /**
  * dokumen path
  */
+app.use("/si-moda/documentation-api", documentationApi)
 // app.use(
 //   "/public/dokumen",
 //   express.static(path.resolve(__dirname, "../public/dokumen"))
@@ -65,10 +67,10 @@ app.use(limiter);
 /**
  * routes
  */
-app.use("/si-plang/api-auth/v1/", apiRoutes);
-app.use("/si-plang/api-noauth/v1/", apiRoutes);
-app.use("/si-plang/web/", webRoutes);
-app.use("/si-plang/mobile/", mobileRoutes);
+app.use("/si-moda/api-auth/v1/", apiRoutes);
+app.use("/si-moda/api-noauth/v1/", apiRoutes);
+app.use("/si-moda/web/", webRoutes);
+app.use("/si-moda/mobile/", mobileRoutes);
 
 /**
  * not found
@@ -81,8 +83,7 @@ app.use(notFound);
 app.use(errorhandler);
 
 try {
-  const server = https.createServer(app);
-  server.listen(getConfig("PORT_SERVER"), () => {
+  app.listen(getConfig("PORT_SERVER"), () => {
     console.log(license);
     console.log(
       `${String.fromCodePoint(
@@ -91,7 +92,6 @@ try {
         "PORT_SERVER"
       )} ${String.fromCodePoint(0x1f525)}`
     );
-    initSocketIO(server);
   });
 } catch (error) {
   errorLogger.error(`SERVER ERROR: ${error}`);
