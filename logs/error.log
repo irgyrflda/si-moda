@@ -1,0 +1,54 @@
+[2024-08-28T23:22:37.542] [ERROR] error - EagerLoadingError [SequelizeEagerLoadingError]: GroupUser is associated to RefGroupUser using an alias. You've included an alias (ref_group), but it does not match the alias(es) defined in your association (m_group).
+    at Function._getIncludedAssociation (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:751:15)
+    at Function._validateIncludedElement (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:646:53)
+    at C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:542:37
+    at Array.map (<anonymous>)
+    at Function._validateIncludedElements (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:537:39)
+    at Function._validateIncludedElement (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:732:38)
+    at C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:542:37
+    at Array.map (<anonymous>)
+    at Function._validateIncludedElements (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:537:39)
+    at Function.findAll (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:1794:12)
+[2024-08-28T23:22:37.543] [ERROR] error - Error login frenn :  CustomError: Internal server error.
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:132:19
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 500,
+  status: 'error'
+}
+[2024-08-28T23:22:37.544] [ERROR] error - CustomError: Internal server error.
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:132:19
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 500,
+  status: 'error'
+}
+[2024-08-28T23:24:06.849] [ERROR] error - EagerLoadingError [SequelizeEagerLoadingError]: GroupUser is associated to RefGroupUser using an alias. You've included an alias (ref_group), but it does not match the alias(es) defined in your association (m_group).
+    at Function._getIncludedAssociation (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:751:15)
+    at Function._validateIncludedElement (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:646:53)
+    at C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:542:37
+    at Array.map (<anonymous>)
+    at Function._validateIncludedElements (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:537:39)
+    at Function._validateIncludedElement (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:732:38)
+    at C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:542:37
+    at Array.map (<anonymous>)
+    at Function._validateIncludedElements (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:537:39)
+    at Function.findAll (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:1794:12)
+[2024-08-28T23:24:06.866] [ERROR] error - Error login frenn :  CustomError: Internal server error.
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:132:19
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 500,
+  status: 'error'
+}
+[2024-08-28T23:24:06.867] [ERROR] error - CustomError: Internal server error.
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:132:19
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 500,
+  status: 'error'
+}

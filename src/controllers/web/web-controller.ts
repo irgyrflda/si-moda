@@ -1,5 +1,4 @@
 import { httpCode } from "@utils/prefix";
-import { UserData } from "@middleware/authorization";
 import { NextFunction, Request, Response } from "express";
 import { responseSuccess } from "@utils/response-success";
 

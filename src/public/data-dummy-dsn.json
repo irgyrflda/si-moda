@@ -1,0 +1,52 @@
+[
+    {
+        "nomor_induk_dosen_nasional": "D001",
+        "nama": "Dr. Ahmad Fauzi",
+        "status": "aktif",
+        "departemen": "Teknik Informatika",
+        "jabatan": "Lektor",
+        "tahun_masuk": 2010,
+        "pendidikan_terakhir": "S3",
+        "mata_kuliah": ["Algoritma dan Pemrograman", "Struktur Data", "Pembelajaran Mesin"]
+    },
+    {
+        "nomor_induk_dosen_nasional": "D002",
+        "nama": "Prof. Siti Aminah",
+        "status": "aktif",
+        "departemen": "Sistem Informasi",
+        "jabatan": "Guru Besar",
+        "tahun_masuk": 2005,
+        "pendidikan_terakhir": "S3",
+        "mata_kuliah": ["Sistem Informasi Manajemen", "Analisis dan Desain Sistem Informasi"]
+    },
+    {
+        "nomor_induk_dosen_nasional": "D003",
+        "nama": "Dr. Bambang Setiawan",
+        "status": "aktif",
+        "departemen": "Teknik Komputer",
+        "jabatan": "Lektor Kepala",
+        "tahun_masuk": 2012,
+        "pendidikan_terakhir": "S3",
+        "mata_kuliah": ["Jaringan Komputer", "Arsitektur Komputer", "Keamanan Jaringan"]
+    },
+    {
+        "nomor_induk_dosen_nasional": "D004",
+        "nama": "M. Rahmat Hidayat, M.T.",
+        "status": "aktif",
+        "departemen": "Manajemen Informatika",
+        "jabatan": "Asisten Ahli",
+        "tahun_masuk": 2018,
+        "pendidikan_terakhir": "S2",
+        "mata_kuliah": ["Manajemen Proyek TI", "Pengantar Teknologi Informasi"]
+    },
+    {
+        "nomor_induk_dosen_nasional": "D005",
+        "nama": "Dr. Dewi Lestari",
+        "status": "tidak aktif",
+        "departemen": "Teknik Informatika",
+        "jabatan": "Lektor Kepala",
+        "tahun_masuk": 2007,
+        "pendidikan_terakhir": "S3",
+        "mata_kuliah": ["Pemrograman Web", "Pengembangan Aplikasi Mobile"]
+    }
+]

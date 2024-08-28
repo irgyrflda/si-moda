@@ -1,0 +1,112 @@
+[
+    {
+        "nomor_induk_mahasiswa": "2017001",
+        "nama": "Andi Pratama",
+        "status": "aktif",
+        "jurusan": "Teknik Informatika",
+        "angkatan": 2017,
+        "semester": 9,
+        "ipk": 3.75,
+        "ips_per_semester": {
+            "semester_1": 3.60,
+            "semester_2": 3.65,
+            "semester_3": 3.70,
+            "semester_4": 3.80,
+            "semester_5": 3.75,
+            "semester_6": 3.80,
+            "semester_7": 3.85,
+            "semester_8": 3.90,
+            "semester_9": 3.95
+        }
+    },
+    {
+        "nomor_induk_mahasiswa": "2017002",
+        "nama": "Budi Santoso",
+        "status": "tidak aktif",
+        "jurusan": "Sistem Informasi",
+        "angkatan": 2017,
+        "semester": 10,
+        "ipk": 3.45,
+        "ips_per_semester": {
+            "semester_1": 3.40,
+            "semester_2": 3.45,
+            "semester_3": 3.50,
+            "semester_4": 3.55,
+            "semester_5": 3.50,
+            "semester_6": 3.55,
+            "semester_7": 3.60,
+            "semester_8": 3.65,
+            "semester_9": 3.70,
+            "semester_10": 3.75
+        }
+    },
+    {
+        "nomor_induk_mahasiswa": "2016003",
+        "nama": "Citra Dewi",
+        "status": "aktif",
+        "jurusan": "Teknik Komputer",
+        "angkatan": 2016,
+        "semester": 11,
+        "ipk": 3.60,
+        "ips_per_semester": {
+            "semester_1": 3.50,
+            "semester_2": 3.55,
+            "semester_3": 3.60,
+            "semester_4": 3.65,
+            "semester_5": 3.70,
+            "semester_6": 3.75,
+            "semester_7": 3.80,
+            "semester_8": 3.85,
+            "semester_9": 3.90,
+            "semester_10": 3.95,
+            "semester_11": 4.00
+        }
+    },
+    {
+        "nomor_induk_mahasiswa": "2016004",
+        "nama": "Dewi Sari",
+        "status": "aktif",
+        "jurusan": "Manajemen Informatika",
+        "angkatan": 2016,
+        "semester": 12,
+        "ipk": 3.85,
+        "ips_per_semester": {
+            "semester_1": 3.70,
+            "semester_2": 3.75,
+            "semester_3": 3.80,
+            "semester_4": 3.85,
+            "semester_5": 3.90,
+            "semester_6": 3.95,
+            "semester_7": 4.00,
+            "semester_8": 3.95,
+            "semester_9": 4.00,
+            "semester_10": 4.00,
+            "semester_11": 4.00,
+            "semester_12": 4.00
+        }
+    },
+    {
+        "nomor_induk_mahasiswa": "2015005",
+        "nama": "Eko Putra",
+        "status": "tidak aktif",
+        "jurusan": "Teknik Informatika",
+        "angkatan": 2015,
+        "semester": 13,
+        "ipk": 3.50,
+        "ips_per_semester": {
+            "semester_1": 3.40,
+            "semester_2": 3.45,
+            "semester_3": 3.50,
+            "semester_4": 3.55,
+            "semester_5": 3.50,
+            "semester_6": 3.55,
+            "semester_7": 3.60,
+            "semester_8": 3.65,
+            "semester_9": 3.70,
+            "semester_10": 3.75,
+            "semester_11": 3.70,
+            "semester_12": 3.75,
+            "semester_13": 3.80
+        }
+    }
+]
