@@ -8,6 +8,8 @@ import { Op } from "sequelize";
 import { cekNoInduk } from "@utils/cek-no-induk";
 import users from "@services/web/users.service-web";
 import RefGroupUser from "@models/ref-group-user.models";
+import { generateAccessToken, generateRefreshToken } from "@middleware/authorization";
+import RefUserSementara, { RefUserSementaraInput, RefUserSementaraOutput } from "@models/user-sementara.models";
 
 export const login = async (
     req: Request,
@@ -16,40 +18,65 @@ export const login = async (
 ): Promise<void> => {
     try {
         const email: string = req.body.email
-        const user = await Users.findOne({
+        const user = await Users.findAll({
             attributes: ["nomor_induk"],
             where: {
                 [Op.or]: {
-                    email_ecampus: {
-                        [Op.like]: `%${email}%`
-                    },
-                    email_google: {
-                        [Op.like]: `%${email}%`
-                    }
+                    email_ecampus: email,
+                    email_google: email
                 }
             }
         })
-        console.log(user);
-        
-        if (!user) {
+        const tokenJwt = generateAccessToken(email)
+        const refreshTokenJwt = generateRefreshToken(email)
+        const auth = {
+            token: tokenJwt,
+            refresh_token: refreshTokenJwt
+        }
+        if (user.length === 0) {
+            const cekUnserSemantara = await RefUserSementara.findOne({
+                where: {
+                    email: email
+                }
+            })
+            if (cekUnserSemantara) {
+                const updateUserSemantara = await RefUserSementara.update({
+                    token: tokenJwt
+                }, {
+                    where: {
+                        email: email
+                    }
+                })
+                if (!updateUserSemantara) throw new CustomError(httpCode.badRequest, "Gagal Login[0]")
+            } else {
+                const payloadUserSemantara: RefUserSementaraInput = {
+                    email: email,
+                    token: tokenJwt,
+                    refresh_token: refreshTokenJwt
+                }
+                const postUserSemantara: RefUserSementaraInput = await RefUserSementara.create(payloadUserSemantara)
+                if (!postUserSemantara) throw new CustomError(httpCode.badRequest, "Gagal Login[1]")
+            }
             responseSuccess(res, httpCode.ok, "Berhasil Login Silahkan Mengisi Data Diri Terlebih Dahulu", {
                 status_user: false,
+                auth: auth,
                 data_user: null
             });
         } else {
             const updateToken = await Users.update({
-                token: req.body.token,
-                refresh_token: req.body.refresh_token,
-                token_expired: req.body.token_expired
+                token: tokenJwt,
+                refresh_token: refreshTokenJwt,
+                // token_expired: req.body.token_expired
             }, {
                 where: {
-                    nomor_induk: user.nomor_induk
+                    nomor_induk: user[0].nomor_induk
                 }
             })
             if (!updateToken) throw new CustomError(httpCode.badRequest, "Gagal Login Silahkan Coba Lagi")
-            const dataUser = await users.getByNomorIndukUser(user.nomor_induk)
+            const dataUser = await users.getByNomorIndukUser(user[0].nomor_induk)
             responseSuccess(res, httpCode.ok, "Berhasil Login", {
                 status_user: true,
+                auth: auth,
                 data_user: dataUser
             });
         }
@@ -81,20 +108,29 @@ export const createUser = async (
     next: NextFunction
 ): Promise<void> => {
     try {
+        const tokenUser: any = req.headers.token
+        const refreshToken: any = req.headers.refresh_token
         const user = await cekNoInduk(req.body.nomor_induk)
+
         const payload = {
-            token: req.body.token,
-            refresh_token: req.body.refresh_token,
-            token_expired: req.body.token_expired,
+            token: tokenUser,
+            refresh_token: refreshToken,
+            // token_expired: req.body.token_expired,
             nomor_induk: req.body.nomor_induk,
             nama_user: user.nama,
             email_ecampus: req.body.email_ecampus,
             email_google: req.body.email_google,
             ucr: req.body.nomor_induk
         }
-        const storeUser: UserInput = await users.storeUser(payload.token, payload.refresh_token,
-            payload.token_expired, payload.nomor_induk, payload.nama_user,
-            payload.email_ecampus, payload.email_google, payload.ucr
+        const storeUser: UserInput = await users.storeUser(
+            payload.token,
+            payload.refresh_token,
+            // payload.token_expired, 
+            payload.nomor_induk,
+            payload.nama_user,
+            payload.email_ecampus,
+            payload.email_google,
+            payload.ucr
         )
 
         const cekRefUserGroup = await RefGroupUser.findOne({
@@ -111,8 +147,9 @@ export const createUser = async (
             })
             if (!storeUserGroup) throw new CustomError(httpCode.badRequest, "Error gagal mendaftarkan user pada aplikasi")
         }
-
-        responseSuccess(res, httpCode.ok, "Berhasil Membuat Data", storeUser)
+        await RefUserSementara.destroy({ where: { email: req.headers.email } })
+        const dataUser = await users.getByNomorIndukUser(payload.nomor_induk)
+        responseSuccess(res, httpCode.ok, "Berhasil Membuat Data", dataUser)
 
     } catch (error) {
         errorLogger.error("Error login frenn : ", error)

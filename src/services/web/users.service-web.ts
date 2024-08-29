@@ -11,7 +11,7 @@ import {
     ParamsNimUsersRequest
 } from "@schema/users.schema";
 import { Op } from "sequelize";
-import { errorLogger } from "@config/logger";
+import { debugLogger, errorLogger } from "@config/logger";
 
 const getAllUsers = async (): Promise<UserOutput[]> => {
     try {
@@ -88,6 +88,7 @@ const getByNomorIndukUser = async (
 ): Promise<UserOutput> => {
     try {
         const user = await Users.findOne({
+            attributes: ["nomor_induk", "nama_user", "email_google", "email_ecampus"],
             include: [
                 {
                     model: RefGroupUser,
@@ -188,7 +189,7 @@ const getByEmailUser = async (
 const storeUser = async (
     token: string,
     refresh_token: string,
-    token_expired: Date,
+    // token_expired: Date,
     nomor_induk: string,
     nama_user: string,
     email_ecampus: string | null | undefined,
@@ -196,34 +197,88 @@ const storeUser = async (
     ucr: string
 ): Promise<UserInput> => {
     try {
-        const cekUser = await Users.findOne({
+        const email = (!email_ecampus) ? ((!email_google) ? email_ecampus : email_google) : email_ecampus
+        const cekUserByEmail = await Users.findAll({
             where: {
-                nomor_induk: nomor_induk
+                [Op.or]: {
+                    email_ecampus: email,
+                    email_google: email
+                }
             }
         })
-        if (cekUser) throw new CustomError(httpCode.conflict, "Nomor induk sudah terdaftar")
 
-        const payloadUser: UserInput = {
-            nama_user: nama_user,
-            email_ecampus: email_ecampus,
-            email_google: email_google,
-            uu: ucr,
-            nomor_induk: nomor_induk,
-            token: token,
-            refresh_token: refresh_token,
-            token_expired: token_expired
+        if (cekUserByEmail.length !== 0) throw new CustomError(httpCode.conflict, "Email Sudah Terdaftar")
+
+        const cekUser = await Users.findOne({
+            where: {
+                nomor_induk: nomor_induk,
+                // [Op.or]: {
+                //     email_ecampus: email_ecampus,
+                //     email_google: email_google
+                // }
+            }
+        })
+        // if (cekUser) throw new CustomError(httpCode.conflict, "Nomor induk sudah terdaftar")
+
+        let user: any
+        const cekEmailEcampus: null | undefined | string = cekUser?.email_ecampus;
+        const cekEmailGoogle: null | undefined | string = cekUser?.email_google;
+        if (cekEmailEcampus && cekEmailGoogle) throw new CustomError(httpCode.conflict, "Email Sudah Ada")
+
+        if (cekEmailEcampus && email_ecampus) throw new CustomError(httpCode.conflict, "Email ecampus pada nomor induk ini sudah terkait")
+
+        if (cekEmailGoogle && email_google) throw new CustomError(httpCode.conflict, "Email google pada nomor induk ini sudah terkait")
+
+        if (cekUser) {
+            const cekUser2: any = await Users.findOne({
+                where: {
+                    nomor_induk: nomor_induk,
+                    [Op.or]: {
+                        email_ecampus: email_ecampus,
+                        email_google: email_google
+                    }
+                }
+            })
+
+            if (cekUser2) throw new CustomError(httpCode.conflict, "Nomor induk dan email sudah terdaftar")
+
+            const payloadUpdate: UserInput = {
+                nama_user: nama_user,
+                email_ecampus: (!email_ecampus || email_ecampus === "") ? cekEmailEcampus : email_ecampus,
+                email_google: (!email_google || email_google === "") ? cekEmailGoogle : email_google,
+                uu: ucr,
+                nomor_induk: nomor_induk,
+            }
+
+            user = await Users.update(payloadUpdate, { where: { nomor_induk: nomor_induk } })
+
+            if (!user) throw new CustomError(httpCode.badRequest, "Gagal membuat user[0]");
+        } else {
+            const payloadUser: UserInput = {
+                token: token,
+                refresh_token: refresh_token,
+                nama_user: nama_user,
+                email_ecampus: (!email_ecampus || email_ecampus === "") ? cekEmailEcampus : email_ecampus,
+                email_google: (!email_google || email_google === "") ? cekEmailGoogle : email_google,
+                uu: ucr,
+                nomor_induk: nomor_induk,
+                // token_expired: token_expired
+            }
+
+            debugLogger.debug("debug 1 : ", payloadUser)
+            user = await Users.create(payloadUser)
+            debugLogger.debug("debug 2 : ", user)
+            if (!user) throw new CustomError(httpCode.badRequest, "Gagal membuat user[1]");
+            debugLogger.debug("debug 3")
         }
 
-        const create = await Users.create(payloadUser)
-
-        if (!create) throw new CustomError(httpCode.badRequest, "Gagal membuat user");
-
-        return create;
+        return user;
     } catch (error) {
+        errorLogger.debug("debug error : ", error)
         if (error instanceof CustomError) {
             throw new CustomError(error.code, error.message);
         } else {
-            throw new CustomError(500, "Internal server error.");
+            throw new CustomError(500, "Internal server error. " + error);
         }
     }
 }

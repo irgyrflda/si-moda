@@ -6,18 +6,18 @@ const payload = {
             required_error: "nomor induk tidak boleh kosong",
             invalid_type_error: "nomor induk harus bertipe huruf"
         }),
-        token: string({
-            required_error: "token tidak boleh kosong",
-            invalid_type_error: "token harus bertipe huruf"
-        }),
-        refresh_token: string({
-            required_error: "refresh_token tidak boleh kosong",
-            invalid_type_error: "refresh_token harus bertipe huruf"
-        }),
-        token_expired: date({
-            required_error: "token_expired tidak boleh kosong",
-            invalid_type_error: "token_expired harus bertipe tanggal"
-        })
+        // token: string({
+        //     required_error: "token tidak boleh kosong",
+        //     invalid_type_error: "token harus bertipe huruf"
+        // }),
+        // refresh_token: string({
+        //     required_error: "refresh_token tidak boleh kosong",
+        //     invalid_type_error: "refresh_token harus bertipe huruf"
+        // }),
+        // token_expired: date({
+        //     required_error: "token_expired tidak boleh kosong",
+        //     invalid_type_error: "token_expired harus bertipe tanggal"
+        // })
     })
 };
 
@@ -35,21 +35,22 @@ const payloadLogin = {
         email: string({
             required_error: "email tidak boleh kosong",
             invalid_type_error: "email harus bertipe huruf"
-        }),
-        token: string({
-            required_error: "token tidak boleh kosong",
-            invalid_type_error: "token harus bertipe huruf"
-        }),
-        refresh_token: string({
-            required_error: "refresh_token tidak boleh kosong",
-            invalid_type_error: "refresh_token harus bertipe huruf"
-        }),
-        token_expired: preprocess((arg) => {
-            if (typeof arg === "string" || arg instanceof Date) return new Date(arg);
-        }, date({
-            required_error: "token_expired tidak boleh kosong",
-            invalid_type_error: "token_expired harus bertipe tanggal dengan format ISO 8601 (YYYY-MM-DDTHH:MM:SSZ) "
-        }))
+        })
+            .email("Email Tidak Valid"),
+        // token: string({
+        //     required_error: "token tidak boleh kosong",
+        //     invalid_type_error: "token harus bertipe huruf"
+        // }),
+        // refresh_token: string({
+        //     required_error: "refresh_token tidak boleh kosong",
+        //     invalid_type_error: "refresh_token harus bertipe huruf"
+        // }),
+        // token_expired: preprocess((arg) => {
+        //     if (typeof arg === "string" || arg instanceof Date) return new Date(arg);
+        // }, date({
+        //     required_error: "token_expired tidak boleh kosong",
+        //     invalid_type_error: "token_expired harus bertipe tanggal dengan format ISO 8601 (YYYY-MM-DDTHH:MM:SSZ) "
+        // }))
     })
 };
 

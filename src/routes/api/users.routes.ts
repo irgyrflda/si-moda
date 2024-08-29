@@ -2,10 +2,11 @@ import usersController from "@controllers/web/users";
 import express from "express";
 import validate from "@schema/validate";
 import {
-    payloadLoginSchema,
+    payloadUsersSchema
 } from "@schema/users.schema"
+import { checkTokenSementara } from "@middleware/authorization";
 const routes = express.Router();
 
-routes.post("/login", validate(payloadLoginSchema), usersController.login);
+routes.post("/first-login", checkTokenSementara, validate(payloadUsersSchema), usersController.createUser);
 
 export default routes;

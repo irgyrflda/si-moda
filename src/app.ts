@@ -21,7 +21,7 @@ import limiter from "@middleware/rate-limit";
 import logger, { errorLogger } from "@config/logger";
 import { notFound } from "@middleware/error-notfound";
 import { errorhandler } from "@middleware/error-handler";
-import documentationApi from "./public/documentation-api";
+import documentationApi from "@public/documentation-api";
 
 const app: Application = express();
 log4js.configure(logger);

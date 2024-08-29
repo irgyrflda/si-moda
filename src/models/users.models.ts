@@ -4,9 +4,9 @@ import { DataTypes, Model, Optional } from "sequelize";
 interface IUsersAttributes {
     nomor_induk: string;
     nama_user: string;
-    token: string;
-    refresh_token: string;
-    token_expired: Date;
+    token: string | null | undefined;
+    refresh_token: string | null | undefined;
+    token_expired: Date | undefined;
     email_google: string | null | undefined;
     email_ecampus: string | null | undefined;
     uc: string | null | undefined;
@@ -18,6 +18,7 @@ interface IUsersAttributes {
 export type UserOutput = Required<IUsersAttributes>;
 export type UserInput = Optional<
     IUsersAttributes,
+    "token" | "refresh_token" | "token_expired" |
     "nama_user" | "email_google" | "email_ecampus" |
     "uc" | "uu" | "created_at" | "update_at"
 >;
@@ -27,9 +28,9 @@ class Users
     implements IUsersAttributes {
     declare nomor_induk: string;
     declare nama_user: string;
-    declare token: string;
-    declare refresh_token: string;
-    declare token_expired: Date;
+    declare token: string | null | undefined;
+    declare refresh_token: string | null | undefined;
+    declare token_expired: Date | undefined;
     declare email_google: string | null | undefined;
     declare email_ecampus: string | null | undefined;
     declare uc: string | null | undefined;
@@ -51,7 +52,7 @@ Users.init(
         },
         token: {
             type: DataTypes.STRING(255),
-            allowNull: false
+            allowNull: true
         },
         refresh_token: {
             type: DataTypes.STRING(255),

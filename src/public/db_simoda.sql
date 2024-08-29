@@ -118,9 +118,11 @@ CREATE TABLE IF NOT EXISTS `ref_group_user` (
   KEY `Index 3` (`nomor_induk`),
   CONSTRAINT `FK_ref_group_m_group` FOREIGN KEY (`kode_group`) REFERENCES `m_group` (`kode_group`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `FK_ref_user_ref_group` FOREIGN KEY (`nomor_induk`) REFERENCES `ref_user` (`nomor_induk`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table db_simoda.ref_group_user: ~0 rows (approximately)
+-- Dumping data for table db_simoda.ref_group_user: ~1 rows (approximately)
+INSERT INTO `ref_group_user` (`id_group_user`, `nomor_induk`, `kode_group`) VALUES
+	(9, '2016003', 'G01');
 
 -- Dumping structure for table db_simoda.ref_materi_pembahasan
 CREATE TABLE IF NOT EXISTS `ref_materi_pembahasan` (
@@ -249,7 +251,19 @@ CREATE TABLE IF NOT EXISTS `ref_user` (
   KEY `Index 2` (`nomor_induk`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table db_simoda.ref_user: ~0 rows (approximately)
+-- Dumping data for table db_simoda.ref_user: ~1 rows (approximately)
+INSERT INTO `ref_user` (`nomor_induk`, `nama_user`, `token`, `refresh_token`, `token_expired`, `email_google`, `email_ecampus`, `uc`, `uu`, `created_at`, `update_at`) VALUES
+	('2016003', 'Citra Dewi', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlyZ3lAZ21haWwuY29tIiwiaWF0IjoxNzI0OTQzMDQ1LCJleHAiOjE3MjQ5NDY2NDV9.LeFqleGCWVJUnCI_dSekND3J7I1dxTb2qyRCf9V_DPM', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlyZ3lAZ21haWwuY29tIiwiaWF0IjoxNzI0OTQzMDQ1LCJleHAiOjE3MjU1NDc4NDV9.hbfqk6FAyCVRvrZSbb3xopPB_r5uDz7_5BuPKThxb2M', NULL, 'irgy@gmail.com', 'irgy@ecampus.ut.ac.id', NULL, '2016003', '2024-08-29 14:21:59', '2024-08-29 14:50:45');
+
+-- Dumping structure for table db_simoda.ref_user_sementara
+CREATE TABLE IF NOT EXISTS `ref_user_sementara` (
+  `email` varchar(100) NOT NULL,
+  `token` varchar(255) NOT NULL,
+  `refresh_token` varchar(255) NOT NULL,
+  PRIMARY KEY (`email`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- Dumping data for table db_simoda.ref_user_sementara: ~0 rows (approximately)
 
 -- Dumping structure for table db_simoda.trx_agenda
 CREATE TABLE IF NOT EXISTS `trx_agenda` (
