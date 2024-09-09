@@ -1,2077 +1,256 @@
-[2024-08-29T17:30:32.974] [DEBUG] default - cek user by email :  []
-[2024-08-29T17:31:17.389] [DEBUG] default - cek user by email :  []
-[2024-08-29T17:31:36.371] [DEBUG] default - cek user by email :  [
-  Users {
-    dataValues: {
-      nomor_induk: '2017001',
-      nama_user: 'Andi Pratama',
-      token: 'qwqwqwqasas',
-      refresh_token: 'daas1111wdasdas',
-      token_expired: 2024-08-13T00:00:00.000Z,
-      email_google: 'irgy@gmail.com',
-      email_ecampus: 'irgy@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2017001',
-      created_at: 2024-08-28T16:15:17.000Z,
-      update_at: 2024-08-29T10:25:59.000Z
-    },
-    _previousDataValues: {
-      nomor_induk: '2017001',
-      nama_user: 'Andi Pratama',
-      token: 'qwqwqwqasas',
-      refresh_token: 'daas1111wdasdas',
-      token_expired: 2024-08-13T00:00:00.000Z,
-      email_google: 'irgy@gmail.com',
-      email_ecampus: 'irgy@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2017001',
-      created_at: 2024-08-28T16:15:17.000Z,
-      update_at: 2024-08-29T10:25:59.000Z
-    },
-    uniqno: 1,
-    _changed: Set(0) {},
-    _options: {
-      isNewRecord: false,
-      _schema: null,
-      _schemaDelimiter: '',
-      raw: true,
-      attributes: [Array]
-    },
-    isNewRecord: false
-  }
-]
-[2024-08-29T17:31:43.238] [DEBUG] default - cek user by email :  []
-[2024-08-29T17:33:46.776] [DEBUG] default - cek user by email :  [
-  Users {
-    dataValues: {
-      nomor_induk: '2017002',
-      nama_user: 'Budi Santoso',
-      token: null,
-      refresh_token: null,
-      token_expired: null,
-      email_google: 'irgy1@gmail.com',
-      email_ecampus: 'irgyrlda@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2017002',
-      created_at: 2024-08-29T10:15:51.000Z,
-      update_at: 2024-08-29T10:31:43.000Z
-    },
-    _previousDataValues: {
-      nomor_induk: '2017002',
-      nama_user: 'Budi Santoso',
-      token: null,
-      refresh_token: null,
-      token_expired: null,
-      email_google: 'irgy1@gmail.com',
-      email_ecampus: 'irgyrlda@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2017002',
-      created_at: 2024-08-29T10:15:51.000Z,
-      update_at: 2024-08-29T10:31:43.000Z
-    },
-    uniqno: 1,
-    _changed: Set(0) {},
-    _options: {
-      isNewRecord: false,
-      _schema: null,
-      _schemaDelimiter: '',
-      raw: true,
-      attributes: [Array]
-    },
-    isNewRecord: false
-  }
-]
-[2024-08-29T17:35:59.898] [DEBUG] default - cek user by email :  [
-  Users {
-    dataValues: {
-      nomor_induk: '2017002',
-      nama_user: 'Budi Santoso',
-      token: null,
-      refresh_token: null,
-      token_expired: null,
-      email_google: 'irgy1@gmail.com',
-      email_ecampus: 'irgyrlda@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2017002',
-      created_at: 2024-08-29T10:15:51.000Z,
-      update_at: 2024-08-29T10:31:43.000Z
-    },
-    _previousDataValues: {
-      nomor_induk: '2017002',
-      nama_user: 'Budi Santoso',
-      token: null,
-      refresh_token: null,
-      token_expired: null,
-      email_google: 'irgy1@gmail.com',
-      email_ecampus: 'irgyrlda@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2017002',
-      created_at: 2024-08-29T10:15:51.000Z,
-      update_at: 2024-08-29T10:31:43.000Z
-    },
-    uniqno: 1,
-    _changed: Set(0) {},
-    _options: {
-      isNewRecord: false,
-      _schema: null,
-      _schemaDelimiter: '',
-      raw: true,
-      attributes: [Array]
-    },
-    isNewRecord: false
-  }
-]
-[2024-08-29T17:36:12.591] [DEBUG] default - cek user by email :  []
-[2024-08-29T17:36:12.593] [DEBUG] default - debug data user :  null
-[2024-08-29T17:36:12.593] [DEBUG] default - debug 1 :  {
-  nama_user: 'Citra Dewi',
-  email_ecampus: 'rlda@ecampus.ut.ac.id',
-  email_google: null,
-  uu: '2016003',
-  nomor_induk: '2016003'
+[2024-09-08T12:15:46.135] [ERROR] default - error pengajuan :  CustomError: Data Tidak Ditemukan
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-tesis-mhs.service-web.ts:40:19
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-tesis-mhs.service-web.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 302,
+  status: 'error'
 }
-[2024-08-29T17:36:12.612] [DEBUG] default - debug 2 :  Users {
-  dataValues: {
-    nama_user: 'Citra Dewi',
-    email_ecampus: 'rlda@ecampus.ut.ac.id',
-    email_google: null,
-    uu: '2016003',
-    nomor_induk: '2016003',
-    update_at: 2024-08-29T10:36:12.595Z,
-    created_at: 2024-08-29T10:36:12.595Z
-  },
-  _previousDataValues: {
-    nama_user: 'Citra Dewi',
-    email_ecampus: 'rlda@ecampus.ut.ac.id',
-    email_google: null,
-    uu: '2016003',
-    nomor_induk: '2016003',
-    token: undefined,
-    refresh_token: undefined,
-    token_expired: undefined,
-    uc: undefined,
-    created_at: 2024-08-29T10:36:12.595Z,
-    update_at: 2024-08-29T10:36:12.595Z
-  },
-  uniqno: 1,
-  _changed: Set(0) {},
-  _options: {
-    isNewRecord: true,
-    _schema: null,
-    _schemaDelimiter: '',
-    attributes: undefined,
-    include: undefined,
-    raw: undefined,
-    silent: undefined
-  },
-  isNewRecord: false,
-  null: undefined
+[2024-09-08T12:17:16.657] [ERROR] default - error pengajuan :  CustomError: Data Mahasiswa Pada Aplikasi Tidak Ditemukan
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-tesis-mhs.service-web.ts:40:19
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-tesis-mhs.service-web.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 302,
+  status: 'error'
 }
-[2024-08-29T17:36:12.613] [DEBUG] default - debug 3
-[2024-08-29T17:45:30.465] [DEBUG] default - cek user by email :  [
-  Users {
-    dataValues: {
-      nomor_induk: '2016003',
-      nama_user: 'Citra Dewi',
-      token: null,
-      refresh_token: null,
-      token_expired: null,
-      email_google: null,
-      email_ecampus: 'rlda@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2016003',
-      created_at: 2024-08-29T10:36:12.000Z,
-      update_at: 2024-08-29T10:36:12.000Z
-    },
-    _previousDataValues: {
-      nomor_induk: '2016003',
-      nama_user: 'Citra Dewi',
-      token: null,
-      refresh_token: null,
-      token_expired: null,
-      email_google: null,
-      email_ecampus: 'rlda@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2016003',
-      created_at: 2024-08-29T10:36:12.000Z,
-      update_at: 2024-08-29T10:36:12.000Z
-    },
-    uniqno: 1,
-    _changed: Set(0) {},
-    _options: {
-      isNewRecord: false,
-      _schema: null,
-      _schemaDelimiter: '',
-      raw: true,
-      attributes: [Array]
-    },
-    isNewRecord: false
-  }
-]
-[2024-08-29T17:45:40.818] [DEBUG] default - cek user by email :  []
-[2024-08-29T17:46:11.135] [DEBUG] default - cek user by email :  []
-[2024-08-29T18:54:16.584] [DEBUG] default - cek user by email :  [
-  Users {
-    dataValues: {
-      nomor_induk: '2016003',
-      nama_user: 'Citra Dewi',
-      token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMjA3OSwiZXhwIjoxNzI0OTM1Njc5fQ.evJrQU6W7KUK1yRZXTRNyI5fETOlDNfUOkygZkK5Gpk',
-      refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMjA3OSwiZXhwIjoxNzI1NTM2ODc5fQ.9aK7Sg0g6G8hHSkiDAdA017-sAzF04_n37eZrD7OV_I',
-      token_expired: null,
-      email_google: 'email@gmail.com',
-      email_ecampus: 'rlda@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2016003',
-      created_at: 2024-08-29T10:36:12.000Z,
-      update_at: 2024-08-29T11:47:59.000Z
-    },
-    _previousDataValues: {
-      nomor_induk: '2016003',
-      nama_user: 'Citra Dewi',
-      token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMjA3OSwiZXhwIjoxNzI0OTM1Njc5fQ.evJrQU6W7KUK1yRZXTRNyI5fETOlDNfUOkygZkK5Gpk',
-      refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMjA3OSwiZXhwIjoxNzI1NTM2ODc5fQ.9aK7Sg0g6G8hHSkiDAdA017-sAzF04_n37eZrD7OV_I',
-      token_expired: null,
-      email_google: 'email@gmail.com',
-      email_ecampus: 'rlda@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2016003',
-      created_at: 2024-08-29T10:36:12.000Z,
-      update_at: 2024-08-29T11:47:59.000Z
-    },
-    uniqno: 1,
-    _changed: Set(0) {},
-    _options: {
-      isNewRecord: false,
-      _schema: null,
-      _schemaDelimiter: '',
-      raw: true,
-      attributes: [Array]
-    },
-    isNewRecord: false
-  }
-]
-[2024-08-29T18:56:06.353] [DEBUG] default - cek user by email :  [
-  Users {
-    dataValues: {
-      nomor_induk: '2016003',
-      nama_user: 'Citra Dewi',
-      token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMjA3OSwiZXhwIjoxNzI0OTM1Njc5fQ.evJrQU6W7KUK1yRZXTRNyI5fETOlDNfUOkygZkK5Gpk',
-      refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMjA3OSwiZXhwIjoxNzI1NTM2ODc5fQ.9aK7Sg0g6G8hHSkiDAdA017-sAzF04_n37eZrD7OV_I',
-      token_expired: null,
-      email_google: 'email@gmail.com',
-      email_ecampus: 'rlda@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2016003',
-      created_at: 2024-08-29T10:36:12.000Z,
-      update_at: 2024-08-29T11:47:59.000Z
-    },
-    _previousDataValues: {
-      nomor_induk: '2016003',
-      nama_user: 'Citra Dewi',
-      token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMjA3OSwiZXhwIjoxNzI0OTM1Njc5fQ.evJrQU6W7KUK1yRZXTRNyI5fETOlDNfUOkygZkK5Gpk',
-      refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMjA3OSwiZXhwIjoxNzI1NTM2ODc5fQ.9aK7Sg0g6G8hHSkiDAdA017-sAzF04_n37eZrD7OV_I',
-      token_expired: null,
-      email_google: 'email@gmail.com',
-      email_ecampus: 'rlda@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2016003',
-      created_at: 2024-08-29T10:36:12.000Z,
-      update_at: 2024-08-29T11:47:59.000Z
-    },
-    uniqno: 1,
-    _changed: Set(0) {},
-    _options: {
-      isNewRecord: false,
-      _schema: null,
-      _schemaDelimiter: '',
-      raw: true,
-      attributes: [Array]
-    },
-    isNewRecord: false
-  }
-]
-[2024-08-29T18:56:18.433] [DEBUG] default - cek user by email :  [
-  Users {
-    dataValues: {
-      nomor_induk: '2016003',
-      nama_user: 'Citra Dewi',
-      token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMjA3OSwiZXhwIjoxNzI0OTM1Njc5fQ.evJrQU6W7KUK1yRZXTRNyI5fETOlDNfUOkygZkK5Gpk',
-      refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMjA3OSwiZXhwIjoxNzI1NTM2ODc5fQ.9aK7Sg0g6G8hHSkiDAdA017-sAzF04_n37eZrD7OV_I',
-      token_expired: null,
-      email_google: 'email@gmail.com',
-      email_ecampus: 'rlda@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2016003',
-      created_at: 2024-08-29T10:36:12.000Z,
-      update_at: 2024-08-29T11:47:59.000Z
-    },
-    _previousDataValues: {
-      nomor_induk: '2016003',
-      nama_user: 'Citra Dewi',
-      token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMjA3OSwiZXhwIjoxNzI0OTM1Njc5fQ.evJrQU6W7KUK1yRZXTRNyI5fETOlDNfUOkygZkK5Gpk',
-      refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMjA3OSwiZXhwIjoxNzI1NTM2ODc5fQ.9aK7Sg0g6G8hHSkiDAdA017-sAzF04_n37eZrD7OV_I',
-      token_expired: null,
-      email_google: 'email@gmail.com',
-      email_ecampus: 'rlda@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2016003',
-      created_at: 2024-08-29T10:36:12.000Z,
-      update_at: 2024-08-29T11:47:59.000Z
-    },
-    uniqno: 1,
-    _changed: Set(0) {},
-    _options: {
-      isNewRecord: false,
-      _schema: null,
-      _schemaDelimiter: '',
-      raw: true,
-      attributes: [Array]
-    },
-    isNewRecord: false
-  }
-]
-[2024-08-29T18:56:44.017] [DEBUG] default - cek user by email :  [
-  Users {
-    dataValues: {
-      nomor_induk: '2016003',
-      nama_user: 'Citra Dewi',
-      token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMjA3OSwiZXhwIjoxNzI0OTM1Njc5fQ.evJrQU6W7KUK1yRZXTRNyI5fETOlDNfUOkygZkK5Gpk',
-      refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMjA3OSwiZXhwIjoxNzI1NTM2ODc5fQ.9aK7Sg0g6G8hHSkiDAdA017-sAzF04_n37eZrD7OV_I',
-      token_expired: null,
-      email_google: 'email@gmail.com',
-      email_ecampus: 'rlda@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2016003',
-      created_at: 2024-08-29T10:36:12.000Z,
-      update_at: 2024-08-29T11:47:59.000Z
-    },
-    _previousDataValues: {
-      nomor_induk: '2016003',
-      nama_user: 'Citra Dewi',
-      token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMjA3OSwiZXhwIjoxNzI0OTM1Njc5fQ.evJrQU6W7KUK1yRZXTRNyI5fETOlDNfUOkygZkK5Gpk',
-      refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMjA3OSwiZXhwIjoxNzI1NTM2ODc5fQ.9aK7Sg0g6G8hHSkiDAdA017-sAzF04_n37eZrD7OV_I',
-      token_expired: null,
-      email_google: 'email@gmail.com',
-      email_ecampus: 'rlda@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2016003',
-      created_at: 2024-08-29T10:36:12.000Z,
-      update_at: 2024-08-29T11:47:59.000Z
-    },
-    uniqno: 1,
-    _changed: Set(0) {},
-    _options: {
-      isNewRecord: false,
-      _schema: null,
-      _schemaDelimiter: '',
-      raw: true,
-      attributes: [Array]
-    },
-    isNewRecord: false
-  }
-]
-[2024-08-29T18:56:45.594] [DEBUG] default - cek user by email :  [
-  Users {
-    dataValues: {
-      nomor_induk: '2016003',
-      nama_user: 'Citra Dewi',
-      token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMjA3OSwiZXhwIjoxNzI0OTM1Njc5fQ.evJrQU6W7KUK1yRZXTRNyI5fETOlDNfUOkygZkK5Gpk',
-      refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMjA3OSwiZXhwIjoxNzI1NTM2ODc5fQ.9aK7Sg0g6G8hHSkiDAdA017-sAzF04_n37eZrD7OV_I',
-      token_expired: null,
-      email_google: 'email@gmail.com',
-      email_ecampus: 'rlda@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2016003',
-      created_at: 2024-08-29T10:36:12.000Z,
-      update_at: 2024-08-29T11:47:59.000Z
-    },
-    _previousDataValues: {
-      nomor_induk: '2016003',
-      nama_user: 'Citra Dewi',
-      token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMjA3OSwiZXhwIjoxNzI0OTM1Njc5fQ.evJrQU6W7KUK1yRZXTRNyI5fETOlDNfUOkygZkK5Gpk',
-      refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMjA3OSwiZXhwIjoxNzI1NTM2ODc5fQ.9aK7Sg0g6G8hHSkiDAdA017-sAzF04_n37eZrD7OV_I',
-      token_expired: null,
-      email_google: 'email@gmail.com',
-      email_ecampus: 'rlda@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2016003',
-      created_at: 2024-08-29T10:36:12.000Z,
-      update_at: 2024-08-29T11:47:59.000Z
-    },
-    uniqno: 1,
-    _changed: Set(0) {},
-    _options: {
-      isNewRecord: false,
-      _schema: null,
-      _schemaDelimiter: '',
-      raw: true,
-      attributes: [Array]
-    },
-    isNewRecord: false
-  }
-]
-[2024-08-29T18:57:12.056] [DEBUG] default - cek user by email :  [
-  Users {
-    dataValues: {
-      nomor_induk: '2016003',
-      nama_user: 'Citra Dewi',
-      token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMjA3OSwiZXhwIjoxNzI0OTM1Njc5fQ.evJrQU6W7KUK1yRZXTRNyI5fETOlDNfUOkygZkK5Gpk',
-      refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMjA3OSwiZXhwIjoxNzI1NTM2ODc5fQ.9aK7Sg0g6G8hHSkiDAdA017-sAzF04_n37eZrD7OV_I',
-      token_expired: null,
-      email_google: 'email@gmail.com',
-      email_ecampus: 'rlda@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2016003',
-      created_at: 2024-08-29T10:36:12.000Z,
-      update_at: 2024-08-29T11:47:59.000Z
-    },
-    _previousDataValues: {
-      nomor_induk: '2016003',
-      nama_user: 'Citra Dewi',
-      token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMjA3OSwiZXhwIjoxNzI0OTM1Njc5fQ.evJrQU6W7KUK1yRZXTRNyI5fETOlDNfUOkygZkK5Gpk',
-      refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMjA3OSwiZXhwIjoxNzI1NTM2ODc5fQ.9aK7Sg0g6G8hHSkiDAdA017-sAzF04_n37eZrD7OV_I',
-      token_expired: null,
-      email_google: 'email@gmail.com',
-      email_ecampus: 'rlda@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2016003',
-      created_at: 2024-08-29T10:36:12.000Z,
-      update_at: 2024-08-29T11:47:59.000Z
-    },
-    uniqno: 1,
-    _changed: Set(0) {},
-    _options: {
-      isNewRecord: false,
-      _schema: null,
-      _schemaDelimiter: '',
-      raw: true,
-      attributes: [Array]
-    },
-    isNewRecord: false
-  }
-]
-[2024-08-29T18:57:38.343] [DEBUG] default - cek user by email :  [
-  Users {
-    dataValues: {
-      nomor_induk: '2016003',
-      nama_user: 'Citra Dewi',
-      token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMjA3OSwiZXhwIjoxNzI0OTM1Njc5fQ.evJrQU6W7KUK1yRZXTRNyI5fETOlDNfUOkygZkK5Gpk',
-      refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMjA3OSwiZXhwIjoxNzI1NTM2ODc5fQ.9aK7Sg0g6G8hHSkiDAdA017-sAzF04_n37eZrD7OV_I',
-      token_expired: null,
-      email_google: 'email@gmail.com',
-      email_ecampus: 'rlda@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2016003',
-      created_at: 2024-08-29T10:36:12.000Z,
-      update_at: 2024-08-29T11:47:59.000Z
-    },
-    _previousDataValues: {
-      nomor_induk: '2016003',
-      nama_user: 'Citra Dewi',
-      token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMjA3OSwiZXhwIjoxNzI0OTM1Njc5fQ.evJrQU6W7KUK1yRZXTRNyI5fETOlDNfUOkygZkK5Gpk',
-      refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMjA3OSwiZXhwIjoxNzI1NTM2ODc5fQ.9aK7Sg0g6G8hHSkiDAdA017-sAzF04_n37eZrD7OV_I',
-      token_expired: null,
-      email_google: 'email@gmail.com',
-      email_ecampus: 'rlda@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2016003',
-      created_at: 2024-08-29T10:36:12.000Z,
-      update_at: 2024-08-29T11:47:59.000Z
-    },
-    uniqno: 1,
-    _changed: Set(0) {},
-    _options: {
-      isNewRecord: false,
-      _schema: null,
-      _schemaDelimiter: '',
-      raw: true,
-      attributes: [Array]
-    },
-    isNewRecord: false
-  }
-]
-[2024-08-29T18:57:59.381] [DEBUG] default - cek user by email :  [
-  Users {
-    dataValues: {
-      nomor_induk: '2016003',
-      nama_user: 'Citra Dewi',
-      token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMjA3OSwiZXhwIjoxNzI0OTM1Njc5fQ.evJrQU6W7KUK1yRZXTRNyI5fETOlDNfUOkygZkK5Gpk',
-      refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMjA3OSwiZXhwIjoxNzI1NTM2ODc5fQ.9aK7Sg0g6G8hHSkiDAdA017-sAzF04_n37eZrD7OV_I',
-      token_expired: null,
-      email_google: 'email@gmail.com',
-      email_ecampus: 'rlda@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2016003',
-      created_at: 2024-08-29T10:36:12.000Z,
-      update_at: 2024-08-29T11:47:59.000Z
-    },
-    _previousDataValues: {
-      nomor_induk: '2016003',
-      nama_user: 'Citra Dewi',
-      token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMjA3OSwiZXhwIjoxNzI0OTM1Njc5fQ.evJrQU6W7KUK1yRZXTRNyI5fETOlDNfUOkygZkK5Gpk',
-      refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMjA3OSwiZXhwIjoxNzI1NTM2ODc5fQ.9aK7Sg0g6G8hHSkiDAdA017-sAzF04_n37eZrD7OV_I',
-      token_expired: null,
-      email_google: 'email@gmail.com',
-      email_ecampus: 'rlda@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2016003',
-      created_at: 2024-08-29T10:36:12.000Z,
-      update_at: 2024-08-29T11:47:59.000Z
-    },
-    uniqno: 1,
-    _changed: Set(0) {},
-    _options: {
-      isNewRecord: false,
-      _schema: null,
-      _schemaDelimiter: '',
-      raw: true,
-      attributes: [Array]
-    },
-    isNewRecord: false
-  }
-]
-[2024-08-29T18:58:06.471] [DEBUG] default - cek user by email :  [
-  Users {
-    dataValues: {
-      nomor_induk: '2016003',
-      nama_user: 'Citra Dewi',
-      token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMjA3OSwiZXhwIjoxNzI0OTM1Njc5fQ.evJrQU6W7KUK1yRZXTRNyI5fETOlDNfUOkygZkK5Gpk',
-      refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMjA3OSwiZXhwIjoxNzI1NTM2ODc5fQ.9aK7Sg0g6G8hHSkiDAdA017-sAzF04_n37eZrD7OV_I',
-      token_expired: null,
-      email_google: 'email@gmail.com',
-      email_ecampus: 'rlda@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2016003',
-      created_at: 2024-08-29T10:36:12.000Z,
-      update_at: 2024-08-29T11:47:59.000Z
-    },
-    _previousDataValues: {
-      nomor_induk: '2016003',
-      nama_user: 'Citra Dewi',
-      token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMjA3OSwiZXhwIjoxNzI0OTM1Njc5fQ.evJrQU6W7KUK1yRZXTRNyI5fETOlDNfUOkygZkK5Gpk',
-      refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMjA3OSwiZXhwIjoxNzI1NTM2ODc5fQ.9aK7Sg0g6G8hHSkiDAdA017-sAzF04_n37eZrD7OV_I',
-      token_expired: null,
-      email_google: 'email@gmail.com',
-      email_ecampus: 'rlda@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2016003',
-      created_at: 2024-08-29T10:36:12.000Z,
-      update_at: 2024-08-29T11:47:59.000Z
-    },
-    uniqno: 1,
-    _changed: Set(0) {},
-    _options: {
-      isNewRecord: false,
-      _schema: null,
-      _schemaDelimiter: '',
-      raw: true,
-      attributes: [Array]
-    },
-    isNewRecord: false
-  }
-]
-[2024-08-29T18:58:07.371] [DEBUG] default - cek user by email :  [
-  Users {
-    dataValues: {
-      nomor_induk: '2016003',
-      nama_user: 'Citra Dewi',
-      token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMjA3OSwiZXhwIjoxNzI0OTM1Njc5fQ.evJrQU6W7KUK1yRZXTRNyI5fETOlDNfUOkygZkK5Gpk',
-      refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMjA3OSwiZXhwIjoxNzI1NTM2ODc5fQ.9aK7Sg0g6G8hHSkiDAdA017-sAzF04_n37eZrD7OV_I',
-      token_expired: null,
-      email_google: 'email@gmail.com',
-      email_ecampus: 'rlda@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2016003',
-      created_at: 2024-08-29T10:36:12.000Z,
-      update_at: 2024-08-29T11:47:59.000Z
-    },
-    _previousDataValues: {
-      nomor_induk: '2016003',
-      nama_user: 'Citra Dewi',
-      token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMjA3OSwiZXhwIjoxNzI0OTM1Njc5fQ.evJrQU6W7KUK1yRZXTRNyI5fETOlDNfUOkygZkK5Gpk',
-      refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMjA3OSwiZXhwIjoxNzI1NTM2ODc5fQ.9aK7Sg0g6G8hHSkiDAdA017-sAzF04_n37eZrD7OV_I',
-      token_expired: null,
-      email_google: 'email@gmail.com',
-      email_ecampus: 'rlda@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2016003',
-      created_at: 2024-08-29T10:36:12.000Z,
-      update_at: 2024-08-29T11:47:59.000Z
-    },
-    uniqno: 1,
-    _changed: Set(0) {},
-    _options: {
-      isNewRecord: false,
-      _schema: null,
-      _schemaDelimiter: '',
-      raw: true,
-      attributes: [Array]
-    },
-    isNewRecord: false
-  }
-]
-[2024-08-29T18:58:19.213] [DEBUG] default - cek user by email :  [
-  Users {
-    dataValues: {
-      nomor_induk: '2017001',
-      nama_user: 'Andi Pratama',
-      token: 'qwqwqwqasas',
-      refresh_token: 'daas1111wdasdas',
-      token_expired: 2024-08-13T00:00:00.000Z,
-      email_google: 'irgy@gmail.com',
-      email_ecampus: 'irgy@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2017001',
-      created_at: 2024-08-28T16:15:17.000Z,
-      update_at: 2024-08-29T10:25:59.000Z
-    },
-    _previousDataValues: {
-      nomor_induk: '2017001',
-      nama_user: 'Andi Pratama',
-      token: 'qwqwqwqasas',
-      refresh_token: 'daas1111wdasdas',
-      token_expired: 2024-08-13T00:00:00.000Z,
-      email_google: 'irgy@gmail.com',
-      email_ecampus: 'irgy@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2017001',
-      created_at: 2024-08-28T16:15:17.000Z,
-      update_at: 2024-08-29T10:25:59.000Z
-    },
-    uniqno: 1,
-    _changed: Set(0) {},
-    _options: {
-      isNewRecord: false,
-      _schema: null,
-      _schemaDelimiter: '',
-      raw: true,
-      attributes: [Array]
-    },
-    isNewRecord: false
-  }
-]
-[2024-08-29T18:59:30.157] [DEBUG] default - cek user by email :  [
-  Users {
-    dataValues: {
-      nomor_induk: '2017001',
-      nama_user: 'Andi Pratama',
-      token: 'qwqwqwqasas',
-      refresh_token: 'daas1111wdasdas',
-      token_expired: 2024-08-13T00:00:00.000Z,
-      email_google: 'irgy@gmail.com',
-      email_ecampus: 'irgy@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2017001',
-      created_at: 2024-08-28T16:15:17.000Z,
-      update_at: 2024-08-29T10:25:59.000Z
-    },
-    _previousDataValues: {
-      nomor_induk: '2017001',
-      nama_user: 'Andi Pratama',
-      token: 'qwqwqwqasas',
-      refresh_token: 'daas1111wdasdas',
-      token_expired: 2024-08-13T00:00:00.000Z,
-      email_google: 'irgy@gmail.com',
-      email_ecampus: 'irgy@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2017001',
-      created_at: 2024-08-28T16:15:17.000Z,
-      update_at: 2024-08-29T10:25:59.000Z
-    },
-    uniqno: 1,
-    _changed: Set(0) {},
-    _options: {
-      isNewRecord: false,
-      _schema: null,
-      _schemaDelimiter: '',
-      raw: true,
-      attributes: [Array]
-    },
-    isNewRecord: false
-  }
-]
-[2024-08-29T19:00:15.418] [DEBUG] default - cek user by email :  [
-  Users {
-    dataValues: {
-      nomor_induk: '2017001',
-      nama_user: 'Andi Pratama',
-      token: 'qwqwqwqasas',
-      refresh_token: 'daas1111wdasdas',
-      token_expired: 2024-08-13T00:00:00.000Z,
-      email_google: 'irgy@gmail.com',
-      email_ecampus: 'irgy@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2017001',
-      created_at: 2024-08-28T16:15:17.000Z,
-      update_at: 2024-08-29T10:25:59.000Z
-    },
-    _previousDataValues: {
-      nomor_induk: '2017001',
-      nama_user: 'Andi Pratama',
-      token: 'qwqwqwqasas',
-      refresh_token: 'daas1111wdasdas',
-      token_expired: 2024-08-13T00:00:00.000Z,
-      email_google: 'irgy@gmail.com',
-      email_ecampus: 'irgy@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2017001',
-      created_at: 2024-08-28T16:15:17.000Z,
-      update_at: 2024-08-29T10:25:59.000Z
-    },
-    uniqno: 1,
-    _changed: Set(0) {},
-    _options: {
-      isNewRecord: false,
-      _schema: null,
-      _schemaDelimiter: '',
-      raw: true,
-      attributes: [Array]
-    },
-    isNewRecord: false
-  }
-]
-[2024-08-29T19:00:21.543] [DEBUG] default - cek user by email :  [
-  Users {
-    dataValues: {
-      nomor_induk: '2017001',
-      nama_user: 'Andi Pratama',
-      token: 'qwqwqwqasas',
-      refresh_token: 'daas1111wdasdas',
-      token_expired: 2024-08-13T00:00:00.000Z,
-      email_google: 'irgy@gmail.com',
-      email_ecampus: 'irgy@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2017001',
-      created_at: 2024-08-28T16:15:17.000Z,
-      update_at: 2024-08-29T10:25:59.000Z
-    },
-    _previousDataValues: {
-      nomor_induk: '2017001',
-      nama_user: 'Andi Pratama',
-      token: 'qwqwqwqasas',
-      refresh_token: 'daas1111wdasdas',
-      token_expired: 2024-08-13T00:00:00.000Z,
-      email_google: 'irgy@gmail.com',
-      email_ecampus: 'irgy@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2017001',
-      created_at: 2024-08-28T16:15:17.000Z,
-      update_at: 2024-08-29T10:25:59.000Z
-    },
-    uniqno: 1,
-    _changed: Set(0) {},
-    _options: {
-      isNewRecord: false,
-      _schema: null,
-      _schemaDelimiter: '',
-      raw: true,
-      attributes: [Array]
-    },
-    isNewRecord: false
-  }
-]
-[2024-08-29T19:00:39.805] [DEBUG] default - cek user by email :  [
-  Users {
-    dataValues: {
-      nomor_induk: '2017001',
-      nama_user: 'Andi Pratama',
-      token: 'qwqwqwqasas',
-      refresh_token: 'daas1111wdasdas',
-      token_expired: 2024-08-13T00:00:00.000Z,
-      email_google: 'irgy@gmail.com',
-      email_ecampus: 'irgy@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2017001',
-      created_at: 2024-08-28T16:15:17.000Z,
-      update_at: 2024-08-29T10:25:59.000Z
-    },
-    _previousDataValues: {
-      nomor_induk: '2017001',
-      nama_user: 'Andi Pratama',
-      token: 'qwqwqwqasas',
-      refresh_token: 'daas1111wdasdas',
-      token_expired: 2024-08-13T00:00:00.000Z,
-      email_google: 'irgy@gmail.com',
-      email_ecampus: 'irgy@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2017001',
-      created_at: 2024-08-28T16:15:17.000Z,
-      update_at: 2024-08-29T10:25:59.000Z
-    },
-    uniqno: 1,
-    _changed: Set(0) {},
-    _options: {
-      isNewRecord: false,
-      _schema: null,
-      _schemaDelimiter: '',
-      raw: true,
-      attributes: [Array]
-    },
-    isNewRecord: false
-  }
-]
-[2024-08-29T19:01:13.858] [DEBUG] default - cek user by email :  [
-  Users {
-    dataValues: {
-      nomor_induk: '2016003',
-      nama_user: 'Citra Dewi',
-      token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMjg2MiwiZXhwIjoxNzI0OTM2NDYyfQ.M4GLiiGdvixPbU_oKxcZKeCdqbfyuoGEZwn6kckEB84',
-      refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMjg2MiwiZXhwIjoxNzI1NTM3NjYyfQ.8zvjULLe7Ee1ghdL0U_b8XjCX6XuQh_USWUIB3WnwGk',
-      token_expired: null,
-      email_google: 'email@gmail.com',
-      email_ecampus: 'rlda@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2016003',
-      created_at: 2024-08-29T10:36:12.000Z,
-      update_at: 2024-08-29T12:01:02.000Z
-    },
-    _previousDataValues: {
-      nomor_induk: '2016003',
-      nama_user: 'Citra Dewi',
-      token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMjg2MiwiZXhwIjoxNzI0OTM2NDYyfQ.M4GLiiGdvixPbU_oKxcZKeCdqbfyuoGEZwn6kckEB84',
-      refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMjg2MiwiZXhwIjoxNzI1NTM3NjYyfQ.8zvjULLe7Ee1ghdL0U_b8XjCX6XuQh_USWUIB3WnwGk',
-      token_expired: null,
-      email_google: 'email@gmail.com',
-      email_ecampus: 'rlda@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2016003',
-      created_at: 2024-08-29T10:36:12.000Z,
-      update_at: 2024-08-29T12:01:02.000Z
-    },
-    uniqno: 1,
-    _changed: Set(0) {},
-    _options: {
-      isNewRecord: false,
-      _schema: null,
-      _schemaDelimiter: '',
-      raw: true,
-      attributes: [Array]
-    },
-    isNewRecord: false
-  }
-]
-[2024-08-29T19:02:22.831] [DEBUG] default - cek user by email :  [
-  Users {
-    dataValues: {
-      nomor_induk: '2016003',
-      nama_user: 'Citra Dewi',
-      token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMjkzNCwiZXhwIjoxNzI0OTM2NTM0fQ.qg0akxf19B0110u3RBXc4amycMITVLBTZyCFozrSxZs',
-      refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMjkzNCwiZXhwIjoxNzI1NTM3NzM0fQ.fdoPAmsDPl1ieJVjQe5tartgutEH_SZ27jRI5y-q6OE',
-      token_expired: null,
-      email_google: 'email@gmail.com',
-      email_ecampus: 'rlda@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2016003',
-      created_at: 2024-08-29T10:36:12.000Z,
-      update_at: 2024-08-29T12:02:14.000Z
-    },
-    _previousDataValues: {
-      nomor_induk: '2016003',
-      nama_user: 'Citra Dewi',
-      token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMjkzNCwiZXhwIjoxNzI0OTM2NTM0fQ.qg0akxf19B0110u3RBXc4amycMITVLBTZyCFozrSxZs',
-      refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMjkzNCwiZXhwIjoxNzI1NTM3NzM0fQ.fdoPAmsDPl1ieJVjQe5tartgutEH_SZ27jRI5y-q6OE',
-      token_expired: null,
-      email_google: 'email@gmail.com',
-      email_ecampus: 'rlda@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2016003',
-      created_at: 2024-08-29T10:36:12.000Z,
-      update_at: 2024-08-29T12:02:14.000Z
-    },
-    uniqno: 1,
-    _changed: Set(0) {},
-    _options: {
-      isNewRecord: false,
-      _schema: null,
-      _schemaDelimiter: '',
-      raw: true,
-      attributes: [Array]
-    },
-    isNewRecord: false
-  }
-]
-[2024-08-29T19:02:32.051] [DEBUG] default - cek user by email :  [
-  Users {
-    dataValues: {
-      nomor_induk: '2016003',
-      nama_user: 'Citra Dewi',
-      token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMjkzNCwiZXhwIjoxNzI0OTM2NTM0fQ.qg0akxf19B0110u3RBXc4amycMITVLBTZyCFozrSxZs',
-      refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMjkzNCwiZXhwIjoxNzI1NTM3NzM0fQ.fdoPAmsDPl1ieJVjQe5tartgutEH_SZ27jRI5y-q6OE',
-      token_expired: null,
-      email_google: 'email@gmail.com',
-      email_ecampus: 'rlda@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2016003',
-      created_at: 2024-08-29T10:36:12.000Z,
-      update_at: 2024-08-29T12:02:14.000Z
-    },
-    _previousDataValues: {
-      nomor_induk: '2016003',
-      nama_user: 'Citra Dewi',
-      token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMjkzNCwiZXhwIjoxNzI0OTM2NTM0fQ.qg0akxf19B0110u3RBXc4amycMITVLBTZyCFozrSxZs',
-      refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMjkzNCwiZXhwIjoxNzI1NTM3NzM0fQ.fdoPAmsDPl1ieJVjQe5tartgutEH_SZ27jRI5y-q6OE',
-      token_expired: null,
-      email_google: 'email@gmail.com',
-      email_ecampus: 'rlda@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2016003',
-      created_at: 2024-08-29T10:36:12.000Z,
-      update_at: 2024-08-29T12:02:14.000Z
-    },
-    uniqno: 1,
-    _changed: Set(0) {},
-    _options: {
-      isNewRecord: false,
-      _schema: null,
-      _schemaDelimiter: '',
-      raw: true,
-      attributes: [Array]
-    },
-    isNewRecord: false
-  }
-]
-[2024-08-29T19:02:41.076] [DEBUG] default - cek user by email :  [
-  Users {
-    dataValues: {
-      nomor_induk: '2016003',
-      nama_user: 'Citra Dewi',
-      token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMjkzNCwiZXhwIjoxNzI0OTM2NTM0fQ.qg0akxf19B0110u3RBXc4amycMITVLBTZyCFozrSxZs',
-      refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMjkzNCwiZXhwIjoxNzI1NTM3NzM0fQ.fdoPAmsDPl1ieJVjQe5tartgutEH_SZ27jRI5y-q6OE',
-      token_expired: null,
-      email_google: 'email@gmail.com',
-      email_ecampus: 'rlda@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2016003',
-      created_at: 2024-08-29T10:36:12.000Z,
-      update_at: 2024-08-29T12:02:14.000Z
-    },
-    _previousDataValues: {
-      nomor_induk: '2016003',
-      nama_user: 'Citra Dewi',
-      token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMjkzNCwiZXhwIjoxNzI0OTM2NTM0fQ.qg0akxf19B0110u3RBXc4amycMITVLBTZyCFozrSxZs',
-      refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMjkzNCwiZXhwIjoxNzI1NTM3NzM0fQ.fdoPAmsDPl1ieJVjQe5tartgutEH_SZ27jRI5y-q6OE',
-      token_expired: null,
-      email_google: 'email@gmail.com',
-      email_ecampus: 'rlda@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2016003',
-      created_at: 2024-08-29T10:36:12.000Z,
-      update_at: 2024-08-29T12:02:14.000Z
-    },
-    uniqno: 1,
-    _changed: Set(0) {},
-    _options: {
-      isNewRecord: false,
-      _schema: null,
-      _schemaDelimiter: '',
-      raw: true,
-      attributes: [Array]
-    },
-    isNewRecord: false
-  }
-]
-[2024-08-29T19:10:37.062] [DEBUG] default - cek user by email :  [
-  Users {
-    dataValues: {
-      nomor_induk: '2016003',
-      nama_user: 'Citra Dewi',
-      token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMzQzMiwiZXhwIjoxNzI0OTM3MDMyfQ.DSzA9zZbn0l83-p0E1CC4e9a0--C0oDtZN5jJE1HzY0',
-      refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMzQzMiwiZXhwIjoxNzI1NTM4MjMyfQ.6YQ1yctu9uaGWScT1BbhtS67cbh0jyPdedTZCNbkWCQ',
-      token_expired: null,
-      email_google: 'email@gmail.com',
-      email_ecampus: 'rlda@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2016003',
-      created_at: 2024-08-29T10:36:12.000Z,
-      update_at: 2024-08-29T12:10:32.000Z
-    },
-    _previousDataValues: {
-      nomor_induk: '2016003',
-      nama_user: 'Citra Dewi',
-      token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMzQzMiwiZXhwIjoxNzI0OTM3MDMyfQ.DSzA9zZbn0l83-p0E1CC4e9a0--C0oDtZN5jJE1HzY0',
-      refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMzQzMiwiZXhwIjoxNzI1NTM4MjMyfQ.6YQ1yctu9uaGWScT1BbhtS67cbh0jyPdedTZCNbkWCQ',
-      token_expired: null,
-      email_google: 'email@gmail.com',
-      email_ecampus: 'rlda@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2016003',
-      created_at: 2024-08-29T10:36:12.000Z,
-      update_at: 2024-08-29T12:10:32.000Z
-    },
-    uniqno: 1,
-    _changed: Set(0) {},
-    _options: {
-      isNewRecord: false,
-      _schema: null,
-      _schemaDelimiter: '',
-      raw: true,
-      attributes: [Array]
-    },
-    isNewRecord: false
-  }
-]
-[2024-08-29T19:13:59.992] [DEBUG] default - debug header :  [Function: header]
-[2024-08-29T19:14:00.038] [DEBUG] default - cek user by email :  [
-  Users {
-    dataValues: {
-      nomor_induk: '2016003',
-      nama_user: 'Citra Dewi',
-      token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMzQzMiwiZXhwIjoxNzI0OTM3MDMyfQ.DSzA9zZbn0l83-p0E1CC4e9a0--C0oDtZN5jJE1HzY0',
-      refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMzQzMiwiZXhwIjoxNzI1NTM4MjMyfQ.6YQ1yctu9uaGWScT1BbhtS67cbh0jyPdedTZCNbkWCQ',
-      token_expired: null,
-      email_google: 'email@gmail.com',
-      email_ecampus: 'rlda@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2016003',
-      created_at: 2024-08-29T10:36:12.000Z,
-      update_at: 2024-08-29T12:10:32.000Z
-    },
-    _previousDataValues: {
-      nomor_induk: '2016003',
-      nama_user: 'Citra Dewi',
-      token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMzQzMiwiZXhwIjoxNzI0OTM3MDMyfQ.DSzA9zZbn0l83-p0E1CC4e9a0--C0oDtZN5jJE1HzY0',
-      refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMzQzMiwiZXhwIjoxNzI1NTM4MjMyfQ.6YQ1yctu9uaGWScT1BbhtS67cbh0jyPdedTZCNbkWCQ',
-      token_expired: null,
-      email_google: 'email@gmail.com',
-      email_ecampus: 'rlda@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2016003',
-      created_at: 2024-08-29T10:36:12.000Z,
-      update_at: 2024-08-29T12:10:32.000Z
-    },
-    uniqno: 1,
-    _changed: Set(0) {},
-    _options: {
-      isNewRecord: false,
-      _schema: null,
-      _schemaDelimiter: '',
-      raw: true,
-      attributes: [Array]
-    },
-    isNewRecord: false
-  }
-]
-[2024-08-29T19:15:10.638] [DEBUG] default - debug header :  {
-  email: 'email@gmail.com',
-  'content-type': 'application/json',
-  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMjkzNCwiZXhwIjoxNzI0OTM2NTM0fQ.qg0akxf19B0110u3RBXc4amycMITVLBTZyCFozrSxZs',
-  'user-agent': 'PostmanRuntime/7.41.1',
-  accept: '*/*',
-  'cache-control': 'no-cache',
-  'postman-token': '29767255-98a2-4dcc-8a54-e0214a5e7771',
-  host: 'localhost:4444',
-  'accept-encoding': 'gzip, deflate, br',
-  connection: 'keep-alive',
-  'content-length': '102'
+[2024-09-08T12:19:27.050] [ERROR] default - error pengajuan :  Error: Support for `{where: 'raw query'}` has been removed.
+    at MySQLQueryGenerator.whereItemsQuery (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:2423:13)
+    at MySQLQueryGenerator.getWhereConditions (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:2884:19)
+    at MySQLQueryGenerator.selectQuery (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:1460:28)
+    at MySQLQueryInterface.select (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-interface.js:1002:27)
+    at Function.findAll (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:1824:47)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Function.findOne (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:1998:12)
+[2024-09-08T12:19:40.037] [ERROR] default - error pengajuan :  Error: Support for `{where: 'raw query'}` has been removed.
+    at MySQLQueryGenerator.whereItemsQuery (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:2423:13)
+    at MySQLQueryGenerator.getWhereConditions (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:2884:19)
+    at MySQLQueryGenerator.selectQuery (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:1460:28)
+    at MySQLQueryInterface.select (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-interface.js:1002:27)
+    at Function.findAll (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:1824:47)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Function.findOne (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:1998:12)
+[2024-09-08T12:20:06.109] [ERROR] default - error pengajuan :  CustomError: Mahasiswa Tidak Terdaftar Pada Aplikasi
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-tesis-mhs.service-web.ts:167:19
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-tesis-mhs.service-web.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 404,
+  status: 'error'
 }
-[2024-08-29T19:15:10.680] [DEBUG] default - cek user by email :  [
-  Users {
-    dataValues: {
-      nomor_induk: '2016003',
-      nama_user: 'Citra Dewi',
-      token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMzQzMiwiZXhwIjoxNzI0OTM3MDMyfQ.DSzA9zZbn0l83-p0E1CC4e9a0--C0oDtZN5jJE1HzY0',
-      refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMzQzMiwiZXhwIjoxNzI1NTM4MjMyfQ.6YQ1yctu9uaGWScT1BbhtS67cbh0jyPdedTZCNbkWCQ',
-      token_expired: null,
-      email_google: 'email@gmail.com',
-      email_ecampus: 'rlda@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2016003',
-      created_at: 2024-08-29T10:36:12.000Z,
-      update_at: 2024-08-29T12:10:32.000Z
-    },
-    _previousDataValues: {
-      nomor_induk: '2016003',
-      nama_user: 'Citra Dewi',
-      token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMzQzMiwiZXhwIjoxNzI0OTM3MDMyfQ.DSzA9zZbn0l83-p0E1CC4e9a0--C0oDtZN5jJE1HzY0',
-      refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMzQzMiwiZXhwIjoxNzI1NTM4MjMyfQ.6YQ1yctu9uaGWScT1BbhtS67cbh0jyPdedTZCNbkWCQ',
-      token_expired: null,
-      email_google: 'email@gmail.com',
-      email_ecampus: 'rlda@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2016003',
-      created_at: 2024-08-29T10:36:12.000Z,
-      update_at: 2024-08-29T12:10:32.000Z
-    },
-    uniqno: 1,
-    _changed: Set(0) {},
-    _options: {
-      isNewRecord: false,
-      _schema: null,
-      _schemaDelimiter: '',
-      raw: true,
-      attributes: [Array]
-    },
-    isNewRecord: false
-  }
-]
-[2024-08-29T19:16:29.382] [DEBUG] default - cek user by email :  [
-  Users {
-    dataValues: {
-      nomor_induk: '2016003',
-      nama_user: 'Citra Dewi',
-      token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMzQzMiwiZXhwIjoxNzI0OTM3MDMyfQ.DSzA9zZbn0l83-p0E1CC4e9a0--C0oDtZN5jJE1HzY0',
-      refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMzQzMiwiZXhwIjoxNzI1NTM4MjMyfQ.6YQ1yctu9uaGWScT1BbhtS67cbh0jyPdedTZCNbkWCQ',
-      token_expired: null,
-      email_google: 'email@gmail.com',
-      email_ecampus: 'rlda@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2016003',
-      created_at: 2024-08-29T10:36:12.000Z,
-      update_at: 2024-08-29T12:10:32.000Z
-    },
-    _previousDataValues: {
-      nomor_induk: '2016003',
-      nama_user: 'Citra Dewi',
-      token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMzQzMiwiZXhwIjoxNzI0OTM3MDMyfQ.DSzA9zZbn0l83-p0E1CC4e9a0--C0oDtZN5jJE1HzY0',
-      refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMzQzMiwiZXhwIjoxNzI1NTM4MjMyfQ.6YQ1yctu9uaGWScT1BbhtS67cbh0jyPdedTZCNbkWCQ',
-      token_expired: null,
-      email_google: 'email@gmail.com',
-      email_ecampus: 'rlda@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2016003',
-      created_at: 2024-08-29T10:36:12.000Z,
-      update_at: 2024-08-29T12:10:32.000Z
-    },
-    uniqno: 1,
-    _changed: Set(0) {},
-    _options: {
-      isNewRecord: false,
-      _schema: null,
-      _schemaDelimiter: '',
-      raw: true,
-      attributes: [Array]
-    },
-    isNewRecord: false
-  }
-]
-[2024-08-29T19:16:56.583] [DEBUG] default - cek user by email :  [
-  Users {
-    dataValues: {
-      nomor_induk: '2016003',
-      nama_user: 'Citra Dewi',
-      token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMzQzMiwiZXhwIjoxNzI0OTM3MDMyfQ.DSzA9zZbn0l83-p0E1CC4e9a0--C0oDtZN5jJE1HzY0',
-      refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMzQzMiwiZXhwIjoxNzI1NTM4MjMyfQ.6YQ1yctu9uaGWScT1BbhtS67cbh0jyPdedTZCNbkWCQ',
-      token_expired: null,
-      email_google: 'email@gmail.com',
-      email_ecampus: 'rlda@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2016003',
-      created_at: 2024-08-29T10:36:12.000Z,
-      update_at: 2024-08-29T12:10:32.000Z
-    },
-    _previousDataValues: {
-      nomor_induk: '2016003',
-      nama_user: 'Citra Dewi',
-      token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMzQzMiwiZXhwIjoxNzI0OTM3MDMyfQ.DSzA9zZbn0l83-p0E1CC4e9a0--C0oDtZN5jJE1HzY0',
-      refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMzQzMiwiZXhwIjoxNzI1NTM4MjMyfQ.6YQ1yctu9uaGWScT1BbhtS67cbh0jyPdedTZCNbkWCQ',
-      token_expired: null,
-      email_google: 'email@gmail.com',
-      email_ecampus: 'rlda@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2016003',
-      created_at: 2024-08-29T10:36:12.000Z,
-      update_at: 2024-08-29T12:10:32.000Z
-    },
-    uniqno: 1,
-    _changed: Set(0) {},
-    _options: {
-      isNewRecord: false,
-      _schema: null,
-      _schemaDelimiter: '',
-      raw: true,
-      attributes: [Array]
-    },
-    isNewRecord: false
-  }
-]
-[2024-08-29T19:17:02.763] [DEBUG] default - cek user by email :  [
-  Users {
-    dataValues: {
-      nomor_induk: '2016003',
-      nama_user: 'Citra Dewi',
-      token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMzgyMCwiZXhwIjoxNzI0OTM3NDIwfQ.wUkUlIhjTO4crZk1J-xl4nGgB1wcAkG00F_7o1FWaCM',
-      refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMzgyMCwiZXhwIjoxNzI1NTM4NjIwfQ.mjIenJ_S3enfZDkxAycajIMN-o9_7r4hrh-TtaY0ILU',
-      token_expired: null,
-      email_google: 'email@gmail.com',
-      email_ecampus: 'rlda@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2016003',
-      created_at: 2024-08-29T10:36:12.000Z,
-      update_at: 2024-08-29T12:17:00.000Z
-    },
-    _previousDataValues: {
-      nomor_induk: '2016003',
-      nama_user: 'Citra Dewi',
-      token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMzgyMCwiZXhwIjoxNzI0OTM3NDIwfQ.wUkUlIhjTO4crZk1J-xl4nGgB1wcAkG00F_7o1FWaCM',
-      refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMzgyMCwiZXhwIjoxNzI1NTM4NjIwfQ.mjIenJ_S3enfZDkxAycajIMN-o9_7r4hrh-TtaY0ILU',
-      token_expired: null,
-      email_google: 'email@gmail.com',
-      email_ecampus: 'rlda@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2016003',
-      created_at: 2024-08-29T10:36:12.000Z,
-      update_at: 2024-08-29T12:17:00.000Z
-    },
-    uniqno: 1,
-    _changed: Set(0) {},
-    _options: {
-      isNewRecord: false,
-      _schema: null,
-      _schemaDelimiter: '',
-      raw: true,
-      attributes: [Array]
-    },
-    isNewRecord: false
-  }
-]
-[2024-08-29T19:57:48.002] [DEBUG] default - cek user by email :  []
-[2024-08-29T19:58:10.160] [DEBUG] default - cek user by email :  [
-  Users {
-    dataValues: {
-      nomor_induk: '2016003',
-      nama_user: 'Citra Dewi',
-      token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMzgyMCwiZXhwIjoxNzI0OTM3NDIwfQ.wUkUlIhjTO4crZk1J-xl4nGgB1wcAkG00F_7o1FWaCM',
-      refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMzgyMCwiZXhwIjoxNzI1NTM4NjIwfQ.mjIenJ_S3enfZDkxAycajIMN-o9_7r4hrh-TtaY0ILU',
-      token_expired: null,
-      email_google: 'aaa@gmail.com',
-      email_ecampus: 'rlda@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2016003',
-      created_at: 2024-08-29T10:36:12.000Z,
-      update_at: 2024-08-29T12:57:48.000Z
-    },
-    _previousDataValues: {
-      nomor_induk: '2016003',
-      nama_user: 'Citra Dewi',
-      token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMzgyMCwiZXhwIjoxNzI0OTM3NDIwfQ.wUkUlIhjTO4crZk1J-xl4nGgB1wcAkG00F_7o1FWaCM',
-      refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMzgyMCwiZXhwIjoxNzI1NTM4NjIwfQ.mjIenJ_S3enfZDkxAycajIMN-o9_7r4hrh-TtaY0ILU',
-      token_expired: null,
-      email_google: 'aaa@gmail.com',
-      email_ecampus: 'rlda@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2016003',
-      created_at: 2024-08-29T10:36:12.000Z,
-      update_at: 2024-08-29T12:57:48.000Z
-    },
-    uniqno: 1,
-    _changed: Set(0) {},
-    _options: {
-      isNewRecord: false,
-      _schema: null,
-      _schemaDelimiter: '',
-      raw: true,
-      attributes: [Array]
-    },
-    isNewRecord: false
-  }
-]
-[2024-08-29T19:59:03.811] [DEBUG] default - cek user by email :  [
-  Users {
-    dataValues: {
-      nomor_induk: '2016003',
-      nama_user: 'Citra Dewi',
-      token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMzgyMCwiZXhwIjoxNzI0OTM3NDIwfQ.wUkUlIhjTO4crZk1J-xl4nGgB1wcAkG00F_7o1FWaCM',
-      refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMzgyMCwiZXhwIjoxNzI1NTM4NjIwfQ.mjIenJ_S3enfZDkxAycajIMN-o9_7r4hrh-TtaY0ILU',
-      token_expired: null,
-      email_google: 'aaa@gmail.com',
-      email_ecampus: 'rlda@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2016003',
-      created_at: 2024-08-29T10:36:12.000Z,
-      update_at: 2024-08-29T12:57:48.000Z
-    },
-    _previousDataValues: {
-      nomor_induk: '2016003',
-      nama_user: 'Citra Dewi',
-      token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMzgyMCwiZXhwIjoxNzI0OTM3NDIwfQ.wUkUlIhjTO4crZk1J-xl4nGgB1wcAkG00F_7o1FWaCM',
-      refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzMzgyMCwiZXhwIjoxNzI1NTM4NjIwfQ.mjIenJ_S3enfZDkxAycajIMN-o9_7r4hrh-TtaY0ILU',
-      token_expired: null,
-      email_google: 'aaa@gmail.com',
-      email_ecampus: 'rlda@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2016003',
-      created_at: 2024-08-29T10:36:12.000Z,
-      update_at: 2024-08-29T12:57:48.000Z
-    },
-    uniqno: 1,
-    _changed: Set(0) {},
-    _options: {
-      isNewRecord: false,
-      _schema: null,
-      _schemaDelimiter: '',
-      raw: true,
-      attributes: [Array]
-    },
-    isNewRecord: false
-  }
-]
-[2024-08-29T20:01:39.854] [DEBUG] default - cek user by email :  []
-[2024-08-29T20:05:54.144] [DEBUG] default - cek user by email :  []
-[2024-08-29T20:06:17.993] [DEBUG] default - cek user by email :  [
-  Users {
-    dataValues: {
-      nomor_induk: '2016003',
-      nama_user: 'Citra Dewi',
-      token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFhYUBnbWFpbC5jb20iLCJpYXQiOjE3MjQ5MzY3NzEsImV4cCI6MTcyNDk0MDM3MX0.31aYUq-gssFvAB3SMW7B5ain0C4uWdgC7_bri27ORNo',
-      refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFhYUBnbWFpbC5jb20iLCJpYXQiOjE3MjQ5MzY3NzEsImV4cCI6MTcyNTU0MTU3MX0.etKp6AErpqbBb8mM6Q5szE8xAruL71_OM0Ymv8W5m3I',
-      token_expired: null,
-      email_google: 'aaa@gmail.com',
-      email_ecampus: 'rlda@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2016003',
-      created_at: 2024-08-29T10:36:12.000Z,
-      update_at: 2024-08-29T13:06:11.000Z
-    },
-    _previousDataValues: {
-      nomor_induk: '2016003',
-      nama_user: 'Citra Dewi',
-      token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFhYUBnbWFpbC5jb20iLCJpYXQiOjE3MjQ5MzY3NzEsImV4cCI6MTcyNDk0MDM3MX0.31aYUq-gssFvAB3SMW7B5ain0C4uWdgC7_bri27ORNo',
-      refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFhYUBnbWFpbC5jb20iLCJpYXQiOjE3MjQ5MzY3NzEsImV4cCI6MTcyNTU0MTU3MX0.etKp6AErpqbBb8mM6Q5szE8xAruL71_OM0Ymv8W5m3I',
-      token_expired: null,
-      email_google: 'aaa@gmail.com',
-      email_ecampus: 'rlda@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2016003',
-      created_at: 2024-08-29T10:36:12.000Z,
-      update_at: 2024-08-29T13:06:11.000Z
-    },
-    uniqno: 1,
-    _changed: Set(0) {},
-    _options: {
-      isNewRecord: false,
-      _schema: null,
-      _schemaDelimiter: '',
-      raw: true,
-      attributes: [Array]
-    },
-    isNewRecord: false
-  }
-]
-[2024-08-29T20:06:20.276] [DEBUG] default - cek user by email :  [
-  Users {
-    dataValues: {
-      nomor_induk: '2016003',
-      nama_user: 'Citra Dewi',
-      token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFhYUBnbWFpbC5jb20iLCJpYXQiOjE3MjQ5MzY3NzEsImV4cCI6MTcyNDk0MDM3MX0.31aYUq-gssFvAB3SMW7B5ain0C4uWdgC7_bri27ORNo',
-      refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFhYUBnbWFpbC5jb20iLCJpYXQiOjE3MjQ5MzY3NzEsImV4cCI6MTcyNTU0MTU3MX0.etKp6AErpqbBb8mM6Q5szE8xAruL71_OM0Ymv8W5m3I',
-      token_expired: null,
-      email_google: 'aaa@gmail.com',
-      email_ecampus: 'rlda@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2016003',
-      created_at: 2024-08-29T10:36:12.000Z,
-      update_at: 2024-08-29T13:06:11.000Z
-    },
-    _previousDataValues: {
-      nomor_induk: '2016003',
-      nama_user: 'Citra Dewi',
-      token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFhYUBnbWFpbC5jb20iLCJpYXQiOjE3MjQ5MzY3NzEsImV4cCI6MTcyNDk0MDM3MX0.31aYUq-gssFvAB3SMW7B5ain0C4uWdgC7_bri27ORNo',
-      refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFhYUBnbWFpbC5jb20iLCJpYXQiOjE3MjQ5MzY3NzEsImV4cCI6MTcyNTU0MTU3MX0.etKp6AErpqbBb8mM6Q5szE8xAruL71_OM0Ymv8W5m3I',
-      token_expired: null,
-      email_google: 'aaa@gmail.com',
-      email_ecampus: 'rlda@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2016003',
-      created_at: 2024-08-29T10:36:12.000Z,
-      update_at: 2024-08-29T13:06:11.000Z
-    },
-    uniqno: 1,
-    _changed: Set(0) {},
-    _options: {
-      isNewRecord: false,
-      _schema: null,
-      _schemaDelimiter: '',
-      raw: true,
-      attributes: [Array]
-    },
-    isNewRecord: false
-  }
-]
-[2024-08-29T20:06:23.397] [DEBUG] default - cek user by email :  [
-  Users {
-    dataValues: {
-      nomor_induk: '2016003',
-      nama_user: 'Citra Dewi',
-      token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFhYUBnbWFpbC5jb20iLCJpYXQiOjE3MjQ5MzY3NzEsImV4cCI6MTcyNDk0MDM3MX0.31aYUq-gssFvAB3SMW7B5ain0C4uWdgC7_bri27ORNo',
-      refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFhYUBnbWFpbC5jb20iLCJpYXQiOjE3MjQ5MzY3NzEsImV4cCI6MTcyNTU0MTU3MX0.etKp6AErpqbBb8mM6Q5szE8xAruL71_OM0Ymv8W5m3I',
-      token_expired: null,
-      email_google: 'aaa@gmail.com',
-      email_ecampus: 'rlda@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2016003',
-      created_at: 2024-08-29T10:36:12.000Z,
-      update_at: 2024-08-29T13:06:11.000Z
-    },
-    _previousDataValues: {
-      nomor_induk: '2016003',
-      nama_user: 'Citra Dewi',
-      token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFhYUBnbWFpbC5jb20iLCJpYXQiOjE3MjQ5MzY3NzEsImV4cCI6MTcyNDk0MDM3MX0.31aYUq-gssFvAB3SMW7B5ain0C4uWdgC7_bri27ORNo',
-      refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFhYUBnbWFpbC5jb20iLCJpYXQiOjE3MjQ5MzY3NzEsImV4cCI6MTcyNTU0MTU3MX0.etKp6AErpqbBb8mM6Q5szE8xAruL71_OM0Ymv8W5m3I',
-      token_expired: null,
-      email_google: 'aaa@gmail.com',
-      email_ecampus: 'rlda@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2016003',
-      created_at: 2024-08-29T10:36:12.000Z,
-      update_at: 2024-08-29T13:06:11.000Z
-    },
-    uniqno: 1,
-    _changed: Set(0) {},
-    _options: {
-      isNewRecord: false,
-      _schema: null,
-      _schemaDelimiter: '',
-      raw: true,
-      attributes: [Array]
-    },
-    isNewRecord: false
-  }
-]
-[2024-08-29T20:06:24.268] [DEBUG] default - cek user by email :  [
-  Users {
-    dataValues: {
-      nomor_induk: '2016003',
-      nama_user: 'Citra Dewi',
-      token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFhYUBnbWFpbC5jb20iLCJpYXQiOjE3MjQ5MzY3NzEsImV4cCI6MTcyNDk0MDM3MX0.31aYUq-gssFvAB3SMW7B5ain0C4uWdgC7_bri27ORNo',
-      refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFhYUBnbWFpbC5jb20iLCJpYXQiOjE3MjQ5MzY3NzEsImV4cCI6MTcyNTU0MTU3MX0.etKp6AErpqbBb8mM6Q5szE8xAruL71_OM0Ymv8W5m3I',
-      token_expired: null,
-      email_google: 'aaa@gmail.com',
-      email_ecampus: 'rlda@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2016003',
-      created_at: 2024-08-29T10:36:12.000Z,
-      update_at: 2024-08-29T13:06:11.000Z
-    },
-    _previousDataValues: {
-      nomor_induk: '2016003',
-      nama_user: 'Citra Dewi',
-      token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFhYUBnbWFpbC5jb20iLCJpYXQiOjE3MjQ5MzY3NzEsImV4cCI6MTcyNDk0MDM3MX0.31aYUq-gssFvAB3SMW7B5ain0C4uWdgC7_bri27ORNo',
-      refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFhYUBnbWFpbC5jb20iLCJpYXQiOjE3MjQ5MzY3NzEsImV4cCI6MTcyNTU0MTU3MX0.etKp6AErpqbBb8mM6Q5szE8xAruL71_OM0Ymv8W5m3I',
-      token_expired: null,
-      email_google: 'aaa@gmail.com',
-      email_ecampus: 'rlda@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2016003',
-      created_at: 2024-08-29T10:36:12.000Z,
-      update_at: 2024-08-29T13:06:11.000Z
-    },
-    uniqno: 1,
-    _changed: Set(0) {},
-    _options: {
-      isNewRecord: false,
-      _schema: null,
-      _schemaDelimiter: '',
-      raw: true,
-      attributes: [Array]
-    },
-    isNewRecord: false
-  }
-]
-[2024-08-29T20:06:27.677] [DEBUG] default - cek user by email :  []
-[2024-08-29T20:06:29.017] [DEBUG] default - cek user by email :  [
-  Users {
-    dataValues: {
-      nomor_induk: '2016003',
-      nama_user: 'Citra Dewi',
-      token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFhYUBnbWFpbC5jb20iLCJpYXQiOjE3MjQ5MzY3NzEsImV4cCI6MTcyNDk0MDM3MX0.31aYUq-gssFvAB3SMW7B5ain0C4uWdgC7_bri27ORNo',
-      refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFhYUBnbWFpbC5jb20iLCJpYXQiOjE3MjQ5MzY3NzEsImV4cCI6MTcyNTU0MTU3MX0.etKp6AErpqbBb8mM6Q5szE8xAruL71_OM0Ymv8W5m3I',
-      token_expired: null,
-      email_google: 'a@gmail.com',
-      email_ecampus: 'rlda@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2016003',
-      created_at: 2024-08-29T10:36:12.000Z,
-      update_at: 2024-08-29T13:06:27.000Z
-    },
-    _previousDataValues: {
-      nomor_induk: '2016003',
-      nama_user: 'Citra Dewi',
-      token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFhYUBnbWFpbC5jb20iLCJpYXQiOjE3MjQ5MzY3NzEsImV4cCI6MTcyNDk0MDM3MX0.31aYUq-gssFvAB3SMW7B5ain0C4uWdgC7_bri27ORNo',
-      refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFhYUBnbWFpbC5jb20iLCJpYXQiOjE3MjQ5MzY3NzEsImV4cCI6MTcyNTU0MTU3MX0.etKp6AErpqbBb8mM6Q5szE8xAruL71_OM0Ymv8W5m3I',
-      token_expired: null,
-      email_google: 'a@gmail.com',
-      email_ecampus: 'rlda@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2016003',
-      created_at: 2024-08-29T10:36:12.000Z,
-      update_at: 2024-08-29T13:06:27.000Z
-    },
-    uniqno: 1,
-    _changed: Set(0) {},
-    _options: {
-      isNewRecord: false,
-      _schema: null,
-      _schemaDelimiter: '',
-      raw: true,
-      attributes: [Array]
-    },
-    isNewRecord: false
-  }
-]
-[2024-08-29T20:06:30.270] [DEBUG] default - cek user by email :  [
-  Users {
-    dataValues: {
-      nomor_induk: '2016003',
-      nama_user: 'Citra Dewi',
-      token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFhYUBnbWFpbC5jb20iLCJpYXQiOjE3MjQ5MzY3NzEsImV4cCI6MTcyNDk0MDM3MX0.31aYUq-gssFvAB3SMW7B5ain0C4uWdgC7_bri27ORNo',
-      refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFhYUBnbWFpbC5jb20iLCJpYXQiOjE3MjQ5MzY3NzEsImV4cCI6MTcyNTU0MTU3MX0.etKp6AErpqbBb8mM6Q5szE8xAruL71_OM0Ymv8W5m3I',
-      token_expired: null,
-      email_google: 'a@gmail.com',
-      email_ecampus: 'rlda@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2016003',
-      created_at: 2024-08-29T10:36:12.000Z,
-      update_at: 2024-08-29T13:06:27.000Z
-    },
-    _previousDataValues: {
-      nomor_induk: '2016003',
-      nama_user: 'Citra Dewi',
-      token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFhYUBnbWFpbC5jb20iLCJpYXQiOjE3MjQ5MzY3NzEsImV4cCI6MTcyNDk0MDM3MX0.31aYUq-gssFvAB3SMW7B5ain0C4uWdgC7_bri27ORNo',
-      refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFhYUBnbWFpbC5jb20iLCJpYXQiOjE3MjQ5MzY3NzEsImV4cCI6MTcyNTU0MTU3MX0.etKp6AErpqbBb8mM6Q5szE8xAruL71_OM0Ymv8W5m3I',
-      token_expired: null,
-      email_google: 'a@gmail.com',
-      email_ecampus: 'rlda@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2016003',
-      created_at: 2024-08-29T10:36:12.000Z,
-      update_at: 2024-08-29T13:06:27.000Z
-    },
-    uniqno: 1,
-    _changed: Set(0) {},
-    _options: {
-      isNewRecord: false,
-      _schema: null,
-      _schemaDelimiter: '',
-      raw: true,
-      attributes: [Array]
-    },
-    isNewRecord: false
-  }
-]
-[2024-08-29T20:07:16.329] [DEBUG] default - cek user by email :  [
-  Users {
-    dataValues: {
-      nomor_induk: '2016003',
-      nama_user: 'Citra Dewi',
-      token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFhYUBnbWFpbC5jb20iLCJpYXQiOjE3MjQ5MzY3NzEsImV4cCI6MTcyNDk0MDM3MX0.31aYUq-gssFvAB3SMW7B5ain0C4uWdgC7_bri27ORNo',
-      refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFhYUBnbWFpbC5jb20iLCJpYXQiOjE3MjQ5MzY3NzEsImV4cCI6MTcyNTU0MTU3MX0.etKp6AErpqbBb8mM6Q5szE8xAruL71_OM0Ymv8W5m3I',
-      token_expired: null,
-      email_google: 'a@gmail.com',
-      email_ecampus: 'rlda@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2016003',
-      created_at: 2024-08-29T10:36:12.000Z,
-      update_at: 2024-08-29T13:06:27.000Z
-    },
-    _previousDataValues: {
-      nomor_induk: '2016003',
-      nama_user: 'Citra Dewi',
-      token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFhYUBnbWFpbC5jb20iLCJpYXQiOjE3MjQ5MzY3NzEsImV4cCI6MTcyNDk0MDM3MX0.31aYUq-gssFvAB3SMW7B5ain0C4uWdgC7_bri27ORNo',
-      refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFhYUBnbWFpbC5jb20iLCJpYXQiOjE3MjQ5MzY3NzEsImV4cCI6MTcyNTU0MTU3MX0.etKp6AErpqbBb8mM6Q5szE8xAruL71_OM0Ymv8W5m3I',
-      token_expired: null,
-      email_google: 'a@gmail.com',
-      email_ecampus: 'rlda@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2016003',
-      created_at: 2024-08-29T10:36:12.000Z,
-      update_at: 2024-08-29T13:06:27.000Z
-    },
-    uniqno: 1,
-    _changed: Set(0) {},
-    _options: {
-      isNewRecord: false,
-      _schema: null,
-      _schemaDelimiter: '',
-      raw: true,
-      attributes: [Array]
-    },
-    isNewRecord: false
-  }
-]
-[2024-08-29T20:08:44.501] [DEBUG] default - cek user by email :  [
-  Users {
-    dataValues: {
-      nomor_induk: '2016003',
-      nama_user: 'Citra Dewi',
-      token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFhYUBnbWFpbC5jb20iLCJpYXQiOjE3MjQ5MzY3NzEsImV4cCI6MTcyNDk0MDM3MX0.31aYUq-gssFvAB3SMW7B5ain0C4uWdgC7_bri27ORNo',
-      refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFhYUBnbWFpbC5jb20iLCJpYXQiOjE3MjQ5MzY3NzEsImV4cCI6MTcyNTU0MTU3MX0.etKp6AErpqbBb8mM6Q5szE8xAruL71_OM0Ymv8W5m3I',
-      token_expired: null,
-      email_google: 'a@gmail.com',
-      email_ecampus: 'rlda@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2016003',
-      created_at: 2024-08-29T10:36:12.000Z,
-      update_at: 2024-08-29T13:06:27.000Z
-    },
-    _previousDataValues: {
-      nomor_induk: '2016003',
-      nama_user: 'Citra Dewi',
-      token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFhYUBnbWFpbC5jb20iLCJpYXQiOjE3MjQ5MzY3NzEsImV4cCI6MTcyNDk0MDM3MX0.31aYUq-gssFvAB3SMW7B5ain0C4uWdgC7_bri27ORNo',
-      refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFhYUBnbWFpbC5jb20iLCJpYXQiOjE3MjQ5MzY3NzEsImV4cCI6MTcyNTU0MTU3MX0.etKp6AErpqbBb8mM6Q5szE8xAruL71_OM0Ymv8W5m3I',
-      token_expired: null,
-      email_google: 'a@gmail.com',
-      email_ecampus: 'rlda@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2016003',
-      created_at: 2024-08-29T10:36:12.000Z,
-      update_at: 2024-08-29T13:06:27.000Z
-    },
-    uniqno: 1,
-    _changed: Set(0) {},
-    _options: {
-      isNewRecord: false,
-      _schema: null,
-      _schemaDelimiter: '',
-      raw: true,
-      attributes: [Array]
-    },
-    isNewRecord: false
-  }
-]
-[2024-08-29T20:10:16.648] [DEBUG] default - cek user by email :  []
-[2024-08-29T20:12:28.413] [DEBUG] default - cek user by email :  [
-  Users {
-    dataValues: {
-      nomor_induk: '2016003',
-      nama_user: 'Citra Dewi',
-      token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFhYUBnbWFpbC5jb20iLCJpYXQiOjE3MjQ5MzY3NzEsImV4cCI6MTcyNDk0MDM3MX0.31aYUq-gssFvAB3SMW7B5ain0C4uWdgC7_bri27ORNo',
-      refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFhYUBnbWFpbC5jb20iLCJpYXQiOjE3MjQ5MzY3NzEsImV4cCI6MTcyNTU0MTU3MX0.etKp6AErpqbBb8mM6Q5szE8xAruL71_OM0Ymv8W5m3I',
-      token_expired: null,
-      email_google: 'aa@gmail.com',
-      email_ecampus: 'rlda@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2016003',
-      created_at: 2024-08-29T10:36:12.000Z,
-      update_at: 2024-08-29T13:10:16.000Z
-    },
-    _previousDataValues: {
-      nomor_induk: '2016003',
-      nama_user: 'Citra Dewi',
-      token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFhYUBnbWFpbC5jb20iLCJpYXQiOjE3MjQ5MzY3NzEsImV4cCI6MTcyNDk0MDM3MX0.31aYUq-gssFvAB3SMW7B5ain0C4uWdgC7_bri27ORNo',
-      refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFhYUBnbWFpbC5jb20iLCJpYXQiOjE3MjQ5MzY3NzEsImV4cCI6MTcyNTU0MTU3MX0.etKp6AErpqbBb8mM6Q5szE8xAruL71_OM0Ymv8W5m3I',
-      token_expired: null,
-      email_google: 'aa@gmail.com',
-      email_ecampus: 'rlda@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2016003',
-      created_at: 2024-08-29T10:36:12.000Z,
-      update_at: 2024-08-29T13:10:16.000Z
-    },
-    uniqno: 1,
-    _changed: Set(0) {},
-    _options: {
-      isNewRecord: false,
-      _schema: null,
-      _schemaDelimiter: '',
-      raw: true,
-      attributes: [Array]
-    },
-    isNewRecord: false
-  }
-]
-[2024-08-29T20:12:32.907] [DEBUG] default - cek user by email :  []
-[2024-08-29T20:12:36.744] [DEBUG] default - cek user by email :  []
-[2024-08-29T20:12:41.149] [DEBUG] default - cek user by email :  [
-  Users {
-    dataValues: {
-      nomor_induk: '2016003',
-      nama_user: 'Citra Dewi',
-      token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFhYUBnbWFpbC5jb20iLCJpYXQiOjE3MjQ5MzY3NzEsImV4cCI6MTcyNDk0MDM3MX0.31aYUq-gssFvAB3SMW7B5ain0C4uWdgC7_bri27ORNo',
-      refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFhYUBnbWFpbC5jb20iLCJpYXQiOjE3MjQ5MzY3NzEsImV4cCI6MTcyNTU0MTU3MX0.etKp6AErpqbBb8mM6Q5szE8xAruL71_OM0Ymv8W5m3I',
-      token_expired: null,
-      email_google: 'aa@gmail.com',
-      email_ecampus: 'rlda@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2016003',
-      created_at: 2024-08-29T10:36:12.000Z,
-      update_at: 2024-08-29T13:10:16.000Z
-    },
-    _previousDataValues: {
-      nomor_induk: '2016003',
-      nama_user: 'Citra Dewi',
-      token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFhYUBnbWFpbC5jb20iLCJpYXQiOjE3MjQ5MzY3NzEsImV4cCI6MTcyNDk0MDM3MX0.31aYUq-gssFvAB3SMW7B5ain0C4uWdgC7_bri27ORNo',
-      refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFhYUBnbWFpbC5jb20iLCJpYXQiOjE3MjQ5MzY3NzEsImV4cCI6MTcyNTU0MTU3MX0.etKp6AErpqbBb8mM6Q5szE8xAruL71_OM0Ymv8W5m3I',
-      token_expired: null,
-      email_google: 'aa@gmail.com',
-      email_ecampus: 'rlda@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2016003',
-      created_at: 2024-08-29T10:36:12.000Z,
-      update_at: 2024-08-29T13:10:16.000Z
-    },
-    uniqno: 1,
-    _changed: Set(0) {},
-    _options: {
-      isNewRecord: false,
-      _schema: null,
-      _schemaDelimiter: '',
-      raw: true,
-      attributes: [Array]
-    },
-    isNewRecord: false
-  }
-]
-[2024-08-29T20:13:25.987] [DEBUG] default - cek user by email :  [
-  Users {
-    dataValues: {
-      nomor_induk: '2016003',
-      nama_user: 'Citra Dewi',
-      token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFhYUBnbWFpbC5jb20iLCJpYXQiOjE3MjQ5MzY3NzEsImV4cCI6MTcyNDk0MDM3MX0.31aYUq-gssFvAB3SMW7B5ain0C4uWdgC7_bri27ORNo',
-      refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFhYUBnbWFpbC5jb20iLCJpYXQiOjE3MjQ5MzY3NzEsImV4cCI6MTcyNTU0MTU3MX0.etKp6AErpqbBb8mM6Q5szE8xAruL71_OM0Ymv8W5m3I',
-      token_expired: null,
-      email_google: 'aa@gmail.com',
-      email_ecampus: 'rlda@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2016003',
-      created_at: 2024-08-29T10:36:12.000Z,
-      update_at: 2024-08-29T13:10:16.000Z
-    },
-    _previousDataValues: {
-      nomor_induk: '2016003',
-      nama_user: 'Citra Dewi',
-      token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFhYUBnbWFpbC5jb20iLCJpYXQiOjE3MjQ5MzY3NzEsImV4cCI6MTcyNDk0MDM3MX0.31aYUq-gssFvAB3SMW7B5ain0C4uWdgC7_bri27ORNo',
-      refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFhYUBnbWFpbC5jb20iLCJpYXQiOjE3MjQ5MzY3NzEsImV4cCI6MTcyNTU0MTU3MX0.etKp6AErpqbBb8mM6Q5szE8xAruL71_OM0Ymv8W5m3I',
-      token_expired: null,
-      email_google: 'aa@gmail.com',
-      email_ecampus: 'rlda@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2016003',
-      created_at: 2024-08-29T10:36:12.000Z,
-      update_at: 2024-08-29T13:10:16.000Z
-    },
-    uniqno: 1,
-    _changed: Set(0) {},
-    _options: {
-      isNewRecord: false,
-      _schema: null,
-      _schemaDelimiter: '',
-      raw: true,
-      attributes: [Array]
-    },
-    isNewRecord: false
-  }
-]
-[2024-08-29T20:13:58.455] [DEBUG] default - cek user by email :  []
-[2024-08-29T20:14:15.600] [DEBUG] default - cek user by email :  []
-[2024-08-29T20:21:32.293] [DEBUG] default - cek user by email :  [
-  Users {
-    dataValues: {
-      nomor_induk: '2016003',
-      nama_user: 'Citra Dewi',
-      token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFhQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzNzIyMSwiZXhwIjoxNzI0OTQwODIxfQ.YodsyDadmYiSQ5SkmsfsCYM2hc9rUQmuQngZxqUUy08',
-      refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFhQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzNzIyMSwiZXhwIjoxNzI1NTQyMDIxfQ.jtvNjI9Ku_-DI8IsBrgEen0QioUK1ruh-ETA0uLhFOk',
-      token_expired: null,
-      email_google: 'aa@gmail.com',
-      email_ecampus: 'rlda@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2016003',
-      created_at: 2024-08-29T10:36:12.000Z,
-      update_at: 2024-08-29T13:13:41.000Z
-    },
-    _previousDataValues: {
-      nomor_induk: '2016003',
-      nama_user: 'Citra Dewi',
-      token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFhQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzNzIyMSwiZXhwIjoxNzI0OTQwODIxfQ.YodsyDadmYiSQ5SkmsfsCYM2hc9rUQmuQngZxqUUy08',
-      refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFhQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzNzIyMSwiZXhwIjoxNzI1NTQyMDIxfQ.jtvNjI9Ku_-DI8IsBrgEen0QioUK1ruh-ETA0uLhFOk',
-      token_expired: null,
-      email_google: 'aa@gmail.com',
-      email_ecampus: 'rlda@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2016003',
-      created_at: 2024-08-29T10:36:12.000Z,
-      update_at: 2024-08-29T13:13:41.000Z
-    },
-    uniqno: 1,
-    _changed: Set(0) {},
-    _options: {
-      isNewRecord: false,
-      _schema: null,
-      _schemaDelimiter: '',
-      raw: true,
-      attributes: [Array]
-    },
-    isNewRecord: false
-  }
-]
-[2024-08-29T20:22:23.309] [DEBUG] default - cek user by email :  [
-  Users {
-    dataValues: {
-      nomor_induk: '2016003',
-      nama_user: 'Citra Dewi',
-      token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFhQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzNzIyMSwiZXhwIjoxNzI0OTQwODIxfQ.YodsyDadmYiSQ5SkmsfsCYM2hc9rUQmuQngZxqUUy08',
-      refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFhQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzNzIyMSwiZXhwIjoxNzI1NTQyMDIxfQ.jtvNjI9Ku_-DI8IsBrgEen0QioUK1ruh-ETA0uLhFOk',
-      token_expired: null,
-      email_google: 'aa@gmail.com',
-      email_ecampus: 'rlda@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2016003',
-      created_at: 2024-08-29T10:36:12.000Z,
-      update_at: 2024-08-29T13:13:41.000Z
-    },
-    _previousDataValues: {
-      nomor_induk: '2016003',
-      nama_user: 'Citra Dewi',
-      token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFhQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzNzIyMSwiZXhwIjoxNzI0OTQwODIxfQ.YodsyDadmYiSQ5SkmsfsCYM2hc9rUQmuQngZxqUUy08',
-      refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFhQGdtYWlsLmNvbSIsImlhdCI6MTcyNDkzNzIyMSwiZXhwIjoxNzI1NTQyMDIxfQ.jtvNjI9Ku_-DI8IsBrgEen0QioUK1ruh-ETA0uLhFOk',
-      token_expired: null,
-      email_google: 'aa@gmail.com',
-      email_ecampus: 'rlda@ecampus.ut.ac.id',
-      uc: null,
-      uu: '2016003',
-      created_at: 2024-08-29T10:36:12.000Z,
-      update_at: 2024-08-29T13:13:41.000Z
-    },
-    uniqno: 1,
-    _changed: Set(0) {},
-    _options: {
-      isNewRecord: false,
-      _schema: null,
-      _schemaDelimiter: '',
-      raw: true,
-      attributes: [Array]
-    },
-    isNewRecord: false
-  }
-]
-[2024-08-29T20:26:29.606] [DEBUG] default - cek user by email :  []
-[2024-08-29T20:26:29.607] [DEBUG] default - debug data user :  null
-[2024-08-29T20:26:29.607] [DEBUG] default - debug 1 :  {
-  nama_user: 'Citra Dewi',
-  email_ecampus: 'irgy@ecampus.ut.ac.id',
-  email_google: '',
-  uu: '2016003',
-  nomor_induk: '2016003'
+[2024-09-08T12:20:44.770] [ERROR] default - error pengajuan :  CustomError: Data tesis pada mahasiswa tersebut sudah ada
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\mahasiswa\pengajuan.controller.ts:48:36
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\mahasiswa\pengajuan.controller.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 409,
+  status: 'error'
 }
-[2024-08-29T20:26:29.612] [DEBUG] default - debug 2 :  Users {
-  dataValues: {
-    nama_user: 'Citra Dewi',
-    email_ecampus: 'irgy@ecampus.ut.ac.id',
-    email_google: '',
-    uu: '2016003',
-    nomor_induk: '2016003',
-    update_at: 2024-08-29T13:26:29.607Z,
-    created_at: 2024-08-29T13:26:29.607Z
-  },
-  _previousDataValues: {
-    nama_user: 'Citra Dewi',
-    email_ecampus: 'irgy@ecampus.ut.ac.id',
-    email_google: '',
-    uu: '2016003',
-    nomor_induk: '2016003',
-    token: undefined,
-    refresh_token: undefined,
-    token_expired: undefined,
-    uc: undefined,
-    created_at: 2024-08-29T13:26:29.607Z,
-    update_at: 2024-08-29T13:26:29.607Z
-  },
-  uniqno: 1,
-  _changed: Set(0) {},
-  _options: {
-    isNewRecord: true,
-    _schema: null,
-    _schemaDelimiter: '',
-    attributes: undefined,
-    include: undefined,
-    raw: undefined,
-    silent: undefined
-  },
-  isNewRecord: false,
-  null: undefined
+[2024-09-08T12:21:28.858] [ERROR] default - error pengajuan :  CustomError: Mahasiswa Tidak Terdaftar Pada Aplikasi
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-tesis-mhs.service-web.ts:167:19
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-tesis-mhs.service-web.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 404,
+  status: 'error'
 }
-[2024-08-29T20:26:29.612] [DEBUG] default - debug 3
-[2024-08-29T20:30:22.215] [DEBUG] default - cek user by email :  []
-[2024-08-29T20:30:22.216] [DEBUG] default - debug data user :  null
-[2024-08-29T20:30:22.216] [DEBUG] default - debug 1 :  {
-  nama_user: 'Citra Dewi',
-  email_ecampus: 'irgy@ecampus.ut.ac.id',
-  email_google: undefined,
-  uu: '2016003',
-  nomor_induk: '2016003'
+[2024-09-08T12:22:21.104] [ERROR] default - error pengajuan :  CustomError: Internal server error.
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-tesis-mhs.service-web.ts:170:19
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-tesis-mhs.service-web.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 500,
+  status: 'error'
 }
-[2024-08-29T20:30:22.221] [DEBUG] default - debug 2 :  Users {
-  dataValues: {
-    nama_user: 'Citra Dewi',
-    email_ecampus: 'irgy@ecampus.ut.ac.id',
-    email_google: undefined,
-    uu: '2016003',
-    nomor_induk: '2016003',
-    update_at: 2024-08-29T13:30:22.217Z,
-    created_at: 2024-08-29T13:30:22.217Z
-  },
-  _previousDataValues: {
-    nama_user: 'Citra Dewi',
-    email_ecampus: 'irgy@ecampus.ut.ac.id',
-    uu: '2016003',
-    nomor_induk: '2016003',
-    token: undefined,
-    refresh_token: undefined,
-    token_expired: undefined,
-    email_google: undefined,
-    uc: undefined,
-    created_at: 2024-08-29T13:30:22.217Z,
-    update_at: 2024-08-29T13:30:22.217Z
-  },
-  uniqno: 1,
-  _changed: Set(0) {},
-  _options: {
-    isNewRecord: true,
-    _schema: null,
-    _schemaDelimiter: '',
-    attributes: undefined,
-    include: undefined,
-    raw: undefined,
-    silent: undefined
-  },
-  isNewRecord: false,
-  null: undefined
+[2024-09-08T12:23:16.452] [ERROR] default - error pengajuan :  CustomError: Internal server error.
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-tesis-mhs.service-web.ts:172:19
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-tesis-mhs.service-web.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 500,
+  status: 'error'
 }
-[2024-08-29T20:30:22.222] [DEBUG] default - debug 3
-[2024-08-29T21:08:09.993] [DEBUG] default - cek user by email :  []
-[2024-08-29T21:08:09.995] [DEBUG] default - debug data user :  null
-[2024-08-29T21:08:09.995] [DEBUG] default - debug 1 :  {
-  nama_user: 'Citra Dewi',
-  email_ecampus: 'irgy@ecampus.ut.ac.id',
-  email_google: undefined,
-  uu: '2016003',
-  nomor_induk: '2016003'
+[2024-09-08T12:24:42.517] [ERROR] default - error pengajuan :  CustomError: Internal server error.
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-tesis-mhs.service-web.ts:172:19
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-tesis-mhs.service-web.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 500,
+  status: 'error'
 }
-[2024-08-29T21:08:10.001] [DEBUG] default - debug 2 :  Users {
-  dataValues: {
-    nama_user: 'Citra Dewi',
-    email_ecampus: 'irgy@ecampus.ut.ac.id',
-    email_google: undefined,
-    uu: '2016003',
-    nomor_induk: '2016003',
-    update_at: 2024-08-29T14:08:09.995Z,
-    created_at: 2024-08-29T14:08:09.995Z
-  },
-  _previousDataValues: {
-    nama_user: 'Citra Dewi',
-    email_ecampus: 'irgy@ecampus.ut.ac.id',
-    uu: '2016003',
-    nomor_induk: '2016003',
-    token: undefined,
-    refresh_token: undefined,
-    token_expired: undefined,
-    email_google: undefined,
-    uc: undefined,
-    created_at: 2024-08-29T14:08:09.995Z,
-    update_at: 2024-08-29T14:08:09.995Z
-  },
-  uniqno: 1,
-  _changed: Set(0) {},
-  _options: {
-    isNewRecord: true,
-    _schema: null,
-    _schemaDelimiter: '',
-    attributes: undefined,
-    include: undefined,
-    raw: undefined,
-    silent: undefined
-  },
-  isNewRecord: false,
-  null: undefined
+[2024-09-08T12:35:31.294] [ERROR] default - error pengajuan :  CustomError: Internal server error.
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-tesis-mhs.service-web.ts:175:19
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-tesis-mhs.service-web.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 500,
+  status: 'error'
 }
-[2024-08-29T21:08:10.002] [DEBUG] default - debug 3
-[2024-08-29T21:12:33.187] [DEBUG] default - cek user by email :  []
-[2024-08-29T21:12:33.189] [DEBUG] default - debug data user :  null
-[2024-08-29T21:12:33.189] [DEBUG] default - debug 1 :  {
-  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlyZ3lAZWNhbXB1cy51dC5hYy5pZCIsImlhdCI6MTcyNDk0MDc0MywiZXhwIjoxNzI0OTQ0MzQzfQ.wIuDTXrPrlBXWevj3ID0m32idJe8XuvLkjkuxIooWY4',
-  nama_user: 'Citra Dewi',
-  email_ecampus: 'irgy@ecampus.ut.ac.id',
-  email_google: undefined,
-  uu: '2016003',
-  nomor_induk: '2016003'
+[2024-09-08T12:37:24.737] [ERROR] default - error pengajuan :  CustomError: Internal server error.
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-tesis-mhs.service-web.ts:175:19
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-tesis-mhs.service-web.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 500,
+  status: 'error'
 }
-[2024-08-29T21:12:33.194] [DEBUG] default - debug 2 :  Users {
-  dataValues: {
-    token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlyZ3lAZWNhbXB1cy51dC5hYy5pZCIsImlhdCI6MTcyNDk0MDc0MywiZXhwIjoxNzI0OTQ0MzQzfQ.wIuDTXrPrlBXWevj3ID0m32idJe8XuvLkjkuxIooWY4',
-    nama_user: 'Citra Dewi',
-    email_ecampus: 'irgy@ecampus.ut.ac.id',
-    email_google: undefined,
-    uu: '2016003',
-    nomor_induk: '2016003',
-    update_at: 2024-08-29T14:12:33.189Z,
-    created_at: 2024-08-29T14:12:33.189Z
-  },
-  _previousDataValues: {
-    token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlyZ3lAZWNhbXB1cy51dC5hYy5pZCIsImlhdCI6MTcyNDk0MDc0MywiZXhwIjoxNzI0OTQ0MzQzfQ.wIuDTXrPrlBXWevj3ID0m32idJe8XuvLkjkuxIooWY4',
-    nama_user: 'Citra Dewi',
-    email_ecampus: 'irgy@ecampus.ut.ac.id',
-    uu: '2016003',
-    nomor_induk: '2016003',
-    refresh_token: undefined,
-    token_expired: undefined,
-    email_google: undefined,
-    uc: undefined,
-    created_at: 2024-08-29T14:12:33.189Z,
-    update_at: 2024-08-29T14:12:33.189Z
-  },
-  uniqno: 1,
-  _changed: Set(0) {},
-  _options: {
-    isNewRecord: true,
-    _schema: null,
-    _schemaDelimiter: '',
-    attributes: undefined,
-    include: undefined,
-    raw: undefined,
-    silent: undefined
-  },
-  isNewRecord: false,
-  null: undefined
+[2024-09-08T12:37:46.535] [ERROR] default - error pengajuan :  CustomError: Internal server error.
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-tesis-mhs.service-web.ts:175:19
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-tesis-mhs.service-web.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 500,
+  status: 'error'
 }
-[2024-08-29T21:12:33.194] [DEBUG] default - debug 3
-[2024-08-29T21:21:59.624] [DEBUG] default - cek user by email :  []
-[2024-08-29T21:21:59.626] [DEBUG] default - debug 1 :  {
-  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlyZ3lAZWNhbXB1cy51dC5hYy5pZCIsImlhdCI6MTcyNDk0MTMxMCwiZXhwIjoxNzI0OTQ0OTEwfQ.2ngY-81NS8iGQ6lmDSzWJM6cJwUwqQpI3AjopmY1_As',
-  refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlyZ3lAZWNhbXB1cy51dC5hYy5pZCIsImlhdCI6MTcyNDk0MTMxMCwiZXhwIjoxNzI1NTQ2MTEwfQ.X3mGWhRHH_9t4CJQJ9lrvL7w1Eu5xzCLZ-eowej39dU',
-  nama_user: 'Citra Dewi',
-  email_ecampus: 'irgy@ecampus.ut.ac.id',
-  email_google: undefined,
-  uu: '2016003',
-  nomor_induk: '2016003'
+[2024-09-08T12:39:47.901] [ERROR] default - error pengajuan :  CustomError: Internal server error.
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-tesis-mhs.service-web.ts:177:19
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-tesis-mhs.service-web.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 500,
+  status: 'error'
 }
-[2024-08-29T21:21:59.632] [DEBUG] default - debug 2 :  Users {
-  dataValues: {
-    token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlyZ3lAZWNhbXB1cy51dC5hYy5pZCIsImlhdCI6MTcyNDk0MTMxMCwiZXhwIjoxNzI0OTQ0OTEwfQ.2ngY-81NS8iGQ6lmDSzWJM6cJwUwqQpI3AjopmY1_As',
-    refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlyZ3lAZWNhbXB1cy51dC5hYy5pZCIsImlhdCI6MTcyNDk0MTMxMCwiZXhwIjoxNzI1NTQ2MTEwfQ.X3mGWhRHH_9t4CJQJ9lrvL7w1Eu5xzCLZ-eowej39dU',
-    nama_user: 'Citra Dewi',
-    email_ecampus: 'irgy@ecampus.ut.ac.id',
-    email_google: undefined,
-    uu: '2016003',
-    nomor_induk: '2016003',
-    update_at: 2024-08-29T14:21:59.627Z,
-    created_at: 2024-08-29T14:21:59.627Z
-  },
-  _previousDataValues: {
-    token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlyZ3lAZWNhbXB1cy51dC5hYy5pZCIsImlhdCI6MTcyNDk0MTMxMCwiZXhwIjoxNzI0OTQ0OTEwfQ.2ngY-81NS8iGQ6lmDSzWJM6cJwUwqQpI3AjopmY1_As',
-    refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlyZ3lAZWNhbXB1cy51dC5hYy5pZCIsImlhdCI6MTcyNDk0MTMxMCwiZXhwIjoxNzI1NTQ2MTEwfQ.X3mGWhRHH_9t4CJQJ9lrvL7w1Eu5xzCLZ-eowej39dU',
-    nama_user: 'Citra Dewi',
-    email_ecampus: 'irgy@ecampus.ut.ac.id',
-    uu: '2016003',
-    nomor_induk: '2016003',
-    token_expired: undefined,
-    email_google: undefined,
-    uc: undefined,
-    created_at: 2024-08-29T14:21:59.627Z,
-    update_at: 2024-08-29T14:21:59.627Z
-  },
-  uniqno: 1,
-  _changed: Set(0) {},
-  _options: {
-    isNewRecord: true,
-    _schema: null,
-    _schemaDelimiter: '',
-    attributes: undefined,
-    include: undefined,
-    raw: undefined,
-    silent: undefined
-  },
-  isNewRecord: false,
-  null: undefined
+[2024-09-08T12:40:15.172] [ERROR] default - error pengajuan :  CustomError: Ada Dospem Yang Tidak Terdaftar
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-tesis-mhs.service-web.ts:175:19
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-tesis-mhs.service-web.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 204,
+  status: 'error'
 }
-[2024-08-29T21:21:59.633] [DEBUG] default - debug 3
-[2024-08-29T21:23:52.044] [DEBUG] default - cek user by email :  []
-[2024-08-29T21:25:20.185] [DEBUG] default - cek user by email :  []
+[2024-09-08T12:40:53.703] [ERROR] default - error pengajuan :  CustomError: Ada Dospem Yang Tidak Terdaftar
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-tesis-mhs.service-web.ts:175:19
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-tesis-mhs.service-web.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 404,
+  status: 'error'
+}
+[2024-09-08T12:46:57.609] [ERROR] default - error pengajuan :  CustomError: Ada Dospem Yang Tidak Terdaftar
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-tesis-mhs.service-web.ts:179:19
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-tesis-mhs.service-web.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 404,
+  status: 'error'
+}
+[2024-09-08T12:48:02.546] [ERROR] default - error pengajuan :  CustomError: Internal server error.
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-tesis-mhs.service-web.ts:181:19
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-tesis-mhs.service-web.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 500,
+  status: 'error'
+}
+[2024-09-08T12:48:40.707] [ERROR] default - error pengajuan :  CustomError: Terdapat dospem yang sama
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-tesis-mhs.service-web.ts:179:19
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-tesis-mhs.service-web.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 409,
+  status: 'error'
+}
+[2024-09-08T12:49:36.431] [ERROR] default - error pengajuan :  CustomError: Internal server error.
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-tesis-mhs.service-web.ts:181:19
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-tesis-mhs.service-web.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 500,
+  status: 'error'
+}
+[2024-09-08T12:50:33.604] [ERROR] default - error pengajuan :  CustomError: Terdapat dospem yang sama
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-tesis-mhs.service-web.ts:179:19
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-tesis-mhs.service-web.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 409,
+  status: 'error'
+}
+[2024-09-08T12:51:11.042] [ERROR] default - error pengajuan :  CustomError: Terdapat dospem yang sama
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-tesis-mhs.service-web.ts:179:19
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-tesis-mhs.service-web.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 409,
+  status: 'error'
+}
+[2024-09-08T12:51:46.603] [ERROR] default - error pengajuan :  CustomError: Terdapat dospem yang sama
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-tesis-mhs.service-web.ts:179:19
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-tesis-mhs.service-web.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 409,
+  status: 'error'
+}
+[2024-09-08T12:53:05.385] [ERROR] default - error pengajuan :  CustomError: Internal server error.
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-tesis-mhs.service-web.ts:181:19
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-tesis-mhs.service-web.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 500,
+  status: 'error'
+}
+[2024-09-08T12:57:34.456] [ERROR] default - error pengajuan :  CustomError: Terdapat dospem yang sama
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-tesis-mhs.service-web.ts:179:19
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-tesis-mhs.service-web.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 409,
+  status: 'error'
+}
+[2024-09-08T12:57:35.981] [ERROR] default - error pengajuan :  CustomError: Terdapat dospem yang sama
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-tesis-mhs.service-web.ts:179:19
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-tesis-mhs.service-web.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 409,
+  status: 'error'
+}
+[2024-09-08T12:57:37.184] [ERROR] default - error pengajuan :  CustomError: Terdapat dospem yang sama
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-tesis-mhs.service-web.ts:179:19
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-tesis-mhs.service-web.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 409,
+  status: 'error'
+}
+[2024-09-08T12:57:38.116] [ERROR] default - error pengajuan :  CustomError: Terdapat dospem yang sama
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-tesis-mhs.service-web.ts:179:19
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-tesis-mhs.service-web.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 409,
+  status: 'error'
+}
+[2024-09-08T12:57:38.983] [ERROR] default - error pengajuan :  CustomError: Terdapat dospem yang sama
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-tesis-mhs.service-web.ts:179:19
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-tesis-mhs.service-web.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 409,
+  status: 'error'
+}
+[2024-09-08T12:57:44.574] [ERROR] default - error pengajuan :  CustomError: Terdapat dospem yang sama
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-tesis-mhs.service-web.ts:179:19
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-tesis-mhs.service-web.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 409,
+  status: 'error'
+}
+[2024-09-08T12:57:51.385] [ERROR] default - error pengajuan :  CustomError: Ada Dospem Yang Tidak Terdaftar
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-tesis-mhs.service-web.ts:179:19
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-tesis-mhs.service-web.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 404,
+  status: 'error'
+}
+[2024-09-08T13:01:01.867] [ERROR] default - error pengajuan :  CustomError: Data tesis pada mahasiswa tersebut sudah ada
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\mahasiswa\pengajuan.controller.ts:47:36
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\mahasiswa\pengajuan.controller.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 409,
+  status: 'error'
+}

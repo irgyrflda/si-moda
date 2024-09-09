@@ -7,8 +7,8 @@ interface IRefUserSementaraAttributes {
     refresh_token: string
 }
 
-export type RefUserSementaraInput = Required<IRefUserSementaraAttributes>;
 export type RefUserSementaraOutput = Required<IRefUserSementaraAttributes>;
+export type RefUserSementaraInput = Required<IRefUserSementaraAttributes>;
 
 class RefUserSementara
     extends Model<IRefUserSementaraAttributes, RefUserSementaraInput>
@@ -23,7 +23,7 @@ RefUserSementara.init(
         email: {
             type: DataTypes.STRING,
             primaryKey: true,
-            autoIncrement: true
+            allowNull: false,
         },
         token: {
             type: DataTypes.STRING,

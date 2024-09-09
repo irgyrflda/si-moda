@@ -36,20 +36,6 @@ INSERT INTO `m_group` (`kode_group`, `nama_group`) VALUES
 	('G05', 'Dekanat'),
 	('G06', 'Ahli');
 
--- Dumping structure for table db_simoda.m_topik_penelitian
-CREATE TABLE IF NOT EXISTS `m_topik_penelitian` (
-  `id_topik` int(11) NOT NULL AUTO_INCREMENT,
-  `topik_penelitian` varchar(100) NOT NULL,
-  `uc` char(50) DEFAULT NULL,
-  `uu` char(50) DEFAULT NULL,
-  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
-  `update_at` timestamp NOT NULL DEFAULT current_timestamp(),
-  PRIMARY KEY (`id_topik`),
-  KEY `Index 1` (`id_topik`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
--- Dumping data for table db_simoda.m_topik_penelitian: ~0 rows (approximately)
-
 -- Dumping structure for table db_simoda.ref_bimbingan_mhs
 CREATE TABLE IF NOT EXISTS `ref_bimbingan_mhs` (
   `id_bimbingan` int(11) NOT NULL AUTO_INCREMENT,
@@ -64,7 +50,8 @@ CREATE TABLE IF NOT EXISTS `ref_bimbingan_mhs` (
   KEY `Index 1` (`id_bimbingan`),
   KEY `Index 2` (`id_trx_bimbingan`),
   KEY `Index 3` (`id_dospem_mhs`),
-  CONSTRAINT `FK_bimbingan_dospem_mhs` FOREIGN KEY (`id_dospem_mhs`) REFERENCES `ref_dospem_mhs` (`id_dospem_mhs`)
+  CONSTRAINT `FK_bimbingan_dospem_mhs` FOREIGN KEY (`id_dospem_mhs`) REFERENCES `ref_dospem_mhs` (`id_dospem_mhs`),
+  CONSTRAINT `FK_bimbingan_trx` FOREIGN KEY (`id_trx_bimbingan`) REFERENCES `trx_bimbingan_mhs` (`id_trx_bimbingan`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- Dumping data for table db_simoda.ref_bimbingan_mhs: ~0 rows (approximately)
@@ -73,26 +60,21 @@ CREATE TABLE IF NOT EXISTS `ref_bimbingan_mhs` (
 CREATE TABLE IF NOT EXISTS `ref_dospem` (
   `nidn` char(15) NOT NULL,
   `nama_dospem` varchar(255) NOT NULL,
-  `id_topik` int(11) DEFAULT NULL,
   `uc` char(50) DEFAULT NULL,
   `uu` char(50) DEFAULT NULL,
   `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
   `update_at` timestamp NOT NULL DEFAULT current_timestamp(),
   PRIMARY KEY (`nidn`),
-  KEY `Index 1` (`nidn`),
-  KEY `Index 2` (`id_topik`),
-  CONSTRAINT `FK_dospem_topik` FOREIGN KEY (`id_topik`) REFERENCES `m_topik_penelitian` (`id_topik`)
+  KEY `Index 1` (`nidn`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
--- Dumping data for table db_simoda.ref_dospem: ~0 rows (approximately)
 
 -- Dumping structure for table db_simoda.ref_dospem_mhs
 CREATE TABLE IF NOT EXISTS `ref_dospem_mhs` (
   `id_dospem_mhs` int(11) NOT NULL AUTO_INCREMENT,
   `nidn` char(15) NOT NULL,
   `nim` char(15) NOT NULL,
-  `keterangan_dospem` enum('dospem_1','dospem_2') DEFAULT NULL,
-  `status_persetujuan` enum('setuju','tidak setuju') DEFAULT NULL,
+  `keterangan_dospem` enum('dospem 1','dospem 2') DEFAULT NULL,
+  `status_persetujuan` enum('setuju','belum disetujui','tidak setuju') DEFAULT NULL,
   `uc` char(50) DEFAULT NULL,
   `uu` char(50) DEFAULT NULL,
   `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
@@ -103,9 +85,7 @@ CREATE TABLE IF NOT EXISTS `ref_dospem_mhs` (
   KEY `Index 3` (`nidn`),
   CONSTRAINT `FK_ref_dospem_mhs_dospem` FOREIGN KEY (`nidn`) REFERENCES `ref_dospem` (`nidn`),
   CONSTRAINT `FK_ref_t_mhs_ref_dospem_mhs` FOREIGN KEY (`nim`) REFERENCES `ref_tesis_mahasiswa` (`nim`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
--- Dumping data for table db_simoda.ref_dospem_mhs: ~0 rows (approximately)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- Dumping structure for table db_simoda.ref_group_user
 CREATE TABLE IF NOT EXISTS `ref_group_user` (
@@ -119,10 +99,6 @@ CREATE TABLE IF NOT EXISTS `ref_group_user` (
   CONSTRAINT `FK_ref_group_m_group` FOREIGN KEY (`kode_group`) REFERENCES `m_group` (`kode_group`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `FK_ref_user_ref_group` FOREIGN KEY (`nomor_induk`) REFERENCES `ref_user` (`nomor_induk`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
--- Dumping data for table db_simoda.ref_group_user: ~1 rows (approximately)
-INSERT INTO `ref_group_user` (`id_group_user`, `nomor_induk`, `kode_group`) VALUES
-	(9, '2016003', 'G01');
 
 -- Dumping structure for table db_simoda.ref_materi_pembahasan
 CREATE TABLE IF NOT EXISTS `ref_materi_pembahasan` (
@@ -192,11 +168,26 @@ CREATE TABLE IF NOT EXISTS `ref_menu3` (
 CREATE TABLE IF NOT EXISTS `ref_status` (
   `kode_status` char(3) NOT NULL,
   `keterangan_status` varchar(255) DEFAULT NULL,
+  `kategori_status` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`kode_status`),
   KEY `Index 1` (`kode_status`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table db_simoda.ref_status: ~0 rows (approximately)
+-- Dumping data for table db_simoda.ref_status: ~13 rows (approximately)
+INSERT INTO `ref_status` (`kode_status`, `keterangan_status`, `kategori_status`) VALUES
+	('T01', 'Pengajuan Judul Tesis dan Dospem', 'capaian_tesis_mhs'),
+	('T02', 'Pengajuan Sedang diproses', 'capaian_tesis_mhs'),
+	('T03', 'ACC Judul dan Dospem', 'capaian_tesis_mhs'),
+	('T04', 'Bimbingan Seminar Proposal', 'capaian_tesis_mhs'),
+	('T05', 'ACC Seminar Proposal', 'capaian_tesis_mhs'),
+	('T06', 'Seminar Proposal', 'capaian_tesis_mhs'),
+	('T07', 'Bimbingan Seminar Hasil', 'capaian_tesis_mhs'),
+	('T08', 'ACC Seminar Hasil', 'capaian_tesis_mhs'),
+	('T09', 'Seminar Hasil', 'capaian_tesis_mhs'),
+	('T10', 'Bimbingan Sidang Akhir', 'capaian_tesis_mhs'),
+	('T11', 'Acc Sidang Akhir', 'capaian_tesis_mhs'),
+	('T12', 'Ujian Sidang', 'capaian_tesis_mhs'),
+	('T13', 'Selesai Tesis', 'capaian_tesis_mhs');
 
 -- Dumping structure for table db_simoda.ref_sub_materi_pembahasan
 CREATE TABLE IF NOT EXISTS `ref_sub_materi_pembahasan` (
@@ -219,20 +210,15 @@ CREATE TABLE IF NOT EXISTS `ref_sub_materi_pembahasan` (
 -- Dumping structure for table db_simoda.ref_tesis_mahasiswa
 CREATE TABLE IF NOT EXISTS `ref_tesis_mahasiswa` (
   `nim` char(15) NOT NULL,
-  `id_topik` int(11) DEFAULT NULL,
   `judul_tesis` varchar(255) NOT NULL,
-  `kode_status` char(3) DEFAULT '001',
+  `kode_status` char(3) DEFAULT 'T01',
   `uc` char(50) DEFAULT NULL,
   `uu` char(50) DEFAULT NULL,
   `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
   `update_at` timestamp NOT NULL DEFAULT current_timestamp(),
   PRIMARY KEY (`nim`),
-  KEY `Index 1` (`id_topik`),
-  KEY `Index 2` (`nim`),
-  CONSTRAINT `FK_mhs_topik` FOREIGN KEY (`id_topik`) REFERENCES `m_topik_penelitian` (`id_topik`)
+  KEY `Index 1` (`nim`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
--- Dumping data for table db_simoda.ref_tesis_mahasiswa: ~0 rows (approximately)
 
 -- Dumping structure for table db_simoda.ref_user
 CREATE TABLE IF NOT EXISTS `ref_user` (
@@ -251,10 +237,6 @@ CREATE TABLE IF NOT EXISTS `ref_user` (
   KEY `Index 2` (`nomor_induk`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table db_simoda.ref_user: ~1 rows (approximately)
-INSERT INTO `ref_user` (`nomor_induk`, `nama_user`, `token`, `refresh_token`, `token_expired`, `email_google`, `email_ecampus`, `uc`, `uu`, `created_at`, `update_at`) VALUES
-	('2016003', 'Citra Dewi', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlyZ3lAZ21haWwuY29tIiwiaWF0IjoxNzI0OTQzMDQ1LCJleHAiOjE3MjQ5NDY2NDV9.LeFqleGCWVJUnCI_dSekND3J7I1dxTb2qyRCf9V_DPM', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlyZ3lAZ21haWwuY29tIiwiaWF0IjoxNzI0OTQzMDQ1LCJleHAiOjE3MjU1NDc4NDV9.hbfqk6FAyCVRvrZSbb3xopPB_r5uDz7_5BuPKThxb2M', NULL, 'irgy@gmail.com', 'irgy@ecampus.ut.ac.id', NULL, '2016003', '2024-08-29 14:21:59', '2024-08-29 14:50:45');
-
 -- Dumping structure for table db_simoda.ref_user_sementara
 CREATE TABLE IF NOT EXISTS `ref_user_sementara` (
   `email` varchar(100) NOT NULL,
@@ -268,9 +250,12 @@ CREATE TABLE IF NOT EXISTS `ref_user_sementara` (
 -- Dumping structure for table db_simoda.trx_agenda
 CREATE TABLE IF NOT EXISTS `trx_agenda` (
   `id_trx_agenda` int(11) NOT NULL AUTO_INCREMENT,
-  `nim` char(15) NOT NULL,
-  `nidn` char(15) NOT NULL,
+  `nim` char(15) DEFAULT NULL,
+  `nidn` char(15) DEFAULT NULL,
   `agenda_pertemuan` enum('online','offline') DEFAULT NULL,
+  `kategori_agenda` enum('bimbingan dosen utama','bimbingan dosen pendamping','seminar proposal','seminar hasil','ujian sidang') NOT NULL,
+  `keterangan_bimbingan` text NOT NULL,
+  `status_persetujuan_jadwal` enum('setuju','belum disetujui') NOT NULL DEFAULT 'belum disetujui',
   `tgl_bimbingan` datetime NOT NULL,
   `uc` char(50) DEFAULT NULL,
   `uu` char(50) DEFAULT NULL,
@@ -300,7 +285,6 @@ CREATE TABLE IF NOT EXISTS `trx_bimbingan_mhs` (
   KEY `Index 1` (`id_sub_materi_pembahasan`),
   KEY `Index 2` (`nim`),
   KEY `Index 3` (`id_sub_materi_pembahasan`),
-  CONSTRAINT `FK_bimbingan_trx` FOREIGN KEY (`id_trx_bimbingan`) REFERENCES `ref_bimbingan_mhs` (`id_trx_bimbingan`),
   CONSTRAINT `FK_trx_bimbingan_mhs` FOREIGN KEY (`nim`) REFERENCES `ref_tesis_mahasiswa` (`nim`),
   CONSTRAINT `FK_trx_bimbingan_sub_m` FOREIGN KEY (`id_sub_materi_pembahasan`) REFERENCES `ref_sub_materi_pembahasan` (`id_sub_materi_pembahasan`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
@@ -326,6 +310,36 @@ CREATE TABLE IF NOT EXISTS `trx_masukan_dospem` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- Dumping data for table db_simoda.trx_masukan_dospem: ~0 rows (approximately)
+
+-- Dumping structure for table db_simoda.trx_notifikasi
+CREATE TABLE IF NOT EXISTS `trx_notifikasi` (
+  `id_notif` int(11) NOT NULL AUTO_INCREMENT,
+  `nomor_induk` char(15) NOT NULL,
+  `isi_notif` varchar(255) NOT NULL,
+  `status_notif` char(1) NOT NULL DEFAULT '1',
+  `uc` char(50) DEFAULT NULL,
+  `uu` char(50) DEFAULT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
+  `update_at` timestamp NOT NULL DEFAULT current_timestamp(),
+  PRIMARY KEY (`id_notif`),
+  KEY `Index 2` (`id_notif`),
+  KEY `Index 3` (`nomor_induk`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- Dumping structure for table db_simoda.trx_topik_penelitian
+CREATE TABLE IF NOT EXISTS `trx_topik_penelitian` (
+  `nomor_induk` char(15) NOT NULL,
+  `id_topik` int(11) NOT NULL AUTO_INCREMENT,
+  `topik_penelitian` varchar(100) NOT NULL,
+  `uc` char(50) DEFAULT NULL,
+  `uu` char(50) DEFAULT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
+  `update_at` timestamp NOT NULL DEFAULT current_timestamp(),
+  PRIMARY KEY (`id_topik`),
+  KEY `Index 1` (`id_topik`),
+  KEY `Index 2` (`nomor_induk`),
+  CONSTRAINT `FK_user_topik` FOREIGN KEY (`nomor_induk`) REFERENCES `ref_user` (`nomor_induk`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

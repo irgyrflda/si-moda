@@ -16,8 +16,8 @@ const payload = {
 const paramsNimKodeGroup = {
     params: object({
         nomor_induk: string({
-            required_error: "nim tidak boleh kosong",
-            invalid_type_error: "nim harus huruf",
+            required_error: "nomor induk tidak boleh kosong",
+            invalid_type_error: "nomor induk harus huruf",
         }),
         kode_group: string({
             required_error: "kode group tidak boleh kosong",

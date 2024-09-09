@@ -34,9 +34,9 @@ class Users
     declare email_google: string | null | undefined;
     declare email_ecampus: string | null | undefined;
     declare uc: string | null | undefined;
-    declare uu: string | null | undefined
-    declare created_at: Date | undefined
-    declare update_at: Date | undefined
+    declare uu: string | null | undefined;
+    declare created_at: Date | undefined;
+    declare update_at: Date | undefined;
 }
 
 Users.init(

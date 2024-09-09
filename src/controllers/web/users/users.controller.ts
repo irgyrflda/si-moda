@@ -81,7 +81,7 @@ export const login = async (
             });
         }
     } catch (error) {
-        errorLogger.error("Error login frenn : ", error)
+        errorLogger.error("Error login : ", error)
         next(error);
     }
 }

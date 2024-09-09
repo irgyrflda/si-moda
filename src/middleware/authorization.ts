@@ -10,7 +10,7 @@ import RefUserSementara from '@models/user-sementara.models';
 
 const generateAccessToken = (email: string) => {
     return jwt.sign({ email: email }, getConfig("SESSION_KEY"), {
-        expiresIn: "1h"
+        expiresIn: "1d"
     });
 };
 
@@ -27,6 +27,9 @@ const checkToken = async (req: Request, res: Response, next: NextFunction) => {
     try {
         const token = req.header('Authorization')?.split(' ')[1];
         const emailUser = req.headers.email
+        if (!token || !emailUser) {
+            throw new CustomError(httpCode.unauthorized, "Unauthorized[0]")
+        }
 
         const getDataUser: any = await Users.findOne({
             attributes: ["token"],
@@ -45,16 +48,11 @@ const checkToken = async (req: Request, res: Response, next: NextFunction) => {
             throw new CustomError(httpCode.unauthorized, "Unauthorized token not match[0] ")
         }
 
-        if (!token || !emailUser) {
-            throw new CustomError(httpCode.unauthorized, "Unauthorized[0]")
-        }
-
         try {
             const verified = jwt.verify(token, getConfig("SESSION_KEY")) as JwtPayload;
             if (verified.email !== emailUser) {
                 throw new CustomError(httpCode.unauthorized, "Unauthorized token not match[1]")
             }
-            console.log(verified);
 
             (req as any).user = verified;
             next();

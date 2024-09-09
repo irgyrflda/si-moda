@@ -1,1720 +1,78 @@
-[2024-08-29T16:45:47.559] [ERROR] error - Error login frenn :  CustomError: Internal server error.
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:231:19
-    at Generator.throw (<anonymous>)
-    at rejected (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:6:65)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 500,
-  status: 'error'
-}
-[2024-08-29T16:45:47.561] [ERROR] error - CustomError: Internal server error.
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:231:19
-    at Generator.throw (<anonymous>)
-    at rejected (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:6:65)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 500,
-  status: 'error'
-}
-[2024-08-29T16:47:08.384] [ERROR] error - Error login frenn :  CustomError: Internal server error.
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:231:19
-    at Generator.throw (<anonymous>)
-    at rejected (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:6:65)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 500,
-  status: 'error'
-}
-[2024-08-29T16:47:08.391] [ERROR] error - CustomError: Internal server error.
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:231:19
-    at Generator.throw (<anonymous>)
-    at rejected (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:6:65)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 500,
-  status: 'error'
-}
-[2024-08-29T16:48:13.027] [ERROR] error - Error login frenn :  CustomError: Internal server error.
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:231:19
-    at Generator.throw (<anonymous>)
-    at rejected (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:6:65)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 500,
-  status: 'error'
-}
-[2024-08-29T16:48:13.037] [ERROR] error - CustomError: Internal server error.
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:231:19
-    at Generator.throw (<anonymous>)
-    at rejected (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:6:65)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 500,
-  status: 'error'
-}
-[2024-08-29T16:48:28.604] [ERROR] error - Error login frenn :  CustomError: Internal server error.
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:231:19
-    at Generator.throw (<anonymous>)
-    at rejected (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:6:65)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 500,
-  status: 'error'
-}
-[2024-08-29T16:48:28.618] [ERROR] error - CustomError: Internal server error.
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:231:19
-    at Generator.throw (<anonymous>)
-    at rejected (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:6:65)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 500,
-  status: 'error'
-}
-[2024-08-29T16:49:03.594] [ERROR] error - Error login frenn :  CustomError: Internal server error.
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:231:19
-    at Generator.throw (<anonymous>)
-    at rejected (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:6:65)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 500,
-  status: 'error'
-}
-[2024-08-29T16:49:03.601] [ERROR] error - CustomError: Internal server error.
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:231:19
-    at Generator.throw (<anonymous>)
-    at rejected (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:6:65)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 500,
-  status: 'error'
-}
-[2024-08-29T16:49:43.673] [ERROR] error - Error login frenn :  CustomError: Internal server error.
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:231:19
-    at Generator.throw (<anonymous>)
-    at rejected (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:6:65)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 500,
-  status: 'error'
-}
-[2024-08-29T16:49:43.675] [ERROR] error - CustomError: Internal server error.
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:231:19
-    at Generator.throw (<anonymous>)
-    at rejected (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:6:65)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 500,
-  status: 'error'
-}
-[2024-08-29T16:50:25.588] [ERROR] error - Error login frenn :  CustomError: Internal server error.
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:233:19
-    at Generator.throw (<anonymous>)
-    at rejected (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:6:65)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 500,
-  status: 'error'
-}
-[2024-08-29T16:50:25.595] [ERROR] error - CustomError: Internal server error.
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:233:19
-    at Generator.throw (<anonymous>)
-    at rejected (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:6:65)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 500,
-  status: 'error'
-}
-[2024-08-29T16:51:14.890] [ERROR] error - Error login frenn :  CustomError: Internal server error.
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:233:19
-    at Generator.throw (<anonymous>)
-    at rejected (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:6:65)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 500,
-  status: 'error'
-}
-[2024-08-29T16:51:14.903] [ERROR] error - CustomError: Internal server error.
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:233:19
-    at Generator.throw (<anonymous>)
-    at rejected (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:6:65)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 500,
-  status: 'error'
-}
-[2024-08-29T16:51:35.047] [ERROR] error - Error login frenn :  CustomError: Internal server error.
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:233:19
-    at Generator.throw (<anonymous>)
-    at rejected (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:6:65)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 500,
-  status: 'error'
-}
-[2024-08-29T16:51:35.054] [ERROR] error - CustomError: Internal server error.
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:233:19
-    at Generator.throw (<anonymous>)
-    at rejected (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:6:65)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 500,
-  status: 'error'
-}
-[2024-08-29T16:52:21.471] [ERROR] error - Error login frenn :  CustomError: Internal server error.
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:233:19
-    at Generator.throw (<anonymous>)
-    at rejected (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:6:65)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 500,
-  status: 'error'
-}
-[2024-08-29T16:52:21.480] [ERROR] error - CustomError: Internal server error.
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:233:19
-    at Generator.throw (<anonymous>)
-    at rejected (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:6:65)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 500,
-  status: 'error'
-}
-[2024-08-29T16:54:20.314] [ERROR] error - Error login frenn :  CustomError: Internal server error.
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:233:19
-    at Generator.throw (<anonymous>)
-    at rejected (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:6:65)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 500,
-  status: 'error'
-}
-[2024-08-29T16:54:20.321] [ERROR] error - CustomError: Internal server error.
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:233:19
-    at Generator.throw (<anonymous>)
-    at rejected (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:6:65)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 500,
-  status: 'error'
-}
-[2024-08-29T16:54:39.824] [ERROR] error - Error login frenn :  CustomError: Internal server error.SequelizeValidationError: notNull Violation: Users.token cannot be null
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:233:19
-    at Generator.throw (<anonymous>)
-    at rejected (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:6:65)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 500,
-  status: 'error'
-}
-[2024-08-29T16:54:39.838] [ERROR] error - CustomError: Internal server error.SequelizeValidationError: notNull Violation: Users.token cannot be null
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:233:19
-    at Generator.throw (<anonymous>)
-    at rejected (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:6:65)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 500,
-  status: 'error'
-}
-[2024-08-29T16:55:17.689] [ERROR] error - Error login frenn :  CustomError: Internal server error. SequelizeUniqueConstraintError: Validation error
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:233:19
-    at Generator.throw (<anonymous>)
-    at rejected (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:6:65)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 500,
-  status: 'error'
-}
-[2024-08-29T16:55:17.693] [ERROR] error - CustomError: Internal server error. SequelizeUniqueConstraintError: Validation error
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:233:19
-    at Generator.throw (<anonymous>)
-    at rejected (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:6:65)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 500,
-  status: 'error'
-}
-[2024-08-29T17:12:39.516] [ERROR] error - Error login frenn :  CustomError: Error: User tidak terdaftar pada aplikasi admisi-sia.ut.ac.id
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\utils\cek-no-induk.ts:43:15
+[2024-09-09T18:55:51.182] [ERROR] error - Error get agenda :  Error: Named replacement ":tgl_selesai" has no entry in the replacement map.
+    at injectReplacements (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\utils\sql.ts:176:15)
+    at Sequelize.query (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\sequelize.js:612:13)
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:164:39
     at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\utils\cek-no-induk.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 400,
-  status: 'error'
-}
-[2024-08-29T17:12:39.521] [ERROR] error - CustomError: Error: User tidak terdaftar pada aplikasi admisi-sia.ut.ac.id
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\utils\cek-no-induk.ts:43:15
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\utils\cek-no-induk.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 400,
-  status: 'error'
-}
-[2024-08-29T17:15:40.573] [ERROR] error - Error login frenn :  CustomError: Email Sudah Terdartar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:269:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T17:15:40.579] [ERROR] error - CustomError: Email Sudah Terdartar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:269:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T17:16:20.503] [ERROR] error - Error login frenn :  CustomError: Email Sudah Terdartar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:269:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T17:16:20.504] [ERROR] error - CustomError: Email Sudah Terdartar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:269:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T17:17:18.461] [ERROR] error - Error login frenn :  CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:269:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T17:17:18.467] [ERROR] error - CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:269:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T17:17:40.243] [ERROR] error - Error login frenn :  CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:270:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T17:17:40.247] [ERROR] error - CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:270:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T17:19:37.042] [ERROR] error - Error login frenn :  CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:270:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T17:19:37.043] [ERROR] error - CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:270:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T17:19:50.168] [ERROR] error - Error login frenn :  CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:270:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T17:19:50.168] [ERROR] error - CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:270:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T17:26:14.043] [ERROR] error - Error login frenn :  CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:270:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T17:26:14.044] [ERROR] error - CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:270:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T17:27:02.552] [ERROR] error - Error login frenn :  CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:270:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T17:27:02.557] [ERROR] error - CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:270:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T17:27:17.502] [ERROR] error - Error login frenn :  CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:270:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T17:27:17.503] [ERROR] error - CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:270:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T17:30:32.978] [ERROR] error - Error login frenn :  CustomError: Nomor induk sudah terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:271:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T17:30:32.983] [ERROR] error - CustomError: Nomor induk sudah terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:271:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T17:31:17.394] [ERROR] error - Error login frenn :  CustomError: Nomor induk dan email sudah terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:271:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T17:31:17.398] [ERROR] error - CustomError: Nomor induk dan email sudah terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:271:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T17:31:36.371] [ERROR] error - Error login frenn :  CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:271:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T17:31:36.372] [ERROR] error - CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:271:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T17:33:46.777] [ERROR] error - Error login frenn :  CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:271:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T17:33:46.782] [ERROR] error - CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:271:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T17:34:09.536] [ERROR] error - Error login frenn :  CustomError: Error: User tidak terdaftar pada aplikasi admisi-sia.ut.ac.id
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\utils\cek-no-induk.ts:43:15
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\utils\cek-no-induk.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 400,
-  status: 'error'
-}
-[2024-08-29T17:34:09.538] [ERROR] error - CustomError: Error: User tidak terdaftar pada aplikasi admisi-sia.ut.ac.id
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\utils\cek-no-induk.ts:43:15
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\utils\cek-no-induk.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 400,
-  status: 'error'
-}
-[2024-08-29T17:35:59.899] [ERROR] error - Error login frenn :  CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:271:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T17:35:59.899] [ERROR] error - CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:271:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T17:45:30.466] [ERROR] error - Error login frenn :  CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:271:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T17:45:30.470] [ERROR] error - CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:271:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T17:45:40.821] [ERROR] error - Error login frenn :  CustomError: Nomor induk dan email sudah terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:271:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T17:45:40.821] [ERROR] error - CustomError: Nomor induk dan email sudah terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:271:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T18:54:16.586] [ERROR] error - Error login frenn :  CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:272:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T18:54:16.592] [ERROR] error - CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:272:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T18:54:29.944] [ERROR] error - Error chect token :  CustomError: Unauthorized[0]
-    at checkToken (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:28:19)
-    at Layer.handle [as handle_request] (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\layer.js:95:5)
-    at trim_prefix (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\index.js:328:13)
-    at C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\index.js:286:9
-    at Function.process_params (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\index.js:346:12)
-    at next (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\index.js:280:10)
-    at C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express-rate-limit\dist\index.cjs:695:7
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:5:58)
     at processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express-rate-limit\dist\index.cjs:611:5 {
-  code: 401,
-  status: 'error'
-}
-[2024-08-29T18:54:29.946] [ERROR] error - CustomError: Unauthorized[0]
-    at checkToken (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:28:19)
-    at Layer.handle [as handle_request] (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\layer.js:95:5)
-    at trim_prefix (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\index.js:328:13)
-    at C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\index.js:286:9
-    at Function.process_params (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\index.js:346:12)
-    at next (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\index.js:280:10)
-    at C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express-rate-limit\dist\index.cjs:695:7
+[2024-09-09T18:55:51.183] [ERROR] error - Error: Named replacement ":tgl_selesai" has no entry in the replacement map.
+    at injectReplacements (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\utils\sql.ts:176:15)
+    at Sequelize.query (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\sequelize.js:612:13)
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:164:39
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:5:58)
     at processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express-rate-limit\dist\index.cjs:611:5 {
-  code: 401,
-  status: 'error'
-}
-[2024-08-29T18:54:59.167] [ERROR] error - Error chect token :  CustomError: Unauthorized[1]
-    at checkToken (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:39:19)
-    at Layer.handle [as handle_request] (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\layer.js:95:5)
-    at trim_prefix (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\index.js:328:13)
-    at C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\index.js:286:9
-    at Function.process_params (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\index.js:346:12)
-    at next (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\index.js:280:10)
-    at C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express-rate-limit\dist\index.cjs:695:7
+[2024-09-09T18:56:25.726] [ERROR] error - Error get agenda :  Error: Named replacement ":tgl_selesai" has no entry in the replacement map.
+    at injectReplacements (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\utils\sql.ts:176:15)
+    at Sequelize.query (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\sequelize.js:612:13)
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:164:39
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:5:58)
     at processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express-rate-limit\dist\index.cjs:611:5 {
-  code: 401,
-  status: 'error'
-}
-[2024-08-29T18:54:59.168] [ERROR] error - CustomError: Unauthorized[1]
-    at checkToken (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:39:19)
-    at Layer.handle [as handle_request] (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\layer.js:95:5)
-    at trim_prefix (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\index.js:328:13)
-    at C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\index.js:286:9
-    at Function.process_params (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\index.js:346:12)
-    at next (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\index.js:280:10)
-    at C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express-rate-limit\dist\index.cjs:695:7
+[2024-09-09T18:56:25.732] [ERROR] error - Error: Named replacement ":tgl_selesai" has no entry in the replacement map.
+    at injectReplacements (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\utils\sql.ts:176:15)
+    at Sequelize.query (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\sequelize.js:612:13)
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:164:39
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:5:58)
     at processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express-rate-limit\dist\index.cjs:611:5 {
-  code: 401,
-  status: 'error'
-}
-[2024-08-29T18:56:06.354] [ERROR] error - Error login frenn :  CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:272:19
+[2024-09-09T18:56:26.734] [ERROR] error - Error get agenda :  Error: Named replacement ":tgl_selesai" has no entry in the replacement map.
+    at injectReplacements (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\utils\sql.ts:176:15)
+    at Sequelize.query (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\sequelize.js:612:13)
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:164:39
     at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T18:56:06.354] [ERROR] error - CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:272:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T18:56:14.671] [ERROR] error - Error chect token :  CustomError: Unauthorized[1]
-    at checkToken (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:39:19)
-    at Layer.handle [as handle_request] (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\layer.js:95:5)
-    at trim_prefix (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\index.js:328:13)
-    at C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\index.js:286:9
-    at Function.process_params (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\index.js:346:12)
-    at next (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\index.js:280:10)
-    at C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express-rate-limit\dist\index.cjs:695:7
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:5:58)
     at processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express-rate-limit\dist\index.cjs:611:5 {
-  code: 401,
-  status: 'error'
-}
-[2024-08-29T18:56:14.672] [ERROR] error - CustomError: Unauthorized[1]
-    at checkToken (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:39:19)
-    at Layer.handle [as handle_request] (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\layer.js:95:5)
-    at trim_prefix (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\index.js:328:13)
-    at C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\index.js:286:9
-    at Function.process_params (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\index.js:346:12)
-    at next (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\index.js:280:10)
-    at C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express-rate-limit\dist\index.cjs:695:7
+[2024-09-09T18:56:26.735] [ERROR] error - Error: Named replacement ":tgl_selesai" has no entry in the replacement map.
+    at injectReplacements (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\utils\sql.ts:176:15)
+    at Sequelize.query (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\sequelize.js:612:13)
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:164:39
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:5:58)
     at processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express-rate-limit\dist\index.cjs:611:5 {
-  code: 401,
-  status: 'error'
-}
-[2024-08-29T18:56:18.433] [ERROR] error - Error login frenn :  CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:272:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T18:56:18.434] [ERROR] error - CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:272:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T18:56:44.017] [ERROR] error - Error login frenn :  CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:272:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T18:56:44.017] [ERROR] error - CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:272:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T18:56:45.594] [ERROR] error - Error login frenn :  CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:272:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T18:56:45.595] [ERROR] error - CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:272:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T18:57:12.056] [ERROR] error - Error login frenn :  CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:272:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T18:57:12.056] [ERROR] error - CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:272:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T18:57:38.343] [ERROR] error - Error login frenn :  CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:272:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T18:57:38.343] [ERROR] error - CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:272:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T18:57:59.381] [ERROR] error - Error login frenn :  CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:272:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T18:57:59.382] [ERROR] error - CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:272:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T18:58:06.471] [ERROR] error - Error login frenn :  CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:272:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T18:58:06.472] [ERROR] error - CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:272:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T18:58:07.371] [ERROR] error - Error login frenn :  CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:272:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T18:58:07.373] [ERROR] error - CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:272:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T18:58:19.213] [ERROR] error - Error login frenn :  CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:272:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T18:58:19.213] [ERROR] error - CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:272:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T18:59:30.157] [ERROR] error - Error login frenn :  CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:272:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T18:59:30.157] [ERROR] error - CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:272:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T19:00:15.418] [ERROR] error - Error login frenn :  CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:272:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T19:00:15.419] [ERROR] error - CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:272:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T19:00:21.543] [ERROR] error - Error login frenn :  CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:272:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T19:00:21.543] [ERROR] error - CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:272:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T19:00:32.932] [ERROR] error - Error chect token :  CustomError: Unauthorized[1]
-    at checkToken (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:39:19)
-    at Layer.handle [as handle_request] (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\layer.js:95:5)
-    at trim_prefix (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\index.js:328:13)
-    at C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\index.js:286:9
-    at Function.process_params (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\index.js:346:12)
-    at next (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\index.js:280:10)
-    at C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express-rate-limit\dist\index.cjs:695:7
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express-rate-limit\dist\index.cjs:611:5 {
-  code: 401,
-  status: 'error'
-}
-[2024-08-29T19:00:32.932] [ERROR] error - CustomError: Unauthorized[1]
-    at checkToken (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:39:19)
-    at Layer.handle [as handle_request] (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\layer.js:95:5)
-    at trim_prefix (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\index.js:328:13)
-    at C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\index.js:286:9
-    at Function.process_params (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\index.js:346:12)
-    at next (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\index.js:280:10)
-    at C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express-rate-limit\dist\index.cjs:695:7
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express-rate-limit\dist\index.cjs:611:5 {
-  code: 401,
-  status: 'error'
-}
-[2024-08-29T19:00:39.805] [ERROR] error - Error login frenn :  CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:272:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T19:00:39.806] [ERROR] error - CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:272:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T19:01:13.859] [ERROR] error - Error login frenn :  CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:272:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T19:01:13.859] [ERROR] error - CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:272:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T19:02:22.832] [ERROR] error - Error login frenn :  CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:272:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T19:02:22.832] [ERROR] error - CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:272:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T19:02:32.051] [ERROR] error - Error login frenn :  CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:272:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T19:02:32.052] [ERROR] error - CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:272:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T19:02:37.777] [ERROR] error - Error chect token :  CustomError: Unauthorized[1]
-    at checkToken (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:39:19)
-    at Layer.handle [as handle_request] (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\layer.js:95:5)
-    at trim_prefix (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\index.js:328:13)
-    at C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\index.js:286:9
-    at Function.process_params (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\index.js:346:12)
-    at next (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\index.js:280:10)
-    at C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express-rate-limit\dist\index.cjs:695:7
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express-rate-limit\dist\index.cjs:611:5 {
-  code: 401,
-  status: 'error'
-}
-[2024-08-29T19:02:37.777] [ERROR] error - CustomError: Unauthorized[1]
-    at checkToken (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:39:19)
-    at Layer.handle [as handle_request] (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\layer.js:95:5)
-    at trim_prefix (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\index.js:328:13)
-    at C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\index.js:286:9
-    at Function.process_params (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\index.js:346:12)
-    at next (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\index.js:280:10)
-    at C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express-rate-limit\dist\index.cjs:695:7
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express-rate-limit\dist\index.cjs:611:5 {
-  code: 401,
-  status: 'error'
-}
-[2024-08-29T19:02:41.076] [ERROR] error - Error login frenn :  CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:272:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T19:02:41.077] [ERROR] error - CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:272:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T19:10:37.063] [ERROR] error - Error login frenn :  CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:272:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T19:10:37.067] [ERROR] error - CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:272:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T19:14:00.039] [ERROR] error - Error login frenn :  CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:272:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T19:14:00.045] [ERROR] error - CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:272:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T19:15:10.681] [ERROR] error - Error login frenn :  CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:272:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T19:15:10.685] [ERROR] error - CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:272:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T19:16:29.384] [ERROR] error - Error login frenn :  CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:272:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T19:16:29.388] [ERROR] error - CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:272:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T19:16:36.824] [ERROR] error - Error chect token :  CustomError: Unauthorized[2]
-    at checkToken (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:45:19)
-    at Layer.handle [as handle_request] (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\layer.js:95:5)
-    at trim_prefix (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\index.js:328:13)
-    at C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\index.js:286:9
-    at Function.process_params (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\index.js:346:12)
-    at next (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\index.js:280:10)
-    at C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express-rate-limit\dist\index.cjs:695:7
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express-rate-limit\dist\index.cjs:611:5 {
-  code: 401,
-  status: 'error'
-}
-[2024-08-29T19:16:36.826] [ERROR] error - CustomError: Unauthorized[2]
-    at checkToken (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:45:19)
-    at Layer.handle [as handle_request] (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\layer.js:95:5)
-    at trim_prefix (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\index.js:328:13)
-    at C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\index.js:286:9
-    at Function.process_params (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\index.js:346:12)
-    at next (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\index.js:280:10)
-    at C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express-rate-limit\dist\index.cjs:695:7
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express-rate-limit\dist\index.cjs:611:5 {
-  code: 401,
-  status: 'error'
-}
-[2024-08-29T19:16:56.583] [ERROR] error - Error login frenn :  CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:272:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T19:16:56.584] [ERROR] error - CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:272:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T19:17:02.763] [ERROR] error - Error login frenn :  CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:272:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T19:17:02.765] [ERROR] error - CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:272:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T19:54:09.954] [ERROR] error - Error chect token :  CustomError: Unauthorized token not match[0] 
-    at checkTokenSementara (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:90:19)
-    at Layer.handle [as handle_request] (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\layer.js:95:5)
-    at next (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\route.js:144:13)
-    at Route.dispatch (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\route.js:114:3)
-    at Layer.handle [as handle_request] (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\layer.js:95:5)
-    at C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\index.js:284:15
-    at Function.process_params (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\index.js:346:12)
-    at next (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\index.js:280:10)
-    at Function.handle (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\index.js:175:3)
-    at router (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\index.js:47:12) {
-  code: 401,
-  status: 'error'
-}
-[2024-08-29T19:54:09.972] [ERROR] error - CustomError: Unauthorized token not match[0] 
-    at checkTokenSementara (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:90:19)
-    at Layer.handle [as handle_request] (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\layer.js:95:5)
-    at next (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\route.js:144:13)
-    at Route.dispatch (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\route.js:114:3)
-    at Layer.handle [as handle_request] (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\layer.js:95:5)
-    at C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\index.js:284:15
-    at Function.process_params (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\index.js:346:12)
-    at next (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\index.js:280:10)
-    at Function.handle (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\index.js:175:3)
-    at router (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\index.js:47:12) {
-  code: 401,
-  status: 'error'
-}
-[2024-08-29T19:54:58.142] [ERROR] error - Error chect token :  CustomError: Unauthorized token not match[0] 
-    at checkTokenSementara (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:92:19)
-    at Layer.handle [as handle_request] (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\layer.js:95:5)
-    at next (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\route.js:144:13)
-    at Route.dispatch (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\route.js:114:3)
-    at Layer.handle [as handle_request] (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\layer.js:95:5)
-    at C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\index.js:284:15
-    at Function.process_params (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\index.js:346:12)
-    at next (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\index.js:280:10)
-    at Function.handle (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\index.js:175:3)
-    at router (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\index.js:47:12) {
-  code: 401,
-  status: 'error'
-}
-[2024-08-29T19:54:58.161] [ERROR] error - CustomError: Unauthorized token not match[0] 
-    at checkTokenSementara (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:92:19)
-    at Layer.handle [as handle_request] (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\layer.js:95:5)
-    at next (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\route.js:144:13)
-    at Route.dispatch (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\route.js:114:3)
-    at Layer.handle [as handle_request] (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\layer.js:95:5)
-    at C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\index.js:284:15
-    at Function.process_params (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\index.js:346:12)
-    at next (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\index.js:280:10)
-    at Function.handle (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\index.js:175:3)
-    at router (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\index.js:47:12) {
-  code: 401,
-  status: 'error'
-}
-[2024-08-29T19:55:26.995] [ERROR] error - Error chect token :  CustomError: User tidak ditemukan
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:86:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 400,
-  status: 'error'
-}
-[2024-08-29T19:55:26.999] [ERROR] error - CustomError: User tidak ditemukan
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:86:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 400,
-  status: 'error'
-}
-[2024-08-29T19:55:45.465] [ERROR] error - Error chect token :  CustomError: Unauthorized token not match[0] 
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:91:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 401,
-  status: 'error'
-}
-[2024-08-29T19:55:45.470] [ERROR] error - CustomError: Unauthorized token not match[0] 
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:91:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 401,
-  status: 'error'
-}
-[2024-08-29T19:56:19.322] [ERROR] error - Error chect token :  CustomError: Unauthorized token not match[0] 
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:91:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 401,
-  status: 'error'
-}
-[2024-08-29T19:56:19.323] [ERROR] error - CustomError: Unauthorized token not match[0] 
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:91:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 401,
-  status: 'error'
-}
-[2024-08-29T19:56:49.383] [ERROR] error - Error chect token :  CustomError: Unauthorized token not match[0] 
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:91:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 401,
-  status: 'error'
-}
-[2024-08-29T19:56:49.384] [ERROR] error - CustomError: Unauthorized token not match[0] 
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:91:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 401,
-  status: 'error'
-}
-[2024-08-29T19:57:22.606] [ERROR] error - Error chect token :  CustomError: Unauthorized[2]
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:111:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 401,
-  status: 'error'
-}
-[2024-08-29T19:57:22.611] [ERROR] error - CustomError: Unauthorized[2]
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:111:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 401,
-  status: 'error'
-}
-[2024-08-29T19:57:38.943] [ERROR] error - Error chect token :  CustomError: Unauthorized[2]
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:111:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 401,
-  status: 'error'
-}
-[2024-08-29T19:57:38.944] [ERROR] error - CustomError: Unauthorized[2]
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:111:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 401,
-  status: 'error'
-}
-[2024-08-29T19:58:10.161] [ERROR] error - Error login frenn :  CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:272:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T19:58:10.163] [ERROR] error - CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:272:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T19:58:17.218] [ERROR] error - Error chect token :  CustomError: Unauthorized[2]
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:111:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 401,
-  status: 'error'
-}
-[2024-08-29T19:58:17.218] [ERROR] error - CustomError: Unauthorized[2]
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:111:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 401,
-  status: 'error'
-}
-[2024-08-29T19:58:50.898] [ERROR] error - Error chect token :  CustomError: Unauthorized[2]JsonWebTokenError: invalid token
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:111:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 401,
-  status: 'error'
-}
-[2024-08-29T19:58:50.902] [ERROR] error - CustomError: Unauthorized[2]JsonWebTokenError: invalid token
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:111:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 401,
-  status: 'error'
-}
-[2024-08-29T19:59:03.812] [ERROR] error - Error login frenn :  CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:272:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T19:59:03.813] [ERROR] error - CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:272:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T20:00:37.981] [ERROR] error - Error chect token :  CustomError: Unauthorized[2]Error: Unauthorized token not match[0]
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:111:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 401,
-  status: 'error'
-}
-[2024-08-29T20:00:37.985] [ERROR] error - CustomError: Unauthorized[2]Error: Unauthorized token not match[0]
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:111:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 401,
-  status: 'error'
-}
-[2024-08-29T20:01:20.708] [ERROR] error - Error chect token :  CustomError: Unauthorized[2] Error: Unauthorized token not match[0]
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:111:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 401,
-  status: 'error'
-}
-[2024-08-29T20:01:20.713] [ERROR] error - CustomError: Unauthorized[2] Error: Unauthorized token not match[0]
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:111:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 401,
-  status: 'error'
-}
-[2024-08-29T20:06:17.993] [ERROR] error - Error login frenn :  CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:272:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T20:06:17.997] [ERROR] error - CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:272:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T20:06:20.276] [ERROR] error - Error login frenn :  CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:272:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T20:06:20.276] [ERROR] error - CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:272:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T20:06:23.398] [ERROR] error - Error login frenn :  CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:272:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T20:06:23.399] [ERROR] error - CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:272:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T20:06:24.268] [ERROR] error - Error login frenn :  CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:272:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T20:06:24.268] [ERROR] error - CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:272:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T20:06:29.017] [ERROR] error - Error login frenn :  CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:272:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T20:06:29.018] [ERROR] error - CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:272:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T20:06:30.270] [ERROR] error - Error login frenn :  CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:272:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T20:06:30.271] [ERROR] error - CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:272:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T20:07:02.976] [ERROR] error - Error chect token :  CustomError: Unauthorized[2] Error: Unauthorized token not match[0]
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:111:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 401,
-  status: 'error'
-}
-[2024-08-29T20:07:02.977] [ERROR] error - CustomError: Unauthorized[2] Error: Unauthorized token not match[0]
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:111:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 401,
-  status: 'error'
-}
-[2024-08-29T20:07:16.329] [ERROR] error - Error login frenn :  CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:272:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T20:07:16.330] [ERROR] error - CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:272:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T20:07:39.649] [ERROR] error - Error chect token :  CustomError: Unauthorized[2] Error: Unauthorized token not match[1]
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:111:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 401,
-  status: 'error'
-}
-[2024-08-29T20:07:39.650] [ERROR] error - CustomError: Unauthorized[2] Error: Unauthorized token not match[1]
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:111:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 401,
-  status: 'error'
-}
-[2024-08-29T20:08:12.248] [ERROR] error - Error chect token :  CustomError: Unauthorized[2] Error: Unauthorized token not match[0]
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:111:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 401,
-  status: 'error'
-}
-[2024-08-29T20:08:12.249] [ERROR] error - CustomError: Unauthorized[2] Error: Unauthorized token not match[0]
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:111:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 401,
-  status: 'error'
-}
-[2024-08-29T20:08:18.297] [ERROR] error - Error chect token :  CustomError: Unauthorized[2] JsonWebTokenError: invalid token
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:111:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 401,
-  status: 'error'
-}
-[2024-08-29T20:08:18.297] [ERROR] error - CustomError: Unauthorized[2] JsonWebTokenError: invalid token
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:111:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 401,
-  status: 'error'
-}
-[2024-08-29T20:08:26.070] [ERROR] error - Error chect token :  CustomError: Unauthorized[2] Error: Unauthorized token not match[1]
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:111:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 401,
-  status: 'error'
-}
-[2024-08-29T20:08:26.071] [ERROR] error - CustomError: Unauthorized[2] Error: Unauthorized token not match[1]
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:111:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 401,
-  status: 'error'
-}
-[2024-08-29T20:08:30.930] [ERROR] error - Error chect token :  CustomError: Unauthorized[2] Error: Unauthorized token not match[0]
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:111:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 401,
-  status: 'error'
-}
-[2024-08-29T20:08:30.931] [ERROR] error - CustomError: Unauthorized[2] Error: Unauthorized token not match[0]
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:111:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 401,
-  status: 'error'
-}
-[2024-08-29T20:08:44.502] [ERROR] error - Error login frenn :  CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:272:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T20:08:44.502] [ERROR] error - CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:272:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T20:12:28.414] [ERROR] error - Error login frenn :  CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:275:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T20:12:28.418] [ERROR] error - CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:275:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T20:12:32.908] [ERROR] error - Error login frenn :  CustomError: Email Sudah Ada
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:275:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T20:12:32.909] [ERROR] error - CustomError: Email Sudah Ada
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:275:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T20:12:36.746] [ERROR] error - Error login frenn :  CustomError: Email Sudah Ada
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:275:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T20:12:36.746] [ERROR] error - CustomError: Email Sudah Ada
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:275:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T20:12:41.150] [ERROR] error - Error login frenn :  CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:275:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T20:12:41.151] [ERROR] error - CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:275:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T20:12:53.304] [ERROR] error - Error chect token :  CustomError: Unauthorized[2] Error: Unauthorized token not match[0]
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:111:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 401,
-  status: 'error'
-}
-[2024-08-29T20:12:53.306] [ERROR] error - CustomError: Unauthorized[2] Error: Unauthorized token not match[0]
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:111:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 401,
-  status: 'error'
-}
-[2024-08-29T20:13:04.624] [ERROR] error - Error chect token :  CustomError: Unauthorized[2] Error: Unauthorized token not match[0]
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:111:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 401,
-  status: 'error'
-}
-[2024-08-29T20:13:04.624] [ERROR] error - CustomError: Unauthorized[2] Error: Unauthorized token not match[0]
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:111:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 401,
-  status: 'error'
-}
-[2024-08-29T20:13:25.988] [ERROR] error - Error login frenn :  CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:275:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T20:13:25.989] [ERROR] error - CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:275:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T20:13:58.456] [ERROR] error - Error login frenn :  CustomError: Email Sudah Ada
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:275:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T20:13:58.457] [ERROR] error - CustomError: Email Sudah Ada
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:275:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T20:14:06.004] [ERROR] error - Error chect token :  CustomError: Unauthorized[2] Error: Unauthorized token not match[0]
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:111:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 401,
-  status: 'error'
-}
-[2024-08-29T20:14:06.004] [ERROR] error - CustomError: Unauthorized[2] Error: Unauthorized token not match[0]
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:111:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 401,
-  status: 'error'
-}
-[2024-08-29T20:14:15.601] [ERROR] error - Error login frenn :  CustomError: Email Sudah Ada
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:275:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T20:14:15.602] [ERROR] error - CustomError: Email Sudah Ada
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:275:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T20:14:25.401] [ERROR] error - Error chect token :  CustomError: Unauthorized[2] Error: Unauthorized token not match[1]
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:111:19
+[2024-09-09T18:58:17.516] [ERROR] error - Error get agenda :  CustomError: Anda Belum Memiliki Agenda
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:180:46
     at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:5:58)
     at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 401,
+  code: 404,
   status: 'error'
 }
-[2024-08-29T20:14:25.401] [ERROR] error - CustomError: Unauthorized[2] Error: Unauthorized token not match[1]
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:111:19
+[2024-09-09T18:58:17.521] [ERROR] error - CustomError: Anda Belum Memiliki Agenda
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:180:46
     at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:5:58)
     at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 401,
+  code: 404,
   status: 'error'
 }
-[2024-08-29T20:14:37.655] [ERROR] error - Error chect token :  CustomError: Unauthorized[2] Error: Unauthorized token not match[0]
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:111:19
+[2024-09-09T19:16:36.033] [ERROR] error - Error get agenda :  CustomError: Data Mahasiswa Tesis Tidak Ditemukan
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:166:37
     at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:5:58)
     at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 401,
+  code: 404,
   status: 'error'
 }
-[2024-08-29T20:14:37.655] [ERROR] error - CustomError: Unauthorized[2] Error: Unauthorized token not match[0]
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:111:19
+[2024-09-09T19:16:36.042] [ERROR] error - CustomError: Data Mahasiswa Tesis Tidak Ditemukan
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:166:37
     at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:5:58)
     at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 401,
+  code: 404,
   status: 'error'
 }
-[2024-08-29T20:15:02.271] [ERROR] error - Error chect token :  Error: WHERE parameter "email" has invalid "undefined" value
+[2024-09-09T19:16:52.382] [ERROR] error - Error get agenda :  Error: WHERE parameter "nidn" has invalid "undefined" value
     at MySQLQueryGenerator.whereItemQuery (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:2445:13)
     at C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:2434:25
     at Array.forEach (<anonymous>)
@@ -1725,7 +83,7 @@
     at Function.findAll (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:1824:47)
     at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async Function.findOne (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:1998:12)
-[2024-08-29T20:15:02.292] [ERROR] error - Error: WHERE parameter "email" has invalid "undefined" value
+[2024-09-09T19:16:52.404] [ERROR] error - Error: WHERE parameter "nidn" has invalid "undefined" value
     at MySQLQueryGenerator.whereItemQuery (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:2445:13)
     at C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:2434:25
     at Array.forEach (<anonymous>)
@@ -1736,7 +94,7 @@
     at Function.findAll (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:1824:47)
     at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async Function.findOne (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:1998:12)
-[2024-08-29T20:15:18.080] [ERROR] error - Error chect token :  Error: WHERE parameter "email" has invalid "undefined" value
+[2024-09-09T19:16:55.262] [ERROR] error - Error get agenda :  Error: WHERE parameter "nidn" has invalid "undefined" value
     at MySQLQueryGenerator.whereItemQuery (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:2445:13)
     at C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:2434:25
     at Array.forEach (<anonymous>)
@@ -1747,7 +105,7 @@
     at Function.findAll (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:1824:47)
     at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async Function.findOne (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:1998:12)
-[2024-08-29T20:15:18.081] [ERROR] error - Error: WHERE parameter "email" has invalid "undefined" value
+[2024-09-09T19:16:55.263] [ERROR] error - Error: WHERE parameter "nidn" has invalid "undefined" value
     at MySQLQueryGenerator.whereItemQuery (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:2445:13)
     at C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:2434:25
     at Array.forEach (<anonymous>)
@@ -1758,29 +116,355 @@
     at Function.findAll (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:1824:47)
     at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async Function.findOne (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:1998:12)
-[2024-08-29T20:15:37.885] [ERROR] error - Error chect token :  CustomError: Unauthorized[2] Error: Unauthorized token not match[0]
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:112:19
+[2024-09-09T19:16:55.952] [ERROR] error - Error get agenda :  Error: WHERE parameter "nidn" has invalid "undefined" value
+    at MySQLQueryGenerator.whereItemQuery (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:2445:13)
+    at C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:2434:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:2432:35)
+    at MySQLQueryGenerator.getWhereConditions (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:2860:19)
+    at MySQLQueryGenerator.selectQuery (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:1460:28)
+    at MySQLQueryInterface.select (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-interface.js:1002:27)
+    at Function.findAll (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:1824:47)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Function.findOne (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:1998:12)
+[2024-09-09T19:16:55.953] [ERROR] error - Error: WHERE parameter "nidn" has invalid "undefined" value
+    at MySQLQueryGenerator.whereItemQuery (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:2445:13)
+    at C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:2434:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:2432:35)
+    at MySQLQueryGenerator.getWhereConditions (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:2860:19)
+    at MySQLQueryGenerator.selectQuery (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:1460:28)
+    at MySQLQueryInterface.select (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-interface.js:1002:27)
+    at Function.findAll (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:1824:47)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Function.findOne (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:1998:12)
+[2024-09-09T19:16:56.419] [ERROR] error - Error get agenda :  Error: WHERE parameter "nidn" has invalid "undefined" value
+    at MySQLQueryGenerator.whereItemQuery (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:2445:13)
+    at C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:2434:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:2432:35)
+    at MySQLQueryGenerator.getWhereConditions (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:2860:19)
+    at MySQLQueryGenerator.selectQuery (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:1460:28)
+    at MySQLQueryInterface.select (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-interface.js:1002:27)
+    at Function.findAll (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:1824:47)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Function.findOne (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:1998:12)
+[2024-09-09T19:16:56.420] [ERROR] error - Error: WHERE parameter "nidn" has invalid "undefined" value
+    at MySQLQueryGenerator.whereItemQuery (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:2445:13)
+    at C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:2434:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:2432:35)
+    at MySQLQueryGenerator.getWhereConditions (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:2860:19)
+    at MySQLQueryGenerator.selectQuery (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:1460:28)
+    at MySQLQueryInterface.select (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-interface.js:1002:27)
+    at Function.findAll (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:1824:47)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Function.findOne (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:1998:12)
+[2024-09-09T19:17:14.260] [ERROR] error - Error get agenda :  Error
+    at Query.run (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\mysql\query.js:46:25)
+    at C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.select (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-interface.js:1001:12)
+    at async Function.findAll (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:1824:21)
+    at async Function.findOne (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:1998:12) {
+  name: 'SequelizeDatabaseError',
+  parent: Error: Unknown column 'kode_status' in 'field list'
+      at Packet.asError (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\packets\packet.js:738:17)
+      at Query.execute (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\commands\command.js:29:26)
+      at Connection.handlePacket (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\connection.js:481:34)
+      at PacketParser.onPacket (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\connection.js:97:12)
+      at PacketParser.executeStart (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\connection.js:104:25)
+      at Socket.emit (node:events:519:28)
+      at Socket.emit (node:domain:488:12)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'kode_status' in 'field list'",
+    sql: "SELECT `kode_status` FROM `ref_dospem` AS `RefDosepem` WHERE `RefDosepem`.`nidn` = '1';",
+    parameters: undefined
+  },
+  original: Error: Unknown column 'kode_status' in 'field list'
+      at Packet.asError (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\packets\packet.js:738:17)
+      at Query.execute (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\commands\command.js:29:26)
+      at Connection.handlePacket (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\connection.js:481:34)
+      at PacketParser.onPacket (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\connection.js:97:12)
+      at PacketParser.executeStart (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\connection.js:104:25)
+      at Socket.emit (node:events:519:28)
+      at Socket.emit (node:domain:488:12)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'kode_status' in 'field list'",
+    sql: "SELECT `kode_status` FROM `ref_dospem` AS `RefDosepem` WHERE `RefDosepem`.`nidn` = '1';",
+    parameters: undefined
+  },
+  sql: "SELECT `kode_status` FROM `ref_dospem` AS `RefDosepem` WHERE `RefDosepem`.`nidn` = '1';",
+  parameters: {}
+}
+[2024-09-09T19:17:14.265] [ERROR] error - Error
+    at Query.run (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\mysql\query.js:46:25)
+    at C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.select (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-interface.js:1001:12)
+    at async Function.findAll (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:1824:21)
+    at async Function.findOne (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:1998:12) {
+  name: 'SequelizeDatabaseError',
+  parent: Error: Unknown column 'kode_status' in 'field list'
+      at Packet.asError (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\packets\packet.js:738:17)
+      at Query.execute (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\commands\command.js:29:26)
+      at Connection.handlePacket (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\connection.js:481:34)
+      at PacketParser.onPacket (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\connection.js:97:12)
+      at PacketParser.executeStart (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\connection.js:104:25)
+      at Socket.emit (node:events:519:28)
+      at Socket.emit (node:domain:488:12)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'kode_status' in 'field list'",
+    sql: "SELECT `kode_status` FROM `ref_dospem` AS `RefDosepem` WHERE `RefDosepem`.`nidn` = '1';",
+    parameters: undefined
+  },
+  original: Error: Unknown column 'kode_status' in 'field list'
+      at Packet.asError (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\packets\packet.js:738:17)
+      at Query.execute (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\commands\command.js:29:26)
+      at Connection.handlePacket (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\connection.js:481:34)
+      at PacketParser.onPacket (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\connection.js:97:12)
+      at PacketParser.executeStart (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\connection.js:104:25)
+      at Socket.emit (node:events:519:28)
+      at Socket.emit (node:domain:488:12)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'kode_status' in 'field list'",
+    sql: "SELECT `kode_status` FROM `ref_dospem` AS `RefDosepem` WHERE `RefDosepem`.`nidn` = '1';",
+    parameters: undefined
+  },
+  sql: "SELECT `kode_status` FROM `ref_dospem` AS `RefDosepem` WHERE `RefDosepem`.`nidn` = '1';",
+  parameters: {}
+}
+[2024-09-09T19:17:24.139] [ERROR] error - Error get agenda :  Error
+    at Query.run (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\mysql\query.js:46:25)
+    at C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.select (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-interface.js:1001:12)
+    at async Function.findAll (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:1824:21)
+    at async Function.findOne (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:1998:12) {
+  name: 'SequelizeDatabaseError',
+  parent: Error: Unknown column 'kode_status' in 'field list'
+      at Packet.asError (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\packets\packet.js:738:17)
+      at Query.execute (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\commands\command.js:29:26)
+      at Connection.handlePacket (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\connection.js:481:34)
+      at PacketParser.onPacket (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\connection.js:97:12)
+      at PacketParser.executeStart (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\connection.js:104:25)
+      at Socket.emit (node:events:519:28)
+      at Socket.emit (node:domain:488:12)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'kode_status' in 'field list'",
+    sql: "SELECT `kode_status` FROM `ref_dospem` AS `RefDosepem` WHERE `RefDosepem`.`nidn` = '1';",
+    parameters: undefined
+  },
+  original: Error: Unknown column 'kode_status' in 'field list'
+      at Packet.asError (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\packets\packet.js:738:17)
+      at Query.execute (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\commands\command.js:29:26)
+      at Connection.handlePacket (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\connection.js:481:34)
+      at PacketParser.onPacket (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\connection.js:97:12)
+      at PacketParser.executeStart (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\connection.js:104:25)
+      at Socket.emit (node:events:519:28)
+      at Socket.emit (node:domain:488:12)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'kode_status' in 'field list'",
+    sql: "SELECT `kode_status` FROM `ref_dospem` AS `RefDosepem` WHERE `RefDosepem`.`nidn` = '1';",
+    parameters: undefined
+  },
+  sql: "SELECT `kode_status` FROM `ref_dospem` AS `RefDosepem` WHERE `RefDosepem`.`nidn` = '1';",
+  parameters: {}
+}
+[2024-09-09T19:17:24.140] [ERROR] error - Error
+    at Query.run (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\mysql\query.js:46:25)
+    at C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.select (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-interface.js:1001:12)
+    at async Function.findAll (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:1824:21)
+    at async Function.findOne (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:1998:12) {
+  name: 'SequelizeDatabaseError',
+  parent: Error: Unknown column 'kode_status' in 'field list'
+      at Packet.asError (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\packets\packet.js:738:17)
+      at Query.execute (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\commands\command.js:29:26)
+      at Connection.handlePacket (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\connection.js:481:34)
+      at PacketParser.onPacket (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\connection.js:97:12)
+      at PacketParser.executeStart (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\connection.js:104:25)
+      at Socket.emit (node:events:519:28)
+      at Socket.emit (node:domain:488:12)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'kode_status' in 'field list'",
+    sql: "SELECT `kode_status` FROM `ref_dospem` AS `RefDosepem` WHERE `RefDosepem`.`nidn` = '1';",
+    parameters: undefined
+  },
+  original: Error: Unknown column 'kode_status' in 'field list'
+      at Packet.asError (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\packets\packet.js:738:17)
+      at Query.execute (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\commands\command.js:29:26)
+      at Connection.handlePacket (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\connection.js:481:34)
+      at PacketParser.onPacket (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\connection.js:97:12)
+      at PacketParser.executeStart (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\connection.js:104:25)
+      at Socket.emit (node:events:519:28)
+      at Socket.emit (node:domain:488:12)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'kode_status' in 'field list'",
+    sql: "SELECT `kode_status` FROM `ref_dospem` AS `RefDosepem` WHERE `RefDosepem`.`nidn` = '1';",
+    parameters: undefined
+  },
+  sql: "SELECT `kode_status` FROM `ref_dospem` AS `RefDosepem` WHERE `RefDosepem`.`nidn` = '1';",
+  parameters: {}
+}
+[2024-09-09T19:17:26.673] [ERROR] error - Error get agenda :  Error
+    at Query.run (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\mysql\query.js:46:25)
+    at C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.select (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-interface.js:1001:12)
+    at async Function.findAll (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:1824:21)
+    at async Function.findOne (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:1998:12) {
+  name: 'SequelizeDatabaseError',
+  parent: Error: Unknown column 'kode_status' in 'field list'
+      at Packet.asError (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\packets\packet.js:738:17)
+      at Query.execute (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\commands\command.js:29:26)
+      at Connection.handlePacket (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\connection.js:481:34)
+      at PacketParser.onPacket (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\connection.js:97:12)
+      at PacketParser.executeStart (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\connection.js:104:25)
+      at Socket.emit (node:events:519:28)
+      at Socket.emit (node:domain:488:12)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'kode_status' in 'field list'",
+    sql: "SELECT `kode_status` FROM `ref_dospem` AS `RefDosepem` WHERE `RefDosepem`.`nidn` = '1';",
+    parameters: undefined
+  },
+  original: Error: Unknown column 'kode_status' in 'field list'
+      at Packet.asError (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\packets\packet.js:738:17)
+      at Query.execute (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\commands\command.js:29:26)
+      at Connection.handlePacket (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\connection.js:481:34)
+      at PacketParser.onPacket (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\connection.js:97:12)
+      at PacketParser.executeStart (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\connection.js:104:25)
+      at Socket.emit (node:events:519:28)
+      at Socket.emit (node:domain:488:12)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'kode_status' in 'field list'",
+    sql: "SELECT `kode_status` FROM `ref_dospem` AS `RefDosepem` WHERE `RefDosepem`.`nidn` = '1';",
+    parameters: undefined
+  },
+  sql: "SELECT `kode_status` FROM `ref_dospem` AS `RefDosepem` WHERE `RefDosepem`.`nidn` = '1';",
+  parameters: {}
+}
+[2024-09-09T19:17:26.673] [ERROR] error - Error
+    at Query.run (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\mysql\query.js:46:25)
+    at C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.select (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-interface.js:1001:12)
+    at async Function.findAll (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:1824:21)
+    at async Function.findOne (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:1998:12) {
+  name: 'SequelizeDatabaseError',
+  parent: Error: Unknown column 'kode_status' in 'field list'
+      at Packet.asError (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\packets\packet.js:738:17)
+      at Query.execute (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\commands\command.js:29:26)
+      at Connection.handlePacket (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\connection.js:481:34)
+      at PacketParser.onPacket (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\connection.js:97:12)
+      at PacketParser.executeStart (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\connection.js:104:25)
+      at Socket.emit (node:events:519:28)
+      at Socket.emit (node:domain:488:12)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'kode_status' in 'field list'",
+    sql: "SELECT `kode_status` FROM `ref_dospem` AS `RefDosepem` WHERE `RefDosepem`.`nidn` = '1';",
+    parameters: undefined
+  },
+  original: Error: Unknown column 'kode_status' in 'field list'
+      at Packet.asError (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\packets\packet.js:738:17)
+      at Query.execute (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\commands\command.js:29:26)
+      at Connection.handlePacket (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\connection.js:481:34)
+      at PacketParser.onPacket (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\connection.js:97:12)
+      at PacketParser.executeStart (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\connection.js:104:25)
+      at Socket.emit (node:events:519:28)
+      at Socket.emit (node:domain:488:12)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'kode_status' in 'field list'",
+    sql: "SELECT `kode_status` FROM `ref_dospem` AS `RefDosepem` WHERE `RefDosepem`.`nidn` = '1';",
+    parameters: undefined
+  },
+  sql: "SELECT `kode_status` FROM `ref_dospem` AS `RefDosepem` WHERE `RefDosepem`.`nidn` = '1';",
+  parameters: {}
+}
+[2024-09-09T19:20:24.997] [ERROR] error - Error get agenda :  CustomError: Data Dosepem pembimbing Tesis Tidak Ditemukan
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:232:37
     at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:5:58)
     at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 401,
+  code: 404,
   status: 'error'
 }
-[2024-08-29T20:15:37.889] [ERROR] error - CustomError: Unauthorized[2] Error: Unauthorized token not match[0]
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:112:19
+[2024-09-09T19:20:25.002] [ERROR] error - CustomError: Data Dosepem pembimbing Tesis Tidak Ditemukan
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:232:37
     at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:5:58)
     at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 401,
+  code: 404,
   status: 'error'
 }
-[2024-08-29T20:15:50.646] [ERROR] error - Error chect token :  CustomError: Unauthorized[0]
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:80:19
+[2024-09-09T21:35:47.309] [ERROR] error - Error chect token :  CustomError: Unauthorized[0]
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:31:19
     at Generator.next (<anonymous>)
     at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:8:71
     at new Promise (<anonymous>)
     at __awaiter (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:4:12)
-    at checkTokenSementara (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:73:87)
+    at checkToken (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:25:78)
     at Layer.handle [as handle_request] (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\layer.js:95:5)
     at next (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\route.js:144:13)
     at Route.dispatch (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\route.js:114:3)
@@ -1788,13 +472,13 @@
   code: 401,
   status: 'error'
 }
-[2024-08-29T20:15:50.648] [ERROR] error - CustomError: Unauthorized[0]
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:80:19
+[2024-09-09T21:35:47.315] [ERROR] error - CustomError: Unauthorized[0]
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:31:19
     at Generator.next (<anonymous>)
     at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:8:71
     at new Promise (<anonymous>)
     at __awaiter (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:4:12)
-    at checkTokenSementara (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:73:87)
+    at checkToken (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:25:78)
     at Layer.handle [as handle_request] (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\layer.js:95:5)
     at next (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\route.js:144:13)
     at Route.dispatch (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\route.js:114:3)
@@ -1802,339 +486,63 @@
   code: 401,
   status: 'error'
 }
-[2024-08-29T20:20:51.152] [ERROR] error - Error chect token :  CustomError: Unauthorized[2] Error: Unauthorized token not match[0]
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:111:19
+[2024-09-09T21:35:51.103] [ERROR] error - Error chect token :  CustomError: Unauthorized[0]
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:31:19
     at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:4:12)
+    at checkToken (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:25:78)
+    at Layer.handle [as handle_request] (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\layer.js:95:5) {
   code: 401,
   status: 'error'
 }
-[2024-08-29T20:20:51.157] [ERROR] error - CustomError: Unauthorized[2] Error: Unauthorized token not match[0]
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:111:19
+[2024-09-09T21:35:51.104] [ERROR] error - CustomError: Unauthorized[0]
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:31:19
     at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:4:12)
+    at checkToken (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:25:78)
+    at Layer.handle [as handle_request] (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\layer.js:95:5) {
   code: 401,
   status: 'error'
 }
-[2024-08-29T20:21:04.572] [ERROR] error - Error chect token :  CustomError: Unauthorized[2] Error: Unauthorized token not match[1]
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:111:19
+[2024-09-09T21:36:19.810] [ERROR] error - Error get daftar pertemuan :  CustomError: Anda Tidak Memiliki Agenda Bimbingan
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\daftar-pertemuan.controller.ts:45:43
     at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\daftar-pertemuan.controller.ts:5:58)
     at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 401,
+  code: 404,
   status: 'error'
 }
-[2024-08-29T20:21:04.572] [ERROR] error - CustomError: Unauthorized[2] Error: Unauthorized token not match[1]
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:111:19
+[2024-09-09T21:36:19.811] [ERROR] error - CustomError: Anda Tidak Memiliki Agenda Bimbingan
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\daftar-pertemuan.controller.ts:45:43
     at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\daftar-pertemuan.controller.ts:5:58)
     at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 401,
+  code: 404,
   status: 'error'
 }
-[2024-08-29T20:21:32.294] [ERROR] error - Error login frenn :  CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:275:19
+[2024-09-09T23:40:23.916] [ERROR] error - Error get daftar pertemuan :  CustomError: Anda Tidak Memiliki Agenda Bimbingan
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\daftar-pertemuan.controller.ts:45:49
     at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\daftar-pertemuan.controller.ts:5:58)
     at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
+  code: 404,
   status: 'error'
 }
-[2024-08-29T20:21:32.295] [ERROR] error - CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:275:19
+[2024-09-09T23:40:23.924] [ERROR] error - CustomError: Anda Tidak Memiliki Agenda Bimbingan
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\daftar-pertemuan.controller.ts:45:49
     at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\daftar-pertemuan.controller.ts:5:58)
     at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T20:22:23.310] [ERROR] error - Error login frenn :  CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:275:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T20:22:23.314] [ERROR] error - CustomError: Email Sudah Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:275:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T20:24:35.705] [ERROR] error - Error chect token :  CustomError: User tidak ditemukan
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:90:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 400,
-  status: 'error'
-}
-[2024-08-29T20:24:35.710] [ERROR] error - CustomError: User tidak ditemukan
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:90:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 400,
-  status: 'error'
-}
-[2024-08-29T20:30:16.622] [ERROR] error - Error chect token :  CustomError: Unauthorized[2] Error: Unauthorized token not match[1]
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:112:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 401,
-  status: 'error'
-}
-[2024-08-29T20:30:16.626] [ERROR] error - CustomError: Unauthorized[2] Error: Unauthorized token not match[1]
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:112:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 401,
-  status: 'error'
-}
-[2024-08-29T21:22:57.082] [ERROR] error - Error chect token :  CustomError: User tidak ditemukan
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:90:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 400,
-  status: 'error'
-}
-[2024-08-29T21:22:57.086] [ERROR] error - CustomError: User tidak ditemukan
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:90:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 400,
-  status: 'error'
-}
-[2024-08-29T21:23:24.149] [ERROR] error - Error chect token :  CustomError: Unauthorized[2] JsonWebTokenError: invalid token
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:113:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 401,
-  status: 'error'
-}
-[2024-08-29T21:23:24.149] [ERROR] error - CustomError: Unauthorized[2] JsonWebTokenError: invalid token
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:113:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 401,
-  status: 'error'
-}
-[2024-08-29T21:23:40.232] [ERROR] error - Error chect token :  CustomError: Unauthorized[2] Error: Unauthorized token not match[1]
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:113:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 401,
-  status: 'error'
-}
-[2024-08-29T21:23:40.233] [ERROR] error - CustomError: Unauthorized[2] Error: Unauthorized token not match[1]
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:113:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 401,
-  status: 'error'
-}
-[2024-08-29T21:24:30.013] [ERROR] error - Error chect token :  CustomError: User tidak ditemukan
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:90:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 400,
-  status: 'error'
-}
-[2024-08-29T21:24:30.014] [ERROR] error - CustomError: User tidak ditemukan
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:90:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 400,
-  status: 'error'
-}
-[2024-08-29T21:31:00.757] [ERROR] error - Error login frenn :  CustomError: Internal server error. TypeError: Cannot read properties of null (reading 'email_ecampus')
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:275:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 500,
-  status: 'error'
-}
-[2024-08-29T21:31:00.763] [ERROR] error - CustomError: Internal server error. TypeError: Cannot read properties of null (reading 'email_ecampus')
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:275:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 500,
-  status: 'error'
-}
-[2024-08-29T21:32:17.063] [ERROR] error - Error login frenn :  CustomError: Internal server error. TypeError: Cannot read properties of null (reading 'email_ecampus')
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:275:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 500,
-  status: 'error'
-}
-[2024-08-29T21:32:17.064] [ERROR] error - CustomError: Internal server error. TypeError: Cannot read properties of null (reading 'email_ecampus')
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:275:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 500,
-  status: 'error'
-}
-[2024-08-29T21:32:27.729] [ERROR] error - Error login frenn :  CustomError: Internal server error. TypeError: Cannot read properties of null (reading 'email_ecampus')
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:275:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 500,
-  status: 'error'
-}
-[2024-08-29T21:32:27.730] [ERROR] error - CustomError: Internal server error. TypeError: Cannot read properties of null (reading 'email_ecampus')
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:275:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 500,
-  status: 'error'
-}
-[2024-08-29T21:33:37.791] [ERROR] error - Error login frenn :  CustomError: Internal server error. TypeError: Cannot read properties of null (reading 'email_ecampus')
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:280:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 500,
-  status: 'error'
-}
-[2024-08-29T21:33:37.799] [ERROR] error - CustomError: Internal server error. TypeError: Cannot read properties of null (reading 'email_ecampus')
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:280:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 500,
-  status: 'error'
-}
-[2024-08-29T21:34:56.146] [ERROR] error - Error login frenn :  CustomError: Internal server error. TypeError: Cannot read properties of null (reading 'email_ecampus')
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:282:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 500,
-  status: 'error'
-}
-[2024-08-29T21:34:56.147] [ERROR] error - CustomError: Internal server error. TypeError: Cannot read properties of null (reading 'email_ecampus')
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:282:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 500,
-  status: 'error'
-}
-[2024-08-29T21:35:32.973] [ERROR] error - Error login frenn :  CustomError: Internal server error. TypeError: Cannot read properties of null (reading 'email_ecampus')
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:284:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 500,
-  status: 'error'
-}
-[2024-08-29T21:35:32.975] [ERROR] error - CustomError: Internal server error. TypeError: Cannot read properties of null (reading 'email_ecampus')
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:284:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 500,
-  status: 'error'
-}
-[2024-08-29T21:50:03.656] [ERROR] error - Error login frenn :  CustomError: Email ecampus pada nomor induk ini sudah terkait
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:279:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T21:50:03.662] [ERROR] error - CustomError: Email ecampus pada nomor induk ini sudah terkait
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:279:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T21:50:18.390] [ERROR] error - Error login frenn :  CustomError: Email ecampus pada nomor induk ini sudah terkait
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:279:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T21:50:18.391] [ERROR] error - CustomError: Email ecampus pada nomor induk ini sudah terkait
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:279:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\users.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
-  status: 'error'
-}
-[2024-08-29T21:51:15.636] [ERROR] error - Error chect token :  CustomError: User tidak ditemukan
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:90:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 400,
-  status: 'error'
-}
-[2024-08-29T21:51:15.637] [ERROR] error - CustomError: User tidak ditemukan
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:90:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 400,
-  status: 'error'
-}
-[2024-08-29T21:52:16.287] [ERROR] error - Error chect token :  CustomError: User tidak ditemukan
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:90:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 400,
-  status: 'error'
-}
-[2024-08-29T21:52:16.292] [ERROR] error - CustomError: User tidak ditemukan
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:90:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 400,
-  status: 'error'
-}
-[2024-08-29T21:52:36.564] [ERROR] error - Error chect token :  CustomError: Unauthorized[0] User tidak ditemukan
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:90:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 400,
-  status: 'error'
-}
-[2024-08-29T21:52:36.569] [ERROR] error - CustomError: Unauthorized[0] User tidak ditemukan
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:90:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 400,
+  code: 404,
   status: 'error'
 }
