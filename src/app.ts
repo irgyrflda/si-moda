@@ -10,8 +10,6 @@ import express, { Application } from "express";
 
 import apiRoutes from "@routes/api";
 import apiRoutesPublic from "@routes/api-public";
-import webRoutes from "@routes/web";
-import mobileRoutes from "@routes/mobile";
 
 // import db from "@config/database";
 import license from "@utils/si-moda";
@@ -70,8 +68,6 @@ app.use("/si-moda/documentation-api", documentationApi)
  */
 app.use("/si-moda/api-auth/v1/", apiRoutes);
 app.use("/si-moda/api-public/v1/", apiRoutesPublic);
-app.use("/si-moda/web/", webRoutes);
-app.use("/si-moda/mobile/", mobileRoutes);
 
 /**
  * not found
