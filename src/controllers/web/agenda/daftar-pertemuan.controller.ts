@@ -26,18 +26,20 @@ export const getAllPertemuan = async (
 
         if (!getDataDsn) throw new CustomError(httpCode.notFound, "Data Dospem pembimbing Tesis Tidak Ditemukan");
 
-        const getDataTesisMhs = await db.query(`SELECT id_trx_agenda, nim,
-        CAST(tgl_bimbingan AS CHAR) tgl_bimbingan, keterangan_bimbingan,
-        kategori_agenda, agenda_pertemuan,
-        status_persetujuan_jadwal
-        FROM trx_agenda
-        WHERE nidn = :nidn
-        AND YEAR(tgl_bimbingan) = :tahun
+        const getDataTesisMhs = await db.query(`SELECT a.id_trx_agenda, a.nim, b.nama_user nama_mahasiswa,
+        a.tgl_bimbingan, a.keterangan_bimbingan,
+        a.kategori_agenda, a.agenda_pertemuan,
+        a.status_persetujuan_jadwal
+        FROM trx_agenda a
+        JOIN ref_user b
+        ON a.nim = b.nomor_induk
+        WHERE a.nidn = :nidn
+        AND YEAR(a.tgl_bimbingan) = :tahun
         ORDER BY 
             CASE 
-                WHEN status_persetujuan_jadwal = 'belum disetujui' THEN 0 
+                WHEN a.status_persetujuan_jadwal = 'belum disetujui' THEN 0 
                 ELSE 1 
-            END, tgl_bimbingan`, {
+            END, a.tgl_bimbingan`, {
             replacements: { nidn: nidn, tahun: tahun },
             type: QueryTypes.SELECT
         });

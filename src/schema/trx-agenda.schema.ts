@@ -1,4 +1,5 @@
-import { TypeOf, date, object, string, array } from "zod";
+import { agenda_pertemuan, kategori_agenda } from "@models/trx-agenda.models";
+import { TypeOf, date, object, string, array, nativeEnum } from "zod";
 
 const paramsNimAndTahun = {
     params: object({
@@ -119,6 +120,41 @@ const paramsId = {
     })
 }
 
+const dospemArray = object({
+    nidn: string({
+        required_error: "nidn tidak boleh kosong",
+        invalid_type_error: "nidn harus bertipe huruf"
+    })
+});
+
+const datetimeRegex = /^\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}$/;
+
+const payloadAgenda = {
+    body: object({
+        nim: string({
+            required_error: "nim tidak boleh kosong",
+            invalid_type_error: "nim harus bertipe huruf"
+        }),
+        dospem: array(dospemArray).min(1, "Minimal harus ada satu dospem"),
+        agenda_pertemuan: nativeEnum(agenda_pertemuan),
+        kategori_agenda: nativeEnum(kategori_agenda),
+        keterangan_bimbingan: string({
+            required_error: "keterangan bimbingan tidak boleh kosong",
+            invalid_type_error: "keterangan bimbingan harus bertipe huruf"
+        }),
+        tgl_bimbingan: string({
+            required_error: "Tanggal bimbingan tidak boleh kosong",
+            invalid_type_error: "Tanggal bimbingan harus berupa string",
+        }).refine((val) => datetimeRegex.test(val), {
+            message: "Invalid datetime format. Expected format: YYYY-MM-DD HH:MM:SS",
+        })
+    })
+};
+
+export const payloadAgendaSchema = object({
+    ...payloadAgenda
+});
+
 export const paramsIdSchema = object({
     ...paramsId
 });
@@ -147,6 +183,7 @@ export const paramsNidnAndRangeTglBulanTahunSchema = object({
     ...paramsNidnAndRangeTglBulanTahun
 });
 
+export type PayloadAgendaRequest = TypeOf<typeof payloadAgendaSchema>;
 export type ParamsIdRequest = TypeOf<typeof paramsIdSchema>;
 export type ParamsMhsNimAndTahunRequest = TypeOf<typeof paramsNimAndTahunSchema>;
 export type ParamsMhsNimAndBulanTahunRequest = TypeOf<typeof paramsNimAndBulanTahunSchema>;

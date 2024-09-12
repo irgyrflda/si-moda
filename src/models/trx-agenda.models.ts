@@ -14,8 +14,7 @@ export enum status_persetujuan_jadwal{
 }
 
 export enum kategori_agenda {
-    bimbinga_dosen_utama = "bimbingan dosen utama",
-    bimbinga_dosen_pendamping = "bimbingan dosen pendamping",
+    bimbinga_dosen = "bimbingan",
     seminar_proposal = "seminar proposal",
     seminar_hasil = "seminar hasil",
     ujuan_sidang = "ujian sidang"
@@ -28,7 +27,7 @@ interface ITrxAgendaAttributes {
     agenda_pertemuan: agenda_pertemuan;
     kategori_agenda: kategori_agenda;
     status_persetujuan_jadwal: status_persetujuan_jadwal;
-    keterangan_agenda: string;
+    keterangan_bimbingan: string;
     tgl_bimbingan: Date;
     uc: string | null | undefined;
     uu: string | null | undefined;
@@ -51,7 +50,7 @@ class TrxAgenda
     declare agenda_pertemuan: agenda_pertemuan;
     declare kategori_agenda: kategori_agenda;
     declare status_persetujuan_jadwal: status_persetujuan_jadwal;
-    declare keterangan_agenda: string;
+    declare keterangan_bimbingan: string;
     declare tgl_bimbingan: Date;
     declare uc: string | null | undefined;
     declare uu: string | null | undefined;
@@ -87,12 +86,12 @@ TrxAgenda.init(
             allowNull: true,
             defaultValue: 'belum disetujui'
         },
-        keterangan_agenda: {
+        keterangan_bimbingan: {
             type: DataTypes.STRING,
             allowNull: false
         },
         tgl_bimbingan: {
-            type: DataTypes.DATE,
+            type: DataTypes.STRING,
             allowNull: false
         },
         uc: {

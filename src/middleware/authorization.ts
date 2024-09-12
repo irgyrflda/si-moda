@@ -10,7 +10,7 @@ import RefUserSementara from '@models/user-sementara.models';
 
 const generateAccessToken = (email: string) => {
     return jwt.sign({ email: email }, getConfig("SESSION_KEY"), {
-        expiresIn: "1d"
+        expiresIn: "1h"
     });
 };
 
@@ -116,9 +116,33 @@ const checkTokenSementara = async (req: Request, res: Response, next: NextFuncti
     }
 };
 
+const refreshToken = (email: string, refreshToken: string) => {
+    interface JwtPayload {
+        email: string
+    };
+
+    try {
+        const decoded = jwt.verify(refreshToken, getConfig("SESSION_REFRESH_KEY")) as JwtPayload;
+        if (email !== decoded.email) throw new CustomError(httpCode.unauthorized, "Refresh Token Not Match")
+
+        const generateTokenNew = generateAccessToken(email);
+        const generateRefreshTokenNew = generateRefreshToken(email);
+
+        return {
+            "token": generateTokenNew,
+            "refresh_token": generateRefreshTokenNew
+        };
+
+    } catch (error) {
+        console.log("error refresh token : ", error);
+        throw new CustomError(httpCode.badRequest, `${error}`)
+    }
+}
+
 export {
     generateAccessToken,
     generateRefreshToken,
     checkToken,
-    checkTokenSementara
+    checkTokenSementara,
+    refreshToken
 }

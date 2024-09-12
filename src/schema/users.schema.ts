@@ -54,6 +54,19 @@ const payloadLogin = {
     })
 };
 
+const payloadRefreshToken = {
+    body: object({
+        email: string({
+            required_error: "email tidak boleh kosong",
+            invalid_type_error: "email harus huruf",
+        }),
+        refresh_token: string({
+            required_error: "refresh token tidak boleh kosong",
+            invalid_type_error: "refresh token harus huruf",
+        }),
+    })
+}
+
 export const payloadUsersSchema = object({
     ...payload
 });
@@ -66,6 +79,11 @@ export const payloadLoginSchema = object({
     ...payloadLogin
 });
 
+export const payloadRefreshTokenSchema = object({
+    ...payloadRefreshToken
+});
+
 export type PayloadLoginRequest = TypeOf<typeof payloadLoginSchema>;
 export type PayloadUsersRequest = TypeOf<typeof payloadUsersSchema>;
 export type ParamsNimUsersRequest = TypeOf<typeof paramsNimUsersSchema>;
+export type PayloadRefreshTokenRequest = TypeOf<typeof payloadRefreshTokenSchema>;

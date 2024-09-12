@@ -1,9 +1,11 @@
 import path from "path";
 import fs from "fs/promises";
 import { errorLogger } from "@config/logger";
+import getConfig from "@config/dotenv";
 
-const removeFile = async (filePath: string) => {
-  const file = path.join(__dirname, `../../${filePath}`);
+const removeFile = async (filePath: any) => {
+  const file = path.join(getConfig("STORAGE_UPLOAD_PDF"), filePath.filename);
+  
   try {
     await fs.unlink(file);
   } catch (error) {

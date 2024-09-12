@@ -2,7 +2,7 @@ import db from "@config/database";
 import { DataTypes, Model, Optional } from "sequelize";
 import Status from "./ref-status.models";
 
-interface IRefTersisMhsAttributes {
+interface IRefTesisMhsAttributes {
     nim: string;
     judul_tesis: string;
     kode_status: string | null | undefined;
@@ -12,15 +12,15 @@ interface IRefTersisMhsAttributes {
     update_at: Date | undefined;
 }
 
-export type RefTersisMhsOutput = Required<IRefTersisMhsAttributes>;
-export type RefTersisMhsInput = Optional<
-    IRefTersisMhsAttributes,
+export type RefTesisMhsOutput = Required<IRefTesisMhsAttributes>;
+export type RefTesisMhsInput = Optional<
+    IRefTesisMhsAttributes,
     "kode_status" | "uc" | "uu" | "created_at" | "update_at"
 >;
 
-class RefTersisMhs
-    extends Model<IRefTersisMhsAttributes, RefTersisMhsInput>
-    implements IRefTersisMhsAttributes {
+class RefTesisMhs
+    extends Model<IRefTesisMhsAttributes, RefTesisMhsInput>
+    implements IRefTesisMhsAttributes {
     declare nim: string;
     declare judul_tesis: string;
     declare kode_status: string | null | undefined;
@@ -30,7 +30,7 @@ class RefTersisMhs
     declare update_at: Date | undefined;
 }
 
-RefTersisMhs.init(
+RefTesisMhs.init(
     {
         nim: {
             type: DataTypes.STRING,
@@ -66,21 +66,21 @@ RefTersisMhs.init(
     {
         sequelize: db,
         tableName: "ref_tesis_mahasiswa",
-        modelName: "RefTersisMhs",
+        modelName: "RefTesisMhs",
         underscored: true,
         createdAt: "created_at",
         updatedAt: "update_at"
     }
 );
 
-Status.hasMany(RefTersisMhs, {
+Status.hasMany(RefTesisMhs, {
     as: "tesis",
     foreignKey: "kode_status"
 });
 
-RefTersisMhs.belongsTo(Status, {
+RefTesisMhs.belongsTo(Status, {
     as: "status",
     foreignKey: "kode_status"
 })
 
-export default RefTersisMhs;
+export default RefTesisMhs;

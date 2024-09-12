@@ -5,6 +5,7 @@ import {
     getAgendaDsnByNidnAndTahun,
     getAgendaDsnByNidnAndTahunBulan,
     getAgendaDsnByNidnAndTahunBulanRangeTgl,
+    storeAgendaPertemuanMhs
 } from "@controllers/web/agenda/agenda.controller";
 
 import {
@@ -18,5 +19,6 @@ export default {
     getAgendaDsnByNidnAndTahun,
     getAgendaDsnByNidnAndTahunBulan,
     getAgendaDsnByNidnAndTahunBulanRangeTgl,
-    getAllPertemuan
+    getAllPertemuan,
+    storeAgendaPertemuanMhs
 }

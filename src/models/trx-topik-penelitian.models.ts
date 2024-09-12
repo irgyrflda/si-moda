@@ -1,7 +1,7 @@
 import db from "@config/database";
 import { DataTypes, Model, Optional } from "sequelize";
 import Users from "./users.models";
-import RefTersisMhs from "./ref-tesis-mhs.models";
+import RefTesisMhs from "./ref-tesis-mhs.models";
 
 interface ITrxTopikAttributes {
     nomor_induk: string;
@@ -83,12 +83,12 @@ TrxTopikUser.belongsTo(Users, {
     foreignKey: "nomor_induk"
 });
 
-RefTersisMhs.hasMany(TrxTopikUser, {
+RefTesisMhs.hasMany(TrxTopikUser, {
     as: "topik_mhs",
     foreignKey: "nomor_induk"
 });
 
-TrxTopikUser.belongsTo(RefTersisMhs, {
+TrxTopikUser.belongsTo(RefTesisMhs, {
     as: "mhs_topik",
     foreignKey: "nim"
 })

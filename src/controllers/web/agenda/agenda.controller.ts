@@ -15,6 +15,8 @@ import {
     ParamsDsnNidnAndRangeTglBulanTahunRequest,
 } from "@schema/trx-agenda.schema";
 import RefDosepem from "@models/ref-dospem.models";
+import TrxAgenda from "@models/trx-agenda.models";
+import serviceNotif from "@services/web/trx-notifikasi.service-web";
 
 export const getAgendaMhsByNimAndTahun = async (
     req: Request,
@@ -414,4 +416,58 @@ export const getAgendaDsnByNidnAndTahunBulanRangeTgl = async (
         errorLogger.error("Error get agenda : ", error)
         next(error);
     }
+}
+
+export const storeAgendaPertemuanMhs = async (
+    req: Request,
+    res: Response,
+    next: NextFunction
+): Promise<void> => {
+    try {
+        const cekMhs = await RefTersisMhs.findOne({
+            attributes: ["nim"],
+            where: {
+                nim: req.body.nim
+            }
+        })
+
+        if (!cekMhs) throw new CustomError(httpCode.badRequest, "Mahasiswa Tidak Terdaftar")
+
+        const dospem = req.body.dospem
+
+        let dataNew: any[] = [];
+
+        Promise.all(
+            dospem.map((i: any) => {
+                dataNew.push({
+                    nim: req.body.nim,
+                    agenda_pertemuan: req.body.agenda_pertemuan,
+                    keterangan_bimbingan: req.body.keterangan_bimbingan,
+                    tgl_bimbingan: req.body.tgl_bimbingan,
+                    nidn: i.nidn,
+                    kategori_agenda: req.body.kategori_agenda
+                });
+
+                serviceNotif.createNotif(i.nidn, "Anda memiliki agenda baru")
+            })
+        )
+        console.log("agenda : ", req.body.tgl_bimbingan.toLocaleString('id-ID', { timeZone: 'Asia/Jakarta' }));
+        
+        const bulkCreate = await TrxAgenda.bulkCreate(dataNew);
+
+        if (!bulkCreate) throw new CustomError(httpCode.badRequest, "Gagal Membuat Agenda");
+
+        responseSuccess(res, httpCode.ok, "Berhasil Membuat Agenda")
+    } catch (error) {
+        errorLogger.error("Error post agenda : ", error)
+        next(error);
+    }
+}
+
+export const createAgendaPertemuanDsn = async (
+    req: Request,
+    res: Response,
+    next: NextFunction
+): Promise<void> => {
+
 }

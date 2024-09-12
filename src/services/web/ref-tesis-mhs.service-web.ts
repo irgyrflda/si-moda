@@ -4,7 +4,7 @@ import CustomError from "@middleware/error-handler";
 import RefDosepemMhs from "@models/ref-dospem-mhs.models";
 import RefDosepem from "@models/ref-dospem.models";
 import Status from "@models/ref-status.models";
-import RefTersisMhs, { RefTersisMhsInput, RefTersisMhsOutput } from "@models/ref-tesis-mhs.models";
+import RefTesisMhs, { RefTesisMhsInput, RefTesisMhsOutput } from "@models/ref-tesis-mhs.models";
 import TrxNotifikasi from "@models/trx-notifikasi.models";
 import TrxTopikUser from "@models/trx-topik-penelitian.models";
 import Users from "@models/users.models";
@@ -12,9 +12,9 @@ import { ParamsTesisMhsNimRequest } from "@schema/ref-tesis-mhs.schema";
 import { httpCode } from "@utils/prefix";
 import { Op } from "sequelize";
 
-const getAllTesisMhs = async (): Promise<RefTersisMhsOutput[]> => {
+const getAllTesisMhs = async (): Promise<RefTesisMhsOutput[]> => {
     try {
-        const tesisMhs: RefTersisMhs[] = await RefTersisMhs.findAll()
+        const tesisMhs: RefTesisMhs[] = await RefTesisMhs.findAll()
         if (!tesisMhs || tesisMhs.length === 0) throw new CustomError(httpCode.found, "Data Tidak Ditemukan");
         return tesisMhs;
     } catch (error: any) {
@@ -29,9 +29,9 @@ const getAllTesisMhs = async (): Promise<RefTersisMhsOutput[]> => {
 
 const getByNimTesisMhs = async (
     nim: ParamsTesisMhsNimRequest["params"]["nim"]
-): Promise<RefTersisMhsOutput> => {
+): Promise<RefTesisMhsOutput> => {
     try {
-        const tesisMhs: RefTersisMhs | null = await RefTersisMhs.findOne({
+        const tesisMhs: RefTesisMhs | null = await RefTesisMhs.findOne({
             attributes: ["nim", "judul_tesis", "kode_status"],
             where: {
                 nim: nim
@@ -51,9 +51,9 @@ const getByNimTesisMhs = async (
 
 const getByNimTesisMhsLengkap = async (
     nim: ParamsTesisMhsNimRequest["params"]["nim"]
-): Promise<RefTersisMhsOutput> => {
+): Promise<RefTesisMhsOutput> => {
     try {
-        const tesisMhs: RefTersisMhs | null = await RefTersisMhs.findOne({
+        const tesisMhs: RefTesisMhs | null = await RefTesisMhs.findOne({
             attributes: ["nim", "judul_tesis"],
             where: {
                 nim: nim
@@ -111,7 +111,7 @@ const storeTesisMhs = async (
     judul_tesis: string,
     dospem: any,
     topik_tesis: any
-): Promise<RefTersisMhsInput> => {
+): Promise<RefTesisMhsInput> => {
     const t = await db.transaction();
     try {
         const cekUser = await Users.findOne({
@@ -122,11 +122,11 @@ const storeTesisMhs = async (
 
         if (!cekUser) throw new CustomError(httpCode.notFound, "Mahasiswa Tidak Terdaftar Pada Aplikasi")
 
-        const payload: RefTersisMhsInput = {
+        const payload: RefTesisMhsInput = {
             nim: nim,
             judul_tesis: judul_tesis
         }
-        const storePayload = await RefTersisMhs.create(payload, { transaction: t })
+        const storePayload = await RefTesisMhs.create(payload, { transaction: t })
 
         if (!storePayload) throw new CustomError(httpCode.badRequest, "Gagal membuat data[0]");
 
@@ -207,7 +207,7 @@ const updateJudulTesis = async (
     judul: string
 ) => {
     try {
-        const tesisMhs: RefTersisMhs | null = await RefTersisMhs.findOne({
+        const tesisMhs: RefTesisMhs | null = await RefTesisMhs.findOne({
             where: {
                 nim: nim
             }
@@ -215,7 +215,7 @@ const updateJudulTesis = async (
         if (!tesisMhs) throw new CustomError(httpCode.found, "Data Tidak Ditemukan");
 
         const JudulNew = judul
-        const updateJudul = await RefTersisMhs.update({
+        const updateJudul = await RefTesisMhs.update({
             judul_tesis: JudulNew
         },
             {
@@ -240,7 +240,7 @@ const deleteByNimTesisMhs = async (
     nim: ParamsTesisMhsNimRequest["params"]["nim"]
 ) => {
     try {
-        const tesisMhs: RefTersisMhs | null = await RefTersisMhs.findOne({
+        const tesisMhs: RefTesisMhs | null = await RefTesisMhs.findOne({
             where: {
                 nim: nim
             }

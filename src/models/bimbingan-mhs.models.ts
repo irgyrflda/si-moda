@@ -5,14 +5,15 @@ import RefDosepemMhs from "./ref-dospem-mhs.models";
 
 export enum status_persetujuan_dospem_mhs {
     setuju = "setuju",
+    belumDisetujui = "belum disetujui",
     tidak_setuju = "tidak setuju"
 }
 
 interface IBimbinganMhsAttributes {
     id_bimbingan: number | null | undefined;
-    id_trx_bimbingan: number;
-    id_dospem_mhs: number;
-    status_persetujaun: status_persetujuan_dospem_mhs;
+    id_trx_bimbingan: number | null | undefined;
+    id_dospem_mhs: number | null | undefined;
+    status_persetujuan: status_persetujuan_dospem_mhs;
     uc: string | null | undefined;
     uu: string | null | undefined;
     created_at: Date | undefined;
@@ -22,7 +23,7 @@ interface IBimbinganMhsAttributes {
 export type BimbinganMhsOutput = Required<IBimbinganMhsAttributes>;
 export type BimbinganMhsInput = Optional<
     IBimbinganMhsAttributes,
-    "id_bimbingan" | "uc" | "uu" | "created_at" | "update_at"
+    "id_bimbingan" | "status_persetujuan" | "uc" | "uu" | "created_at" | "update_at"
 >;
 
 class BimbinganMhs
@@ -31,7 +32,7 @@ class BimbinganMhs
     declare id_bimbingan: number | null | undefined;
     declare id_trx_bimbingan: number;
     declare id_dospem_mhs: number;
-    declare status_persetujaun: status_persetujuan_dospem_mhs;
+    declare status_persetujuan: status_persetujuan_dospem_mhs;
     declare uc: string | null | undefined;
     declare uu: string | null | undefined;
     declare created_at: Date | undefined;
@@ -53,9 +54,9 @@ BimbinganMhs.init(
             type: DataTypes.INTEGER,
             allowNull: false
         },
-        status_persetujaun: {
-            type: DataTypes.ENUM("setuju", "tidak setuju"),
-            defaultValue: "tidak setuju",
+        status_persetujuan: {
+            type: DataTypes.ENUM("setuju", "belum disetujui", "tidak setuju"),
+            defaultValue: "belum disetujui",
             allowNull: true
         },
         uc: {
@@ -85,13 +86,13 @@ BimbinganMhs.init(
     }
 );
 
-BimbinganMhs.hasMany(TrxBimbinganMhs, {
-    as: "bimbingan_tesis_mhs",
+TrxBimbinganMhs.hasMany(BimbinganMhs, {
+    as: "dospem_tasis_mhs",
     foreignKey: "id_trx_bimbingan"
 });
 
-TrxBimbinganMhs.belongsTo(BimbinganMhs, {
-    as: "dospem_tasis_mhs",
+BimbinganMhs.belongsTo(TrxBimbinganMhs, {
+    as: "bimbingan_tesis_mhs",
     foreignKey: "id_trx_bimbingan"
 });
 

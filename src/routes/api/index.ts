@@ -5,11 +5,15 @@ import mahasiwa from "./mahasiswa.routes";
 import agenda from "./agenda.routes";
 import daftraPertemuan from "./daftar-pertemuan.routes";
 import notifikasi from "./notifikasi.routes";
+import dospem from "./dospem.routes";
+import materiPembahasan from "./materi-pembahasan.routes";
 
 routes.use("/users", user)
 routes.use("/tesis-mhs", mahasiwa)
 routes.use("/agenda", agenda)
 routes.use("/daftar-pertemuan", daftraPertemuan)
 routes.use("/notifikasi", notifikasi)
+routes.use("/dosen-pembimbing", dospem)
+routes.use("/materi", materiPembahasan)
 
 export default routes;

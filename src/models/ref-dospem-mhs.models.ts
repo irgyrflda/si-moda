@@ -1,7 +1,7 @@
 import db from "@config/database";
 import { DataTypes, Model, Optional } from "sequelize";
 import RefDosepem from "./ref-dospem.models";
-import RefTersisMhs from "./ref-tesis-mhs.models";
+import RefTesisMhs from "./ref-tesis-mhs.models";
 
 export enum keterangan_dospem {
     dospem_1 = "dospem 1",
@@ -19,7 +19,7 @@ interface IRefDospemMhsAttributes {
     nidn: string;
     nim: string;
     keterangan_dospem: keterangan_dospem;
-    status_persetujuan: status_persetujuan_dospem_mhs;
+    status_persetujuan: status_persetujuan_dospem_mhs | null | undefined;
     uc: string | null | undefined;
     uu: string | null | undefined;
     created_at: Date | undefined;
@@ -39,7 +39,7 @@ class RefDosepemMhs
     declare nidn: string;
     declare nim: string;
     declare keterangan_dospem: keterangan_dospem;
-    declare status_persetujuan: status_persetujuan_dospem_mhs;
+    declare status_persetujuan: status_persetujuan_dospem_mhs | null | undefined;
     declare uc: string | null | undefined;
     declare uu: string | null | undefined;
     declare created_at: Date | undefined;
@@ -106,12 +106,12 @@ RefDosepemMhs.belongsTo(RefDosepem, {
     foreignKey: "nidn"
 })
 
-RefTersisMhs.hasMany(RefDosepemMhs, {
+RefTesisMhs.hasMany(RefDosepemMhs, {
     as: "dospem_mhs_tesis",
     foreignKey: "nim"
 })
 
-RefDosepemMhs.belongsTo(RefTersisMhs, {
+RefDosepemMhs.belongsTo(RefTesisMhs, {
     as: "tesis_mhs",
     foreignKey: "nim"
 })

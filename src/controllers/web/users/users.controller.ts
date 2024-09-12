@@ -8,7 +8,7 @@ import { Op } from "sequelize";
 import { cekNoInduk } from "@utils/cek-no-induk";
 import users from "@services/web/users.service-web";
 import RefGroupUser from "@models/ref-group-user.models";
-import { generateAccessToken, generateRefreshToken } from "@middleware/authorization";
+import { generateAccessToken, generateRefreshToken, refreshToken } from "@middleware/authorization";
 import RefUserSementara, { RefUserSementaraInput, RefUserSementaraOutput } from "@models/user-sementara.models";
 
 export const login = async (
@@ -82,6 +82,41 @@ export const login = async (
         }
     } catch (error) {
         errorLogger.error("Error login : ", error)
+        next(error);
+    }
+}
+
+export const refreshTokenUser = async (
+    req: Request,
+    res: Response,
+    next: NextFunction
+): Promise<void> => {
+    try {
+        const refreshTokenBaru = refreshToken(req.body.email, req.body.refresh_token)
+
+        const updateTokenUser = await Users.update({
+            token: refreshTokenBaru.token,
+            refresh_token: refreshTokenBaru.refresh_token
+        }, {
+            where: {
+                [Op.or]:
+                    [
+                        {
+                            email_ecampus: req.body.email
+                        },
+                        {
+                            email_google: req.body.email
+                        }
+                    ]
+            }
+        });
+
+        if (!updateTokenUser) {
+            throw new CustomError(httpCode.badRequest, "Gagal Refresh Token")
+        }
+        responseSuccess(res, httpCode.ok, "Berhasil Refresh Token", refreshTokenBaru)
+    } catch (error) {
+        errorLogger.error("Error refresh token : ", error)
         next(error);
     }
 }

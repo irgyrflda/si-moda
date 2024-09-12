@@ -1,464 +1,4 @@
-[2024-09-09T18:55:51.182] [ERROR] error - Error get agenda :  Error: Named replacement ":tgl_selesai" has no entry in the replacement map.
-    at injectReplacements (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\utils\sql.ts:176:15)
-    at Sequelize.query (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\sequelize.js:612:13)
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:164:39
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)
-[2024-09-09T18:55:51.183] [ERROR] error - Error: Named replacement ":tgl_selesai" has no entry in the replacement map.
-    at injectReplacements (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\utils\sql.ts:176:15)
-    at Sequelize.query (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\sequelize.js:612:13)
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:164:39
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)
-[2024-09-09T18:56:25.726] [ERROR] error - Error get agenda :  Error: Named replacement ":tgl_selesai" has no entry in the replacement map.
-    at injectReplacements (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\utils\sql.ts:176:15)
-    at Sequelize.query (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\sequelize.js:612:13)
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:164:39
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)
-[2024-09-09T18:56:25.732] [ERROR] error - Error: Named replacement ":tgl_selesai" has no entry in the replacement map.
-    at injectReplacements (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\utils\sql.ts:176:15)
-    at Sequelize.query (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\sequelize.js:612:13)
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:164:39
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)
-[2024-09-09T18:56:26.734] [ERROR] error - Error get agenda :  Error: Named replacement ":tgl_selesai" has no entry in the replacement map.
-    at injectReplacements (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\utils\sql.ts:176:15)
-    at Sequelize.query (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\sequelize.js:612:13)
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:164:39
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)
-[2024-09-09T18:56:26.735] [ERROR] error - Error: Named replacement ":tgl_selesai" has no entry in the replacement map.
-    at injectReplacements (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\utils\sql.ts:176:15)
-    at Sequelize.query (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\sequelize.js:612:13)
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:164:39
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)
-[2024-09-09T18:58:17.516] [ERROR] error - Error get agenda :  CustomError: Anda Belum Memiliki Agenda
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:180:46
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 404,
-  status: 'error'
-}
-[2024-09-09T18:58:17.521] [ERROR] error - CustomError: Anda Belum Memiliki Agenda
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:180:46
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 404,
-  status: 'error'
-}
-[2024-09-09T19:16:36.033] [ERROR] error - Error get agenda :  CustomError: Data Mahasiswa Tesis Tidak Ditemukan
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:166:37
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 404,
-  status: 'error'
-}
-[2024-09-09T19:16:36.042] [ERROR] error - CustomError: Data Mahasiswa Tesis Tidak Ditemukan
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:166:37
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 404,
-  status: 'error'
-}
-[2024-09-09T19:16:52.382] [ERROR] error - Error get agenda :  Error: WHERE parameter "nidn" has invalid "undefined" value
-    at MySQLQueryGenerator.whereItemQuery (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:2445:13)
-    at C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:2434:25
-    at Array.forEach (<anonymous>)
-    at MySQLQueryGenerator.whereItemsQuery (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:2432:35)
-    at MySQLQueryGenerator.getWhereConditions (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:2860:19)
-    at MySQLQueryGenerator.selectQuery (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:1460:28)
-    at MySQLQueryInterface.select (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-interface.js:1002:27)
-    at Function.findAll (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:1824:47)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async Function.findOne (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:1998:12)
-[2024-09-09T19:16:52.404] [ERROR] error - Error: WHERE parameter "nidn" has invalid "undefined" value
-    at MySQLQueryGenerator.whereItemQuery (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:2445:13)
-    at C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:2434:25
-    at Array.forEach (<anonymous>)
-    at MySQLQueryGenerator.whereItemsQuery (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:2432:35)
-    at MySQLQueryGenerator.getWhereConditions (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:2860:19)
-    at MySQLQueryGenerator.selectQuery (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:1460:28)
-    at MySQLQueryInterface.select (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-interface.js:1002:27)
-    at Function.findAll (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:1824:47)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async Function.findOne (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:1998:12)
-[2024-09-09T19:16:55.262] [ERROR] error - Error get agenda :  Error: WHERE parameter "nidn" has invalid "undefined" value
-    at MySQLQueryGenerator.whereItemQuery (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:2445:13)
-    at C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:2434:25
-    at Array.forEach (<anonymous>)
-    at MySQLQueryGenerator.whereItemsQuery (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:2432:35)
-    at MySQLQueryGenerator.getWhereConditions (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:2860:19)
-    at MySQLQueryGenerator.selectQuery (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:1460:28)
-    at MySQLQueryInterface.select (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-interface.js:1002:27)
-    at Function.findAll (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:1824:47)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async Function.findOne (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:1998:12)
-[2024-09-09T19:16:55.263] [ERROR] error - Error: WHERE parameter "nidn" has invalid "undefined" value
-    at MySQLQueryGenerator.whereItemQuery (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:2445:13)
-    at C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:2434:25
-    at Array.forEach (<anonymous>)
-    at MySQLQueryGenerator.whereItemsQuery (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:2432:35)
-    at MySQLQueryGenerator.getWhereConditions (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:2860:19)
-    at MySQLQueryGenerator.selectQuery (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:1460:28)
-    at MySQLQueryInterface.select (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-interface.js:1002:27)
-    at Function.findAll (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:1824:47)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async Function.findOne (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:1998:12)
-[2024-09-09T19:16:55.952] [ERROR] error - Error get agenda :  Error: WHERE parameter "nidn" has invalid "undefined" value
-    at MySQLQueryGenerator.whereItemQuery (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:2445:13)
-    at C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:2434:25
-    at Array.forEach (<anonymous>)
-    at MySQLQueryGenerator.whereItemsQuery (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:2432:35)
-    at MySQLQueryGenerator.getWhereConditions (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:2860:19)
-    at MySQLQueryGenerator.selectQuery (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:1460:28)
-    at MySQLQueryInterface.select (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-interface.js:1002:27)
-    at Function.findAll (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:1824:47)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async Function.findOne (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:1998:12)
-[2024-09-09T19:16:55.953] [ERROR] error - Error: WHERE parameter "nidn" has invalid "undefined" value
-    at MySQLQueryGenerator.whereItemQuery (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:2445:13)
-    at C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:2434:25
-    at Array.forEach (<anonymous>)
-    at MySQLQueryGenerator.whereItemsQuery (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:2432:35)
-    at MySQLQueryGenerator.getWhereConditions (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:2860:19)
-    at MySQLQueryGenerator.selectQuery (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:1460:28)
-    at MySQLQueryInterface.select (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-interface.js:1002:27)
-    at Function.findAll (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:1824:47)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async Function.findOne (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:1998:12)
-[2024-09-09T19:16:56.419] [ERROR] error - Error get agenda :  Error: WHERE parameter "nidn" has invalid "undefined" value
-    at MySQLQueryGenerator.whereItemQuery (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:2445:13)
-    at C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:2434:25
-    at Array.forEach (<anonymous>)
-    at MySQLQueryGenerator.whereItemsQuery (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:2432:35)
-    at MySQLQueryGenerator.getWhereConditions (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:2860:19)
-    at MySQLQueryGenerator.selectQuery (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:1460:28)
-    at MySQLQueryInterface.select (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-interface.js:1002:27)
-    at Function.findAll (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:1824:47)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async Function.findOne (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:1998:12)
-[2024-09-09T19:16:56.420] [ERROR] error - Error: WHERE parameter "nidn" has invalid "undefined" value
-    at MySQLQueryGenerator.whereItemQuery (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:2445:13)
-    at C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:2434:25
-    at Array.forEach (<anonymous>)
-    at MySQLQueryGenerator.whereItemsQuery (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:2432:35)
-    at MySQLQueryGenerator.getWhereConditions (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:2860:19)
-    at MySQLQueryGenerator.selectQuery (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:1460:28)
-    at MySQLQueryInterface.select (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-interface.js:1002:27)
-    at Function.findAll (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:1824:47)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async Function.findOne (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:1998:12)
-[2024-09-09T19:17:14.260] [ERROR] error - Error get agenda :  Error
-    at Query.run (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\mysql\query.js:46:25)
-    at C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\sequelize.js:650:28
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async MySQLQueryInterface.select (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-interface.js:1001:12)
-    at async Function.findAll (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:1824:21)
-    at async Function.findOne (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:1998:12) {
-  name: 'SequelizeDatabaseError',
-  parent: Error: Unknown column 'kode_status' in 'field list'
-      at Packet.asError (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\packets\packet.js:738:17)
-      at Query.execute (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\commands\command.js:29:26)
-      at Connection.handlePacket (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\connection.js:481:34)
-      at PacketParser.onPacket (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\connection.js:97:12)
-      at PacketParser.executeStart (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\packet_parser.js:75:16)
-      at Socket.<anonymous> (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\connection.js:104:25)
-      at Socket.emit (node:events:519:28)
-      at Socket.emit (node:domain:488:12)
-      at addChunk (node:internal/streams/readable:559:12)
-      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3) {
-    code: 'ER_BAD_FIELD_ERROR',
-    errno: 1054,
-    sqlState: '42S22',
-    sqlMessage: "Unknown column 'kode_status' in 'field list'",
-    sql: "SELECT `kode_status` FROM `ref_dospem` AS `RefDosepem` WHERE `RefDosepem`.`nidn` = '1';",
-    parameters: undefined
-  },
-  original: Error: Unknown column 'kode_status' in 'field list'
-      at Packet.asError (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\packets\packet.js:738:17)
-      at Query.execute (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\commands\command.js:29:26)
-      at Connection.handlePacket (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\connection.js:481:34)
-      at PacketParser.onPacket (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\connection.js:97:12)
-      at PacketParser.executeStart (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\packet_parser.js:75:16)
-      at Socket.<anonymous> (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\connection.js:104:25)
-      at Socket.emit (node:events:519:28)
-      at Socket.emit (node:domain:488:12)
-      at addChunk (node:internal/streams/readable:559:12)
-      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3) {
-    code: 'ER_BAD_FIELD_ERROR',
-    errno: 1054,
-    sqlState: '42S22',
-    sqlMessage: "Unknown column 'kode_status' in 'field list'",
-    sql: "SELECT `kode_status` FROM `ref_dospem` AS `RefDosepem` WHERE `RefDosepem`.`nidn` = '1';",
-    parameters: undefined
-  },
-  sql: "SELECT `kode_status` FROM `ref_dospem` AS `RefDosepem` WHERE `RefDosepem`.`nidn` = '1';",
-  parameters: {}
-}
-[2024-09-09T19:17:14.265] [ERROR] error - Error
-    at Query.run (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\mysql\query.js:46:25)
-    at C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\sequelize.js:650:28
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async MySQLQueryInterface.select (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-interface.js:1001:12)
-    at async Function.findAll (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:1824:21)
-    at async Function.findOne (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:1998:12) {
-  name: 'SequelizeDatabaseError',
-  parent: Error: Unknown column 'kode_status' in 'field list'
-      at Packet.asError (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\packets\packet.js:738:17)
-      at Query.execute (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\commands\command.js:29:26)
-      at Connection.handlePacket (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\connection.js:481:34)
-      at PacketParser.onPacket (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\connection.js:97:12)
-      at PacketParser.executeStart (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\packet_parser.js:75:16)
-      at Socket.<anonymous> (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\connection.js:104:25)
-      at Socket.emit (node:events:519:28)
-      at Socket.emit (node:domain:488:12)
-      at addChunk (node:internal/streams/readable:559:12)
-      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3) {
-    code: 'ER_BAD_FIELD_ERROR',
-    errno: 1054,
-    sqlState: '42S22',
-    sqlMessage: "Unknown column 'kode_status' in 'field list'",
-    sql: "SELECT `kode_status` FROM `ref_dospem` AS `RefDosepem` WHERE `RefDosepem`.`nidn` = '1';",
-    parameters: undefined
-  },
-  original: Error: Unknown column 'kode_status' in 'field list'
-      at Packet.asError (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\packets\packet.js:738:17)
-      at Query.execute (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\commands\command.js:29:26)
-      at Connection.handlePacket (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\connection.js:481:34)
-      at PacketParser.onPacket (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\connection.js:97:12)
-      at PacketParser.executeStart (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\packet_parser.js:75:16)
-      at Socket.<anonymous> (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\connection.js:104:25)
-      at Socket.emit (node:events:519:28)
-      at Socket.emit (node:domain:488:12)
-      at addChunk (node:internal/streams/readable:559:12)
-      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3) {
-    code: 'ER_BAD_FIELD_ERROR',
-    errno: 1054,
-    sqlState: '42S22',
-    sqlMessage: "Unknown column 'kode_status' in 'field list'",
-    sql: "SELECT `kode_status` FROM `ref_dospem` AS `RefDosepem` WHERE `RefDosepem`.`nidn` = '1';",
-    parameters: undefined
-  },
-  sql: "SELECT `kode_status` FROM `ref_dospem` AS `RefDosepem` WHERE `RefDosepem`.`nidn` = '1';",
-  parameters: {}
-}
-[2024-09-09T19:17:24.139] [ERROR] error - Error get agenda :  Error
-    at Query.run (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\mysql\query.js:46:25)
-    at C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\sequelize.js:650:28
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async MySQLQueryInterface.select (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-interface.js:1001:12)
-    at async Function.findAll (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:1824:21)
-    at async Function.findOne (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:1998:12) {
-  name: 'SequelizeDatabaseError',
-  parent: Error: Unknown column 'kode_status' in 'field list'
-      at Packet.asError (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\packets\packet.js:738:17)
-      at Query.execute (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\commands\command.js:29:26)
-      at Connection.handlePacket (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\connection.js:481:34)
-      at PacketParser.onPacket (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\connection.js:97:12)
-      at PacketParser.executeStart (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\packet_parser.js:75:16)
-      at Socket.<anonymous> (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\connection.js:104:25)
-      at Socket.emit (node:events:519:28)
-      at Socket.emit (node:domain:488:12)
-      at addChunk (node:internal/streams/readable:559:12)
-      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3) {
-    code: 'ER_BAD_FIELD_ERROR',
-    errno: 1054,
-    sqlState: '42S22',
-    sqlMessage: "Unknown column 'kode_status' in 'field list'",
-    sql: "SELECT `kode_status` FROM `ref_dospem` AS `RefDosepem` WHERE `RefDosepem`.`nidn` = '1';",
-    parameters: undefined
-  },
-  original: Error: Unknown column 'kode_status' in 'field list'
-      at Packet.asError (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\packets\packet.js:738:17)
-      at Query.execute (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\commands\command.js:29:26)
-      at Connection.handlePacket (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\connection.js:481:34)
-      at PacketParser.onPacket (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\connection.js:97:12)
-      at PacketParser.executeStart (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\packet_parser.js:75:16)
-      at Socket.<anonymous> (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\connection.js:104:25)
-      at Socket.emit (node:events:519:28)
-      at Socket.emit (node:domain:488:12)
-      at addChunk (node:internal/streams/readable:559:12)
-      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3) {
-    code: 'ER_BAD_FIELD_ERROR',
-    errno: 1054,
-    sqlState: '42S22',
-    sqlMessage: "Unknown column 'kode_status' in 'field list'",
-    sql: "SELECT `kode_status` FROM `ref_dospem` AS `RefDosepem` WHERE `RefDosepem`.`nidn` = '1';",
-    parameters: undefined
-  },
-  sql: "SELECT `kode_status` FROM `ref_dospem` AS `RefDosepem` WHERE `RefDosepem`.`nidn` = '1';",
-  parameters: {}
-}
-[2024-09-09T19:17:24.140] [ERROR] error - Error
-    at Query.run (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\mysql\query.js:46:25)
-    at C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\sequelize.js:650:28
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async MySQLQueryInterface.select (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-interface.js:1001:12)
-    at async Function.findAll (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:1824:21)
-    at async Function.findOne (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:1998:12) {
-  name: 'SequelizeDatabaseError',
-  parent: Error: Unknown column 'kode_status' in 'field list'
-      at Packet.asError (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\packets\packet.js:738:17)
-      at Query.execute (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\commands\command.js:29:26)
-      at Connection.handlePacket (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\connection.js:481:34)
-      at PacketParser.onPacket (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\connection.js:97:12)
-      at PacketParser.executeStart (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\packet_parser.js:75:16)
-      at Socket.<anonymous> (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\connection.js:104:25)
-      at Socket.emit (node:events:519:28)
-      at Socket.emit (node:domain:488:12)
-      at addChunk (node:internal/streams/readable:559:12)
-      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3) {
-    code: 'ER_BAD_FIELD_ERROR',
-    errno: 1054,
-    sqlState: '42S22',
-    sqlMessage: "Unknown column 'kode_status' in 'field list'",
-    sql: "SELECT `kode_status` FROM `ref_dospem` AS `RefDosepem` WHERE `RefDosepem`.`nidn` = '1';",
-    parameters: undefined
-  },
-  original: Error: Unknown column 'kode_status' in 'field list'
-      at Packet.asError (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\packets\packet.js:738:17)
-      at Query.execute (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\commands\command.js:29:26)
-      at Connection.handlePacket (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\connection.js:481:34)
-      at PacketParser.onPacket (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\connection.js:97:12)
-      at PacketParser.executeStart (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\packet_parser.js:75:16)
-      at Socket.<anonymous> (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\connection.js:104:25)
-      at Socket.emit (node:events:519:28)
-      at Socket.emit (node:domain:488:12)
-      at addChunk (node:internal/streams/readable:559:12)
-      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3) {
-    code: 'ER_BAD_FIELD_ERROR',
-    errno: 1054,
-    sqlState: '42S22',
-    sqlMessage: "Unknown column 'kode_status' in 'field list'",
-    sql: "SELECT `kode_status` FROM `ref_dospem` AS `RefDosepem` WHERE `RefDosepem`.`nidn` = '1';",
-    parameters: undefined
-  },
-  sql: "SELECT `kode_status` FROM `ref_dospem` AS `RefDosepem` WHERE `RefDosepem`.`nidn` = '1';",
-  parameters: {}
-}
-[2024-09-09T19:17:26.673] [ERROR] error - Error get agenda :  Error
-    at Query.run (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\mysql\query.js:46:25)
-    at C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\sequelize.js:650:28
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async MySQLQueryInterface.select (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-interface.js:1001:12)
-    at async Function.findAll (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:1824:21)
-    at async Function.findOne (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:1998:12) {
-  name: 'SequelizeDatabaseError',
-  parent: Error: Unknown column 'kode_status' in 'field list'
-      at Packet.asError (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\packets\packet.js:738:17)
-      at Query.execute (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\commands\command.js:29:26)
-      at Connection.handlePacket (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\connection.js:481:34)
-      at PacketParser.onPacket (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\connection.js:97:12)
-      at PacketParser.executeStart (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\packet_parser.js:75:16)
-      at Socket.<anonymous> (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\connection.js:104:25)
-      at Socket.emit (node:events:519:28)
-      at Socket.emit (node:domain:488:12)
-      at addChunk (node:internal/streams/readable:559:12)
-      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3) {
-    code: 'ER_BAD_FIELD_ERROR',
-    errno: 1054,
-    sqlState: '42S22',
-    sqlMessage: "Unknown column 'kode_status' in 'field list'",
-    sql: "SELECT `kode_status` FROM `ref_dospem` AS `RefDosepem` WHERE `RefDosepem`.`nidn` = '1';",
-    parameters: undefined
-  },
-  original: Error: Unknown column 'kode_status' in 'field list'
-      at Packet.asError (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\packets\packet.js:738:17)
-      at Query.execute (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\commands\command.js:29:26)
-      at Connection.handlePacket (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\connection.js:481:34)
-      at PacketParser.onPacket (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\connection.js:97:12)
-      at PacketParser.executeStart (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\packet_parser.js:75:16)
-      at Socket.<anonymous> (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\connection.js:104:25)
-      at Socket.emit (node:events:519:28)
-      at Socket.emit (node:domain:488:12)
-      at addChunk (node:internal/streams/readable:559:12)
-      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3) {
-    code: 'ER_BAD_FIELD_ERROR',
-    errno: 1054,
-    sqlState: '42S22',
-    sqlMessage: "Unknown column 'kode_status' in 'field list'",
-    sql: "SELECT `kode_status` FROM `ref_dospem` AS `RefDosepem` WHERE `RefDosepem`.`nidn` = '1';",
-    parameters: undefined
-  },
-  sql: "SELECT `kode_status` FROM `ref_dospem` AS `RefDosepem` WHERE `RefDosepem`.`nidn` = '1';",
-  parameters: {}
-}
-[2024-09-09T19:17:26.673] [ERROR] error - Error
-    at Query.run (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\mysql\query.js:46:25)
-    at C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\sequelize.js:650:28
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async MySQLQueryInterface.select (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-interface.js:1001:12)
-    at async Function.findAll (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:1824:21)
-    at async Function.findOne (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:1998:12) {
-  name: 'SequelizeDatabaseError',
-  parent: Error: Unknown column 'kode_status' in 'field list'
-      at Packet.asError (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\packets\packet.js:738:17)
-      at Query.execute (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\commands\command.js:29:26)
-      at Connection.handlePacket (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\connection.js:481:34)
-      at PacketParser.onPacket (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\connection.js:97:12)
-      at PacketParser.executeStart (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\packet_parser.js:75:16)
-      at Socket.<anonymous> (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\connection.js:104:25)
-      at Socket.emit (node:events:519:28)
-      at Socket.emit (node:domain:488:12)
-      at addChunk (node:internal/streams/readable:559:12)
-      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3) {
-    code: 'ER_BAD_FIELD_ERROR',
-    errno: 1054,
-    sqlState: '42S22',
-    sqlMessage: "Unknown column 'kode_status' in 'field list'",
-    sql: "SELECT `kode_status` FROM `ref_dospem` AS `RefDosepem` WHERE `RefDosepem`.`nidn` = '1';",
-    parameters: undefined
-  },
-  original: Error: Unknown column 'kode_status' in 'field list'
-      at Packet.asError (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\packets\packet.js:738:17)
-      at Query.execute (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\commands\command.js:29:26)
-      at Connection.handlePacket (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\connection.js:481:34)
-      at PacketParser.onPacket (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\connection.js:97:12)
-      at PacketParser.executeStart (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\packet_parser.js:75:16)
-      at Socket.<anonymous> (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\connection.js:104:25)
-      at Socket.emit (node:events:519:28)
-      at Socket.emit (node:domain:488:12)
-      at addChunk (node:internal/streams/readable:559:12)
-      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3) {
-    code: 'ER_BAD_FIELD_ERROR',
-    errno: 1054,
-    sqlState: '42S22',
-    sqlMessage: "Unknown column 'kode_status' in 'field list'",
-    sql: "SELECT `kode_status` FROM `ref_dospem` AS `RefDosepem` WHERE `RefDosepem`.`nidn` = '1';",
-    parameters: undefined
-  },
-  sql: "SELECT `kode_status` FROM `ref_dospem` AS `RefDosepem` WHERE `RefDosepem`.`nidn` = '1';",
-  parameters: {}
-}
-[2024-09-09T19:20:24.997] [ERROR] error - Error get agenda :  CustomError: Data Dosepem pembimbing Tesis Tidak Ditemukan
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:232:37
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 404,
-  status: 'error'
-}
-[2024-09-09T19:20:25.002] [ERROR] error - CustomError: Data Dosepem pembimbing Tesis Tidak Ditemukan
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:232:37
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 404,
-  status: 'error'
-}
-[2024-09-09T21:35:47.309] [ERROR] error - Error chect token :  CustomError: Unauthorized[0]
+[2024-09-12T10:10:19.083] [ERROR] error - Error chect token :  CustomError: Unauthorized[0]
     at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:31:19
     at Generator.next (<anonymous>)
     at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:8:71
@@ -472,7 +12,7 @@
   code: 401,
   status: 'error'
 }
-[2024-09-09T21:35:47.315] [ERROR] error - CustomError: Unauthorized[0]
+[2024-09-12T10:10:19.090] [ERROR] error - CustomError: Unauthorized[0]
     at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:31:19
     at Generator.next (<anonymous>)
     at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:8:71
@@ -486,63 +26,532 @@
   code: 401,
   status: 'error'
 }
-[2024-09-09T21:35:51.103] [ERROR] error - Error chect token :  CustomError: Unauthorized[0]
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:31:19
+[2024-09-12T10:11:10.831] [ERROR] error - Error bimbingan :  CustomError: Data Materi Tidak Ditemukan
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-materi-pembahasan.service-web.ts:27:19
     at Generator.next (<anonymous>)
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:8:71
-    at new Promise (<anonymous>)
-    at __awaiter (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:4:12)
-    at checkToken (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:25:78)
-    at Layer.handle [as handle_request] (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\layer.js:95:5)
-    at next (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\route.js:144:13)
-    at Route.dispatch (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\route.js:114:3)
-    at Layer.handle [as handle_request] (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\layer.js:95:5) {
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-materi-pembahasan.service-web.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 404,
+  status: 'error'
+}
+[2024-09-12T10:11:10.831] [ERROR] error - CustomError: Data Materi Tidak Ditemukan
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-materi-pembahasan.service-web.ts:27:19
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-materi-pembahasan.service-web.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 404,
+  status: 'error'
+}
+[2024-09-12T10:12:34.187] [ERROR] error - Error bimbingan :  CustomError: Data Materi Tidak Ditemukan
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-materi-pembahasan.service-web.ts:58:19
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-materi-pembahasan.service-web.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 404,
+  status: 'error'
+}
+[2024-09-12T10:12:34.187] [ERROR] error - CustomError: Data Materi Tidak Ditemukan
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-materi-pembahasan.service-web.ts:58:19
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-materi-pembahasan.service-web.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 404,
+  status: 'error'
+}
+[2024-09-12T10:18:17.948] [ERROR] error - Error bimbingan :  CustomError: Internal server error.
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-materi-pembahasan.service-web.ts:29:19
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-materi-pembahasan.service-web.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 500,
+  status: 'error'
+}
+[2024-09-12T10:18:17.951] [ERROR] error - CustomError: Internal server error.
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-materi-pembahasan.service-web.ts:29:19
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-materi-pembahasan.service-web.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 500,
+  status: 'error'
+}
+[2024-09-12T10:46:50.209] [ERROR] error - Error bimbingan :  CustomError: Data Sub Materi Tidak Ditemukan
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-submateri-pembahasan.service-web.ts:58:19
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-submateri-pembahasan.service-web.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 404,
+  status: 'error'
+}
+[2024-09-12T10:46:50.211] [ERROR] error - CustomError: Data Sub Materi Tidak Ditemukan
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-submateri-pembahasan.service-web.ts:58:19
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-submateri-pembahasan.service-web.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 404,
+  status: 'error'
+}
+[2024-09-12T10:48:46.860] [ERROR] error - Error bimbingan :  CustomError: Internal server error.
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-submateri-pembahasan.service-web.ts:86:19
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-submateri-pembahasan.service-web.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 500,
+  status: 'error'
+}
+[2024-09-12T10:48:46.862] [ERROR] error - CustomError: Internal server error.
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-submateri-pembahasan.service-web.ts:86:19
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-submateri-pembahasan.service-web.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 500,
+  status: 'error'
+}
+[2024-09-12T10:49:41.562] [ERROR] error - Error bimbingan :  CustomError: Internal server error.
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-submateri-pembahasan.service-web.ts:94:19
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-submateri-pembahasan.service-web.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 500,
+  status: 'error'
+}
+[2024-09-12T10:49:41.564] [ERROR] error - CustomError: Internal server error.
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-submateri-pembahasan.service-web.ts:94:19
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-submateri-pembahasan.service-web.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 500,
+  status: 'error'
+}
+[2024-09-12T10:50:06.597] [ERROR] error - Error bimbingan :  CustomError: Internal server error.
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-submateri-pembahasan.service-web.ts:94:19
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-submateri-pembahasan.service-web.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 500,
+  status: 'error'
+}
+[2024-09-12T10:50:06.598] [ERROR] error - CustomError: Internal server error.
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-submateri-pembahasan.service-web.ts:94:19
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-submateri-pembahasan.service-web.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 500,
+  status: 'error'
+}
+[2024-09-12T10:50:54.315] [ERROR] error - Error bimbingan :  CustomError: Internal server error.
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-submateri-pembahasan.service-web.ts:95:19
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-submateri-pembahasan.service-web.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 500,
+  status: 'error'
+}
+[2024-09-12T10:50:54.317] [ERROR] error - CustomError: Internal server error.
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-submateri-pembahasan.service-web.ts:95:19
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-submateri-pembahasan.service-web.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 500,
+  status: 'error'
+}
+[2024-09-12T10:51:29.576] [ERROR] error - Error bimbingan :  CustomError: Data Materi Pembahasan Tidak Ditemukan
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-submateri-pembahasan.service-web.ts:93:19
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-submateri-pembahasan.service-web.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 404,
+  status: 'error'
+}
+[2024-09-12T10:51:29.578] [ERROR] error - CustomError: Data Materi Pembahasan Tidak Ditemukan
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-submateri-pembahasan.service-web.ts:93:19
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-submateri-pembahasan.service-web.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 404,
+  status: 'error'
+}
+[2024-09-12T10:52:40.029] [ERROR] error - Error bimbingan :  CustomError: Data Materi Pembahasan Tidak Ditemukan
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-submateri-pembahasan.service-web.ts:141:19
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-submateri-pembahasan.service-web.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 404,
+  status: 'error'
+}
+[2024-09-12T10:52:40.031] [ERROR] error - CustomError: Data Materi Pembahasan Tidak Ditemukan
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-submateri-pembahasan.service-web.ts:141:19
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-submateri-pembahasan.service-web.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 404,
+  status: 'error'
+}
+[2024-09-12T10:53:23.778] [ERROR] error - Error bimbingan :  CustomError: Internal server error.
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-submateri-pembahasan.service-web.ts:174:19
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-submateri-pembahasan.service-web.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 500,
+  status: 'error'
+}
+[2024-09-12T14:32:05.685] [ERROR] error - Error chect token :  CustomError: Token Expired
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:61:23
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
   code: 401,
   status: 'error'
 }
-[2024-09-09T21:35:51.104] [ERROR] error - CustomError: Unauthorized[0]
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:31:19
+[2024-09-12T14:32:05.691] [ERROR] error - CustomError: Token Expired
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:61:23
     at Generator.next (<anonymous>)
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:8:71
-    at new Promise (<anonymous>)
-    at __awaiter (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:4:12)
-    at checkToken (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:25:78)
-    at Layer.handle [as handle_request] (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\layer.js:95:5)
-    at next (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\route.js:144:13)
-    at Route.dispatch (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\route.js:114:3)
-    at Layer.handle [as handle_request] (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\layer.js:95:5) {
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
   code: 401,
   status: 'error'
 }
-[2024-09-09T21:36:19.810] [ERROR] error - Error get daftar pertemuan :  CustomError: Anda Tidak Memiliki Agenda Bimbingan
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\daftar-pertemuan.controller.ts:45:43
+[2024-09-12T14:41:59.428] [ERROR] error - Error bimbingan :  TypeError: Cannot read properties of undefined (reading 'some')
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\mahasiswa\bimbingan-mhs.controller.ts:66:56
+    at Array.map (<anonymous>)
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\mahasiswa\bimbingan-mhs.controller.ts:61:40
     at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\daftar-pertemuan.controller.ts:5:58)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\mahasiswa\bimbingan-mhs.controller.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2024-09-12T14:41:59.436] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'some')
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\mahasiswa\bimbingan-mhs.controller.ts:66:56
+    at Array.map (<anonymous>)
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\mahasiswa\bimbingan-mhs.controller.ts:61:40
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\mahasiswa\bimbingan-mhs.controller.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2024-09-12T14:42:49.229] [ERROR] error - Error bimbingan :  TypeError: Cannot read properties of undefined (reading 'some')
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\mahasiswa\bimbingan-mhs.controller.ts:66:56
+    at Array.map (<anonymous>)
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\mahasiswa\bimbingan-mhs.controller.ts:61:40
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\mahasiswa\bimbingan-mhs.controller.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2024-09-12T14:42:49.233] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'some')
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\mahasiswa\bimbingan-mhs.controller.ts:66:56
+    at Array.map (<anonymous>)
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\mahasiswa\bimbingan-mhs.controller.ts:61:40
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\mahasiswa\bimbingan-mhs.controller.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2024-09-12T14:51:23.266] [ERROR] error - Error bimbingan :  EagerLoadingError [SequelizeEagerLoadingError]: BimbinganMhs is associated to TrxBimbinganMhs using an alias. You must use the 'as' keyword to specify the alias within your include statement.
+    at Function._getIncludedAssociation (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:754:13)
+    at Function._validateIncludedElement (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:646:53)
+    at C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:542:37
+    at Array.map (<anonymous>)
+    at Function._validateIncludedElements (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:537:39)
+    at Function.findAll (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:1794:12)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2024-09-12T14:51:23.281] [ERROR] error - EagerLoadingError [SequelizeEagerLoadingError]: BimbinganMhs is associated to TrxBimbinganMhs using an alias. You must use the 'as' keyword to specify the alias within your include statement.
+    at Function._getIncludedAssociation (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:754:13)
+    at Function._validateIncludedElement (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:646:53)
+    at C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:542:37
+    at Array.map (<anonymous>)
+    at Function._validateIncludedElements (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:537:39)
+    at Function.findAll (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:1794:12)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+[2024-09-12T14:51:52.820] [ERROR] error - Error bimbingan :  Error
+    at Query.run (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\mysql\query.js:46:25)
+    at C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.select (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-interface.js:1001:12)
+    at async Function.findAll (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:1824:21) {
+  name: 'SequelizeDatabaseError',
+  parent: Error: Column 'id_trx_bimbingan' in on clause is ambiguous
+      at Packet.asError (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\packets\packet.js:738:17)
+      at Query.execute (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\commands\command.js:29:26)
+      at Connection.handlePacket (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\connection.js:481:34)
+      at PacketParser.onPacket (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\connection.js:97:12)
+      at PacketParser.executeStart (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\connection.js:104:25)
+      at Socket.emit (node:events:519:28)
+      at Socket.emit (node:domain:488:12)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3) {
+    code: 'ER_NON_UNIQ_ERROR',
+    errno: 1052,
+    sqlState: '23000',
+    sqlMessage: "Column 'id_trx_bimbingan' in on clause is ambiguous",
+    sql: 'SELECT `TrxBimbinganMhs`.`id_trx_bimbingan`, `dospem_tasis_mhs`.`id_bimbingan` AS `dospem_tasis_mhs.id_bimbingan`, `dospem_tasis_mhs`.`status_persetujuan` AS `dospem_tasis_mhs.status_persetujuan` FROM `trx_bimbingan_mhs` AS `TrxBimbinganMhs` LEFT OUTER JOIN `ref_bimbingan_mhs` AS `dospem_tasis_mhs` ON `id_trx_bimbingan` WHERE `TrxBimbinganMhs`.`id_trx_bimbingan` IN \n' +
+      '                  (SELECT MAX(id_trx_bimbingan) FROM trx_bimbingan_mhs \n' +
+      "                  WHERE nim = '2016003' GROUP BY id_sub_materi_pembahasan)\n" +
+      "                 AND `TrxBimbinganMhs`.`nim` = '2016003';",
+    parameters: undefined
+  },
+  original: Error: Column 'id_trx_bimbingan' in on clause is ambiguous
+      at Packet.asError (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\packets\packet.js:738:17)
+      at Query.execute (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\commands\command.js:29:26)
+      at Connection.handlePacket (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\connection.js:481:34)
+      at PacketParser.onPacket (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\connection.js:97:12)
+      at PacketParser.executeStart (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\connection.js:104:25)
+      at Socket.emit (node:events:519:28)
+      at Socket.emit (node:domain:488:12)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3) {
+    code: 'ER_NON_UNIQ_ERROR',
+    errno: 1052,
+    sqlState: '23000',
+    sqlMessage: "Column 'id_trx_bimbingan' in on clause is ambiguous",
+    sql: 'SELECT `TrxBimbinganMhs`.`id_trx_bimbingan`, `dospem_tasis_mhs`.`id_bimbingan` AS `dospem_tasis_mhs.id_bimbingan`, `dospem_tasis_mhs`.`status_persetujuan` AS `dospem_tasis_mhs.status_persetujuan` FROM `trx_bimbingan_mhs` AS `TrxBimbinganMhs` LEFT OUTER JOIN `ref_bimbingan_mhs` AS `dospem_tasis_mhs` ON `id_trx_bimbingan` WHERE `TrxBimbinganMhs`.`id_trx_bimbingan` IN \n' +
+      '                  (SELECT MAX(id_trx_bimbingan) FROM trx_bimbingan_mhs \n' +
+      "                  WHERE nim = '2016003' GROUP BY id_sub_materi_pembahasan)\n" +
+      "                 AND `TrxBimbinganMhs`.`nim` = '2016003';",
+    parameters: undefined
+  },
+  sql: 'SELECT `TrxBimbinganMhs`.`id_trx_bimbingan`, `dospem_tasis_mhs`.`id_bimbingan` AS `dospem_tasis_mhs.id_bimbingan`, `dospem_tasis_mhs`.`status_persetujuan` AS `dospem_tasis_mhs.status_persetujuan` FROM `trx_bimbingan_mhs` AS `TrxBimbinganMhs` LEFT OUTER JOIN `ref_bimbingan_mhs` AS `dospem_tasis_mhs` ON `id_trx_bimbingan` WHERE `TrxBimbinganMhs`.`id_trx_bimbingan` IN \n' +
+    '                  (SELECT MAX(id_trx_bimbingan) FROM trx_bimbingan_mhs \n' +
+    "                  WHERE nim = '2016003' GROUP BY id_sub_materi_pembahasan)\n" +
+    "                 AND `TrxBimbinganMhs`.`nim` = '2016003';",
+  parameters: {}
+}
+[2024-09-12T14:51:52.825] [ERROR] error - Error
+    at Query.run (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\mysql\query.js:46:25)
+    at C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.select (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-interface.js:1001:12)
+    at async Function.findAll (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:1824:21) {
+  name: 'SequelizeDatabaseError',
+  parent: Error: Column 'id_trx_bimbingan' in on clause is ambiguous
+      at Packet.asError (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\packets\packet.js:738:17)
+      at Query.execute (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\commands\command.js:29:26)
+      at Connection.handlePacket (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\connection.js:481:34)
+      at PacketParser.onPacket (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\connection.js:97:12)
+      at PacketParser.executeStart (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\connection.js:104:25)
+      at Socket.emit (node:events:519:28)
+      at Socket.emit (node:domain:488:12)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3) {
+    code: 'ER_NON_UNIQ_ERROR',
+    errno: 1052,
+    sqlState: '23000',
+    sqlMessage: "Column 'id_trx_bimbingan' in on clause is ambiguous",
+    sql: 'SELECT `TrxBimbinganMhs`.`id_trx_bimbingan`, `dospem_tasis_mhs`.`id_bimbingan` AS `dospem_tasis_mhs.id_bimbingan`, `dospem_tasis_mhs`.`status_persetujuan` AS `dospem_tasis_mhs.status_persetujuan` FROM `trx_bimbingan_mhs` AS `TrxBimbinganMhs` LEFT OUTER JOIN `ref_bimbingan_mhs` AS `dospem_tasis_mhs` ON `id_trx_bimbingan` WHERE `TrxBimbinganMhs`.`id_trx_bimbingan` IN \n' +
+      '                  (SELECT MAX(id_trx_bimbingan) FROM trx_bimbingan_mhs \n' +
+      "                  WHERE nim = '2016003' GROUP BY id_sub_materi_pembahasan)\n" +
+      "                 AND `TrxBimbinganMhs`.`nim` = '2016003';",
+    parameters: undefined
+  },
+  original: Error: Column 'id_trx_bimbingan' in on clause is ambiguous
+      at Packet.asError (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\packets\packet.js:738:17)
+      at Query.execute (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\commands\command.js:29:26)
+      at Connection.handlePacket (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\connection.js:481:34)
+      at PacketParser.onPacket (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\connection.js:97:12)
+      at PacketParser.executeStart (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\mysql2\lib\connection.js:104:25)
+      at Socket.emit (node:events:519:28)
+      at Socket.emit (node:domain:488:12)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3) {
+    code: 'ER_NON_UNIQ_ERROR',
+    errno: 1052,
+    sqlState: '23000',
+    sqlMessage: "Column 'id_trx_bimbingan' in on clause is ambiguous",
+    sql: 'SELECT `TrxBimbinganMhs`.`id_trx_bimbingan`, `dospem_tasis_mhs`.`id_bimbingan` AS `dospem_tasis_mhs.id_bimbingan`, `dospem_tasis_mhs`.`status_persetujuan` AS `dospem_tasis_mhs.status_persetujuan` FROM `trx_bimbingan_mhs` AS `TrxBimbinganMhs` LEFT OUTER JOIN `ref_bimbingan_mhs` AS `dospem_tasis_mhs` ON `id_trx_bimbingan` WHERE `TrxBimbinganMhs`.`id_trx_bimbingan` IN \n' +
+      '                  (SELECT MAX(id_trx_bimbingan) FROM trx_bimbingan_mhs \n' +
+      "                  WHERE nim = '2016003' GROUP BY id_sub_materi_pembahasan)\n" +
+      "                 AND `TrxBimbinganMhs`.`nim` = '2016003';",
+    parameters: undefined
+  },
+  sql: 'SELECT `TrxBimbinganMhs`.`id_trx_bimbingan`, `dospem_tasis_mhs`.`id_bimbingan` AS `dospem_tasis_mhs.id_bimbingan`, `dospem_tasis_mhs`.`status_persetujuan` AS `dospem_tasis_mhs.status_persetujuan` FROM `trx_bimbingan_mhs` AS `TrxBimbinganMhs` LEFT OUTER JOIN `ref_bimbingan_mhs` AS `dospem_tasis_mhs` ON `id_trx_bimbingan` WHERE `TrxBimbinganMhs`.`id_trx_bimbingan` IN \n' +
+    '                  (SELECT MAX(id_trx_bimbingan) FROM trx_bimbingan_mhs \n' +
+    "                  WHERE nim = '2016003' GROUP BY id_sub_materi_pembahasan)\n" +
+    "                 AND `TrxBimbinganMhs`.`nim` = '2016003';",
+  parameters: {}
+}
+[2024-09-12T22:05:14.102] [ERROR] error - Error chect token :  CustomError: Token Expired
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:61:23
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
     at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 404,
+  code: 401,
   status: 'error'
 }
-[2024-09-09T21:36:19.811] [ERROR] error - CustomError: Anda Tidak Memiliki Agenda Bimbingan
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\daftar-pertemuan.controller.ts:45:43
+[2024-09-12T22:05:14.155] [ERROR] error - CustomError: Token Expired
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:61:23
     at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\daftar-pertemuan.controller.ts:5:58)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
     at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 404,
+  code: 401,
   status: 'error'
 }
-[2024-09-09T23:40:23.916] [ERROR] error - Error get daftar pertemuan :  CustomError: Anda Tidak Memiliki Agenda Bimbingan
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\daftar-pertemuan.controller.ts:45:49
+[2024-09-12T23:06:59.298] [ERROR] error - Error chect token :  CustomError: Token Expired
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:61:23
     at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\daftar-pertemuan.controller.ts:5:58)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
     at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 404,
+  code: 401,
   status: 'error'
 }
-[2024-09-09T23:40:23.924] [ERROR] error - CustomError: Anda Tidak Memiliki Agenda Bimbingan
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\daftar-pertemuan.controller.ts:45:49
+[2024-09-12T23:06:59.306] [ERROR] error - CustomError: Token Expired
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:61:23
     at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\daftar-pertemuan.controller.ts:5:58)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
     at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 404,
+  code: 401,
+  status: 'error'
+}
+[2024-09-12T23:07:36.839] [ERROR] error - CustomError: Format file harus berupa application/docx
+    at fileFilterPdf (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\upload.ts:43:7)
+    at wrappedFileFilter (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\multer\index.js:44:7)
+    at Multipart.<anonymous> (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\multer\lib\make-middleware.js:107:7)
+    at Multipart.emit (node:events:519:28)
+    at Multipart.emit (node:domain:488:12)
+    at HeaderParser.cb (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\busboy\lib\types\multipart.js:358:14)
+    at HeaderParser.push (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\busboy\lib\types\multipart.js:162:20)
+    at SBMH.ssCb [as _cb] (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\busboy\lib\types\multipart.js:394:37)
+    at feed (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\streamsearch\lib\sbmh.js:248:10)
+    at SBMH.push (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\streamsearch\lib\sbmh.js:104:16) {
+  code: 415,
+  status: 'error',
+  storageErrors: []
+}
+[2024-09-12T23:07:56.434] [ERROR] error - CustomError: Format file harus berupa application/docx
+    at fileFilterPdf (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\upload.ts:43:7)
+    at wrappedFileFilter (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\multer\index.js:44:7)
+    at Multipart.<anonymous> (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\multer\lib\make-middleware.js:107:7)
+    at Multipart.emit (node:events:519:28)
+    at Multipart.emit (node:domain:488:12)
+    at HeaderParser.cb (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\busboy\lib\types\multipart.js:358:14)
+    at HeaderParser.push (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\busboy\lib\types\multipart.js:162:20)
+    at SBMH.ssCb [as _cb] (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\busboy\lib\types\multipart.js:394:37)
+    at feed (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\streamsearch\lib\sbmh.js:200:10)
+    at SBMH.push (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\streamsearch\lib\sbmh.js:104:16) {
+  code: 415,
+  status: 'error',
+  storageErrors: []
+}
+[2024-09-12T23:08:23.394] [ERROR] error - CustomError: Format file harus berupa application/docx
+    at fileFilterPdf (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\upload.ts:43:7)
+    at wrappedFileFilter (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\multer\index.js:44:7)
+    at Multipart.<anonymous> (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\multer\lib\make-middleware.js:107:7)
+    at Multipart.emit (node:events:519:28)
+    at Multipart.emit (node:domain:488:12)
+    at HeaderParser.cb (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\busboy\lib\types\multipart.js:358:14)
+    at HeaderParser.push (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\busboy\lib\types\multipart.js:162:20)
+    at SBMH.ssCb [as _cb] (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\busboy\lib\types\multipart.js:394:37)
+    at feed (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\streamsearch\lib\sbmh.js:248:10)
+    at SBMH.push (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\streamsearch\lib\sbmh.js:104:16) {
+  code: 415,
+  status: 'error',
+  storageErrors: []
+}
+[2024-09-12T23:11:40.825] [ERROR] error - CustomError: Format file harus berupa application/docx
+    at fileFilterPdf (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\upload.ts:43:7)
+    at wrappedFileFilter (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\multer\index.js:44:7)
+    at Multipart.<anonymous> (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\multer\lib\make-middleware.js:107:7)
+    at Multipart.emit (node:events:519:28)
+    at Multipart.emit (node:domain:488:12)
+    at HeaderParser.cb (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\busboy\lib\types\multipart.js:358:14)
+    at HeaderParser.push (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\busboy\lib\types\multipart.js:162:20)
+    at SBMH.ssCb [as _cb] (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\busboy\lib\types\multipart.js:394:37)
+    at feed (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\streamsearch\lib\sbmh.js:219:14)
+    at SBMH.push (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\streamsearch\lib\sbmh.js:104:16) {
+  code: 415,
+  status: 'error',
+  storageErrors: []
+}
+[2024-09-12T23:13:02.656] [ERROR] error - CustomError: Format file harus berupa application/docx | application/msword
+    at fileFilterPdf (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\upload.ts:45:7)
+    at wrappedFileFilter (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\multer\index.js:44:7)
+    at Multipart.<anonymous> (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\multer\lib\make-middleware.js:107:7)
+    at Multipart.emit (node:events:519:28)
+    at Multipart.emit (node:domain:488:12)
+    at HeaderParser.cb (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\busboy\lib\types\multipart.js:358:14)
+    at HeaderParser.push (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\busboy\lib\types\multipart.js:162:20)
+    at SBMH.ssCb [as _cb] (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\busboy\lib\types\multipart.js:394:37)
+    at feed (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\streamsearch\lib\sbmh.js:219:14)
+    at SBMH.push (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\streamsearch\lib\sbmh.js:104:16) {
+  code: 415,
+  status: 'error',
+  storageErrors: []
+}
+[2024-09-12T23:13:27.040] [ERROR] error - CustomError: Format file harus berupa application/docx | application/msword
+    at fileFilterPdf (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\upload.ts:45:7)
+    at wrappedFileFilter (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\multer\index.js:44:7)
+    at Multipart.<anonymous> (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\multer\lib\make-middleware.js:107:7)
+    at Multipart.emit (node:events:519:28)
+    at Multipart.emit (node:domain:488:12)
+    at HeaderParser.cb (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\busboy\lib\types\multipart.js:358:14)
+    at HeaderParser.push (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\busboy\lib\types\multipart.js:162:20)
+    at SBMH.ssCb [as _cb] (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\busboy\lib\types\multipart.js:394:37)
+    at feed (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\streamsearch\lib\sbmh.js:219:14)
+    at SBMH.push (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\streamsearch\lib\sbmh.js:104:16) {
+  code: 415,
+  status: 'error',
+  storageErrors: []
+}
+[2024-09-12T23:14:04.775] [ERROR] error - error upload pdf Error: tidak ada file yang di upload
+[2024-09-12T23:14:04.777] [ERROR] error - CustomError: tidak ada file yang di upload
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\mahasiswa\bimbingan-mhs.controller.ts:124:19
+    at Generator.next (<anonymous>)
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\mahasiswa\bimbingan-mhs.controller.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\mahasiswa\bimbingan-mhs.controller.ts:4:12)
+    at uploadPdf (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\mahasiswa\bimbingan-mhs.controller.ts:121:20)
+    at Layer.handle [as handle_request] (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\route.js:144:13)
+    at done (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\multer\lib\make-middleware.js:45:7)
+    at indicateDone (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\multer\lib\make-middleware.js:49:68) {
+  code: 400,
+  status: 'error'
+}
+[2024-09-12T23:15:18.398] [ERROR] error - error upload pdf Error: Ada kesalahan sistem saat penetapan dospem
+[2024-09-12T23:17:14.070] [ERROR] error - error upload pdf Error: Ada kesalahan sistem saat penetapan dospem
+[2024-09-12T23:18:16.297] [ERROR] error - error upload pdf Error: Ada kesalahan sistem saat penetapan dospem
+[2024-09-12T23:19:28.841] [ERROR] error - error upload pdf Error: Ada kesalahan sistem saat penetapan dospem
+[2024-09-12T23:19:28.844] [ERROR] error - CustomError: Ada kesalahan sistem saat penetapan dospem
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:70:19
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 400,
+  status: 'error'
+}
+[2024-09-12T23:20:46.849] [ERROR] error - error upload pdf Error: Ada kesalahan sistem saat penetapan dospem
+[2024-09-12T23:20:46.851] [ERROR] error - CustomError: Ada kesalahan sistem saat penetapan dospem
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:71:19
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 400,
+  status: 'error'
+}
+[2024-09-12T23:21:49.258] [ERROR] error - error upload pdf Error: Ada kesalahan sistem saat penetapan dospem
+[2024-09-12T23:21:49.261] [ERROR] error - CustomError: Ada kesalahan sistem saat penetapan dospem
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:71:19
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 400,
+  status: 'error'
+}
+[2024-09-12T23:23:02.204] [ERROR] error - error upload pdf Error: Internal server error.
+[2024-09-12T23:23:02.207] [ERROR] error - CustomError: Internal server error.
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:74:19
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 500,
+  status: 'error'
+}
+[2024-09-12T23:40:06.104] [ERROR] error - error upload pdf Error: nim atau id_sub_materi_pembahasan harus di isi
+[2024-09-12T23:40:06.108] [ERROR] error - CustomError: nim atau id_sub_materi_pembahasan harus di isi
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\mahasiswa\bimbingan-mhs.controller.ts:126:71
+    at Generator.next (<anonymous>)
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\mahasiswa\bimbingan-mhs.controller.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\mahasiswa\bimbingan-mhs.controller.ts:4:12)
+    at uploadPdf (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\mahasiswa\bimbingan-mhs.controller.ts:121:20)
+    at Layer.handle [as handle_request] (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\route.js:144:13)
+    at done (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\multer\lib\make-middleware.js:45:7)
+    at indicateDone (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\multer\lib\make-middleware.js:49:68) {
+  code: 400,
   status: 'error'
 }

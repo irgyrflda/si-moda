@@ -1,6 +1,6 @@
 import db from "@config/database";
 import { DataTypes, Model, Optional } from "sequelize";
-import RefTersisMhs from "./ref-tesis-mhs.models";
+import RefTesisMhs from "./ref-tesis-mhs.models";
 import SubMateriPembahasan from "./sub-materi-pembahasan.models";
 
 interface ITrxBimbinganMhsAttributes {
@@ -79,12 +79,12 @@ TrxBimbinganMhs.init(
     }
 );
 
-TrxBimbinganMhs.hasMany(RefTersisMhs, {
+TrxBimbinganMhs.hasMany(RefTesisMhs, {
     as: "bimbingan_tesis",
     foreignKey: "nim"
 });
 
-RefTersisMhs.belongsTo(TrxBimbinganMhs, {
+RefTesisMhs.belongsTo(TrxBimbinganMhs, {
     as: "tesis_bimbingan",
     foreignKey: "nim"
 });

@@ -84,13 +84,13 @@ SubMateriPembahasan.init(
     }
 );
 
-SubMateriPembahasan.hasMany(MateriPembahasan, {
-    as: "materi",
+MateriPembahasan.hasMany(SubMateriPembahasan, {
+    as: "sub_materi",
     foreignKey: "id_materi_pembahasan"
 });
 
-MateriPembahasan.belongsTo(SubMateriPembahasan, {
-    as: "sub_materi",
+SubMateriPembahasan.belongsTo(MateriPembahasan, {
+    as: "materi",
     foreignKey: "id_materi_pembahasan"
 });
 
