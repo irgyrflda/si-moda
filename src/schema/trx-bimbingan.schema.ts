@@ -31,6 +31,19 @@ const paramsNim = {
     })
 }
 
+const paramsNimAndIdSubMateri = {
+    params: object({
+        nim: string({
+            required_error: "nim tidak boleh kosong",
+            invalid_type_error: "nim harus angka",
+        }),
+        id_sub_materi_pembahasan: string({
+            required_error: "id_sub_materi_pembahasan tidak boleh kosong",
+            invalid_type_error: "id_sub_materi_pembahasan harus angka",
+        })
+    })
+}
+
 export const payloadTrxBimbinganSchema = object({
     ...payloadTrxBimbingan
 });
@@ -43,6 +56,11 @@ export const paramsNimTrxBimbinganSchema = object({
     ...paramsNim
 });
 
+export const paramsNimAndIdSubMateriTrxBimbinganSchema = object({
+    ...paramsNimAndIdSubMateri
+});
+
 export type PayloadTrxBimbinganRequest = TypeOf<typeof payloadTrxBimbinganSchema>;
 export type ParamsIdTrxBimbinganRequest = TypeOf<typeof paramsIdTrxBimbinganNotifSchema>;
 export type ParamsNimTrxBimbinganRequest = TypeOf<typeof paramsNimTrxBimbinganSchema>;
+export type ParamsNimAndIdSubMateriTrxBimbinganRequest = TypeOf<typeof paramsNimAndIdSubMateriTrxBimbinganSchema>;

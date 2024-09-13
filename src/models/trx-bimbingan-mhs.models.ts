@@ -8,6 +8,8 @@ interface ITrxBimbinganMhsAttributes {
     nim: string;
     id_sub_materi_pembahasan: number;
     url_path_doc: string;
+    tgl_upload: string;
+    tgl_review: string | null | undefined;
     uc: string | null | undefined;
     uu: string | null | undefined;
     created_at: Date | undefined;
@@ -17,7 +19,7 @@ interface ITrxBimbinganMhsAttributes {
 export type TrxBimbinganMhsOutput = Required<ITrxBimbinganMhsAttributes>;
 export type TrxBimbinganMhsInput = Optional<
     ITrxBimbinganMhsAttributes,
-    "id_trx_bimbingan" | "uc" | "uu" | "created_at" | "update_at"
+    "id_trx_bimbingan" | "tgl_review" | "uc" | "uu" | "created_at" | "update_at"
 >;
 
 class TrxBimbinganMhs
@@ -27,6 +29,8 @@ class TrxBimbinganMhs
     declare nim: string;
     declare id_sub_materi_pembahasan: number;
     declare url_path_doc: string;
+    declare tgl_upload: string;
+    declare tgl_review: string | null | undefined;
     declare uc: string | null | undefined;
     declare uu: string | null | undefined;
     declare created_at: Date | undefined;
@@ -51,6 +55,14 @@ TrxBimbinganMhs.init(
         url_path_doc: {
             type: DataTypes.STRING,
             allowNull: false
+        },
+        tgl_upload: {
+            type: DataTypes.STRING,
+            allowNull: false
+        },
+        tgl_review: {
+            type: DataTypes.STRING,
+            allowNull: true
         },
         uc: {
             type: DataTypes.STRING(100),

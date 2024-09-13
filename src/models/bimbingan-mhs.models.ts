@@ -14,6 +14,7 @@ interface IBimbinganMhsAttributes {
     id_trx_bimbingan: number | null | undefined;
     id_dospem_mhs: number | null | undefined;
     status_persetujuan: status_persetujuan_dospem_mhs;
+    tgl_detail_review: string | null | undefined;
     uc: string | null | undefined;
     uu: string | null | undefined;
     created_at: Date | undefined;
@@ -23,7 +24,7 @@ interface IBimbinganMhsAttributes {
 export type BimbinganMhsOutput = Required<IBimbinganMhsAttributes>;
 export type BimbinganMhsInput = Optional<
     IBimbinganMhsAttributes,
-    "id_bimbingan" | "status_persetujuan" | "uc" | "uu" | "created_at" | "update_at"
+    "id_bimbingan" | "tgl_detail_review" | "status_persetujuan" | "uc" | "uu" | "created_at" | "update_at"
 >;
 
 class BimbinganMhs
@@ -33,6 +34,7 @@ class BimbinganMhs
     declare id_trx_bimbingan: number;
     declare id_dospem_mhs: number;
     declare status_persetujuan: status_persetujuan_dospem_mhs;
+    declare tgl_detail_review: string | null | undefined;
     declare uc: string | null | undefined;
     declare uu: string | null | undefined;
     declare created_at: Date | undefined;
@@ -57,6 +59,10 @@ BimbinganMhs.init(
         status_persetujuan: {
             type: DataTypes.ENUM("setuju", "belum disetujui", "tidak setuju"),
             defaultValue: "belum disetujui",
+            allowNull: true
+        },
+        tgl_detail_review: {
+            type: DataTypes.STRING,
             allowNull: true
         },
         uc: {

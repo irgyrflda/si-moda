@@ -95,7 +95,7 @@ TrxMasukanDsn.hasMany(RefDosepemMhs, {
 });
 
 RefDosepemMhs.belongsTo(TrxMasukanDsn, {
-    as: "tesis_dospem",
+    as: "masukan_dospem",
     foreignKey: "id_dospem_mhs"
 });
 

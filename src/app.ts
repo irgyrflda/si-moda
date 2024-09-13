@@ -58,10 +58,10 @@ app.use(limiter);
  * dokumen path
  */
 app.use("/si-moda/documentation-api", documentationApi)
-// app.use(
-//   "/public/dokumen",
-//   express.static(path.resolve(__dirname, "../public/dokumen"))
-// );
+app.use(
+  "/public/dokumen",
+  express.static(path.join(__dirname, "./public/upload"))
+);
 
 /**
  * routes

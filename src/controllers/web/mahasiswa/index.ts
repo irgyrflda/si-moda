@@ -10,7 +10,9 @@ import {
 
 import {
     getAllBimbinganByNim,
-    uploadPdf
+    uploadPdf,
+    uploadUlangPdf,
+    getHistoryBimbinganByNimAndIdSubMateri
 } from "@controllers/web/mahasiswa/bimbingan-mhs.controller";
 
 export default {
@@ -19,5 +21,7 @@ export default {
     updateJudulTesis,
     getCapaianMahasiswaByNim,
     getAllBimbinganByNim,
-    uploadPdf
+    uploadPdf,
+    uploadUlangPdf,
+    getHistoryBimbinganByNimAndIdSubMateri
 }

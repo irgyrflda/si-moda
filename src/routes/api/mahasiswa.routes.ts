@@ -21,6 +21,8 @@ routes.get("/capaian-tesis/:nim", checkToken, mahasiswaController.getCapaianMaha
 
 //bimbingan mahasiswa
 routes.get("/bimbingan-mhs/:nim", checkToken, mahasiswaController.getAllBimbinganByNim);
-routes.post("/bimbingan-mhs", checkToken, uploadFile.single("file"), mahasiswaController.uploadPdf);
+routes.get("/bimbingan-mhs-historis/:nim/:id_sub_materi_pembahasan", checkToken, mahasiswaController.getHistoryBimbinganByNimAndIdSubMateri);
+routes.post("/bimbingan-mhs/upload", checkToken, uploadFile.single("file"), mahasiswaController.uploadPdf);
+routes.post("/bimbingan-mhs/re-upload", checkToken, uploadFile.single("file"), mahasiswaController.uploadUlangPdf);
 
 export default routes;

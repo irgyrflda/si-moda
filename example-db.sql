@@ -27,21 +27,15 @@ CREATE TABLE IF NOT EXISTS `m_group` (
   KEY `Index 1` (`kode_group`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table db_simoda.m_group: ~6 rows (approximately)
-INSERT INTO `m_group` (`kode_group`, `nama_group`) VALUES
-	('G01', 'Mahasiswa'),
-	('G02', 'Pembimbing'),
-	('G03', 'Admin UT Daerah'),
-	('G04', 'Kaprodi'),
-	('G05', 'Dekanat'),
-	('G06', 'Ahli');
+-- Data exporting was unselected.
 
 -- Dumping structure for table db_simoda.ref_bimbingan_mhs
 CREATE TABLE IF NOT EXISTS `ref_bimbingan_mhs` (
   `id_bimbingan` int(11) NOT NULL AUTO_INCREMENT,
   `id_trx_bimbingan` int(11) NOT NULL,
   `id_dospem_mhs` int(11) NOT NULL,
-  `status_persetujaun` enum('setuju','tidak setuju') DEFAULT NULL,
+  `status_persetujuan` enum('setuju','belum disetujui','tidak setuju') DEFAULT 'belum disetujui',
+  `tgl_detail_review` varchar(50) DEFAULT NULL,
   `uc` char(50) DEFAULT NULL,
   `uu` char(50) DEFAULT NULL,
   `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
@@ -51,10 +45,10 @@ CREATE TABLE IF NOT EXISTS `ref_bimbingan_mhs` (
   KEY `Index 2` (`id_trx_bimbingan`),
   KEY `Index 3` (`id_dospem_mhs`),
   CONSTRAINT `FK_bimbingan_dospem_mhs` FOREIGN KEY (`id_dospem_mhs`) REFERENCES `ref_dospem_mhs` (`id_dospem_mhs`),
-  CONSTRAINT `FK_bimbingan_trx` FOREIGN KEY (`id_trx_bimbingan`) REFERENCES `trx_bimbingan_mhs` (`id_trx_bimbingan`)
+  CONSTRAINT `FK_bimbingan_trx` FOREIGN KEY (`id_trx_bimbingan`) REFERENCES `trx_bimbingan_mhs` (`id_trx_bimbingan`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table db_simoda.ref_bimbingan_mhs: ~0 rows (approximately)
+-- Data exporting was unselected.
 
 -- Dumping structure for table db_simoda.ref_dospem
 CREATE TABLE IF NOT EXISTS `ref_dospem` (
@@ -67,6 +61,8 @@ CREATE TABLE IF NOT EXISTS `ref_dospem` (
   PRIMARY KEY (`nidn`),
   KEY `Index 1` (`nidn`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- Data exporting was unselected.
 
 -- Dumping structure for table db_simoda.ref_dospem_mhs
 CREATE TABLE IF NOT EXISTS `ref_dospem_mhs` (
@@ -85,7 +81,9 @@ CREATE TABLE IF NOT EXISTS `ref_dospem_mhs` (
   KEY `Index 3` (`nidn`),
   CONSTRAINT `FK_ref_dospem_mhs_dospem` FOREIGN KEY (`nidn`) REFERENCES `ref_dospem` (`nidn`),
   CONSTRAINT `FK_ref_t_mhs_ref_dospem_mhs` FOREIGN KEY (`nim`) REFERENCES `ref_tesis_mahasiswa` (`nim`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- Data exporting was unselected.
 
 -- Dumping structure for table db_simoda.ref_group_user
 CREATE TABLE IF NOT EXISTS `ref_group_user` (
@@ -98,7 +96,9 @@ CREATE TABLE IF NOT EXISTS `ref_group_user` (
   KEY `Index 3` (`nomor_induk`),
   CONSTRAINT `FK_ref_group_m_group` FOREIGN KEY (`kode_group`) REFERENCES `m_group` (`kode_group`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `FK_ref_user_ref_group` FOREIGN KEY (`nomor_induk`) REFERENCES `ref_user` (`nomor_induk`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- Data exporting was unselected.
 
 -- Dumping structure for table db_simoda.ref_materi_pembahasan
 CREATE TABLE IF NOT EXISTS `ref_materi_pembahasan` (
@@ -112,7 +112,7 @@ CREATE TABLE IF NOT EXISTS `ref_materi_pembahasan` (
   KEY `Index 1` (`id_materi_pembahasan`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table db_simoda.ref_materi_pembahasan: ~0 rows (approximately)
+-- Data exporting was unselected.
 
 -- Dumping structure for table db_simoda.ref_menu1
 CREATE TABLE IF NOT EXISTS `ref_menu1` (
@@ -125,13 +125,7 @@ CREATE TABLE IF NOT EXISTS `ref_menu1` (
   CONSTRAINT `FK_ref_menu_m_group` FOREIGN KEY (`kode_group`) REFERENCES `m_group` (`kode_group`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table db_simoda.ref_menu1: ~5 rows (approximately)
-INSERT INTO `ref_menu1` (`kode_group`, `kode_menu1`, `nama_menu1`) VALUES
-	('G01', 'G01.M01', 'Beranda'),
-	('G01', 'G01.M02', 'Bimbingan'),
-	('G01', 'G01.M03', 'Seminar Proposal'),
-	('G01', 'G01.M04', 'Seminar Hasil'),
-	('G01', 'G01.M05', 'Sidang');
+-- Data exporting was unselected.
 
 -- Dumping structure for table db_simoda.ref_menu2
 CREATE TABLE IF NOT EXISTS `ref_menu2` (
@@ -144,12 +138,7 @@ CREATE TABLE IF NOT EXISTS `ref_menu2` (
   CONSTRAINT `FK_ref_menu2_ref_menu1` FOREIGN KEY (`kode_menu1`) REFERENCES `ref_menu1` (`kode_menu1`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table db_simoda.ref_menu2: ~4 rows (approximately)
-INSERT INTO `ref_menu2` (`kode_menu1`, `kode_menu2`, `nama_menu2`) VALUES
-	('G01.M01', 'G01.M01.M01', 'Agenda'),
-	('G01.M01', 'G01.M01.M02', 'Score'),
-	('G01.M01', 'G01.M01.M03', 'To do List'),
-	('G01.M01', 'G01.M01.M04', 'Reading List');
+-- Data exporting was unselected.
 
 -- Dumping structure for table db_simoda.ref_menu3
 CREATE TABLE IF NOT EXISTS `ref_menu3` (
@@ -162,7 +151,7 @@ CREATE TABLE IF NOT EXISTS `ref_menu3` (
   CONSTRAINT `FK_ref_menu3_ref_menu2` FOREIGN KEY (`kode_menu2`) REFERENCES `ref_menu2` (`kode_menu2`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table db_simoda.ref_menu3: ~0 rows (approximately)
+-- Data exporting was unselected.
 
 -- Dumping structure for table db_simoda.ref_status
 CREATE TABLE IF NOT EXISTS `ref_status` (
@@ -173,28 +162,14 @@ CREATE TABLE IF NOT EXISTS `ref_status` (
   KEY `Index 1` (`kode_status`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table db_simoda.ref_status: ~13 rows (approximately)
-INSERT INTO `ref_status` (`kode_status`, `keterangan_status`, `kategori_status`) VALUES
-	('T01', 'Pengajuan Judul Tesis dan Dospem', 'capaian_tesis_mhs'),
-	('T02', 'Pengajuan Sedang diproses', 'capaian_tesis_mhs'),
-	('T03', 'ACC Judul dan Dospem', 'capaian_tesis_mhs'),
-	('T04', 'Bimbingan Seminar Proposal', 'capaian_tesis_mhs'),
-	('T05', 'ACC Seminar Proposal', 'capaian_tesis_mhs'),
-	('T06', 'Seminar Proposal', 'capaian_tesis_mhs'),
-	('T07', 'Bimbingan Seminar Hasil', 'capaian_tesis_mhs'),
-	('T08', 'ACC Seminar Hasil', 'capaian_tesis_mhs'),
-	('T09', 'Seminar Hasil', 'capaian_tesis_mhs'),
-	('T10', 'Bimbingan Sidang Akhir', 'capaian_tesis_mhs'),
-	('T11', 'Acc Sidang Akhir', 'capaian_tesis_mhs'),
-	('T12', 'Ujian Sidang', 'capaian_tesis_mhs'),
-	('T13', 'Selesai Tesis', 'capaian_tesis_mhs');
+-- Data exporting was unselected.
 
 -- Dumping structure for table db_simoda.ref_sub_materi_pembahasan
 CREATE TABLE IF NOT EXISTS `ref_sub_materi_pembahasan` (
   `id_sub_materi_pembahasan` int(11) NOT NULL AUTO_INCREMENT,
   `id_materi_pembahasan` int(11) NOT NULL,
   `sub_materi_pembahasan` varchar(100) DEFAULT NULL,
-  `status_sub_materi` enum('optional','required') DEFAULT NULL,
+  `status_sub_materi` enum('optional','required') DEFAULT 'required',
   `uc` char(50) DEFAULT NULL,
   `uu` char(50) DEFAULT NULL,
   `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
@@ -205,7 +180,7 @@ CREATE TABLE IF NOT EXISTS `ref_sub_materi_pembahasan` (
   CONSTRAINT `Fk_mp_smp` FOREIGN KEY (`id_materi_pembahasan`) REFERENCES `ref_materi_pembahasan` (`id_materi_pembahasan`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table db_simoda.ref_sub_materi_pembahasan: ~0 rows (approximately)
+-- Data exporting was unselected.
 
 -- Dumping structure for table db_simoda.ref_tesis_mahasiswa
 CREATE TABLE IF NOT EXISTS `ref_tesis_mahasiswa` (
@@ -219,6 +194,8 @@ CREATE TABLE IF NOT EXISTS `ref_tesis_mahasiswa` (
   PRIMARY KEY (`nim`),
   KEY `Index 1` (`nim`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- Data exporting was unselected.
 
 -- Dumping structure for table db_simoda.ref_user
 CREATE TABLE IF NOT EXISTS `ref_user` (
@@ -237,6 +214,8 @@ CREATE TABLE IF NOT EXISTS `ref_user` (
   KEY `Index 2` (`nomor_induk`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+-- Data exporting was unselected.
+
 -- Dumping structure for table db_simoda.ref_user_sementara
 CREATE TABLE IF NOT EXISTS `ref_user_sementara` (
   `email` varchar(100) NOT NULL,
@@ -245,7 +224,7 @@ CREATE TABLE IF NOT EXISTS `ref_user_sementara` (
   PRIMARY KEY (`email`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table db_simoda.ref_user_sementara: ~0 rows (approximately)
+-- Data exporting was unselected.
 
 -- Dumping structure for table db_simoda.trx_agenda
 CREATE TABLE IF NOT EXISTS `trx_agenda` (
@@ -253,10 +232,10 @@ CREATE TABLE IF NOT EXISTS `trx_agenda` (
   `nim` char(15) DEFAULT NULL,
   `nidn` char(15) DEFAULT NULL,
   `agenda_pertemuan` enum('online','offline') DEFAULT NULL,
-  `kategori_agenda` enum('bimbingan dosen utama','bimbingan dosen pendamping','seminar proposal','seminar hasil','ujian sidang') NOT NULL,
+  `kategori_agenda` enum('bimbingan','seminar proposal','seminar hasil','ujian sidang') NOT NULL,
   `keterangan_bimbingan` text NOT NULL,
   `status_persetujuan_jadwal` enum('setuju','belum disetujui') NOT NULL DEFAULT 'belum disetujui',
-  `tgl_bimbingan` datetime NOT NULL,
+  `tgl_bimbingan` varchar(50) NOT NULL,
   `uc` char(50) DEFAULT NULL,
   `uu` char(50) DEFAULT NULL,
   `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
@@ -269,7 +248,7 @@ CREATE TABLE IF NOT EXISTS `trx_agenda` (
   CONSTRAINT `FK_mhs_agenda` FOREIGN KEY (`nim`) REFERENCES `ref_tesis_mahasiswa` (`nim`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table db_simoda.trx_agenda: ~0 rows (approximately)
+-- Data exporting was unselected.
 
 -- Dumping structure for table db_simoda.trx_bimbingan_mhs
 CREATE TABLE IF NOT EXISTS `trx_bimbingan_mhs` (
@@ -277,6 +256,8 @@ CREATE TABLE IF NOT EXISTS `trx_bimbingan_mhs` (
   `nim` char(15) NOT NULL,
   `id_sub_materi_pembahasan` int(11) NOT NULL,
   `url_path_doc` varchar(255) NOT NULL,
+  `tgl_upload` varchar(50) NOT NULL,
+  `tgl_review` varchar(50) DEFAULT NULL,
   `uc` char(50) DEFAULT NULL,
   `uu` char(50) DEFAULT NULL,
   `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
@@ -289,7 +270,7 @@ CREATE TABLE IF NOT EXISTS `trx_bimbingan_mhs` (
   CONSTRAINT `FK_trx_bimbingan_sub_m` FOREIGN KEY (`id_sub_materi_pembahasan`) REFERENCES `ref_sub_materi_pembahasan` (`id_sub_materi_pembahasan`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table db_simoda.trx_bimbingan_mhs: ~0 rows (approximately)
+-- Data exporting was unselected.
 
 -- Dumping structure for table db_simoda.trx_masukan_dospem
 CREATE TABLE IF NOT EXISTS `trx_masukan_dospem` (
@@ -309,7 +290,7 @@ CREATE TABLE IF NOT EXISTS `trx_masukan_dospem` (
   CONSTRAINT `FK_masukan_dsn_trx_bimbingan` FOREIGN KEY (`id_trx_bimbingan`) REFERENCES `trx_bimbingan_mhs` (`id_trx_bimbingan`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table db_simoda.trx_masukan_dospem: ~0 rows (approximately)
+-- Data exporting was unselected.
 
 -- Dumping structure for table db_simoda.trx_notifikasi
 CREATE TABLE IF NOT EXISTS `trx_notifikasi` (
@@ -324,7 +305,9 @@ CREATE TABLE IF NOT EXISTS `trx_notifikasi` (
   PRIMARY KEY (`id_notif`),
   KEY `Index 2` (`id_notif`),
   KEY `Index 3` (`nomor_induk`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- Data exporting was unselected.
 
 -- Dumping structure for table db_simoda.trx_topik_penelitian
 CREATE TABLE IF NOT EXISTS `trx_topik_penelitian` (
@@ -339,7 +322,9 @@ CREATE TABLE IF NOT EXISTS `trx_topik_penelitian` (
   KEY `Index 1` (`id_topik`),
   KEY `Index 2` (`nomor_induk`),
   CONSTRAINT `FK_user_topik` FOREIGN KEY (`nomor_induk`) REFERENCES `ref_user` (`nomor_induk`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- Data exporting was unselected.
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
