@@ -44,7 +44,15 @@ const getByNimDataDospemMhs = async (
                         status_persetujuan: status_persetujuan_dospem_mhs.belum
                     }
                 ]
-            }
+            },
+            include: [
+                {
+                    model: RefDosepem,
+                    as: "dosen_mhs",
+                    attributes: ["nama_dospem"]
+                }
+            ],
+            raw: true
         })
 
         if (getData.length === 0) throw new CustomError(httpCode.notFound, "Mahasiswa bimbingan belum mendapatkan dosen pembimbing")
