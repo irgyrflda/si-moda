@@ -2,7 +2,8 @@ import express from "express";
 import validate from "@schema/validate";
 import agendaController from "@controllers/web/agenda"
 import {
-    payloadAgendaSchema
+    payloadAgendaSchema,
+    payloadUpdateAgendaSchema
 } from "@schema/trx-agenda.schema";
 import {
     checkToken
@@ -15,6 +16,8 @@ routes.get("/mhs/:nim/:tahun/:bulan/:tgl_awal/:tgl_akhir", checkToken, agendaCon
 routes.get("/dsn/:nidn/:tahun", checkToken, agendaController.getAgendaDsnByNidnAndTahun);
 routes.get("/dsn/:nidn/:tahun/:bulan", checkToken, agendaController.getAgendaDsnByNidnAndTahunBulan);
 routes.get("/dsn/:nidn/:tahun/:bulan/:tgl_awal/:tgl_akhir", checkToken, agendaController.getAgendaDsnByNidnAndTahunBulanRangeTgl);
-routes.post("/", checkToken, validate(payloadAgendaSchema), agendaController.storeAgendaPertemuanMhs)
+routes.post("/", checkToken, validate(payloadAgendaSchema), agendaController.storeAgendaPertemuanMhs);
+routes.put("/reschedule/:id_trx_agenda", checkToken, validate(payloadUpdateAgendaSchema), agendaController.updateAgendaPertemuanMhs);
+routes.get("/persetujuan-agenda/:id_trx_agenda", checkToken, agendaController.persetujaunAgendaPertemuanMhs)
 
 export default routes;

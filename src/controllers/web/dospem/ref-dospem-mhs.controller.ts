@@ -4,7 +4,7 @@ import { responseSuccess } from "@utils/response-success";
 import { debugLogger, errorLogger } from "@config/logger";
 import CustomError from "@middleware/error-handler";
 import service from "@services/web/ref-dospem-mhs.service-web";
-import { ParamsIdRequest, ParamsNimRequest, PayloadRequest } from "@schema/ref-dospem-mhs.schema";
+import { ParamsIdRequest, ParamsNidnRequest, ParamsNimRequest, PayloadRequest } from "@schema/ref-dospem-mhs.schema";
 import { RefDospemMhsInput } from "@models/ref-dospem-mhs.models";
 
 export const getByIdDataDospemMhs = async (
@@ -33,6 +33,55 @@ export const getByNimDataDospemMhs = async (
         const getData = await service.getByNimDataDospemMhs(nim)
 
         responseSuccess(res, httpCode.ok, "Berhasil memuat data", getData)
+    } catch (error) {
+        errorLogger.error("Error dospem controller : ", error)
+        next(error);
+    }
+}
+
+export const getByNindDataDospemMhs = async (
+    req: Request,
+    res: Response,
+    next: NextFunction
+): Promise<void> => {
+    try {
+        const nim: ParamsNidnRequest["params"]["nidn"] = req.params.nidn as string;
+        const keteranganDospem: ParamsNidnRequest["params"]["nidn"] = req.params.keterangan_dospem as string;
+        const getData = await service.getByNidnDataDospemMhs(nim, keteranganDospem)
+
+        responseSuccess(res, httpCode.ok, "Berhasil memuat data", getData)
+    } catch (error) {
+        errorLogger.error("Error dospem controller : ", error)
+        next(error);
+    }
+}
+
+export const updatePersetujuanDospemMhs = async (
+    req: Request,
+    res: Response,
+    next: NextFunction
+): Promise<void> => {
+    try {
+        const idDospemMhs: ParamsIdRequest["params"]["id_dospem_mhs"] = req.params.id_dospem_mhs as string;
+        const statusPersetujuan = req.body.status_persetujuan
+        const updatePersetujuan = await service.updatePersetujuanDospem(idDospemMhs, statusPersetujuan)
+
+        responseSuccess(res, httpCode.ok, "Berhasil menyetujui", updatePersetujuan)
+    } catch (error) {
+        errorLogger.error("Error dospem controller : ", error)
+        next(error);
+    }
+}
+
+export const updatePersetujuanArrayDospemMhs = async (
+    req: Request,
+    res: Response,
+    next: NextFunction
+): Promise<void> => {
+    try {
+        const updatePersetujuan = await service.updatePersetujuanDospemArray(req.body.persetujuan)
+
+        responseSuccess(res, httpCode.ok, "Berhasil menyetujui", updatePersetujuan)
     } catch (error) {
         errorLogger.error("Error dospem controller : ", error)
         next(error);

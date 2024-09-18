@@ -13,9 +13,10 @@ import {
     ParamsDsnNidnAndTahunRequest,
     ParamsDsnNidnAndBulanTahunRequest,
     ParamsDsnNidnAndRangeTglBulanTahunRequest,
+    ParamsIdRequest,
 } from "@schema/trx-agenda.schema";
 import RefDosepem from "@models/ref-dospem.models";
-import TrxAgenda from "@models/trx-agenda.models";
+import TrxAgenda, { status_persetujuan_jadwal } from "@models/trx-agenda.models";
 import serviceNotif from "@services/web/trx-notifikasi.service-web";
 
 export const getAgendaMhsByNimAndTahun = async (
@@ -452,7 +453,7 @@ export const storeAgendaPertemuanMhs = async (
             })
         )
         console.log("agenda : ", req.body.tgl_bimbingan.toLocaleString('id-ID', { timeZone: 'Asia/Jakarta' }));
-        
+
         const bulkCreate = await TrxAgenda.bulkCreate(dataNew);
 
         if (!bulkCreate) throw new CustomError(httpCode.badRequest, "Gagal Membuat Agenda");
@@ -464,10 +465,113 @@ export const storeAgendaPertemuanMhs = async (
     }
 }
 
+export const updateAgendaPertemuanMhs = async (
+    req: Request,
+    res: Response,
+    next: NextFunction
+): Promise<void> => {
+    try {
+        const idTrxAgenda: ParamsIdRequest["params"]["id_trx_agenda"] = req.params.id_trx_agenda as string;
+        const keterangan: string = req.body.keterangan
+
+        const checkAgenda = await TrxAgenda.findOne({
+            attributes: ["nim", "tgl_bimbingan", "status_persetujuan_jadwal"],
+            where: {
+                id_trx_agenda: idTrxAgenda
+            }
+        })
+
+        if (!checkAgenda) throw new CustomError(httpCode.notFound, "Agenda Tidak Ditemukan")
+
+        const nim: any = checkAgenda.nim
+        let updateAgenda: any
+        let message: string = 'Gagal Mengubah Agenda'
+
+        if (keterangan === "Mahasiswa") {
+            if (checkAgenda.status_persetujuan_jadwal === 'setuju') throw new CustomError(httpCode.badRequest, "Gagal mengubah tanggal agenda: Jadwal sudah disetujui oleh pembimbing")
+            updateAgenda = await TrxAgenda.update({
+                tgl_bimbingan: req.body.tgl_bimbingan
+            }, {
+                where: {
+                    id_trx_agenda: idTrxAgenda
+                }
+            })
+        } else if (keterangan === "Pembimbing") {
+            updateAgenda = await TrxAgenda.update({
+                tgl_bimbingan: req.body.tgl_bimbingan,
+                status_persetujuan_jadwal: status_persetujuan_jadwal.setuju
+            }, {
+                where: {
+                    id_trx_agenda: idTrxAgenda
+                }
+            })
+            await serviceNotif.createNotif(nim, "Jadwal Bimbingan Telah Disetujui!!")
+        } else {
+            updateAgenda = null
+            message = 'Pastikan keterangan berisi Mahasiswa atau Pembimbing'
+        }
+
+        if (!updateAgenda) throw new CustomError(httpCode.badRequest, message)
+        responseSuccess(res, httpCode.ok, "Berhasil Mengubah Agenda")
+    } catch (error) {
+        errorLogger.error("Error post agenda : ", error)
+        next(error);
+    }
+}
+
+export const persetujaunAgendaPertemuanMhs = async (
+    req: Request,
+    res: Response,
+    next: NextFunction
+): Promise<void> => {
+    try {
+        const idTrxAgenda: ParamsIdRequest["params"]["id_trx_agenda"] = req.params.id_trx_agenda as string;
+        const checkAgenda = await TrxAgenda.findOne({
+            attributes: ["nim", "status_persetujuan_jadwal"],
+            where: {
+                id_trx_agenda: idTrxAgenda
+            }
+        });
+
+        if (!checkAgenda) throw new CustomError(httpCode.notFound, "Agenda Tidak Ditemukan")
+        if (checkAgenda.status_persetujuan_jadwal === 'setuju') throw new CustomError(httpCode.conflict, "Agenda Sudah Disetujui")
+
+        const nim: any = checkAgenda.nim
+        const updateAgenda = await TrxAgenda.update({
+            status_persetujuan_jadwal: status_persetujuan_jadwal.setuju
+        }, {
+            where: {
+                id_trx_agenda: idTrxAgenda
+            }
+        });
+
+        if (!updateAgenda) throw new CustomError(httpCode.badRequest, "Gagal Menyetujui Agenda Pertemuan")
+
+        const dataAgendaNew = await TrxAgenda.findOne({
+            attributes: ["id_trx_agenda", "status_persetujuan_jadwal"],
+            where: {
+                id_trx_agenda: idTrxAgenda
+            }
+        });
+
+        await serviceNotif.createNotif(nim, "Jadwal Bimbingan Telah Disetujui!!")
+
+        responseSuccess(res, httpCode.ok, "Berhasil Menyetujui", dataAgendaNew)
+    } catch (error) {
+        errorLogger.error("Error post agenda : ", error)
+        next(error);
+    }
+}
+
 export const createAgendaPertemuanDsn = async (
     req: Request,
     res: Response,
     next: NextFunction
 ): Promise<void> => {
+    try {
 
+    } catch (error) {
+        errorLogger.error("Error post agenda : ", error)
+        next(error);
+    }
 }

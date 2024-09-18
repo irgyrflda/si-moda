@@ -151,6 +151,25 @@ const payloadAgenda = {
     })
 };
 
+const payloadUpdateAgenda = {
+    body: object({
+        keterangan: string({
+            required_error: "keterangan tidak boleh kosong",
+            invalid_type_error: "keterangan harus bertipe huruf"
+        }),
+        tgl_bimbingan: string({
+            required_error: "Tanggal bimbingan tidak boleh kosong",
+            invalid_type_error: "Tanggal bimbingan harus berupa string",
+        }).refine((val) => datetimeRegex.test(val), {
+            message: "Invalid datetime format. Expected format: YYYY-MM-DD HH:MM:SS",
+        })
+    })
+};
+
+export const payloadUpdateAgendaSchema = object({
+    ...payloadUpdateAgenda
+});
+
 export const payloadAgendaSchema = object({
     ...payloadAgenda
 });
@@ -183,6 +202,8 @@ export const paramsNidnAndRangeTglBulanTahunSchema = object({
     ...paramsNidnAndRangeTglBulanTahun
 });
 
+
+export type PayloadUpdateAgendaRequest = TypeOf<typeof payloadUpdateAgendaSchema>;
 export type PayloadAgendaRequest = TypeOf<typeof payloadAgendaSchema>;
 export type ParamsIdRequest = TypeOf<typeof paramsIdSchema>;
 export type ParamsMhsNimAndTahunRequest = TypeOf<typeof paramsNimAndTahunSchema>;
