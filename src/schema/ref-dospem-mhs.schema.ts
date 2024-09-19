@@ -62,6 +62,16 @@ const paramsNidn = {
     })
 }
 
+const paramsKetDospem = {
+    params: object({
+        keterangan_dospem: nativeEnum(keterangan_dospem)
+    })
+}
+
+export const paramsKetDospemSchema = object({
+    ...paramsKetDospem
+});
+
 export const payloadSchema = object({
     ...payload
 });
@@ -86,6 +96,7 @@ export const paramsNidnSchema = object({
     ...paramsNidn
 });
 
+export type ParamsKetDospemRequest = TypeOf<typeof paramsKetDospemSchema>;
 export type PayloadRequest = TypeOf<typeof payloadSchema>;
 export type PayloadPersetujuanRequest = TypeOf<typeof payloadPersetujuanSchema>;
 export type PayloadPersetujuanArrayRequest = TypeOf<typeof payloadPersetujuanArraySchema>;

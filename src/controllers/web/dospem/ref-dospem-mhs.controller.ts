@@ -4,8 +4,8 @@ import { responseSuccess } from "@utils/response-success";
 import { debugLogger, errorLogger } from "@config/logger";
 import CustomError from "@middleware/error-handler";
 import service from "@services/web/ref-dospem-mhs.service-web";
-import { ParamsIdRequest, ParamsNidnRequest, ParamsNimRequest, PayloadRequest } from "@schema/ref-dospem-mhs.schema";
-import { RefDospemMhsInput } from "@models/ref-dospem-mhs.models";
+import { ParamsIdRequest, ParamsKetDospemRequest, ParamsNidnRequest, ParamsNimRequest, PayloadRequest } from "@schema/ref-dospem-mhs.schema";
+import { keterangan_dospem, RefDospemMhsInput } from "@models/ref-dospem-mhs.models";
 
 export const getByIdDataDospemMhs = async (
     req: Request,
@@ -46,7 +46,7 @@ export const getByNindDataDospemMhs = async (
 ): Promise<void> => {
     try {
         const nim: ParamsNidnRequest["params"]["nidn"] = req.params.nidn as string;
-        const keteranganDospem: ParamsNidnRequest["params"]["nidn"] = req.params.keterangan_dospem as string;
+        const keteranganDospem: ParamsKetDospemRequest["params"]["keterangan_dospem"] = req.params.keterangan_dospem as keterangan_dospem;
         const getData = await service.getByNidnDataDospemMhs(nim, keteranganDospem)
 
         responseSuccess(res, httpCode.ok, "Berhasil memuat data", getData)
@@ -100,7 +100,7 @@ export const storeDataDospemMhs = async (
             keterangan_dospem: req.body.keterangan_dospem
         }
 
-        const store : RefDospemMhsInput = await service.storeDataDospemMhs(payload)
+        const store: RefDospemMhsInput = await service.storeDataDospemMhs(payload)
 
         responseSuccess(res, httpCode.ok, "Berhasil membuat data", store)
     } catch (error) {

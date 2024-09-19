@@ -1,100 +1,52 @@
-[2024-09-18T00:01:48.408] [ERROR] error - Error dospem controller :  CustomError: Internal server error.
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-dospem-mhs.service-web.ts:223:19
+[2024-09-19T10:36:06.667] [ERROR] error - Error bimbingan :  CustomError: materi bimbingan tidak ditemukan
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:109:19
     at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-dospem-mhs.service-web.ts:28:58)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:5:58)
     at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 500,
+  code: 404,
   status: 'error'
 }
-[2024-09-18T00:01:48.414] [ERROR] error - CustomError: Internal server error.
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-dospem-mhs.service-web.ts:223:19
+[2024-09-19T10:36:06.673] [ERROR] error - CustomError: materi bimbingan tidak ditemukan
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:109:19
     at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-dospem-mhs.service-web.ts:28:58)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:5:58)
     at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 500,
+  code: 404,
   status: 'error'
 }
-[2024-09-18T00:04:47.413] [ERROR] error - Error dospem controller :  CustomError: Internal server error.
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-dospem-mhs.service-web.ts:289:19
-    at Generator.throw (<anonymous>)
-    at rejected (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-dospem-mhs.service-web.ts:29:65)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 500,
-  status: 'error'
-}
-[2024-09-18T00:04:47.422] [ERROR] error - CustomError: Internal server error.
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-dospem-mhs.service-web.ts:289:19
-    at Generator.throw (<anonymous>)
-    at rejected (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-dospem-mhs.service-web.ts:29:65)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 500,
-  status: 'error'
-}
-[2024-09-18T00:05:02.837] [ERROR] error - Error dospem controller :  CustomError: Internal server error.
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-dospem-mhs.service-web.ts:289:19
-    at Generator.throw (<anonymous>)
-    at rejected (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-dospem-mhs.service-web.ts:29:65)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 500,
-  status: 'error'
-}
-[2024-09-18T00:05:02.846] [ERROR] error - CustomError: Internal server error.
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-dospem-mhs.service-web.ts:289:19
-    at Generator.throw (<anonymous>)
-    at rejected (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-dospem-mhs.service-web.ts:29:65)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 500,
-  status: 'error'
-}
-[2024-09-18T00:06:10.058] [ERROR] error - Error dospem controller :  CustomError: Ada mahasiswa yang tidak terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-dospem-mhs.service-web.ts:286:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-dospem-mhs.service-web.ts:28:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 400,
-  status: 'error'
-}
-[2024-09-18T00:06:10.067] [ERROR] error - CustomError: Ada mahasiswa yang tidak terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-dospem-mhs.service-web.ts:286:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-dospem-mhs.service-web.ts:28:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 400,
-  status: 'error'
-}
-[2024-09-18T00:06:48.577] [ERROR] error - Error dospem controller :  CustomError: Ada mahasiswa yang tidak terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-dospem-mhs.service-web.ts:286:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-dospem-mhs.service-web.ts:28:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 400,
-  status: 'error'
-}
-[2024-09-18T00:06:48.583] [ERROR] error - CustomError: Ada mahasiswa yang tidak terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-dospem-mhs.service-web.ts:286:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-dospem-mhs.service-web.ts:28:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 400,
-  status: 'error'
-}
-[2024-09-18T00:39:10.360] [ERROR] error - Error chect token :  CustomError: Unauthorized[0] User tidak ditemukan
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:44:19
+[2024-09-19T11:23:04.653] [ERROR] error - Error chect token :  CustomError: Unauthorized[0] User tidak ditemukan
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:88:19
     at Generator.next (<anonymous>)
     at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
     at processTicksAndRejections (node:internal/process/task_queues:95:5) {
   code: 400,
   status: 'error'
 }
-[2024-09-18T00:39:10.366] [ERROR] error - CustomError: Unauthorized[0] User tidak ditemukan
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:44:19
+[2024-09-19T11:23:04.661] [ERROR] error - CustomError: Unauthorized[0] User tidak ditemukan
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:88:19
     at Generator.next (<anonymous>)
     at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
     at processTicksAndRejections (node:internal/process/task_queues:95:5) {
   code: 400,
   status: 'error'
 }
-[2024-09-18T00:40:31.229] [ERROR] error - Error chect token :  CustomError: Token Expired
+[2024-09-19T11:23:10.014] [ERROR] error - Error chect token :  CustomError: Unauthorized[0] User tidak ditemukan
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:88:19
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 400,
+  status: 'error'
+}
+[2024-09-19T11:23:10.015] [ERROR] error - CustomError: Unauthorized[0] User tidak ditemukan
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:88:19
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 400,
+  status: 'error'
+}
+[2024-09-19T11:38:56.407] [ERROR] error - Error chect token :  CustomError: Token Expired
     at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:61:23
     at Generator.next (<anonymous>)
     at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
@@ -102,7 +54,7 @@
   code: 401,
   status: 'error'
 }
-[2024-09-18T00:40:31.230] [ERROR] error - CustomError: Token Expired
+[2024-09-19T11:38:56.411] [ERROR] error - CustomError: Token Expired
     at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:61:23
     at Generator.next (<anonymous>)
     at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
@@ -110,23 +62,7 @@
   code: 401,
   status: 'error'
 }
-[2024-09-18T00:43:01.384] [ERROR] error - Error post agenda :  CustomError: Agenda Tidak Ditemukan
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:484:33
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:28:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 404,
-  status: 'error'
-}
-[2024-09-18T00:43:01.393] [ERROR] error - CustomError: Agenda Tidak Ditemukan
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:484:33
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:28:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 404,
-  status: 'error'
-}
-[2024-09-18T10:08:05.236] [ERROR] error - Error chect token :  CustomError: Unauthorized token not match[0] 
+[2024-09-19T11:45:02.266] [ERROR] error - Error chect token :  CustomError: Unauthorized token not match[0] 
     at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:48:19
     at Generator.next (<anonymous>)
     at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
@@ -134,7 +70,7 @@
   code: 401,
   status: 'error'
 }
-[2024-09-18T10:08:05.240] [ERROR] error - CustomError: Unauthorized token not match[0] 
+[2024-09-19T11:45:02.272] [ERROR] error - CustomError: Unauthorized token not match[0] 
     at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:48:19
     at Generator.next (<anonymous>)
     at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
@@ -142,147 +78,210 @@
   code: 401,
   status: 'error'
 }
-[2024-09-18T10:11:37.431] [ERROR] error - Error post agenda :  CustomError: Gagal mengubah tanggal agenda: Jadwal sudah disetujui oleh dospem
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:490:75
+[2024-09-19T13:29:08.859] [ERROR] error - Error chect token :  CustomError: Token Expired
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:61:23
     at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:28:58)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
     at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 401,
+  status: 'error'
+}
+[2024-09-19T13:29:08.863] [ERROR] error - CustomError: Token Expired
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:61:23
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 401,
+  status: 'error'
+}
+[2024-09-19T15:38:05.538] [ERROR] error - error upload Error: tidak ada file yang di upload
+[2024-09-19T15:38:05.542] [ERROR] error - CustomError: tidak ada file yang di upload
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\mahasiswa\bimbingan-mhs.controller.ts:50:30
+    at Generator.next (<anonymous>)
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\mahasiswa\bimbingan-mhs.controller.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\mahasiswa\bimbingan-mhs.controller.ts:4:12)
+    at uploadPdf (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\mahasiswa\bimbingan-mhs.controller.ts:48:20)
+    at Layer.handle [as handle_request] (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\route.js:144:13)
+    at done (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\multer\lib\make-middleware.js:45:7)
+    at indicateDone (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\multer\lib\make-middleware.js:49:68) {
   code: 400,
   status: 'error'
 }
-[2024-09-18T10:11:37.437] [ERROR] error - CustomError: Gagal mengubah tanggal agenda: Jadwal sudah disetujui oleh dospem
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:490:75
+[2024-09-19T21:48:13.751] [ERROR] error - Error profile mhs :  CustomError: Data Mahasiswa Tidak Ditemukan
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\profiles.service-web.ts:45:19
     at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:28:58)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\profiles.service-web.ts:5:58)
     at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 400,
+  code: 404,
   status: 'error'
 }
-[2024-09-18T10:11:48.371] [ERROR] error - Error post agenda :  CustomError: Pastikan keterangan berisi mahasiswa atau dospem
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:512:34
+[2024-09-19T21:48:13.753] [ERROR] error - CustomError: Data Mahasiswa Tidak Ditemukan
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\profiles.service-web.ts:45:19
     at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:28:58)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\profiles.service-web.ts:5:58)
     at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 400,
+  code: 404,
   status: 'error'
 }
-[2024-09-18T10:11:48.372] [ERROR] error - CustomError: Pastikan keterangan berisi mahasiswa atau dospem
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:512:34
+[2024-09-19T21:58:07.361] [ERROR] error - Error dospem controller :  CustomError: Mahasiswa bimbingan tidak ditemukan
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-dospem-mhs.service-web.ts:106:19
     at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:28:58)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-dospem-mhs.service-web.ts:28:58)
     at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 400,
+  code: 404,
   status: 'error'
 }
-[2024-09-18T10:17:11.004] [ERROR] error - Error post agenda :  CustomError: Pastikan keterangan berisi mahasiswa atau dospem
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:514:34
+[2024-09-19T21:58:07.366] [ERROR] error - CustomError: Mahasiswa bimbingan tidak ditemukan
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-dospem-mhs.service-web.ts:106:19
     at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:28:58)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-dospem-mhs.service-web.ts:28:58)
     at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 400,
+  code: 404,
   status: 'error'
 }
-[2024-09-18T10:17:11.011] [ERROR] error - CustomError: Pastikan keterangan berisi mahasiswa atau dospem
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:514:34
+[2024-09-19T22:00:37.367] [ERROR] error - Error dospem controller :  CustomError: Dospem pada mahasiswa tersebut sudah dua
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-dospem-mhs.service-web.ts:170:19
     at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:28:58)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-dospem-mhs.service-web.ts:28:58)
     at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 400,
+  code: 208,
   status: 'error'
 }
-[2024-09-18T10:17:34.950] [ERROR] error - Error post agenda :  CustomError: Pastikan keterangan berisi Mahasiswa atau Pembimbing
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:514:34
+[2024-09-19T22:00:37.368] [ERROR] error - CustomError: Dospem pada mahasiswa tersebut sudah dua
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-dospem-mhs.service-web.ts:170:19
     at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:28:58)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-dospem-mhs.service-web.ts:28:58)
     at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 400,
+  code: 208,
   status: 'error'
 }
-[2024-09-18T10:17:34.955] [ERROR] error - CustomError: Pastikan keterangan berisi Mahasiswa atau Pembimbing
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:514:34
+[2024-09-19T22:02:10.643] [ERROR] error - Error dospem controller :  CustomError: Mahasiswa bimbingan tidak ditemukan
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-dospem-mhs.service-web.ts:106:19
     at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:28:58)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-dospem-mhs.service-web.ts:28:58)
     at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 400,
+  code: 404,
   status: 'error'
 }
-[2024-09-18T10:17:42.804] [ERROR] error - Error post agenda :  CustomError: Gagal mengubah tanggal agenda: Jadwal sudah disetujui oleh dospem
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:491:75
+[2024-09-19T22:02:10.644] [ERROR] error - CustomError: Mahasiswa bimbingan tidak ditemukan
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-dospem-mhs.service-web.ts:106:19
     at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:28:58)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-dospem-mhs.service-web.ts:28:58)
     at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 400,
+  code: 404,
   status: 'error'
 }
-[2024-09-18T10:17:42.805] [ERROR] error - CustomError: Gagal mengubah tanggal agenda: Jadwal sudah disetujui oleh dospem
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:491:75
+[2024-09-19T22:53:52.205] [ERROR] error - Error chect token :  CustomError: Token Expired
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:61:23
     at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:28:58)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
     at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 400,
+  code: 401,
   status: 'error'
 }
-[2024-09-18T10:18:10.525] [ERROR] error - Error post agenda :  CustomError: Gagal mengubah tanggal agenda: Jadwal sudah disetujui oleh pembimbing
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:491:75
+[2024-09-19T22:53:52.209] [ERROR] error - CustomError: Token Expired
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:61:23
     at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:28:58)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
     at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 400,
+  code: 401,
   status: 'error'
 }
-[2024-09-18T10:18:10.531] [ERROR] error - CustomError: Gagal mengubah tanggal agenda: Jadwal sudah disetujui oleh pembimbing
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:491:75
+[2024-09-19T23:21:09.564] [ERROR] error - Error chect token :  CustomError: Unauthorized token not match[0] 
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:48:19
     at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:28:58)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
     at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 400,
+  code: 401,
   status: 'error'
 }
-[2024-09-18T10:41:07.866] [ERROR] error - Error post agenda :  CustomError: Agenda Sudah DIsetujui
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:537:71
+[2024-09-19T23:21:09.569] [ERROR] error - CustomError: Unauthorized token not match[0] 
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:48:19
     at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:28:58)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
     at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
+  code: 401,
   status: 'error'
 }
-[2024-09-18T10:41:07.873] [ERROR] error - CustomError: Agenda Sudah DIsetujui
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:537:71
+[2024-09-19T23:21:28.816] [ERROR] error - Error dospem controller :  CustomError: Mahasiswa bimbingan tidak ditemukan
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-dospem-mhs.service-web.ts:106:19
     at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:28:58)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-dospem-mhs.service-web.ts:28:58)
     at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
+  code: 404,
   status: 'error'
 }
-[2024-09-18T10:41:27.332] [ERROR] error - Error post agenda :  CustomError: Agenda Sudah Disetujui
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:537:71
+[2024-09-19T23:21:28.818] [ERROR] error - CustomError: Mahasiswa bimbingan tidak ditemukan
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-dospem-mhs.service-web.ts:106:19
     at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:28:58)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-dospem-mhs.service-web.ts:28:58)
     at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
+  code: 404,
   status: 'error'
 }
-[2024-09-18T10:41:27.338] [ERROR] error - CustomError: Agenda Sudah Disetujui
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:537:71
+[2024-09-19T23:24:56.765] [ERROR] error - Error chect token :  CustomError: Unauthorized token not match[0] 
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:48:19
     at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:28:58)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
     at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
+  code: 401,
   status: 'error'
 }
-[2024-09-18T10:42:30.026] [ERROR] error - Error post agenda :  CustomError: Agenda Sudah Disetujui
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:537:71
+[2024-09-19T23:24:56.770] [ERROR] error - CustomError: Unauthorized token not match[0] 
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:48:19
     at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:28:58)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
     at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
+  code: 401,
   status: 'error'
 }
-[2024-09-18T10:42:30.032] [ERROR] error - CustomError: Agenda Sudah Disetujui
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:537:71
+[2024-09-19T23:26:01.259] [ERROR] error - Error dospem controller :  CustomError: Ada dospem yang belum disetujui
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-dospem-mhs.service-web.ts:69:19
     at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:28:58)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-dospem-mhs.service-web.ts:28:58)
     at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 409,
+  code: 302,
+  status: 'error'
+}
+[2024-09-19T23:26:01.260] [ERROR] error - CustomError: Ada dospem yang belum disetujui
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-dospem-mhs.service-web.ts:69:19
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-dospem-mhs.service-web.ts:28:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 302,
+  status: 'error'
+}
+[2024-09-19T23:27:59.343] [ERROR] error - Error profile mhs :  CustomError: Internal server error.
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\profiles.service-web.ts:73:19
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\profiles.service-web.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 500,
+  status: 'error'
+}
+[2024-09-19T23:27:59.344] [ERROR] error - CustomError: Internal server error.
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\profiles.service-web.ts:73:19
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\profiles.service-web.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 500,
+  status: 'error'
+}
+[2024-09-19T23:29:03.609] [ERROR] error - Error profile mhs :  CustomError: Data Mahasiswa Tidak Ditemukan
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\profiles.service-web.ts:69:19
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\profiles.service-web.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 404,
+  status: 'error'
+}
+[2024-09-19T23:29:03.611] [ERROR] error - CustomError: Data Mahasiswa Tidak Ditemukan
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\profiles.service-web.ts:69:19
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\profiles.service-web.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 404,
   status: 'error'
 }

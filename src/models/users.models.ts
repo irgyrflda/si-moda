@@ -3,7 +3,7 @@ import { DataTypes, Model, Optional } from "sequelize";
 
 interface IUsersAttributes {
     nomor_induk: string;
-    nama_user: string;
+    nama_user: string | null | undefined;
     token: string | null | undefined;
     refresh_token: string | null | undefined;
     token_expired: Date | undefined;

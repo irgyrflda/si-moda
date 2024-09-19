@@ -191,7 +191,7 @@ const storeUser = async (
     refresh_token: string,
     // token_expired: Date,
     nomor_induk: string,
-    nama_user: string,
+    nama_user: string | null | undefined,
     email_ecampus: string | null | undefined,
     email_google: string | null | undefined,
     ucr: string

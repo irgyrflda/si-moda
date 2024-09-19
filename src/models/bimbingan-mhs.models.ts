@@ -102,12 +102,12 @@ BimbinganMhs.belongsTo(TrxBimbinganMhs, {
     foreignKey: "id_trx_bimbingan"
 });
 
-BimbinganMhs.hasMany(RefDosepemMhs, {
+BimbinganMhs.belongsTo(RefDosepemMhs, {
     as: "dospem_tesis",
     foreignKey: "id_dospem_mhs"
 });
 
-RefDosepemMhs.belongsTo(BimbinganMhs, {
+RefDosepemMhs.hasMany(BimbinganMhs, {
     as: "tesis_dospem",
     foreignKey: "id_dospem_mhs"
 });

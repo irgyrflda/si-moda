@@ -44,7 +44,14 @@ const getDataBimbinganByNim = async (
                 {
                     model: BimbinganMhs,
                     as: "dospem_tasis_mhs",
-                    attributes: ['id_bimbingan', 'status_persetujuan', 'tgl_detail_review']
+                    attributes: ['id_bimbingan', 'status_persetujuan', 'tgl_detail_review'],
+                    include: [
+                        {
+                            model: RefDosepemMhs,
+                            as: "dospem_tesis",
+                            attributes: ["keterangan_dospem", "id_dospem_mhs"]
+                        }
+                    ]
                 }
             ],
             where: {
@@ -83,11 +90,17 @@ const getDataBimbinganByNim = async (
         Promise.all(
             getBimbingan.map((i: any) => {
                 let kemajuan = null
+                let detailPenilaian = null
                 dataArr.find((o: any) => {
                     if (o.id_trx_bimbingan === i.id_trx_bimbingan) {
                         kemajuan = o.kemajuan
                     }
                 });
+                getPersetujuanDosepemByNim.find((o: any) => {
+                    if (o.id_trx_bimbingan === i.id_trx_bimbingan) {
+                        detailPenilaian = o.dospem_tasis_mhs
+                    }
+                })
                 dataNew.push({
                     id_materi_pembahasan: i.id_materi_pembahasan,
                     materi_pembahasan: i.materi_pembahasan,
@@ -99,7 +112,8 @@ const getDataBimbinganByNim = async (
                     url_path_doc: i.url_path_doc,
                     tgl_upload: i.tgl_upload,
                     tgl_terakhir_review: i.tgl_review,
-                    kemajuan: kemajuan
+                    kemajuan: kemajuan,
+                    penilaian_kemajuan_detail: detailPenilaian
                 })
             })
         )
@@ -152,7 +166,14 @@ const getDataHistoryBimbinganByNim = async (
                 {
                     model: BimbinganMhs,
                     as: "dospem_tasis_mhs",
-                    attributes: ['id_bimbingan', 'status_persetujuan']
+                    attributes: ['id_bimbingan', 'status_persetujuan'],
+                    include: [
+                        {
+                            model: RefDosepemMhs,
+                            as: "dospem_tesis",
+                            attributes: ["keterangan_dospem", "id_dospem_mhs"]
+                        }
+                    ]
                 }
             ],
             where: {
@@ -184,7 +205,7 @@ const getDataHistoryBimbinganByNim = async (
 
                 dataArr.push({
                     id_trx_bimbingan: i.id_trx_bimbingan,
-                    kemajuan: valPersetujuan
+                    kemajuan: valPersetujuan,
                 })
             })
         )
@@ -194,9 +215,15 @@ const getDataHistoryBimbinganByNim = async (
         Promise.all(
             getBimbingan.map((i: any) => {
                 let kemajuan = null
+                let detailPenilaian = null
                 dataArr.find((o: any) => {
                     if (o.id_trx_bimbingan === i.id_trx_bimbingan) {
                         kemajuan = o.kemajuan
+                    }
+                })
+                getPersetujuanDosepemByNim.find((o: any) => {
+                    if (o.id_trx_bimbingan === i.id_trx_bimbingan) {
+                        detailPenilaian = o.dospem_tasis_mhs
                     }
                 })
                 dataNew.push({
@@ -210,7 +237,8 @@ const getDataHistoryBimbinganByNim = async (
                     url_path_doc: i.url_path_doc,
                     tgl_upload: i.tgl_upload,
                     tgl_terakhir_review: i.tgl_review,
-                    kemajuan: kemajuan
+                    kemajuan: kemajuan,
+                    penilaian_kemajuan_detail: detailPenilaian
                 })
             })
         )
@@ -235,7 +263,7 @@ const storeTrxBimbinganByNim = async (
     try {
         const cekPayloadTgl = cekTgl(tgl_upload)
 
-        if(cekPayloadTgl === false) throw new CustomError(httpCode.badRequest, "Pastikan format tgl_upload YYYY-MM-DD HH:MM:SS")
+        if (cekPayloadTgl === false) throw new CustomError(httpCode.badRequest, "Pastikan format tgl_upload YYYY-MM-DD HH:MM:SS")
         const checkDospem = await RefDosepemMhs.findAll({
             attributes: ["id_dospem_mhs", "nidn", "status_persetujuan"],
             where: {
@@ -270,7 +298,7 @@ const storeTrxBimbinganByNim = async (
         if (!getIdMaxTrx) throw new CustomError(httpCode.badRequest, "Gagal Upload Data[1]")
 
         const idDospemArrNol = checkDospem[0].id_dospem_mhs
-        const idDospemArrSatu = checkDospem[0].id_dospem_mhs
+        const idDospemArrSatu = checkDospem[1].id_dospem_mhs
         const payloadRef = [
             {
                 id_dospem_mhs: idDospemArrNol,
