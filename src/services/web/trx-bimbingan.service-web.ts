@@ -276,6 +276,25 @@ const storeTrxBimbinganByNim = async (
 
         if (checkDospem.length > 2) throw new CustomError(httpCode.badRequest, "Ada kesalahan sistem saat penetapan dospem")
 
+        const validationBimbingan = await db.query(`SELECT a.id_trx_bimbingan, b.id_dospem_mhs, b.status_persetujuan
+        FROM trx_bimbingan_mhs a
+        JOIN ref_bimbingan_mhs b
+        ON a.id_trx_bimbingan = b.id_trx_bimbingan
+        WHERE a.nim = :nim
+        AND a.id_sub_materi_pembahasan = :id_sub_materi_pembahasan
+        AND a.id_trx_bimbingan = (
+        SELECT MAX(id_trx_bimbingan)
+        FROM trx_bimbingan_mhs 
+        WHERE nim = :nim
+        AND id_sub_materi_pembahasan = :id_sub_materi_pembahasan)`, {
+            replacements: { nim: nim, id_sub_materi_pembahasan: id_sub_materi_pembahasan },
+            type: QueryTypes.SELECT
+        });
+
+        const validationPersetujuan = validationBimbingan.some((i: any) => i.status_persetujuan === "belum disetujui")
+
+        if (validationPersetujuan === true) throw new CustomError(httpCode.conflict, "Bimbingan belum di review dospem")
+
         const payloadTrx: TrxBimbinganMhsInput = {
             nim: nim,
             id_sub_materi_pembahasan: id_sub_materi_pembahasan,

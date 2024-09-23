@@ -248,7 +248,7 @@ const updatePersetujuanDospemArray = async (
                 const namaDospem: any = data?.get("dosen_mhs")
                 dataValidation.push({
                     nim: data?.nim,
-                    nama_dospem: namaDospem.nama_dospem,
+                    nama_dospem: namaDospem?.nama_dospem,
                     keterangan_dospem: data?.keterangan_dospem
                 })
             })

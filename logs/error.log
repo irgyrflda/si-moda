@@ -1,0 +1,70 @@
+[2024-09-23T21:25:24.303] [ERROR] error - Error dospem controller :  CustomError: Ada dospem yang belum disetujui
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-dospem-mhs.service-web.ts:69:19
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-dospem-mhs.service-web.ts:28:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 302,
+  status: 'error'
+}
+[2024-09-23T21:25:24.320] [ERROR] error - CustomError: Ada dospem yang belum disetujui
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-dospem-mhs.service-web.ts:69:19
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-dospem-mhs.service-web.ts:28:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 302,
+  status: 'error'
+}
+[2024-09-23T22:38:26.324] [ERROR] error - error upload Error: Bimbingan belum di review dospem
+[2024-09-23T22:38:26.325] [ERROR] error - CustomError: Bimbingan belum di review dospem
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:344:19
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 409,
+  status: 'error'
+}
+[2024-09-23T22:38:30.012] [ERROR] error - error upload Error: Bimbingan belum di review dospem
+[2024-09-23T22:38:30.012] [ERROR] error - CustomError: Bimbingan belum di review dospem
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:344:19
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 409,
+  status: 'error'
+}
+[2024-09-23T22:38:31.247] [ERROR] error - error upload Error: Bimbingan belum di review dospem
+[2024-09-23T22:38:31.247] [ERROR] error - CustomError: Bimbingan belum di review dospem
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:344:19
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 409,
+  status: 'error'
+}
+[2024-09-23T22:38:32.086] [ERROR] error - error upload Error: Bimbingan belum di review dospem
+[2024-09-23T22:38:32.087] [ERROR] error - CustomError: Bimbingan belum di review dospem
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:344:19
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 409,
+  status: 'error'
+}
+[2024-09-23T22:38:32.999] [ERROR] error - error upload Error: Bimbingan belum di review dospem
+[2024-09-23T22:38:33.000] [ERROR] error - CustomError: Bimbingan belum di review dospem
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:344:19
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 409,
+  status: 'error'
+}
+[2024-09-23T22:39:27.659] [ERROR] error - error upload Error: Bimbingan belum di review dospem
+[2024-09-23T22:39:27.659] [ERROR] error - CustomError: Bimbingan belum di review dospem
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:344:19
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 409,
+  status: 'error'
+}
