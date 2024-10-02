@@ -127,15 +127,44 @@ const dospemArray = object({
     })
 });
 
+const mahasiswaArray = object({
+    nim: string({
+        required_error: "nim tidak boleh kosong",
+        invalid_type_error: "nim harus bertipe huruf"
+    })
+});
+
 const datetimeRegex = /^\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}$/;
 
-const payloadAgenda = {
+const payloadAgendaMsh = {
     body: object({
         nim: string({
             required_error: "nim tidak boleh kosong",
             invalid_type_error: "nim harus bertipe huruf"
         }),
         dospem: array(dospemArray).min(1, "Minimal harus ada satu dospem"),
+        agenda_pertemuan: nativeEnum(agenda_pertemuan),
+        kategori_agenda: nativeEnum(kategori_agenda),
+        keterangan_bimbingan: string({
+            required_error: "keterangan bimbingan tidak boleh kosong",
+            invalid_type_error: "keterangan bimbingan harus bertipe huruf"
+        }),
+        tgl_bimbingan: string({
+            required_error: "Tanggal bimbingan tidak boleh kosong",
+            invalid_type_error: "Tanggal bimbingan harus berupa string",
+        }).refine((val) => datetimeRegex.test(val), {
+            message: "Invalid datetime format. Expected format: YYYY-MM-DD HH:MM:SS",
+        })
+    })
+};
+
+const payloadAgendaDsn = {
+    body: object({
+        nidn: string({
+            required_error: "nidn tidak boleh kosong",
+            invalid_type_error: "nidn harus bertipe huruf"
+        }),
+        mahasiswa: array(mahasiswaArray).min(1, "Minimal harus ada satu mahasiswa"),
         agenda_pertemuan: nativeEnum(agenda_pertemuan),
         kategori_agenda: nativeEnum(kategori_agenda),
         keterangan_bimbingan: string({
@@ -170,8 +199,12 @@ export const payloadUpdateAgendaSchema = object({
     ...payloadUpdateAgenda
 });
 
-export const payloadAgendaSchema = object({
-    ...payloadAgenda
+export const payloadAgendaMhsSchema = object({
+    ...payloadAgendaMsh
+});
+
+export const payloadAgendaDsnSchema = object({
+    ...payloadAgendaDsn
 });
 
 export const paramsIdSchema = object({
@@ -204,7 +237,8 @@ export const paramsNidnAndRangeTglBulanTahunSchema = object({
 
 
 export type PayloadUpdateAgendaRequest = TypeOf<typeof payloadUpdateAgendaSchema>;
-export type PayloadAgendaRequest = TypeOf<typeof payloadAgendaSchema>;
+export type PayloadAgendaMhsRequest = TypeOf<typeof payloadAgendaMhsSchema>;
+export type PayloadAgendaDsnRequest = TypeOf<typeof payloadAgendaDsnSchema>;
 export type ParamsIdRequest = TypeOf<typeof paramsIdSchema>;
 export type ParamsMhsNimAndTahunRequest = TypeOf<typeof paramsNimAndTahunSchema>;
 export type ParamsMhsNimAndBulanTahunRequest = TypeOf<typeof paramsNimAndBulanTahunSchema>;

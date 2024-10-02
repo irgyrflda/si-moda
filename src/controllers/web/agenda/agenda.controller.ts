@@ -18,6 +18,7 @@ import {
 import RefDosepem from "@models/ref-dospem.models";
 import TrxAgenda, { status_persetujuan_jadwal } from "@models/trx-agenda.models";
 import serviceNotif from "@services/web/trx-notifikasi.service-web";
+import RefDosepemMhs from "@models/ref-dospem-mhs.models";
 
 export const getAgendaMhsByNimAndTahun = async (
     req: Request,
@@ -446,10 +447,59 @@ export const storeAgendaPertemuanMhs = async (
                     keterangan_bimbingan: req.body.keterangan_bimbingan,
                     tgl_bimbingan: req.body.tgl_bimbingan,
                     nidn: i.nidn,
-                    kategori_agenda: req.body.kategori_agenda
+                    kategori_agenda: req.body.kategori_agenda,
+                    uc: req.body.nim
                 });
 
                 serviceNotif.createNotif(i.nidn, "Anda memiliki agenda baru")
+            })
+        )
+        console.log("agenda : ", req.body.tgl_bimbingan.toLocaleString('id-ID', { timeZone: 'Asia/Jakarta' }));
+
+        const bulkCreate = await TrxAgenda.bulkCreate(dataNew);
+
+        if (!bulkCreate) throw new CustomError(httpCode.badRequest, "Gagal Membuat Agenda");
+
+        responseSuccess(res, httpCode.ok, "Berhasil Membuat Agenda")
+    } catch (error) {
+        errorLogger.error("Error post agenda : ", error)
+        next(error);
+    }
+}
+
+export const storeAgendaPertemuanDsn = async (
+    req: Request,
+    res: Response,
+    next: NextFunction
+): Promise<void> => {
+    try {
+        const cekDsn = await RefDosepemMhs.findOne({
+            attributes: ["nidn"],
+            where: {
+                nidn: req.body.nidn
+            }
+        })        
+
+        if (!cekDsn) throw new CustomError(httpCode.badRequest, "Dosen Pembimbing Tidak Terdaftar")
+
+        const mahasiswa = req.body.mahasiswa
+
+        let dataNew: any[] = [];
+
+        Promise.all(
+            mahasiswa.map((i: any) => {
+                dataNew.push({
+                    nidn: req.body.nidn,
+                    agenda_pertemuan: req.body.agenda_pertemuan,
+                    keterangan_bimbingan: req.body.keterangan_bimbingan,
+                    tgl_bimbingan: req.body.tgl_bimbingan,
+                    nim: i.nim,
+                    kategori_agenda: req.body.kategori_agenda,
+                    status_persetujuan_jadwal: status_persetujuan_jadwal.setuju,
+                    uc: req.body.nidn
+                });
+
+                serviceNotif.createNotif(i.nim, "Anda memiliki agenda baru")
             })
         )
         console.log("agenda : ", req.body.tgl_bimbingan.toLocaleString('id-ID', { timeZone: 'Asia/Jakarta' }));
@@ -490,7 +540,8 @@ export const updateAgendaPertemuanMhs = async (
         if (keterangan === "Mahasiswa") {
             if (checkAgenda.status_persetujuan_jadwal === 'setuju') throw new CustomError(httpCode.badRequest, "Gagal mengubah tanggal agenda: Jadwal sudah disetujui oleh pembimbing")
             updateAgenda = await TrxAgenda.update({
-                tgl_bimbingan: req.body.tgl_bimbingan
+                tgl_bimbingan: req.body.tgl_bimbingan,
+                uu: nim
             }, {
                 where: {
                     id_trx_agenda: idTrxAgenda

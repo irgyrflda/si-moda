@@ -111,6 +111,38 @@ const getByNidnDataDospemMhs = async (
     }
 }
 
+const getByNidnDataDospemMhsAcc = async (
+    nidn: string,
+    keterangan_dospem: string
+) => {
+    try {
+        const getData = await db.query(`SELECT c.id_dospem_mhs, a.nim, b.nama_user nama_mahasiswa, 
+        a.judul_tesis, c.status_persetujuan
+        FROM ref_tesis_mahasiswa a
+        JOIN ref_user b
+        ON a.nim = b.nomor_induk
+        JOIN ref_dospem_mhs c
+        ON a.nim = c.nim
+        WHERE c.nidn = :nidn
+        AND c.keterangan_dospem = :keterangan_dospem
+        AND c.status_persetujuan = 'setuju'`, {
+            replacements: { nidn: nidn, keterangan_dospem: keterangan_dospem },
+            type: QueryTypes.SELECT
+        })
+
+        if (getData.length === 0) throw new CustomError(httpCode.notFound, "Belum Ada Mahasiswa bimbingan Yang Disetujui")
+
+        return getData;
+    } catch (error) {
+        if (error instanceof CustomError) {
+            throw new CustomError(error.code, error.message);
+        } else {
+            console.log(`error : ${error}`);
+            throw new CustomError(500, "Internal server error.");
+        }
+    }
+}
+
 const storeDataDospemMhs = async (
     request: PayloadRequest["body"]
 ): Promise<RefDospemMhsInput> => {
@@ -317,5 +349,6 @@ export default {
     getByNidnDataDospemMhs,
     updatePersetujuanDospem,
     updatePersetujuanDospemArray,
-    storeDataDospemMhs
+    storeDataDospemMhs,
+    getByNidnDataDospemMhsAcc
 }

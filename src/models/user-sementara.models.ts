@@ -4,7 +4,8 @@ import { DataTypes, Model, Optional } from "sequelize";
 interface IRefUserSementaraAttributes {
     email: string,
     token: string,
-    refresh_token: string
+    refresh_token: string,
+    password: string;
 }
 
 export type RefUserSementaraOutput = Required<IRefUserSementaraAttributes>;
@@ -15,7 +16,8 @@ class RefUserSementara
     implements IRefUserSementaraAttributes {
     declare email: string;
     declare token: string;
-    declare refresh_token: string
+    declare refresh_token: string;
+    declare password: string;
 }
 
 RefUserSementara.init(
@@ -30,6 +32,10 @@ RefUserSementara.init(
             allowNull: false
         },
         refresh_token: {
+            type: DataTypes.STRING,
+            allowNull: false
+        },
+        password: {
             type: DataTypes.STRING,
             allowNull: false
         }

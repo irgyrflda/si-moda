@@ -9,6 +9,7 @@ interface IUsersAttributes {
     token_expired: Date | undefined;
     email_google: string | null | undefined;
     email_ecampus: string | null | undefined;
+    password: string;
     uc: string | null | undefined;
     uu: string | null | undefined
     created_at: Date | undefined
@@ -33,6 +34,7 @@ class Users
     declare token_expired: Date | undefined;
     declare email_google: string | null | undefined;
     declare email_ecampus: string | null | undefined;
+    declare password: string;
     declare uc: string | null | undefined;
     declare uu: string | null | undefined;
     declare created_at: Date | undefined;
@@ -68,6 +70,10 @@ Users.init(
         },
         email_ecampus: {
             type: DataTypes.STRING(100),
+            allowNull: true
+        },
+        password: {
+            type: DataTypes.STRING(50),
             allowNull: true
         },
         uc: {

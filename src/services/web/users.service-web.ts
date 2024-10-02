@@ -32,8 +32,6 @@ const getByNomorIndukUserParams = async (
     nomor_induk: ParamsNimUsersRequest["params"]["nomor_induk"]
 ): Promise<UserOutput> => {
     try {
-        console.log("debug 1");
-
         const user = await Users.findOne({
             include: [
                 {
@@ -69,9 +67,7 @@ const getByNomorIndukUserParams = async (
                 nomor_induk: nomor_induk
             }
         });
-        console.log("debug 2 : ", user);
         if (!user) throw new CustomError(httpCode.noContent, "Data Tidak Ditemukan");
-        console.log("debug 3");
         return user;
     } catch (error: any) {
         if (error instanceof CustomError) {
@@ -189,7 +185,7 @@ const getByEmailUser = async (
 const storeUser = async (
     token: string,
     refresh_token: string,
-    // token_expired: Date,
+    password: string,
     nomor_induk: string,
     nama_user: string | null | undefined,
     email_ecampus: string | null | undefined,
@@ -242,7 +238,7 @@ const storeUser = async (
 
             if (cekUser2) throw new CustomError(httpCode.conflict, "Nomor induk dan email sudah terdaftar")
 
-            const payloadUpdate: UserInput = {
+            const payloadUpdate = {
                 nama_user: nama_user,
                 email_ecampus: (!email_ecampus || email_ecampus === "") ? cekEmailEcampus : email_ecampus,
                 email_google: (!email_google || email_google === "") ? cekEmailGoogle : email_google,
@@ -258,6 +254,7 @@ const storeUser = async (
                 token: token,
                 refresh_token: refresh_token,
                 nama_user: nama_user,
+                password: password,
                 email_ecampus: (!email_ecampus || email_ecampus === "") ? cekEmailEcampus : email_ecampus,
                 email_google: (!email_google || email_google === "") ? cekEmailGoogle : email_google,
                 uu: ucr,

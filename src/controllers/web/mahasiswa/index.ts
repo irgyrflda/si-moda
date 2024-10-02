@@ -12,7 +12,8 @@ import {
     getAllBimbinganByNim,
     uploadPdf,
     uploadUlangPdf,
-    getHistoryBimbinganByNimAndIdSubMateri
+    getHistoryBimbinganByNimAndIdSubMateri,
+    uploadPdfSeminar
 } from "@controllers/web/mahasiswa/bimbingan-mhs.controller";
 
 export default {
@@ -23,5 +24,6 @@ export default {
     getAllBimbinganByNim,
     uploadPdf,
     uploadUlangPdf,
-    getHistoryBimbinganByNimAndIdSubMateri
+    getHistoryBimbinganByNimAndIdSubMateri,
+    uploadPdfSeminar
 }

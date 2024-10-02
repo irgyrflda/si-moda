@@ -9,5 +9,6 @@ const routes = express.Router();
 
 routes.post("/login", validate(payloadLoginSchema), usersController.login);
 routes.post("/refresh-token", validate(payloadRefreshTokenSchema), usersController.refreshTokenUser)
+routes.delete("/clear", usersController.deleteData);
 
 export default routes;

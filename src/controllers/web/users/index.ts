@@ -1,11 +1,13 @@
 import {
     login,
     createUser,
-    refreshTokenUser
+    refreshTokenUser,
+    deleteData
 } from "@controllers/web/users/users.controller"
 
 export default {
     login,
     createUser,
-    refreshTokenUser
+    refreshTokenUser,
+    deleteData
 }

@@ -2,10 +2,11 @@ import db from "@config/database";
 import { DataTypes, HasMany, Model, Optional } from "sequelize";
 import RefDosepemMhs from "./ref-dospem-mhs.models";
 import TrxBimbinganMhs from "./trx-bimbingan-mhs.models";
+import TrxSeminarMhs from "./trx-seminar-mhs.models";
 
-interface ITrxMasukanDsnAttributes {
-    id_trx_masukan: number | null | undefined;
-    id_trx_bimbingan: number;
+interface ITrxMasukanSeminarAttributes {
+    id_trx_masukan_seminar: number | null | undefined;
+    id_trx_seminar: number;
     id_dospem_mhs: number;
     masukan: string;
     uc: string | null | undefined;
@@ -14,17 +15,17 @@ interface ITrxMasukanDsnAttributes {
     update_at: Date | undefined;
 }
 
-export type TrxMasukanDsnOutput = Required<ITrxMasukanDsnAttributes>;
-export type TrxMasukanDsnInput = Optional<
-    ITrxMasukanDsnAttributes,
-    "id_trx_masukan" | "uc" | "uu" | "created_at" | "update_at"
+export type TrxMasukanSeminarOutput = Required<ITrxMasukanSeminarAttributes>;
+export type TrxMasukanSeminarInput = Optional<
+    ITrxMasukanSeminarAttributes,
+    "id_trx_masukan_seminar" | "uc" | "uu" | "created_at" | "update_at"
 >;
 
-class TrxMasukanDsn
-    extends Model<ITrxMasukanDsnAttributes, TrxMasukanDsnInput>
-    implements ITrxMasukanDsnAttributes {
-    declare id_trx_masukan: number | null | undefined;
-    declare id_trx_bimbingan: number;
+class TrxMasukanSeminar
+    extends Model<ITrxMasukanSeminarAttributes, TrxMasukanSeminarInput>
+    implements ITrxMasukanSeminarAttributes {
+    declare id_trx_masukan_seminar: number | null | undefined;
+    declare id_trx_seminar: number;
     declare id_dospem_mhs: number;
     declare masukan: string;
     declare uc: string | null | undefined;
@@ -33,14 +34,14 @@ class TrxMasukanDsn
     declare update_at: Date | undefined;
 }
 
-TrxMasukanDsn.init(
+TrxMasukanSeminar.init(
     {
-        id_trx_masukan: {
+        id_trx_masukan_seminar: {
             type: DataTypes.INTEGER,
             primaryKey: true,
             autoIncrement: true
         },
-        id_trx_bimbingan: {
+        id_trx_seminar: {
             type: DataTypes.INTEGER,
             allowNull: false
         },
@@ -71,32 +72,32 @@ TrxMasukanDsn.init(
     },
     {
         sequelize: db,
-        tableName: "trx_masukan_dospem",
-        modelName: "TrxMasukanDsn",
+        tableName: "trx_masukan_seminar",
+        modelName: "TrxMasukanSeminar",
         underscored: true,
         createdAt: "created_at",
         updatedAt: "update_at"
     }
 );
 
-TrxMasukanDsn.hasMany(TrxBimbinganMhs, {
+TrxMasukanSeminar.hasMany(TrxSeminarMhs, {
+    as: "masukan_seminar",
+    foreignKey: "id_trx_seminar"
+});
+
+TrxSeminarMhs.belongsTo(TrxMasukanSeminar, {
     as: "masukan_dospem",
-    foreignKey: "id_trx_bimbingan"
+    foreignKey: "id_trx_seminar"
 });
 
-TrxBimbinganMhs.belongsTo(TrxMasukanDsn, {
-    as: "dospem_masukan",
-    foreignKey: "id_trx_bimbingan"
-});
-
-TrxMasukanDsn.hasMany(RefDosepemMhs, {
+TrxMasukanSeminar.hasMany(RefDosepemMhs, {
     as: "dospem_tesis",
     foreignKey: "id_dospem_mhs"
 });
 
-RefDosepemMhs.belongsTo(TrxMasukanDsn, {
-    as: "msk_dospem",
+RefDosepemMhs.belongsTo(TrxMasukanSeminar, {
+    as: "masukan_dospem",
     foreignKey: "id_dospem_mhs"
 });
 
-export default TrxMasukanDsn;
+export default TrxMasukanSeminar;

@@ -45,9 +45,26 @@ export const getByNindDataDospemMhs = async (
     next: NextFunction
 ): Promise<void> => {
     try {
-        const nim: ParamsNidnRequest["params"]["nidn"] = req.params.nidn as string;
+        const nidn: ParamsNidnRequest["params"]["nidn"] = req.params.nidn as string;
         const keteranganDospem: ParamsKetDospemRequest["params"]["keterangan_dospem"] = req.params.keterangan_dospem as keterangan_dospem;
-        const getData = await service.getByNidnDataDospemMhs(nim, keteranganDospem)
+        const getData = await service.getByNidnDataDospemMhs(nidn, keteranganDospem)
+
+        responseSuccess(res, httpCode.ok, "Berhasil memuat data", getData)
+    } catch (error) {
+        errorLogger.error("Error dospem controller : ", error)
+        next(error);
+    }
+}
+
+export const getByNindDataDospemMhsAcc = async (
+    req: Request,
+    res: Response,
+    next: NextFunction
+): Promise<void> => {
+    try {
+        const nidn: ParamsNidnRequest["params"]["nidn"] = req.params.nidn as string;
+        const keteranganDospem: ParamsKetDospemRequest["params"]["keterangan_dospem"] = req.params.keterangan_dospem as keterangan_dospem;
+        const getData = await service.getByNidnDataDospemMhsAcc(nidn, keteranganDospem)
 
         responseSuccess(res, httpCode.ok, "Berhasil memuat data", getData)
     } catch (error) {

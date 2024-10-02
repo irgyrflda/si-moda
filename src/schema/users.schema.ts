@@ -6,6 +6,10 @@ const payload = {
             required_error: "nomor induk tidak boleh kosong",
             invalid_type_error: "nomor induk harus bertipe huruf"
         }),
+        password: string({
+            required_error: "password tidak boleh kosong",
+            invalid_type_error: "password harus bertipe huruf"
+        })
         // token: string({
         //     required_error: "token tidak boleh kosong",
         //     invalid_type_error: "token harus bertipe huruf"
@@ -37,6 +41,10 @@ const payloadLogin = {
             invalid_type_error: "email harus bertipe huruf"
         })
             .email("Email Tidak Valid"),
+        password: string({
+            required_error: "password tidak boleh kosong",
+            invalid_type_error: "password harus bertipe huruf"
+        })
         // token: string({
         //     required_error: "token tidak boleh kosong",
         //     invalid_type_error: "token harus bertipe huruf"
