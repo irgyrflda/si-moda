@@ -454,7 +454,6 @@ export const storeAgendaPertemuanMhs = async (
                 serviceNotif.createNotif(i.nidn, "Anda memiliki agenda baru")
             })
         )
-        console.log("agenda : ", req.body.tgl_bimbingan.toLocaleString('id-ID', { timeZone: 'Asia/Jakarta' }));
 
         const bulkCreate = await TrxAgenda.bulkCreate(dataNew);
 
