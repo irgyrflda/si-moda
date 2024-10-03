@@ -1,6 +1,7 @@
 import {
     getAllDataDospem,
-    getByNidnDataDospem
+    getByNidnDataDospem,
+    getDataDashboardDospem
 } from "@controllers/web/dospem/ref-dospem.controller";
 
 import {
@@ -22,5 +23,6 @@ export default {
     updatePersetujuanDospemMhs,
     updatePersetujuanArrayDospemMhs,
     storeDataDospemMhs,
-    getByNindDataDospemMhsAcc
+    getByNindDataDospemMhsAcc,
+    getDataDashboardDospem
 }

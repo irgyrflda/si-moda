@@ -1,0 +1,112 @@
+[2024-10-02T22:20:37.047] [DEBUG] default - debug 1 :  {
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlyZ3lyckBnbWFpbC5jb20iLCJpYXQiOjE3Mjc4ODI0MTIsImV4cCI6MTcyNzg4NjAxMn0.7keoTZAexr3RC7jJei_btUQbMCLqHESKhORVCdKFf8U',
+  refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlyZ3lyckBnbWFpbC5jb20iLCJpYXQiOjE3Mjc4ODI0MTIsImV4cCI6MTcyODQ4NzIxMn0.rmGoq4WNjvZS1XNJIXSeNYywd1oKwYYmBMdO00yHxBg',
+  nama_user: 'Dewi Sari',
+  password: '3314C9B7CB40BF689101BCBEFE593E7D',
+  email_ecampus: undefined,
+  email_google: 'irgyrr@gmail.com',
+  uu: '2016004',
+  nomor_induk: '2016004'
+}
+[2024-10-02T22:20:37.054] [DEBUG] default - debug 2 :  Users {
+  dataValues: {
+    token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlyZ3lyckBnbWFpbC5jb20iLCJpYXQiOjE3Mjc4ODI0MTIsImV4cCI6MTcyNzg4NjAxMn0.7keoTZAexr3RC7jJei_btUQbMCLqHESKhORVCdKFf8U',
+    refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlyZ3lyckBnbWFpbC5jb20iLCJpYXQiOjE3Mjc4ODI0MTIsImV4cCI6MTcyODQ4NzIxMn0.rmGoq4WNjvZS1XNJIXSeNYywd1oKwYYmBMdO00yHxBg',
+    nama_user: 'Dewi Sari',
+    password: '3314C9B7CB40BF689101BCBEFE593E7D',
+    email_ecampus: undefined,
+    email_google: 'irgyrr@gmail.com',
+    uu: '2016004',
+    nomor_induk: '2016004',
+    update_at: 2024-10-02T15:20:37.048Z,
+    created_at: 2024-10-02T15:20:37.048Z
+  },
+  _previousDataValues: {
+    token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlyZ3lyckBnbWFpbC5jb20iLCJpYXQiOjE3Mjc4ODI0MTIsImV4cCI6MTcyNzg4NjAxMn0.7keoTZAexr3RC7jJei_btUQbMCLqHESKhORVCdKFf8U',
+    refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlyZ3lyckBnbWFpbC5jb20iLCJpYXQiOjE3Mjc4ODI0MTIsImV4cCI6MTcyODQ4NzIxMn0.rmGoq4WNjvZS1XNJIXSeNYywd1oKwYYmBMdO00yHxBg',
+    nama_user: 'Dewi Sari',
+    password: '3314C9B7CB40BF689101BCBEFE593E7D',
+    email_google: 'irgyrr@gmail.com',
+    uu: '2016004',
+    nomor_induk: '2016004',
+    token_expired: undefined,
+    email_ecampus: undefined,
+    uc: undefined,
+    created_at: 2024-10-02T15:20:37.048Z,
+    update_at: 2024-10-02T15:20:37.048Z
+  },
+  uniqno: 1,
+  _changed: Set(0) {},
+  _options: {
+    isNewRecord: true,
+    _schema: null,
+    _schemaDelimiter: '',
+    attributes: undefined,
+    include: undefined,
+    raw: undefined,
+    silent: undefined
+  },
+  isNewRecord: false,
+  null: undefined
+}
+[2024-10-02T22:20:37.055] [DEBUG] default - debug 3
+[2024-10-02T22:24:29.354] [ERROR] default - error pengajuan :  CustomError: Data tesis pada mahasiswa tersebut sudah ada
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\mahasiswa\pengajuan.controller.ts:45:36
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\mahasiswa\pengajuan.controller.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 409,
+  status: 'error'
+}
+[2024-10-02T22:29:05.263] [DEBUG] default - debug 1 :  {
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlyZ3lyckBnbWFpbC5jb20iLCJpYXQiOjE3Mjc4ODI5MTUsImV4cCI6MTcyNzg4NjUxNX0.o3V2CWTgL_NvnMb5NRHioFJMkOXT93IqGaDx5VSNDeU',
+  refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlyZ3lyckBnbWFpbC5jb20iLCJpYXQiOjE3Mjc4ODI5MTUsImV4cCI6MTcyODQ4NzcxNX0.1fpkmcMr9Ixp_5Da7WhTfTJOvemr-pE62q1m_MI4FHA',
+  nama_user: 'Citra Dewi',
+  password: '3314C9B7CB40BF689101BCBEFE593E7D',
+  email_ecampus: undefined,
+  email_google: 'irgyrr@gmail.com',
+  uu: '2016003',
+  nomor_induk: '2016003'
+}
+[2024-10-02T22:29:05.273] [DEBUG] default - debug 2 :  Users {
+  dataValues: {
+    token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlyZ3lyckBnbWFpbC5jb20iLCJpYXQiOjE3Mjc4ODI5MTUsImV4cCI6MTcyNzg4NjUxNX0.o3V2CWTgL_NvnMb5NRHioFJMkOXT93IqGaDx5VSNDeU',
+    refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlyZ3lyckBnbWFpbC5jb20iLCJpYXQiOjE3Mjc4ODI5MTUsImV4cCI6MTcyODQ4NzcxNX0.1fpkmcMr9Ixp_5Da7WhTfTJOvemr-pE62q1m_MI4FHA',
+    nama_user: 'Citra Dewi',
+    password: '3314C9B7CB40BF689101BCBEFE593E7D',
+    email_ecampus: undefined,
+    email_google: 'irgyrr@gmail.com',
+    uu: '2016003',
+    nomor_induk: '2016003',
+    update_at: 2024-10-02T15:29:05.264Z,
+    created_at: 2024-10-02T15:29:05.264Z
+  },
+  _previousDataValues: {
+    token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlyZ3lyckBnbWFpbC5jb20iLCJpYXQiOjE3Mjc4ODI5MTUsImV4cCI6MTcyNzg4NjUxNX0.o3V2CWTgL_NvnMb5NRHioFJMkOXT93IqGaDx5VSNDeU',
+    refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlyZ3lyckBnbWFpbC5jb20iLCJpYXQiOjE3Mjc4ODI5MTUsImV4cCI6MTcyODQ4NzcxNX0.1fpkmcMr9Ixp_5Da7WhTfTJOvemr-pE62q1m_MI4FHA',
+    nama_user: 'Citra Dewi',
+    password: '3314C9B7CB40BF689101BCBEFE593E7D',
+    email_google: 'irgyrr@gmail.com',
+    uu: '2016003',
+    nomor_induk: '2016003',
+    token_expired: undefined,
+    email_ecampus: undefined,
+    uc: undefined,
+    created_at: 2024-10-02T15:29:05.264Z,
+    update_at: 2024-10-02T15:29:05.264Z
+  },
+  uniqno: 1,
+  _changed: Set(0) {},
+  _options: {
+    isNewRecord: true,
+    _schema: null,
+    _schemaDelimiter: '',
+    attributes: undefined,
+    include: undefined,
+    raw: undefined,
+    silent: undefined
+  },
+  isNewRecord: false,
+  null: undefined
+}
+[2024-10-02T22:29:05.274] [DEBUG] default - debug 3

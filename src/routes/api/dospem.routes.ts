@@ -20,4 +20,7 @@ routes.post("/dosen-mhs", checkToken, validate(payloadSchema), dospemController.
 routes.put("/persetujuan/:id_dospem_mhs", checkToken, validate(payloadPersetujuanSchema), dospemController.updatePersetujuanDospemMhs)
 routes.post("/persetujuan", checkToken, validate(payloadPersetujuanArraySchema), dospemController.updatePersetujuanArrayDospemMhs)
 
+//dashboard dospem
+routes.get("/dashboard/:nidn", checkToken, dospemController.getDataDashboardDospem);
+
 export default routes;

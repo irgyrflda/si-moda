@@ -36,3 +36,19 @@ export const getByNidnDataDospem = async (
         next(error);
     }
 }
+
+export const getDataDashboardDospem = async (
+    req: Request,
+    res: Response,
+    next: NextFunction
+): Promise<void> => {
+    try {
+        const nidn: ParamsNidnRequest["params"]["nidn"] = req.params.nidn as string;
+        const getData = await service.getByNidnDataDashboardDospem(nidn)
+
+        responseSuccess(res, httpCode.ok, "Berhasil memuat data", getData)
+    } catch (error) {
+        errorLogger.error("Error dospem controller : ", error)
+        next(error);
+    }
+}
