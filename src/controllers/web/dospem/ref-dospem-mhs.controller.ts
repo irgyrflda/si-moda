@@ -101,7 +101,7 @@ export const updatePersetujuanBimbinganMhsDospemMhs = async (
         const idTrxBimbingan = req.body.id_trx_bimbingan
         const statusPersetujuan = req.body.status_persetujuan
 
-        await serviceBimbingan.updatePersetujuanBimbinganByNidn(nidn, idTrxBimbingan, statusPersetujuan)
+        await serviceBimbingan.updatePersetujuanBimbinganByNidn(nidn, idTrxBimbingan, statusPersetujuan, )
 
         responseSuccess(res, httpCode.ok, "Berhasil Mengirim Persetujuan")
     } catch (error) {

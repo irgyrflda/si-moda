@@ -347,3 +347,35 @@
   code: 400,
   status: 'error'
 }
+[2024-10-04T22:48:45.745] [ERROR] error - Error dospem controller :  CustomError: Data tidak ditemukan
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-dospem-mhs.service-web.ts:27:19
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-dospem-mhs.service-web.ts:28:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 404,
+  status: 'error'
+}
+[2024-10-04T22:48:45.754] [ERROR] error - CustomError: Data tidak ditemukan
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-dospem-mhs.service-web.ts:27:19
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-dospem-mhs.service-web.ts:28:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 404,
+  status: 'error'
+}
+[2024-10-04T22:49:26.055] [ERROR] error - Error profile mhs :  CustomError: Data Mahasiswa Tidak Ditemukan
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\profiles.service-web.ts:69:19
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\profiles.service-web.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 404,
+  status: 'error'
+}
+[2024-10-04T22:49:26.056] [ERROR] error - CustomError: Data Mahasiswa Tidak Ditemukan
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\profiles.service-web.ts:69:19
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\profiles.service-web.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 404,
+  status: 'error'
+}

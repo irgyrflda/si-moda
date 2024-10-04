@@ -7,6 +7,7 @@ import RefTesisMhs from "@models/ref-tesis-mhs.models";
 import { Op, QueryTypes } from "sequelize";
 import db from "@config/database";
 import serviceNotif from "@services/web/trx-notifikasi.service-web";
+import statusMhsServiceWeb from "./status-mhs.service-web";
 
 const getByIdDataDospemMhs = async (
     id_dospem_mhs: string
@@ -239,7 +240,7 @@ const updatePersetujuanDospem = async (
         })
 
         if (!updateStatusPersetujuan) throw new CustomError(httpCode.badRequest, "Gagal mengubah data")
-
+        await statusMhsServiceWeb.updateStatusCapaianBimbinganProposalMhs(checkDataMhsBimbingan.nim)
         await serviceNotif.createNotif(checkDataMhsBimbingan.nim, `${namaDosem.nama_dospem} telah ${status_persetujuan} menjadi ${checkDataMhsBimbingan.keterangan_dospem} anda`)
 
         return updateStatusPersetujuan;
@@ -329,6 +330,7 @@ const updatePersetujuanDospemArray = async (
         )
         await Promise.all(
             dataNotif.map(async (i: any) => {
+                await statusMhsServiceWeb.updateStatusCapaianBimbinganProposalMhs(i.nim)
                 await serviceNotif.createNotif(i.nim, `${i.nama_dospem} telah ${i.status_persetujuan} menjadi ${i.keterangan_dospem} anda`)
             })
         )

@@ -165,14 +165,14 @@ export const uploadPdfSeminar = async (
 
         const kodeStatusMhs = cekStatusMhs.kode_status
 
-        if (kodeStatusMhs !== "T06" && kodeStatusMhs !== "T09") {
+        if (kodeStatusMhs !== "T05" && kodeStatusMhs !== "T08") {
             pathFiles.forEach(async (items: any) => {
                 await removeFile(items.filename)
             })
             throw new CustomError(httpCode.badRequest, "Anda Belum Diperbolehkan Upload")
         }
         
-        const storeSeminar = await serviceBimbingan.storeSeminarMhs(req.body.nim, req.body.keterangan_seminar, pathFiles[0].filename, pathFiles[1].filename, req.body.tgl_upload, pathFiles)
+        const storeSeminar = await serviceBimbingan.storeSeminarMhs(req.body.nim, req.body.keterangan_seminar, pathFiles[0].filename, pathFiles[1].filename, req.body.tgl_upload, pathFiles, kodeStatusMhs)
 
         responseSuccess(res, httpCode.ok, "Berhasil upload", storeSeminar)
     } catch (error) {

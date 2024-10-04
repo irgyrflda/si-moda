@@ -13,6 +13,7 @@ import { httpCode } from "@utils/prefix";
 import { removeFile } from "@utils/remove-file";
 import { QueryTypes, Op, fn, col } from "sequelize";
 import serviceNotif from "@services/web/trx-notifikasi.service-web";
+import RefTesisMhs from "@models/ref-tesis-mhs.models";
 import statusMhsServiceWeb from "./status-mhs.service-web";
 
 const getDataBimbinganByNim = async (
@@ -169,6 +170,19 @@ const updatePersetujuanBimbinganByNidn = async (
         });
 
         if (!update) throw new CustomError(httpCode.badRequest, "Gagal Menyetujui Bimbingan")
+
+        const statusTesisMhs: any = await RefTesisMhs.findOne({
+            attributes: ["kode_status"]
+        });
+
+        if (statusTesisMhs.kode_status === "T04") {
+            console.log("statusTesisMhs.kode_status : ", statusTesisMhs.kode_status);
+            
+            await statusMhsServiceWeb.updateStatusCapaianSeminarProposalMhs(checkDataDospem.dospem_tesis.nim)
+        }
+        if (statusTesisMhs.kode_status === "T07") {
+            await statusMhsServiceWeb.updateStatusCapaianSeminarHasilMhs(checkDataDospem.dospem_tesis.nim)
+        }
         await serviceNotif.createNotif(checkDataDospem.dospem_tesis.nim, `${checkDataDospem.dospem_tesis.keterangan_dospem} anda ${statusPersetujuan} dengan bimbingan kaliini`)
 
         return update;
@@ -440,7 +454,6 @@ const storeTrxBimbinganByNim = async (
 
         if (!storeRefBimbingan) throw new CustomError(httpCode.badRequest, "Gagal Upload Data[2]")
 
-        await statusMhsServiceWeb.updateStatusTesisMhs("T04", nim)
         // t.commit()
         return storeTrx
     } catch (error: any) {
@@ -499,7 +512,8 @@ const storeSeminarMhs = async (
     url_path_pdf: string,
     url_path_materi_ppt: string,
     tgl_upload: string,
-    files: any
+    files: any,
+    kodeStatusMhs: string | null
 ) => {
     try {
         const cekPayloadTgl = cekTgl(tgl_upload)
@@ -600,6 +614,14 @@ const storeSeminarMhs = async (
             })
             throw new CustomError(httpCode.badRequest, "Gagal Upload[2]")
         }
+
+        await RefTesisMhs.update({
+            kode_status: (kodeStatusMhs === "T05") ? "T06" : "T09"
+        }, {
+            where: {
+                nim: nim
+            }
+        })
 
         return storeTrxSeminar;
     } catch (error) {
