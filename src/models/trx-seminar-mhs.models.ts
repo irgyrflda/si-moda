@@ -25,7 +25,7 @@ interface ITrxSeminarMhsAttributes {
 export type TrxSeminarMhsOutput = Required<ITrxSeminarMhsAttributes>;
 export type TrxSeminarMhsInput = Optional<
     ITrxSeminarMhsAttributes,
-    "id_trx_seminar" | "keterangan_seminar" | "tgl_review" | "uc" | "uu" | "created_at" | "update_at"
+    "id_trx_seminar" | "tgl_review" | "uc" | "uu" | "created_at" | "update_at"
 >;
 
 class TrxSeminarMhs

@@ -25,6 +25,7 @@ routes.get("/bimbingan-mhs/:nim", checkToken, mahasiswaController.getAllBimbinga
 routes.get("/bimbingan-mhs-historis/:nim/:id_sub_materi_pembahasan", checkToken, mahasiswaController.getHistoryBimbinganByNimAndIdSubMateri);
 routes.post("/bimbingan-mhs/upload", checkToken, uploadFile.single("file"), mahasiswaController.uploadPdf);
 routes.post("/bimbingan-mhs/re-upload", checkToken, uploadFile.single("file"), mahasiswaController.uploadUlangPdf);
+routes.get("/seminar/:nim/:keterangan_seminar", checkToken, mahasiswaController.getSeminarByNimAndKeteranganSeminar);
 
 //upload seminar
 routes.post("/upload-seminar", checkToken, uploadFileSeminar.array("file", 2), mahasiswaController.uploadPdfSeminar);

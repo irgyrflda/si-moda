@@ -1,4 +1,6 @@
-import { TypeOf, number, object, string } from "zod";
+import { status_persetujuan_dospem_mhs } from "@models/bimbingan-mhs.models";
+import { keterangan_seminar } from "@models/trx-seminar-mhs.models";
+import { TypeOf, nativeEnum, number, object, string } from "zod";
 
 const payloadTrxBimbingan = {
     body: object({
@@ -10,6 +12,16 @@ const payloadTrxBimbingan = {
             required_error: "id sub materi pembahasan tidak boleh kosong",
             invalid_type_error: "id sub materi pembahasan harus bertipe nomor"
         })
+    })
+};
+
+const payloadPersetujuanBimbingan = {
+    body: object({
+        id_trx_bimbingan: number({
+            required_error: "id_trx_bimbingan tidak boleh kosong",
+            invalid_type_error: "id_trx_bimbingan harus bertipe angka"
+        }),
+        status_persetujuan: nativeEnum(status_persetujuan_dospem_mhs)
     })
 };
 
@@ -44,12 +56,50 @@ const paramsNimAndIdSubMateri = {
     })
 }
 
+const paramsNimAndKeteranganSeminar = {
+    params: object({
+        nim: string({
+            required_error: "nim tidak boleh kosong",
+            invalid_type_error: "nim harus angka",
+        }),
+        keterangan_seminar: string({
+            required_error: "keterangan_seminar tidak boleh kosong",
+            invalid_type_error: "keterangan_seminar harus string",
+        })
+    })
+}
+
+const paramsIdTrxSeminarAndIdDospemMhs = {
+    params: object({
+        id_trx_seminar: string({
+            required_error: "id_trx_seminar tidak boleh kosong",
+            invalid_type_error: "id_trx_seminar harus angka",
+        }),
+        id_dospem_mhs: string({
+            required_error: "id_dospem_mhs tidak boleh kosong",
+            invalid_type_error: "id_dospem_mhs harus string",
+        })
+    })
+}
+
 export const payloadTrxBimbinganSchema = object({
     ...payloadTrxBimbingan
 });
 
+export const payloadPersetujuanBimbinganSchema = object({
+    ...payloadPersetujuanBimbingan
+});
+
+export const paramsIdTrxSeminarAndIdDospemMhsSchema = object({
+    ...paramsIdTrxSeminarAndIdDospemMhs
+});
+
 export const paramsIdTrxBimbinganNotifSchema = object({
     ...paramsIdTrxBimbingan
+});
+
+export const paramsNimAndKeteranganSeminarSchema = object({
+    ...paramsNimAndKeteranganSeminar
 });
 
 export const paramsNimTrxBimbinganSchema = object({
@@ -60,7 +110,10 @@ export const paramsNimAndIdSubMateriTrxBimbinganSchema = object({
     ...paramsNimAndIdSubMateri
 });
 
+export type PayloadPersetujuanBimbinganRequest = TypeOf<typeof payloadPersetujuanBimbinganSchema>;
 export type PayloadTrxBimbinganRequest = TypeOf<typeof payloadTrxBimbinganSchema>;
 export type ParamsIdTrxBimbinganRequest = TypeOf<typeof paramsIdTrxBimbinganNotifSchema>;
+export type ParamsNimAndKeteranganSeminarRequest = TypeOf<typeof paramsNimAndKeteranganSeminarSchema>;
+export type ParamsIdTrxSeminarAndIdDospemMhsRequest = TypeOf<typeof paramsIdTrxSeminarAndIdDospemMhsSchema>;
 export type ParamsNimTrxBimbinganRequest = TypeOf<typeof paramsNimTrxBimbinganSchema>;
 export type ParamsNimAndIdSubMateriTrxBimbinganRequest = TypeOf<typeof paramsNimAndIdSubMateriTrxBimbinganSchema>;

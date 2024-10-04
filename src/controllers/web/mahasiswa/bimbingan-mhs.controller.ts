@@ -3,9 +3,29 @@ import { NextFunction, Request, Response } from "express";
 import { responseSuccess } from "@utils/response-success";
 import logger, { debugLogger, errorLogger } from "@config/logger";
 import CustomError from "@middleware/error-handler";
-import { ParamsNimAndIdSubMateriTrxBimbinganRequest, ParamsNimTrxBimbinganRequest } from "@schema/trx-bimbingan.schema";
+import { ParamsNimAndIdSubMateriTrxBimbinganRequest, ParamsNimAndKeteranganSeminarRequest, ParamsNimTrxBimbinganRequest } from "@schema/trx-bimbingan.schema";
 import serviceBimbingan from "@services/web/trx-bimbingan.service-web";
 import { removeFile } from "@utils/remove-file";
+import cekTypeFile from "@utils/cek-typefile";
+import RefTesisMhs from "@models/ref-tesis-mhs.models";
+
+export const getSeminarByNimAndKeteranganSeminar = async (
+    req: Request,
+    res: Response,
+    next: NextFunction
+): Promise<void> => {
+    try {
+        const nim: ParamsNimAndKeteranganSeminarRequest["params"]["nim"] = req.params.nim as string;
+        const keteranganSeminar: ParamsNimAndKeteranganSeminarRequest["params"]["keterangan_seminar"] = req.params.keterangan_seminar as string;
+
+        const dataNew = await serviceBimbingan.getDataSeminarByNimAndKeteranganSeminar(nim, keteranganSeminar);
+
+        responseSuccess(res, httpCode.ok, "Berhasil memuat data", dataNew)
+    } catch (error) {
+        errorLogger.error("Error bimbingan : ", error)
+        next(error);
+    }
+}
 
 export const getAllBimbinganByNim = async (
     req: Request,
@@ -92,19 +112,69 @@ export const uploadPdfSeminar = async (
     try {
         if (!req.files || req.files?.length === 0) throw new CustomError(httpCode.badRequest, "tidak ada file yang di upload")
 
-        if (!req.body.nim || !req.body.tgl_upload) throw new CustomError(httpCode.badRequest, "nim harus di isi")
-
         const pathFiles: any = req.files
 
-        if(pathFiles.length < 2) {
+        if (pathFiles.length < 2) {
             await removeFile(pathFiles[0].filename)
             throw new CustomError(httpCode.badRequest, "Jumlah file harus lebih dari satu")
         }
-        debugLogger.debug("debug file : ", pathFiles)
 
-        // const storeBimbingan = await serviceBimbingan.storeTrxBimbinganByNim(req.body.nim, parseInt(req.body.id_sub_materi_pembahasan), pathFiles.filename, req.body.tgl_upload)
+        if (!req.body.nim || !req.body.tgl_upload) {
+            pathFiles.forEach(async (items: any) => {
+                await removeFile(items.filename)
+            })
+            throw new CustomError(httpCode.badRequest, "nim dan tgl_upload harus di isi")
+        }
 
-        responseSuccess(res, httpCode.ok, "Berhasil upload")
+        if (!req.body.keterangan_seminar) {
+            pathFiles.forEach(async (items: any) => {
+                await removeFile(items.filename)
+            })
+            throw new CustomError(httpCode.badRequest, "keterangan_seminar harus di isi")
+        }
+
+        if (req.body.keterangan_seminar !== "proposal" && req.body.keterangan_seminar !== "hasil") {
+            pathFiles.forEach(async (items: any) => {
+                await removeFile(items.filename)
+            })
+            throw new CustomError(httpCode.badRequest, "keterangan_seminar harus di isi proposal atau hasil")
+        }
+
+        const checkTypeFiles = cekTypeFile(pathFiles)
+
+        if (checkTypeFiles.status === false) {
+            pathFiles.forEach(async (items: any) => {
+                await removeFile(items.filename)
+            })
+            throw new CustomError(httpCode.badRequest, checkTypeFiles.message)
+        }
+
+        const cekStatusMhs = await RefTesisMhs.findOne({
+            attributes: ["kode_status"],
+            where: {
+                nim: req.body.nim
+            }
+        })
+
+        if (!cekStatusMhs) {
+            pathFiles.forEach(async (items: any) => {
+                await removeFile(items.filename)
+            })
+            throw new CustomError(httpCode.badRequest, "Mahasiswa Tidak Terdaftar")
+        }
+
+        const kodeStatusMhs = cekStatusMhs.kode_status
+
+        if (kodeStatusMhs !== "T06" && kodeStatusMhs !== "T09") {
+            pathFiles.forEach(async (items: any) => {
+                await removeFile(items.filename)
+            })
+            throw new CustomError(httpCode.badRequest, "Anda Belum Diperbolehkan Upload")
+        }
+        
+        const storeSeminar = await serviceBimbingan.storeSeminarMhs(req.body.nim, req.body.keterangan_seminar, pathFiles[0].filename, pathFiles[1].filename, req.body.tgl_upload, pathFiles)
+
+        responseSuccess(res, httpCode.ok, "Berhasil upload", storeSeminar)
     } catch (error) {
         errorLogger.error(`error upload ${error}`)
         next(error);

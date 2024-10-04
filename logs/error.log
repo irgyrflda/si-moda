@@ -1,20 +1,100 @@
-[2024-10-03T10:43:01.788] [ERROR] error - Error chect token :  CustomError: Token Expired
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:61:23
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
+[2024-10-04T13:49:05.876] [ERROR] error - Error bimbingan :  CustomError: Internal server error.
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:177:19
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:6:65)
     at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 401,
+  code: 500,
   status: 'error'
 }
-[2024-10-03T10:43:01.794] [ERROR] error - CustomError: Token Expired
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:61:23
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
+[2024-10-04T13:49:05.881] [ERROR] error - CustomError: Internal server error.
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:177:19
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:6:65)
     at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 401,
+  code: 500,
   status: 'error'
 }
-[2024-10-03T10:43:41.519] [ERROR] error - Error chect token :  CustomError: Unauthorized token not match[0] 
+[2024-10-04T13:55:22.598] [ERROR] error - Error bimbingan :  CustomError: Internal server error.
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:181:19
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 500,
+  status: 'error'
+}
+[2024-10-04T13:55:22.600] [ERROR] error - CustomError: Internal server error.
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:181:19
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 500,
+  status: 'error'
+}
+[2024-10-04T13:55:48.824] [ERROR] error - Error bimbingan :  CustomError: Internal server error.
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:181:19
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 500,
+  status: 'error'
+}
+[2024-10-04T13:55:48.826] [ERROR] error - CustomError: Internal server error.
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:181:19
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 500,
+  status: 'error'
+}
+[2024-10-04T13:56:12.564] [ERROR] error - Error bimbingan :  CustomError: Internal server error.
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:181:19
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 500,
+  status: 'error'
+}
+[2024-10-04T13:56:12.566] [ERROR] error - CustomError: Internal server error.
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:181:19
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 500,
+  status: 'error'
+}
+[2024-10-04T14:06:17.724] [ERROR] error - Error masukan seminar :  CustomError: Tidak ada masukan dospem
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-masukan.service-web.ts:68:19
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-masukan.service-web.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 404,
+  status: 'error'
+}
+[2024-10-04T14:06:17.729] [ERROR] error - CustomError: Tidak ada masukan dospem
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-masukan.service-web.ts:68:19
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-masukan.service-web.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 404,
+  status: 'error'
+}
+[2024-10-04T14:06:22.403] [ERROR] error - Error masukan seminar :  CustomError: Tidak ada masukan dospem
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-masukan.service-web.ts:68:19
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-masukan.service-web.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 404,
+  status: 'error'
+}
+[2024-10-04T14:06:22.404] [ERROR] error - CustomError: Tidak ada masukan dospem
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-masukan.service-web.ts:68:19
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-masukan.service-web.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 404,
+  status: 'error'
+}
+[2024-10-04T14:15:11.353] [ERROR] error - Error chect token :  CustomError: Unauthorized token not match[0] 
     at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:48:19
     at Generator.next (<anonymous>)
     at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
@@ -22,7 +102,7 @@
   code: 401,
   status: 'error'
 }
-[2024-10-03T10:43:41.520] [ERROR] error - CustomError: Unauthorized token not match[0] 
+[2024-10-04T14:15:11.357] [ERROR] error - CustomError: Unauthorized token not match[0] 
     at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:48:19
     at Generator.next (<anonymous>)
     at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
@@ -30,7 +110,115 @@
   code: 401,
   status: 'error'
 }
-[2024-10-03T17:06:05.587] [ERROR] error - Error chect token :  CustomError: Token Expired
+[2024-10-04T14:20:13.634] [ERROR] error - Error get daftar pertemuan :  CustomError: Anda Tidak Memiliki Agenda Bimbingan
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\daftar-pertemuan.controller.ts:47:49
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\daftar-pertemuan.controller.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 404,
+  status: 'error'
+}
+[2024-10-04T14:20:13.636] [ERROR] error - CustomError: Anda Tidak Memiliki Agenda Bimbingan
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\daftar-pertemuan.controller.ts:47:49
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\daftar-pertemuan.controller.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 404,
+  status: 'error'
+}
+[2024-10-04T14:31:26.039] [ERROR] error - Error chect token :  CustomError: Unauthorized token not match[0] 
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:48:19
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 401,
+  status: 'error'
+}
+[2024-10-04T14:31:26.043] [ERROR] error - CustomError: Unauthorized token not match[0] 
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:48:19
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 401,
+  status: 'error'
+}
+[2024-10-04T14:31:45.624] [ERROR] error - Error bimbingan :  CustomError: Internal server error.
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-masukan.service-web.ts:71:19
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-masukan.service-web.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 500,
+  status: 'error'
+}
+[2024-10-04T14:31:45.625] [ERROR] error - CustomError: Internal server error.
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-masukan.service-web.ts:71:19
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-masukan.service-web.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 500,
+  status: 'error'
+}
+[2024-10-04T14:32:13.390] [ERROR] error - Error bimbingan :  CustomError: Tidak ada masukan dospem
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-masukan.service-web.ts:68:19
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-masukan.service-web.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 404,
+  status: 'error'
+}
+[2024-10-04T14:32:13.394] [ERROR] error - CustomError: Tidak ada masukan dospem
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-masukan.service-web.ts:68:19
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-masukan.service-web.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 404,
+  status: 'error'
+}
+[2024-10-04T14:42:16.451] [ERROR] error - Error chect token :  CustomError: Unauthorized token not match[0] 
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:48:19
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 401,
+  status: 'error'
+}
+[2024-10-04T14:42:16.456] [ERROR] error - CustomError: Unauthorized token not match[0] 
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:48:19
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 401,
+  status: 'error'
+}
+[2024-10-04T14:42:35.968] [ERROR] error - Error bimbingan :  CustomError: masukan tidak boleh kosong
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\masukan\trx-masukan.controller.ts:51:38
+    at Generator.next (<anonymous>)
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\masukan\trx-masukan.controller.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\masukan\trx-masukan.controller.ts:4:12)
+    at updateMasukanByIdTrxMasukan (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\masukan\trx-masukan.controller.ts:49:20)
+    at Layer.handle [as handle_request] (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\route.js:144:13)
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:58:13
+    at Generator.next (<anonymous>) {
+  code: 400,
+  status: 'error'
+}
+[2024-10-04T14:42:35.970] [ERROR] error - CustomError: masukan tidak boleh kosong
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\masukan\trx-masukan.controller.ts:51:38
+    at Generator.next (<anonymous>)
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\masukan\trx-masukan.controller.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\masukan\trx-masukan.controller.ts:4:12)
+    at updateMasukanByIdTrxMasukan (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\masukan\trx-masukan.controller.ts:49:20)
+    at Layer.handle [as handle_request] (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\route.js:144:13)
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:58:13
+    at Generator.next (<anonymous>) {
+  code: 400,
+  status: 'error'
+}
+[2024-10-04T14:43:14.167] [ERROR] error - Error chect token :  CustomError: Token Expired
     at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:61:23
     at Generator.next (<anonymous>)
     at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
@@ -38,11 +226,124 @@
   code: 401,
   status: 'error'
 }
-[2024-10-03T17:06:05.592] [ERROR] error - CustomError: Token Expired
+[2024-10-04T14:43:14.171] [ERROR] error - CustomError: Token Expired
     at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:61:23
     at Generator.next (<anonymous>)
     at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
     at processTicksAndRejections (node:internal/process/task_queues:95:5) {
   code: 401,
+  status: 'error'
+}
+[2024-10-04T14:44:22.898] [ERROR] error - Error bimbingan :  CustomError: Data Masukan Tidak Ditemukan
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\masukan\trx-masukan.controller.ts:61:31
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\masukan\trx-masukan.controller.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 404,
+  status: 'error'
+}
+[2024-10-04T14:44:22.900] [ERROR] error - CustomError: Data Masukan Tidak Ditemukan
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\masukan\trx-masukan.controller.ts:61:31
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\masukan\trx-masukan.controller.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 404,
+  status: 'error'
+}
+[2024-10-04T16:26:34.178] [ERROR] error - Error dospem controller :  CustomError: Internal server error.
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-dospem-mhs.service-web.ts:251:19
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-dospem-mhs.service-web.ts:29:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 500,
+  status: 'error'
+}
+[2024-10-04T16:26:34.183] [ERROR] error - CustomError: Internal server error.
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-dospem-mhs.service-web.ts:251:19
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-dospem-mhs.service-web.ts:29:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 500,
+  status: 'error'
+}
+[2024-10-04T16:27:27.344] [ERROR] error - Error dospem controller :  CustomError: Internal server error.
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:179:19
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 500,
+  status: 'error'
+}
+[2024-10-04T16:27:27.346] [ERROR] error - CustomError: Internal server error.
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:179:19
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 500,
+  status: 'error'
+}
+[2024-10-04T16:28:27.325] [ERROR] error - Error dospem controller :  CustomError: Internal server error.
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:179:19
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 500,
+  status: 'error'
+}
+[2024-10-04T16:28:27.330] [ERROR] error - CustomError: Internal server error.
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:179:19
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 500,
+  status: 'error'
+}
+[2024-10-04T17:40:17.780] [ERROR] error - CustomError: Status Tidak Terdaftar
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-tesis-mhs.service-web.ts:199:19
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-tesis-mhs.service-web.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 404,
+  status: 'error'
+}
+[2024-10-04T17:40:46.478] [ERROR] error - CustomError: Status Tidak Terdaftar
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-tesis-mhs.service-web.ts:199:19
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-tesis-mhs.service-web.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 404,
+  status: 'error'
+}
+[2024-10-04T17:41:21.278] [ERROR] error - CustomError: Mahasiswa Tidak Terdaftar
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-tesis-mhs.service-web.ts:199:19
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-tesis-mhs.service-web.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 404,
+  status: 'error'
+}
+[2024-10-04T17:41:41.240] [ERROR] error - CustomError: Mahasiswa Tidak Terdaftar
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-tesis-mhs.service-web.ts:199:19
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-tesis-mhs.service-web.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 404,
+  status: 'error'
+}
+[2024-10-04T17:43:10.069] [ERROR] error - CustomError: Internal server error.
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-tesis-mhs.service-web.ts:199:19
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-tesis-mhs.service-web.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 500,
+  status: 'error'
+}
+[2024-10-04T18:05:51.192] [ERROR] error - error upload Error: Dosen pembimbing belum ditetapkan atau belum diterima
+[2024-10-04T18:05:51.194] [ERROR] error - CustomError: Dosen pembimbing belum ditetapkan atau belum diterima
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:450:19
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 400,
   status: 'error'
 }

@@ -1,13 +1,19 @@
 import db from "@config/database";
 import { debugLogger } from "@config/logger";
 import CustomError from "@middleware/error-handler";
-import BimbinganMhs from "@models/bimbingan-mhs.models";
+import BimbinganMhs, { status_persetujuan_dospem_mhs } from "@models/bimbingan-mhs.models";
 import RefDosepemMhs from "@models/ref-dospem-mhs.models";
+import RefDosepem from "@models/ref-dospem.models";
+import SeminarMhs from "@models/ref-seminar-mhs.models";
 import TrxBimbinganMhs, { TrxBimbinganMhsInput, TrxBimbinganMhsOutput } from "@models/trx-bimbingan-mhs.models";
+import TrxMasukanSeminar from "@models/trx-masukan-seminar.model";
+import TrxSeminarMhs, { keterangan_seminar, TrxSeminarMhsInput } from "@models/trx-seminar-mhs.models";
 import { cekTgl } from "@utils/cek-tgl";
 import { httpCode } from "@utils/prefix";
 import { removeFile } from "@utils/remove-file";
 import { QueryTypes, Op, fn, col } from "sequelize";
+import serviceNotif from "@services/web/trx-notifikasi.service-web";
+import statusMhsServiceWeb from "./status-mhs.service-web";
 
 const getDataBimbinganByNim = async (
     nim: string
@@ -117,6 +123,105 @@ const getDataBimbinganByNim = async (
                 })
             })
         )
+        return dataNew;
+    } catch (error) {
+        if (error instanceof CustomError) {
+            throw new CustomError(error.code, error.message);
+        } else {
+            console.log(`error : ${error}`);
+            throw new CustomError(500, "Internal server error.");
+        }
+    }
+}
+
+const updatePersetujuanBimbinganByNidn = async (
+    nidn: string,
+    idTrxBimbingan: number,
+    statusPersetujuan: status_persetujuan_dospem_mhs
+) => {
+    try {
+        const checkDataDospem: any = await BimbinganMhs.findOne({
+            attributes: ["id_trx_bimbingan", "id_bimbingan", "id_dospem_mhs"],
+            include: [
+                {
+                    model: RefDosepemMhs,
+                    as: "dospem_tesis",
+                    attributes: ["nim", "nidn", "keterangan_dospem"],
+                    where: {
+                        nidn: nidn
+                    }
+                }
+            ],
+            where: {
+                id_trx_bimbingan: idTrxBimbingan
+            }
+        });
+        if (!checkDataDospem) throw new CustomError(httpCode.notFound, "Dosen Tidak Terdaftar Sebagai Pembimbing Mahasiswa Ini")
+
+        const idBimbingan = checkDataDospem.id_bimbingan
+
+        const update = await BimbinganMhs.update({
+            status_persetujuan: statusPersetujuan
+        }, {
+            where: {
+                id_bimbingan: idBimbingan
+            }
+        });
+
+        if (!update) throw new CustomError(httpCode.badRequest, "Gagal Menyetujui Bimbingan")
+        await serviceNotif.createNotif(checkDataDospem.dospem_tesis.nim, `${checkDataDospem.dospem_tesis.keterangan_dospem} anda ${statusPersetujuan} dengan bimbingan kaliini`)
+
+        return update;
+    } catch (error) {
+        if (error instanceof CustomError) {
+            throw new CustomError(error.code, error.message);
+        } else {
+            console.log(`error : ${error}`);
+            throw new CustomError(500, "Internal server error.");
+        }
+    }
+}
+
+const getDataSeminarByNimAndKeteranganSeminar = async (
+    nim: string,
+    keterangan_seminar: string
+) => {
+    try {
+        const data = await TrxSeminarMhs.findOne({
+            attributes: ["id_trx_seminar", "nim", "keterangan_seminar", "url_path_pdf", "url_path_materi_ppt", "tgl_upload", "tgl_review"],
+            include: [
+                {
+                    model: SeminarMhs,
+                    as: "dospem_tasis_mhs",
+                    attributes: ["id_seminar_mhs", "id_dospem_mhs", "tgl_detail_review"],
+                    include: [
+                        {
+                            model: RefDosepemMhs,
+                            as: "dospem_t",
+                            attributes: ["keterangan_dospem", "nidn"],
+                            include: [
+                                {
+                                    model: RefDosepem,
+                                    as: "dosen_mhs",
+                                    attributes: ["nama_dospem"]
+                                }
+                            ],
+                        }
+                    ]
+                }
+            ],
+            where: {
+                nim: nim,
+                keterangan_seminar: keterangan_seminar
+            }
+        });
+        let validation = false
+        if (data) validation = true
+
+        const dataNew = {
+            validation: validation,
+            data_seminar: data
+        }
         return dataNew;
     } catch (error) {
         if (error instanceof CustomError) {
@@ -335,6 +440,7 @@ const storeTrxBimbinganByNim = async (
 
         if (!storeRefBimbingan) throw new CustomError(httpCode.badRequest, "Gagal Upload Data[2]")
 
+        await statusMhsServiceWeb.updateStatusTesisMhs("T04", nim)
         // t.commit()
         return storeTrx
     } catch (error: any) {
@@ -387,9 +493,131 @@ const updateFileTrxBimbinganByNim = async (
     }
 }
 
+const storeSeminarMhs = async (
+    nim: string,
+    keterangan_seminar: keterangan_seminar,
+    url_path_pdf: string,
+    url_path_materi_ppt: string,
+    tgl_upload: string,
+    files: any
+) => {
+    try {
+        const cekPayloadTgl = cekTgl(tgl_upload)
+
+        if (cekPayloadTgl === false) {
+            files.forEach(async (items: any) => {
+                await removeFile(items.filename)
+            })
+            throw new CustomError(httpCode.badRequest, "Pastikan format tgl_upload YYYY-MM-DD HH:MM:SS")
+        }
+
+        const cekSeminar = await TrxSeminarMhs.findOne({
+            attributes: ["nim"],
+            where: {
+                nim: nim,
+                keterangan_seminar: keterangan_seminar
+            }
+        })
+
+        if (cekSeminar) {
+            files.forEach(async (items: any) => {
+                await removeFile(items.filename)
+            })
+            throw new CustomError(httpCode.badRequest, "Anda Sudah Upload")
+        }
+
+        const checkDospem = await RefDosepemMhs.findAll({
+            attributes: ["id_dospem_mhs", "nidn", "status_persetujuan"],
+            where: {
+                nim: nim,
+                status_persetujuan: "setuju"
+            }
+        });
+
+        if (checkDospem.length < 2) {
+            files.forEach(async (items: any) => {
+                await removeFile(items.filename)
+            })
+            throw new CustomError(httpCode.badRequest, "Dosen pembimbing belum ditetapkan atau belum diterima")
+        }
+
+        if (checkDospem.length > 2) {
+            files.forEach(async (items: any) => {
+                await removeFile(items.filename)
+            })
+            throw new CustomError(httpCode.badRequest, "Ada kesalahan sistem saat penetapan dospem")
+        }
+
+        const payloadTrxSeminar: TrxSeminarMhsInput = {
+            nim: nim,
+            keterangan_seminar: keterangan_seminar,
+            url_path_materi_ppt: url_path_materi_ppt,
+            url_path_pdf: url_path_pdf,
+            tgl_upload: tgl_upload
+        }
+
+        const storeTrxSeminar = await TrxSeminarMhs.create(payloadTrxSeminar)
+
+        if (!storeTrxSeminar) {
+            files.forEach(async (items: any) => {
+                await removeFile(items.filename)
+            })
+            throw new CustomError(httpCode.badRequest, "Gagal Upload[2]")
+        }
+
+        const getIdMaxTrx = await TrxSeminarMhs.findOne({
+            attributes: [[fn('MAX', col('id_trx_seminar')), "id_trx_seminar"]],
+            where: {
+                nim: nim
+            }
+        })
+
+        if (!getIdMaxTrx) {
+            files.forEach(async (items: any) => {
+                await removeFile(items.filename)
+            })
+            throw new CustomError(httpCode.badRequest, "Gagal Upload Data[1]")
+        }
+
+        const idDospemArrNol = checkDospem[0].id_dospem_mhs
+        const idDospemArrSatu = checkDospem[1].id_dospem_mhs
+        const payloadRef = [
+            {
+                id_dospem_mhs: idDospemArrNol,
+                id_trx_seminar: getIdMaxTrx.get("id_trx_seminar"),
+            },
+            {
+                id_dospem_mhs: idDospemArrSatu,
+                id_trx_seminar: getIdMaxTrx.get("id_trx_seminar"),
+            }
+        ]
+
+        const storeRefSeminar = await SeminarMhs.bulkCreate(payloadRef)
+
+        if (!storeRefSeminar) {
+            files.forEach(async (items: any) => {
+                await removeFile(items.filename)
+            })
+            throw new CustomError(httpCode.badRequest, "Gagal Upload[2]")
+        }
+
+        return storeTrxSeminar;
+    } catch (error) {
+        if (error instanceof CustomError) {
+            throw new CustomError(error.code, error.message);
+        } else {
+            console.log(`error : ${error}`);
+            throw new CustomError(500, "Internal server error.");
+        }
+    }
+}
+
 export default {
     getDataBimbinganByNim,
     storeTrxBimbinganByNim,
     updateFileTrxBimbinganByNim,
-    getDataHistoryBimbinganByNim
+    getDataHistoryBimbinganByNim,
+    storeSeminarMhs,
+    getDataSeminarByNimAndKeteranganSeminar,
+    updatePersetujuanBimbinganByNidn
 }

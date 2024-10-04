@@ -11,6 +11,7 @@ import Users from "@models/users.models";
 import { ParamsTesisMhsNimRequest } from "@schema/ref-tesis-mhs.schema";
 import { httpCode } from "@utils/prefix";
 import { Op } from "sequelize";
+import serviceStatus from "@services/web/status-mhs.service-web";
 
 const getAllTesisMhs = async (): Promise<RefTesisMhsOutput[]> => {
     try {
@@ -124,7 +125,8 @@ const storeTesisMhs = async (
 
         const payload: RefTesisMhsInput = {
             nim: nim,
-            judul_tesis: judul_tesis
+            judul_tesis: judul_tesis,
+            kode_status: "T02"
         }
         const storePayload = await RefTesisMhs.create(payload, { transaction: t })
 
@@ -188,7 +190,6 @@ const storeTesisMhs = async (
                 })
             })
         )
-
         await t.commit();
         return storePayload;
     } catch (error) {

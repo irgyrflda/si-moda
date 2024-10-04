@@ -11,7 +11,8 @@ import {
     updatePersetujuanDospemMhs,
     updatePersetujuanArrayDospemMhs,
     storeDataDospemMhs,
-    getByNindDataDospemMhsAcc
+    getByNindDataDospemMhsAcc,
+    updatePersetujuanBimbinganMhsDospemMhs
 } from "@controllers/web/dospem/ref-dospem-mhs.controller";
 
 export default {
@@ -24,5 +25,6 @@ export default {
     updatePersetujuanArrayDospemMhs,
     storeDataDospemMhs,
     getByNindDataDospemMhsAcc,
-    getDataDashboardDospem
+    getDataDashboardDospem,
+    updatePersetujuanBimbinganMhsDospemMhs
 }

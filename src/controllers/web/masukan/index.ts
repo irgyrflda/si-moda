@@ -1,9 +1,17 @@
 import {
     getAllMasukanByIdTrxbimbingan,
-    storeTrxMasukan
+    storeTrxMasukan,
+    storeTrxMasukanSeminar,
+    getAllMasukanIdTrxSeminarAndIdDospemMhs,
+    getAllMasukanByIdTrxbimbinganAndNidn,
+    updateMasukanByIdTrxMasukan
 } from "@controllers/web/masukan/trx-masukan.controller";
 
 export default {
     getAllMasukanByIdTrxbimbingan,
-    storeTrxMasukan
+    storeTrxMasukan,
+    storeTrxMasukanSeminar,
+    getAllMasukanIdTrxSeminarAndIdDospemMhs,
+    getAllMasukanByIdTrxbimbinganAndNidn,
+    updateMasukanByIdTrxMasukan
 }

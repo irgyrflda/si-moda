@@ -5,6 +5,7 @@ import {
     checkToken
 } from "@middleware/authorization";
 import { payloadPersetujuanArraySchema, payloadPersetujuanSchema, payloadSchema } from "@schema/ref-dospem-mhs.schema";
+import { payloadPersetujuanBimbinganSchema } from "@schema/trx-bimbingan.schema";
 const routes = express.Router();
 
 //route dosen
@@ -17,8 +18,11 @@ routes.get("/dosen-mhs/acc/:nim", checkToken, dospemController.getByNimDataDospe
 routes.get("/daftar-mahasiswa/:nidn/:keterangan_dospem", checkToken, dospemController.getByNindDataDospemMhs);
 routes.get("/daftar-mahasiswa-acc/:nidn/:keterangan_dospem", checkToken, dospemController.getByNindDataDospemMhsAcc);
 routes.post("/dosen-mhs", checkToken, validate(payloadSchema), dospemController.storeDataDospemMhs);
-routes.put("/persetujuan/:id_dospem_mhs", checkToken, validate(payloadPersetujuanSchema), dospemController.updatePersetujuanDospemMhs)
-routes.post("/persetujuan", checkToken, validate(payloadPersetujuanArraySchema), dospemController.updatePersetujuanArrayDospemMhs)
+routes.put("/persetujuan/:id_dospem_mhs", checkToken, validate(payloadPersetujuanSchema), dospemController.updatePersetujuanDospemMhs);
+routes.post("/persetujuan", checkToken, validate(payloadPersetujuanArraySchema), dospemController.updatePersetujuanArrayDospemMhs);
+
+//persetujuan bimbingan
+routes.put("/persetujuan-dospem/:nidn", checkToken, validate(payloadPersetujuanBimbinganSchema), dospemController.updatePersetujuanBimbinganMhsDospemMhs);
 
 //dashboard dospem
 routes.get("/dashboard/:nidn", checkToken, dospemController.getDataDashboardDospem);

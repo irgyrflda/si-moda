@@ -6,6 +6,7 @@ import CustomError from "@middleware/error-handler";
 import service from "@services/web/ref-dospem-mhs.service-web";
 import { ParamsIdRequest, ParamsKetDospemRequest, ParamsNidnRequest, ParamsNimRequest, PayloadRequest } from "@schema/ref-dospem-mhs.schema";
 import { keterangan_dospem, RefDospemMhsInput } from "@models/ref-dospem-mhs.models";
+import serviceBimbingan from "@services/web/trx-bimbingan.service-web";
 
 export const getByIdDataDospemMhs = async (
     req: Request,
@@ -84,6 +85,25 @@ export const updatePersetujuanDospemMhs = async (
         const updatePersetujuan = await service.updatePersetujuanDospem(idDospemMhs, statusPersetujuan)
 
         responseSuccess(res, httpCode.ok, "Berhasil menyetujui", updatePersetujuan)
+    } catch (error) {
+        errorLogger.error("Error dospem controller : ", error)
+        next(error);
+    }
+}
+
+export const updatePersetujuanBimbinganMhsDospemMhs = async (
+    req: Request,
+    res: Response,
+    next: NextFunction
+): Promise<void> => {
+    try {
+        const nidn: ParamsNidnRequest["params"]["nidn"] = req.params.nidn as string;
+        const idTrxBimbingan = req.body.id_trx_bimbingan
+        const statusPersetujuan = req.body.status_persetujuan
+
+        await serviceBimbingan.updatePersetujuanBimbinganByNidn(nidn, idTrxBimbingan, statusPersetujuan)
+
+        responseSuccess(res, httpCode.ok, "Berhasil Mengirim Persetujuan")
     } catch (error) {
         errorLogger.error("Error dospem controller : ", error)
         next(error);

@@ -10,6 +10,8 @@ const allowedMimeTypesPdf = ["application/pdf", "application/vnd.ms-powerpoint",
 
 const storageAsli = multer.diskStorage({
     destination: async (req, file, callback) => {
+        console.log("file : ", file);
+        
         const pathAplikasi = getConfig("STORAGE_UPLOAD_PDF")
 
         const folderPath = pathAplikasi;
