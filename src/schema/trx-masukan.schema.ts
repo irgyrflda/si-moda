@@ -13,6 +13,10 @@ const payloadTrxMasukan = {
         masukan: string({
             required_error: "masukan tidak boleh kosong",
             invalid_type_error: "masukan harus bertipe huruf"
+        }),
+        tgl_review: string({
+            required_error: "tgl_review tidak boleh kosong",
+            invalid_type_error: "tgl_review harus bertipe huruf"
         })
     })
 };

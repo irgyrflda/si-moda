@@ -10,6 +10,7 @@ import TrxMasukanSeminar, { TrxMasukanSeminarInput } from "@models/trx-masukan-s
 import serviceNotif from "@services/web/trx-notifikasi.service-web";
 import { cekTgl } from "@utils/cek-tgl";
 import TrxSeminarMhs, { keterangan_seminar } from "@models/trx-seminar-mhs.models";
+import TrxBimbinganMhs from "@models/trx-bimbingan-mhs.models";
 
 const getMasukanByIdTrxBimbingan = async (
     idTrxBimbingan: string,
@@ -108,9 +109,15 @@ const getMasukanByIdTrxSeminarAndIdDospemMhs = async (
 const storeMasukanTrxBimbingan = async (
     idTrxBimbingan: number,
     id_dospem_mhs: number,
-    masukan: string
+    masukan: string,
+    tgl_review: string
 ) => {
+    const t = await db.transaction()
     try {
+        const checkTgl = cekTgl(tgl_review);
+
+        if (checkTgl === false) throw new CustomError(httpCode.badRequest, "Pastikan format tgl_upload YYYY-MM-DD HH:MM:SS")
+
         const checkTrxBimbingan = await BimbinganMhs.findOne({
             attributes: ["id_dospem_mhs"],
             where: {
@@ -127,12 +134,37 @@ const storeMasukanTrxBimbingan = async (
             masukan: masukan
         }
 
-        const storeMasukan = await TrxMasukanDsn.create(payload)
+        const storeMasukan = await TrxMasukanDsn.create(payload, { transaction: t })
 
-        if (!storeMasukan) throw new CustomError(httpCode.badRequest, "Gagal membuat data")
+        if (!storeMasukan) throw new CustomError(httpCode.badRequest, "Gagal membuat data[0]")
 
+        const updateTglBimbingan = await TrxBimbinganMhs.update({
+            tgl_review: tgl_review
+        }, {
+            where: {
+                id_trx_bimbingan: idTrxBimbingan
+            },
+            transaction: t
+        });
+
+        if (!updateTglBimbingan) throw new CustomError(httpCode.badRequest, "Gagal membuat data[1]")
+
+        const updateTglDetail = await BimbinganMhs.update({
+            tgl_detail_review: tgl_review
+        }, {
+            where: {
+                id_trx_bimbingan: idTrxBimbingan,
+                id_dospem_mhs: id_dospem_mhs
+            },
+            transaction: t
+        });
+
+        if (!updateTglDetail) throw new CustomError(httpCode.badRequest, "Gagal membuat data[2]")
+
+        t.commit();
         return storeMasukan
     } catch (error) {
+        t.rollback()
         if (error instanceof CustomError) {
             throw new CustomError(error.code, error.message);
         } else {

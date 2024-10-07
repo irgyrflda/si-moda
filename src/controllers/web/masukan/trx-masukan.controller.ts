@@ -99,7 +99,7 @@ export const storeTrxMasukan = async (
     next: NextFunction
 ): Promise<void> => {
     try {
-        const storeMasukan = await service.storeMasukanTrxBimbingan(req.body.id_trx_bimbingan, req.body.id_dospem_mhs, req.body.masukan)
+        const storeMasukan = await service.storeMasukanTrxBimbingan(req.body.id_trx_bimbingan, req.body.id_dospem_mhs, req.body.masukan, req.body.tgl_review)
 
         responseSuccess(res, httpCode.ok, "Berhasil Membuat Data", storeMasukan)
     } catch (error) {
