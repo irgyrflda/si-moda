@@ -146,7 +146,7 @@ const updatePersetujuanBimbinganByNidn = async (
             include: [
                 {
                     model: RefDosepemMhs,
-                    as: "dospem_tesis",
+                    as: "dospem_t",
                     attributes: ["nim", "nidn", "keterangan_dospem"],
                     where: {
                         nidn: nidn
@@ -172,18 +172,79 @@ const updatePersetujuanBimbinganByNidn = async (
         if (!update) throw new CustomError(httpCode.badRequest, "Gagal Menyetujui Bimbingan")
 
         const statusTesisMhs: any = await RefTesisMhs.findOne({
-            attributes: ["kode_status"]
+            attributes: ["kode_status"],
+            where: {
+                nim: checkDataDospem.dospem_t.nim
+            }
         });
 
         if (statusTesisMhs.kode_status === "T04") {
-            console.log("statusTesisMhs.kode_status : ", statusTesisMhs.kode_status);
-            
-            await statusMhsServiceWeb.updateStatusCapaianSeminarProposalMhs(checkDataDospem.dospem_tesis.nim)
+            await statusMhsServiceWeb.updateStatusCapaianSeminarProposalMhs(checkDataDospem.dospem_t.nim)
         }
         if (statusTesisMhs.kode_status === "T07") {
-            await statusMhsServiceWeb.updateStatusCapaianSeminarHasilMhs(checkDataDospem.dospem_tesis.nim)
+            await statusMhsServiceWeb.updateStatusCapaianSeminarHasilMhs(checkDataDospem.dospem_t.nim)
         }
-        await serviceNotif.createNotif(checkDataDospem.dospem_tesis.nim, `${checkDataDospem.dospem_tesis.keterangan_dospem} anda ${statusPersetujuan} dengan bimbingan kaliini`)
+        await serviceNotif.createNotif(checkDataDospem.dospem_t.nim, `${checkDataDospem.dospem_t.keterangan_dospem} anda ${statusPersetujuan} dengan bimbingan kaliini`)
+
+        return update;
+    } catch (error) {
+        if (error instanceof CustomError) {
+            throw new CustomError(error.code, error.message);
+        } else {
+            console.log(`error : ${error}`);
+            throw new CustomError(500, "Internal server error.");
+        }
+    }
+}
+
+const updatePersetujuanSeminar = async (
+    idTrxSeminar: string,
+    idDospemMhs: string,
+    statusPersetujuan: status_persetujuan_dospem_mhs
+) => {
+    try {
+        const checkDataDospem: any = await SeminarMhs.findOne({
+            attributes: ["id_trx_seminar", "id_seminar_mhs", "id_dospem_mhs"],
+            include: [
+                {
+                    model: RefDosepemMhs,
+                    as: "dospem_t",
+                    attributes: ["nim", "nidn", "keterangan_dospem"],
+                    where: {
+                        id_dospem_mhs: idDospemMhs
+                    }
+                }
+            ],
+            where: {
+                id_trx_seminar: idTrxSeminar
+            }
+        });
+        if (!checkDataDospem) throw new CustomError(httpCode.notFound, "Dosen Tidak Terdaftar Sebagai Pembimbing Mahasiswa Ini")
+
+        const idSeminar = checkDataDospem.id_seminar_mhs
+
+        const update = await SeminarMhs.update({
+            status_persetujuan: statusPersetujuan
+        }, {
+            where: {
+                $id_seminar_mhs$: idSeminar
+            }
+        });
+
+        if (!update) throw new CustomError(httpCode.badRequest, "Gagal Menyetujui")
+
+        const statusTesisMhs: any = await RefTesisMhs.findOne({
+            attributes: ["kode_status"],
+            where: {
+                nim: checkDataDospem.dospem_t.nim
+            }
+        });
+
+        if (statusTesisMhs.kode_status === "T11" || statusTesisMhs.kode_status === "T10") {
+            await statusMhsServiceWeb.updateStatusCapaianSeminarSidangAkhirMhs(idTrxSeminar)
+        }
+
+        await serviceNotif.createNotif(checkDataDospem.dospem_t.nim, `${checkDataDospem.dospem_t.keterangan_dospem} anda ${statusPersetujuan}`)
 
         return update;
     } catch (error) {
@@ -634,6 +695,125 @@ const storeSeminarMhs = async (
     }
 }
 
+const storeSidangAkhir = async (
+    nim: string,
+    keterangan_seminar: keterangan_seminar,
+    url_path_pdf: string,
+    tgl_upload: string,
+    files: any
+) => {
+    try {
+        const cekPayloadTgl = cekTgl(tgl_upload)
+
+        if (cekPayloadTgl === false) {
+            await removeFile(files.filename)
+            throw new CustomError(httpCode.badRequest, "Pastikan format tgl_upload YYYY-MM-DD HH:MM:SS")
+        }
+
+        const cekSeminar = await TrxSeminarMhs.findOne({
+            attributes: ["id_trx_seminar", "nim", "url_path_pdf"],
+            where: {
+                nim: nim,
+                keterangan_seminar: keterangan_seminar
+            }
+        })
+        let storeTrxSeminar
+        if (cekSeminar) {
+            await removeFile(cekSeminar.url_path_pdf)
+            storeTrxSeminar = TrxSeminarMhs.update({
+                url_path_pdf: url_path_pdf
+            }, {
+                where: {
+                    id_trx_seminar: cekSeminar.id_trx_seminar
+                }
+            })
+        } else {
+            const checkDospem = await RefDosepemMhs.findAll({
+                attributes: ["id_dospem_mhs", "nidn", "status_persetujuan"],
+                where: {
+                    nim: nim,
+                    status_persetujuan: "setuju"
+                }
+            });
+
+            if (checkDospem.length < 2) {
+                await removeFile(files.filename)
+                throw new CustomError(httpCode.badRequest, "Dosen pembimbing belum ditetapkan atau belum diterima")
+            }
+
+            if (checkDospem.length > 2) {
+                await removeFile(files.filename)
+                throw new CustomError(httpCode.badRequest, "Ada kesalahan sistem saat penetapan dospem")
+            }
+
+            const payloadTrxSeminar: TrxSeminarMhsInput = {
+                nim: nim,
+                keterangan_seminar: keterangan_seminar,
+                url_path_materi_ppt: '-',
+                url_path_pdf: url_path_pdf,
+                tgl_upload: tgl_upload
+            }
+
+            storeTrxSeminar = await TrxSeminarMhs.create(payloadTrxSeminar)
+
+            if (!storeTrxSeminar) {
+                await removeFile(files.filename)
+                throw new CustomError(httpCode.badRequest, "Gagal Upload[2]")
+            }
+
+            const getIdMaxTrx = await TrxSeminarMhs.findOne({
+                attributes: [[fn('MAX', col('id_trx_seminar')), "id_trx_seminar"]],
+                where: {
+                    nim: nim
+                }
+            })
+
+            if (!getIdMaxTrx) {
+                await removeFile(files.filename)
+                throw new CustomError(httpCode.badRequest, "Gagal Upload Data[1]")
+            }
+
+            const idDospemArrNol = checkDospem[0].id_dospem_mhs
+            const idDospemArrSatu = checkDospem[1].id_dospem_mhs
+            const payloadRef = [
+                {
+                    id_dospem_mhs: idDospemArrNol,
+                    id_trx_seminar: getIdMaxTrx.get("id_trx_seminar"),
+                },
+                {
+                    id_dospem_mhs: idDospemArrSatu,
+                    id_trx_seminar: getIdMaxTrx.get("id_trx_seminar"),
+                }
+            ]
+
+            const storeRefSeminar = await SeminarMhs.bulkCreate(payloadRef)
+
+            if (!storeRefSeminar) {
+                await removeFile(files.filename)
+                throw new CustomError(httpCode.badRequest, "Gagal Upload[2]")
+            }
+
+            await RefTesisMhs.update({
+                kode_status: "T11"
+            }, {
+                where: {
+                    nim: nim
+                }
+            })
+
+        }
+
+        return storeTrxSeminar;
+    } catch (error) {
+        if (error instanceof CustomError) {
+            throw new CustomError(error.code, error.message);
+        } else {
+            console.log(`error : ${error}`);
+            throw new CustomError(500, "Internal server error.");
+        }
+    }
+}
+
 export default {
     getDataBimbinganByNim,
     storeTrxBimbinganByNim,
@@ -641,5 +821,7 @@ export default {
     getDataHistoryBimbinganByNim,
     storeSeminarMhs,
     getDataSeminarByNimAndKeteranganSeminar,
-    updatePersetujuanBimbinganByNidn
+    updatePersetujuanBimbinganByNidn,
+    storeSidangAkhir,
+    updatePersetujuanSeminar
 }

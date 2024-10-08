@@ -14,8 +14,13 @@ import {
     uploadUlangPdf,
     getHistoryBimbinganByNimAndIdSubMateri,
     uploadPdfSeminar,
-    getSeminarByNimAndKeteranganSeminar
+    getSeminarByNimAndKeteranganSeminar,
+    uploadPdfSidangAkhir
 } from "@controllers/web/mahasiswa/bimbingan-mhs.controller";
+
+import {
+    generateDokumenKelayakan
+} from "@controllers/web/mahasiswa/dokumen-kelayakan.controller";
 
 export default {
     getTesisByNim,
@@ -27,5 +32,7 @@ export default {
     uploadUlangPdf,
     getHistoryBimbinganByNimAndIdSubMateri,
     uploadPdfSeminar,
-    getSeminarByNimAndKeteranganSeminar
+    getSeminarByNimAndKeteranganSeminar,
+    generateDokumenKelayakan,
+    uploadPdfSidangAkhir
 }

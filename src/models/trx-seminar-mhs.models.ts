@@ -4,7 +4,8 @@ import RefTesisMhs from "./ref-tesis-mhs.models";
 
 export enum keterangan_seminar {
     proposal = "proposal",
-    hasil = "hasil"
+    hasil = "hasil",
+    sidang_akhir = "sidang_akhir"
 }
 
 interface ITrxSeminarMhsAttributes {

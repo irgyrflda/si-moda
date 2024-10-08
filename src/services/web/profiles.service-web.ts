@@ -47,7 +47,7 @@ const profileMhsByNidnKetDospem = async (
                 dataNew.push({
                     nama_mahasiswa: getDataMhs.nama,
                     nim: i.nim,
-                    judul_tesis: getDataTesisMhs.judul_tesis,
+                    judul_tesis: i.judul_tesis,
                     Prodi: getDataMhs.jurusan,
                     ipk: getDataMhs.ipk,
                     semester: getDataMhs.semester,

@@ -23,7 +23,7 @@ const storageAsli = multer.diskStorage({
         callback(null, folderPath);
     },
     filename: async (req, file, callback) => {
-        const name = Date.now() + '-' + Math.round(Math.random() * 1E9) + '=' + file.originalname;
+        const name = Date.now() + '-' + Math.round(Math.random() * 1E9);
 
         if (allowedMimeTypesPdf.includes(file.mimetype)) {
             const fileName = `${name}.${file.originalname}`;

@@ -2,12 +2,14 @@ import db from "@config/database";
 import { DataTypes, Model, Optional } from "sequelize";
 import RefDosepemMhs from "./ref-dospem-mhs.models";
 import TrxSeminarMhs from "./trx-seminar-mhs.models";
+import { status_persetujuan_dospem_mhs } from "./bimbingan-mhs.models";
 
 interface ISeminarMhsAttributes {
     id_seminar_mhs: number | null | undefined;
     id_trx_seminar: number | null | undefined;
     id_dospem_mhs: number | null | undefined;
     tgl_detail_review: string | null | undefined;
+    status_persetujuan: null | status_persetujuan_dospem_mhs
     uc: string | null | undefined;
     uu: string | null | undefined;
     created_at: Date | undefined;
@@ -17,7 +19,7 @@ interface ISeminarMhsAttributes {
 export type SeminarMhsOutput = Required<ISeminarMhsAttributes>;
 export type SeminarMhsInput = Optional<
     ISeminarMhsAttributes,
-    "id_seminar_mhs" | "tgl_detail_review" | "uc" | "uu" | "created_at" | "update_at"
+    "id_seminar_mhs" | "status_persetujuan" | "tgl_detail_review" | "uc" | "uu" | "created_at" | "update_at"
 >;
 
 class SeminarMhs
@@ -27,6 +29,7 @@ class SeminarMhs
     declare id_trx_seminar: number;
     declare id_dospem_mhs: number;
     declare tgl_detail_review: string | null | undefined;
+    declare status_persetujuan: status_persetujuan_dospem_mhs | null;
     declare uc: string | null | undefined;
     declare uu: string | null | undefined;
     declare created_at: Date | undefined;
@@ -50,6 +53,11 @@ SeminarMhs.init(
         },
         tgl_detail_review: {
             type: DataTypes.STRING,
+            allowNull: true
+        },
+        status_persetujuan: {
+            type: DataTypes.ENUM("setuju", "belum disetujui", "tidak setuju"),
+            defaultValue: "belum disetujui",
             allowNull: true
         },
         uc: {

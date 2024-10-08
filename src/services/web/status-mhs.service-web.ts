@@ -102,9 +102,79 @@ const updateStatusCapaianSeminarProposalMhs = async (
         status = "T05"
         await trxNotifikasiServiceWeb.createNotif(nim, 'Bimbingan Proposal Anda Telah Disetujui Oleh Kedua Dospem, Silahkan Upload Materi Proposal Anda!!')
     }
-    
+
     console.log("status baru : ", status);
-    
+
+    await RefTesisMhs.update({
+        kode_status: status
+    }, {
+        where: {
+            nim: nim
+        }
+    })
+}
+
+const updateStatusCapaianBimbinganHasilMhs = async (
+    nim: string,
+) => {
+    const checkData: any = await db.query(`SELECT COUNT(id_trx_seminar) total_masukan
+    FROM (SELECT b.id_trx_seminar, b.id_dospem_mhs
+    FROM trx_seminar_mhs a
+    JOIN trx_masukan_seminar b
+    ON a.id_trx_seminar = b.id_trx_seminar
+    WHERE a.nim = :nim
+    AND a.keterangan_seminar = 'proposal'
+    GROUP BY b.id_dospem_mhs) a`,
+        {
+            replacements: { nim: nim },
+            type: QueryTypes.SELECT
+        }
+    );
+
+    let status: string = "T06"
+
+    if (checkData[0].total_masukan === 2) {
+        status = "T07"
+        await trxNotifikasiServiceWeb.createNotif(nim, 'Seminar Proposal Anda Telah Diberimasukan Oleh Kedua Dospem, Silahkan Revisi Proposal Anda!!, Semangat Revisi!!')
+    }
+
+    console.log("status baru : ", status);
+
+    await RefTesisMhs.update({
+        kode_status: status
+    }, {
+        where: {
+            nim: nim
+        }
+    })
+}
+
+const updateStatusCapaianBimbinganSidangAkhirMhs = async (
+    nim: string,
+) => {
+    const checkData: any = await db.query(`SELECT COUNT(id_trx_seminar) total_masukan
+    FROM (SELECT b.id_trx_seminar, b.id_dospem_mhs
+    FROM trx_seminar_mhs a
+    JOIN trx_masukan_seminar b
+    ON a.id_trx_seminar = b.id_trx_seminar
+    WHERE a.nim = :nim
+    AND a.keterangan_seminar = 'hasil'
+    GROUP BY b.id_dospem_mhs) a`,
+        {
+            replacements: { nim: nim },
+            type: QueryTypes.SELECT
+        }
+    );
+
+    let status: string = "T09"
+
+    if (checkData[0].total_masukan === 2) {
+        status = "T10"
+        await trxNotifikasiServiceWeb.createNotif(nim, 'Seminar Hasil Anda Telah Diberimasukan Oleh Kedua Dospem, Silahkan Revisi Hasil Penelitian Anda!!, Semangat Revisi!!')
+    }
+
+    console.log("status baru : ", status);
+
     await RefTesisMhs.update({
         kode_status: status
     }, {
@@ -165,9 +235,55 @@ const updateStatusCapaianSeminarHasilMhs = async (
     })
 }
 
+const updateStatusCapaianSeminarSidangAkhirMhs = async (
+    id_trx_seminar: string,
+) => {
+    const checkData: any = await db.query(`SELECT a.nim, b.status_persetujuan
+    FROM trx_seminar_mhs a
+    JOIN ref_seminar_mhs b
+    ON a.id_trx_seminar = b.id_trx_seminar
+    WHERE a.id_trx_seminar = :id_trx_seminar
+`,
+        {
+            replacements: { id_trx_seminar: id_trx_seminar },
+            type: QueryTypes.SELECT
+        }
+    );
+
+    let status: string = "T11"
+
+    const statusNeww = checkData.filter((i: any) => i.status_persetujuan === 'tidak setuju')
+    const statusPersetujuan = checkData.filter((i: any) => i.status_persetujuan === 'setuju')
+    const nim = checkData[0].nim
+    
+    if (statusPersetujuan.length === 2) {
+        status = "T12"
+        await trxNotifikasiServiceWeb.createNotif(nim, 'Ujian Akhir Anda Disetujui Oleh Kedua Dospem')
+    } else if (statusNeww.length > 0 && statusNeww.length <= 2) {
+        status = "T10"
+    } else if (statusPersetujuan.length > 0 && statusPersetujuan.length < 2) {
+        status = "T11"
+    } else {
+        status = "T11"
+    }
+
+    console.log("status baru : ", status);
+
+    await RefTesisMhs.update({
+        kode_status: status
+    }, {
+        where: {
+            nim: nim
+        }
+    })
+}
+
 export default {
     updateStatusTesisMhs,
     updateStatusCapaianBimbinganProposalMhs,
     updateStatusCapaianSeminarProposalMhs,
-    updateStatusCapaianSeminarHasilMhs
+    updateStatusCapaianSeminarHasilMhs,
+    updateStatusCapaianBimbinganHasilMhs,
+    updateStatusCapaianBimbinganSidangAkhirMhs,
+    updateStatusCapaianSeminarSidangAkhirMhs
 }

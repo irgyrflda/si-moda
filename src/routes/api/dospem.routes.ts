@@ -5,7 +5,7 @@ import {
     checkToken
 } from "@middleware/authorization";
 import { payloadPersetujuanArraySchema, payloadPersetujuanSchema, payloadSchema } from "@schema/ref-dospem-mhs.schema";
-import { payloadPersetujuanBimbinganSchema } from "@schema/trx-bimbingan.schema";
+import { payloadPersetujuanBimbinganSchema, payloadPersetujuanSeminarSchema } from "@schema/trx-bimbingan.schema";
 const routes = express.Router();
 
 //route dosen
@@ -23,6 +23,7 @@ routes.post("/persetujuan", checkToken, validate(payloadPersetujuanArraySchema),
 
 //persetujuan bimbingan
 routes.put("/persetujuan-dospem/:nidn", checkToken, validate(payloadPersetujuanBimbinganSchema), dospemController.updatePersetujuanBimbinganMhsDospemMhs);
+routes.put("/persetujuan-dospem/:id_trx_seminar/:id_dospem_mhs", checkToken, validate(payloadPersetujuanSeminarSchema), dospemController.updatePersetujuanSeminarMhsDospemMhs);
 
 //dashboard dospem
 routes.get("/dashboard/:nidn", checkToken, dospemController.getDataDashboardDospem);

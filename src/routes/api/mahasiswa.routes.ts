@@ -29,5 +29,9 @@ routes.get("/seminar/:nim/:keterangan_seminar", checkToken, mahasiswaController.
 
 //upload seminar
 routes.post("/upload-seminar", checkToken, uploadFileSeminar.array("file", 2), mahasiswaController.uploadPdfSeminar);
+routes.post("/upload-sidang-akhir", checkToken, uploadFileSeminar.single("file"), mahasiswaController.uploadPdfSidangAkhir);
+
+//dokumen kelayakan
+routes.get("/dokumen-kelayakan/:nim/:keterangan_seminar", checkToken, mahasiswaController.generateDokumenKelayakan);
 
 export default routes;

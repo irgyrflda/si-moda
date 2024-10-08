@@ -7,6 +7,7 @@ import service from "@services/web/ref-dospem-mhs.service-web";
 import { ParamsIdRequest, ParamsKetDospemRequest, ParamsNidnRequest, ParamsNimRequest, PayloadRequest } from "@schema/ref-dospem-mhs.schema";
 import { keterangan_dospem, RefDospemMhsInput } from "@models/ref-dospem-mhs.models";
 import serviceBimbingan from "@services/web/trx-bimbingan.service-web";
+import { ParamsIdTrxSeminarAndIdDospemMhsRequest } from "@schema/trx-bimbingan.schema";
 
 export const getByIdDataDospemMhs = async (
     req: Request,
@@ -102,6 +103,25 @@ export const updatePersetujuanBimbinganMhsDospemMhs = async (
         const statusPersetujuan = req.body.status_persetujuan
 
         await serviceBimbingan.updatePersetujuanBimbinganByNidn(nidn, idTrxBimbingan, statusPersetujuan, )
+
+        responseSuccess(res, httpCode.ok, "Berhasil Mengirim Persetujuan")
+    } catch (error) {
+        errorLogger.error("Error dospem controller : ", error)
+        next(error);
+    }
+}
+
+export const updatePersetujuanSeminarMhsDospemMhs = async (
+    req: Request,
+    res: Response,
+    next: NextFunction
+): Promise<void> => {
+    try {
+        const idTrxseminar: ParamsIdTrxSeminarAndIdDospemMhsRequest["params"]["id_trx_seminar"] = req.params.id_trx_seminar as string;
+        const idDospemMhs: ParamsIdTrxSeminarAndIdDospemMhsRequest["params"]["id_dospem_mhs"] = req.params.id_dospem_mhs as string;
+        const statusPersetujuan = req.body.status_persetujuan
+
+        await serviceBimbingan.updatePersetujuanSeminar(idTrxseminar, idDospemMhs, statusPersetujuan, )
 
         responseSuccess(res, httpCode.ok, "Berhasil Mengirim Persetujuan")
     } catch (error) {

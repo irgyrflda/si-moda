@@ -25,6 +25,12 @@ const payloadPersetujuanBimbingan = {
     })
 };
 
+const payloadPersetujuanSeminar = {
+    body: object({
+        status_persetujuan: nativeEnum(status_persetujuan_dospem_mhs)
+    })
+};
+
 const paramsIdTrxBimbingan = {
     params: object({
         id_trx_bimbingan: string({
@@ -90,6 +96,10 @@ export const payloadPersetujuanBimbinganSchema = object({
     ...payloadPersetujuanBimbingan
 });
 
+export const payloadPersetujuanSeminarSchema = object({
+    ...payloadPersetujuanSeminar
+});
+
 export const paramsIdTrxSeminarAndIdDospemMhsSchema = object({
     ...paramsIdTrxSeminarAndIdDospemMhs
 });
@@ -112,6 +122,7 @@ export const paramsNimAndIdSubMateriTrxBimbinganSchema = object({
 
 export type PayloadPersetujuanBimbinganRequest = TypeOf<typeof payloadPersetujuanBimbinganSchema>;
 export type PayloadTrxBimbinganRequest = TypeOf<typeof payloadTrxBimbinganSchema>;
+export type PayloadTrxSeminarRequest = TypeOf<typeof payloadPersetujuanSeminarSchema>;
 export type ParamsIdTrxBimbinganRequest = TypeOf<typeof paramsIdTrxBimbinganNotifSchema>;
 export type ParamsNimAndKeteranganSeminarRequest = TypeOf<typeof paramsNimAndKeteranganSeminarSchema>;
 export type ParamsIdTrxSeminarAndIdDospemMhsRequest = TypeOf<typeof paramsIdTrxSeminarAndIdDospemMhsSchema>;

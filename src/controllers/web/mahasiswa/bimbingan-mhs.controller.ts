@@ -8,6 +8,7 @@ import serviceBimbingan from "@services/web/trx-bimbingan.service-web";
 import { removeFile } from "@utils/remove-file";
 import cekTypeFile from "@utils/cek-typefile";
 import RefTesisMhs from "@models/ref-tesis-mhs.models";
+import TrxSeminarMhs from "@models/trx-seminar-mhs.models";
 
 export const getSeminarByNimAndKeteranganSeminar = async (
     req: Request,
@@ -171,8 +172,60 @@ export const uploadPdfSeminar = async (
             })
             throw new CustomError(httpCode.badRequest, "Anda Belum Diperbolehkan Upload")
         }
-        
         const storeSeminar = await serviceBimbingan.storeSeminarMhs(req.body.nim, req.body.keterangan_seminar, pathFiles[0].filename, pathFiles[1].filename, req.body.tgl_upload, pathFiles, kodeStatusMhs)
+
+        responseSuccess(res, httpCode.ok, "Berhasil upload", storeSeminar)
+    } catch (error) {
+        errorLogger.error(`error upload ${error}`)
+        next(error);
+    }
+}
+
+export const uploadPdfSidangAkhir = async (
+    req: Request,
+    res: Response,
+    next: NextFunction
+): Promise<void> => {
+    try {
+        if (!req.file) throw new CustomError(httpCode.badRequest, "tidak ada file yang di upload")
+
+        const pathFiles: any = req.file
+
+        if (!req.body.nim || !req.body.tgl_upload) {
+            await removeFile(pathFiles.filename)
+            throw new CustomError(httpCode.badRequest, "nim dan tgl_upload harus di isi")
+        }
+
+        if (!req.body.keterangan_seminar) {
+            await removeFile(pathFiles.filename)
+            throw new CustomError(httpCode.badRequest, "keterangan_seminar harus di isi")
+        }
+
+        if (req.body.keterangan_seminar !== "sidang_akhir") {
+            await removeFile(pathFiles.filename)
+            throw new CustomError(httpCode.badRequest, "keterangan_seminar harus di isi sidang_akhir")
+        }
+
+        const cekStatusMhs = await RefTesisMhs.findOne({
+            attributes: ["kode_status"],
+            where: {
+                nim: req.body.nim
+            }
+        })
+
+        if (!cekStatusMhs) {
+            await removeFile(pathFiles.filename)
+            throw new CustomError(httpCode.badRequest, "Mahasiswa Tidak Terdaftar")
+        }
+
+        const kodeStatusMhs = cekStatusMhs.kode_status
+
+        if (kodeStatusMhs !== "T10" && kodeStatusMhs !== "T11") {
+            await removeFile(pathFiles.filename)
+            throw new CustomError(httpCode.badRequest, "Anda Belum Diperbolehkan Upload")
+        }
+
+        const storeSeminar = await serviceBimbingan.storeSidangAkhir(req.body.nim, req.body.keterangan_seminar, pathFiles.filename, req.body.tgl_upload, pathFiles)
 
         responseSuccess(res, httpCode.ok, "Berhasil upload", storeSeminar)
     } catch (error) {

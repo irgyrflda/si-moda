@@ -11,6 +11,7 @@ import serviceNotif from "@services/web/trx-notifikasi.service-web";
 import { cekTgl } from "@utils/cek-tgl";
 import TrxSeminarMhs, { keterangan_seminar } from "@models/trx-seminar-mhs.models";
 import TrxBimbinganMhs from "@models/trx-bimbingan-mhs.models";
+import statusMhsServiceWeb from "./status-mhs.service-web";
 
 const getMasukanByIdTrxBimbingan = async (
     idTrxBimbingan: string,
@@ -237,6 +238,14 @@ const storeMasukanTrxSeminar = async (
         await serviceNotif.createNotif(checkTrx[0].seminar_tesis_mhs.nim, `Seminar ${checkTrx[0].seminar_tesis_mhs.keterangan_seminar} telah dikomentari`)
 
         t.commit()
+
+        if (checkTrx[0].seminar_tesis_mhs.keterangan_seminar === keterangan_seminar.proposal) {
+            await statusMhsServiceWeb.updateStatusCapaianBimbinganHasilMhs(checkTrx[0].seminar_tesis_mhs.nim)
+        }
+
+        if (checkTrx[0].seminar_tesis_mhs.keterangan_seminar === keterangan_seminar.hasil) {
+            await statusMhsServiceWeb.updateStatusCapaianBimbinganSidangAkhirMhs(checkTrx[0].seminar_tesis_mhs.nim)
+        }
         return storeMasukan
     } catch (error) {
         t.rollback()
