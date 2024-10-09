@@ -2,6 +2,8 @@ import { errorLogger } from "@config/logger";
 import { ParamsNimAndKeteranganSeminarRequest } from "@schema/trx-bimbingan.schema";
 import { NextFunction, Request, Response } from "express";
 import serviceGenerateDokumenKelayakan from "@services/web/dokumen-kelayakan.service-web";
+import CustomError from "@middleware/error-handler";
+import { httpCode } from "@utils/prefix";
 
 export const generateDokumenKelayakan = async (
     req: Request,
@@ -14,13 +16,17 @@ export const generateDokumenKelayakan = async (
 
         const dokumenBuffer = await serviceGenerateDokumenKelayakan.generateDokumenKelayakan(nim, keteranganSeminar)
 
-        res.set({
-            'Content-Type': 'application/pdf',
-            'Content-Length': dokumenBuffer.length,
-            'Content-Disposition': 'inline; filename="Si-PPan-DRAUK.pdf"',
-        });
-        res.send(dokumenBuffer);
+        dokumenBuffer.toBuffer((error, docBuffer) => {
+            if (error) throw new CustomError(httpCode.badRequest, "gagal membuat pdf")
 
+            res.set({
+                'Content-Type': 'application/pdf',
+                'Content-Disposition': 'attachment; filename="document.pdf"',
+                'Content-Length': docBuffer.length,
+            });
+
+            res.send(docBuffer);
+        });
     } catch (error) {
         errorLogger.error(`error upload ${error}`)
         next(error);

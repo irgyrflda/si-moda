@@ -146,7 +146,7 @@ const updatePersetujuanBimbinganByNidn = async (
             include: [
                 {
                     model: RefDosepemMhs,
-                    as: "dospem_t",
+                    as: "dospem_tesis",
                     attributes: ["nim", "nidn", "keterangan_dospem"],
                     where: {
                         nidn: nidn
@@ -174,17 +174,17 @@ const updatePersetujuanBimbinganByNidn = async (
         const statusTesisMhs: any = await RefTesisMhs.findOne({
             attributes: ["kode_status"],
             where: {
-                nim: checkDataDospem.dospem_t.nim
+                nim: checkDataDospem.dospem_tesis.nim
             }
         });
 
         if (statusTesisMhs.kode_status === "T04") {
-            await statusMhsServiceWeb.updateStatusCapaianSeminarProposalMhs(checkDataDospem.dospem_t.nim)
+            await statusMhsServiceWeb.updateStatusCapaianSeminarProposalMhs(checkDataDospem.dospem_tesis.nim)
         }
         if (statusTesisMhs.kode_status === "T07") {
-            await statusMhsServiceWeb.updateStatusCapaianSeminarHasilMhs(checkDataDospem.dospem_t.nim)
+            await statusMhsServiceWeb.updateStatusCapaianSeminarHasilMhs(checkDataDospem.dospem_tesis.nim)
         }
-        await serviceNotif.createNotif(checkDataDospem.dospem_t.nim, `${checkDataDospem.dospem_t.keterangan_dospem} anda ${statusPersetujuan} dengan bimbingan kaliini`)
+        await serviceNotif.createNotif(checkDataDospem.dospem_tesis.nim, `${checkDataDospem.dospem_tesis.keterangan_dospem} anda ${statusPersetujuan} dengan bimbingan kaliini`)
 
         return update;
     } catch (error) {
