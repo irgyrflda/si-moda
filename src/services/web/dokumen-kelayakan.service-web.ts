@@ -2,7 +2,6 @@ import db from "@config/database";
 import CustomError from "@middleware/error-handler";
 import { keterangan_seminar } from "@models/trx-seminar-mhs.models";
 import { QueryTypes } from "sequelize";
-import pdf from 'html-pdf';
 
 const generateDokumenKelayakan = async (
     nim: string,
@@ -92,87 +91,88 @@ const generateDokumenKelayakan = async (
             })
         });
 
-        const judulPdf = `Dokumen Kelayakan Mahasiswa`
-        const htmlContent = `
-            <html>
-            <head>
-                <style>
-                body {
-                    font-family: Arial, sans-serif;
-                }
-                table {
-                    width: 100%;
-                    border-collapse: collapse;
-                }
-    
-                table, th, td {
-                    border: 1px solid black;
-                }
-    
-                th, td {
-                    padding: 8px;
-                    text-align: left;
-                }
-    
-                th {
-                    background-color: #f2f2f2;
-                }
-                </style>
-            </head>
-            <body>
-                <body>
-                <h1 style="text-align: center;">${judulPdf}</h1>
-                <h3>NIM : ${dataMap[0].nim}</h3>
-                <h3>Nama : ${dataMap[0].nama}</h3>
-                <h3>Judul Tesis : ${dataMap[0].judul_tesis}</h3>
-                <table>
-                    <thead>
-                    <tr>
-                        <th>Bab</th>
-                        <th>Sub Bab</th>
-                        <th>Tanggal Upload</th>
-                        <th>Persetujuan dospem 1</th>
-                        <th>Persetujuan dospem 2</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        ${dataMap.map((items: any) => `
-                        <tr>
-                            <td>${items.materi_pembahasan}</td>
-                            <td>${items.sub_materi_pembahasan}</td>
-                            <td>${items.tgl_upload}</td>
-                            <td>
-                                Nidn : ${items.persetujuan_dospem[1].nidn} <br>
-                                Nama : ${items.persetujuan_dospem[1].nama_dospem} <br>
-                                Persetujuan : ${items.persetujuan_dospem[1].status_persetujuan} <br>
-                                tgl : ${items.persetujuan_dospem[1].tgl_detail_review}
-                            </td>
-                            <td>
-                                Nidn : ${items.persetujuan_dospem[0].nidn} <br>
-                                Nama : ${items.persetujuan_dospem[0].nama_dospem} <br>
-                                Persetujuan : ${items.persetujuan_dospem[0].status_persetujuan} <br>
-                                tgl : ${items.persetujuan_dospem[0].tgl_detail_review}
-                            </td>
-                        </tr>
-                    `).join('')}
-                    </tbody>
-                </table>
-                </body>
-            </html>`
+        // const judulPdf = `Dokumen Kelayakan Mahasiswa`
+        // const htmlContent = `
+        //     <html>
+        //     <head>
+        //         <style>
+        //         body {
+        //             font-family: Arial, sans-serif;
+        //         }
+        //         table {
+        //             width: 100%;
+        //             border-collapse: collapse;
+        //         }
 
-        const options: any = {
-            format: 'A4',
-            orientation: 'portrait',
-            border: {
-                top: '10mm',
-                right: '10mm',
-                bottom: '10mm',
-                left: '10mm',
-            },
-        };
-        const pdfBuffer = pdf.create(htmlContent, options)
+        //         table, th, td {
+        //             border: 1px solid black;
+        //         }
 
-        return pdfBuffer;
+        //         th, td {
+        //             padding: 8px;
+        //             text-align: left;
+        //         }
+
+        //         th {
+        //             background-color: #f2f2f2;
+        //         }
+        //         </style>
+        //     </head>
+        //     <body>
+        //         <body>
+        //         <h1 style="text-align: center;">${judulPdf}</h1>
+        //         <h3>NIM : ${dataMap[0].nim}</h3>
+        //         <h3>Nama : ${dataMap[0].nama}</h3>
+        //         <h3>Judul Tesis : ${dataMap[0].judul_tesis}</h3>
+        //         <table>
+        //             <thead>
+        //             <tr>
+        //                 <th>Bab</th>
+        //                 <th>Sub Bab</th>
+        //                 <th>Tanggal Upload</th>
+        //                 <th>Persetujuan dospem 1</th>
+        //                 <th>Persetujuan dospem 2</th>
+        //                 </tr>
+        //             </thead>
+        //             <tbody>
+        //                 ${dataMap.map((items: any) => `
+        //                 <tr>
+        //                     <td>${items.materi_pembahasan}</td>
+        //                     <td>${items.sub_materi_pembahasan}</td>
+        //                     <td>${items.tgl_upload}</td>
+        //                     <td>
+        //                         Nidn : ${items.persetujuan_dospem[1].nidn} <br>
+        //                         Nama : ${items.persetujuan_dospem[1].nama_dospem} <br>
+        //                         Persetujuan : ${items.persetujuan_dospem[1].status_persetujuan} <br>
+        //                         tgl : ${items.persetujuan_dospem[1].tgl_detail_review}
+        //                     </td>
+        //                     <td>
+        //                         Nidn : ${items.persetujuan_dospem[0].nidn} <br>
+        //                         Nama : ${items.persetujuan_dospem[0].nama_dospem} <br>
+        //                         Persetujuan : ${items.persetujuan_dospem[0].status_persetujuan} <br>
+        //                         tgl : ${items.persetujuan_dospem[0].tgl_detail_review}
+        //                     </td>
+        //                 </tr>
+        //             `).join('')}
+        //             </tbody>
+        //         </table>
+        //         </body>
+        //     </html>`
+
+        // const options: any = {
+        //     format: 'A4',
+        //     orientation: 'portrait',
+        //     border: {
+        //         top: '10mm',
+        //         right: '10mm',
+        //         bottom: '10mm',
+        //         left: '10mm',
+        //     },
+        // };
+        // const pdfBuffer = pdf.create(htmlContent, options)
+
+        // return pdfBuffer;
+        return dataMap;
     } catch (error: any) {
         if (error instanceof CustomError) {
             throw new CustomError(error.code, error.message);
