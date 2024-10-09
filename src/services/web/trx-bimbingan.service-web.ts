@@ -262,39 +262,98 @@ const getDataSeminarByNimAndKeteranganSeminar = async (
     keterangan_seminar: string
 ) => {
     try {
-        const data = await TrxSeminarMhs.findOne({
-            attributes: ["id_trx_seminar", "nim", "keterangan_seminar", "url_path_pdf", "url_path_materi_ppt", "tgl_upload", "tgl_review"],
-            include: [
-                {
-                    model: SeminarMhs,
-                    as: "dospem_tasis_mhs",
-                    attributes: ["id_seminar_mhs", "id_dospem_mhs", "tgl_detail_review"],
-                    include: [
-                        {
-                            model: RefDosepemMhs,
-                            as: "dospem_t",
-                            attributes: ["keterangan_dospem", "nidn"],
-                            include: [
-                                {
-                                    model: RefDosepem,
-                                    as: "dosen_mhs",
-                                    attributes: ["nama_dospem"]
-                                }
-                            ],
-                        }
-                    ]
+        const cekSeminar: any = await db.query(`SELECT MAX(id_trx_seminar) id_trx_seminar, url_path_pdf
+        FROM trx_seminar_mhs 
+        WHERE nim = :nim
+        AND keterangan_seminar = :keterangan_seminar`,
+            {
+                replacements: { nim: nim, keterangan_seminar: keterangan_seminar },
+                type: QueryTypes.SELECT
+            });
+        let data: any
+        let validationKelulusan: string = "belum ada keputusan"
+        if (cekSeminar.length === 0) {
+            data = await TrxSeminarMhs.findOne({
+                attributes: ["id_trx_seminar", "nim", "keterangan_seminar", "url_path_pdf", "url_path_materi_ppt", "tgl_upload", "tgl_review"],
+                include: [
+                    {
+                        model: SeminarMhs,
+                        as: "dospem_tasis_mhs",
+                        attributes: ["id_seminar_mhs", "id_dospem_mhs", "tgl_detail_review", "status_persetujuan"],
+                        include: [
+                            {
+                                model: RefDosepemMhs,
+                                as: "dospem_t",
+                                attributes: ["keterangan_dospem", "nidn"],
+                                include: [
+                                    {
+                                        model: RefDosepem,
+                                        as: "dosen_mhs",
+                                        attributes: ["nama_dospem"]
+                                    }
+                                ],
+                            }
+                        ]
+                    }
+                ],
+                where: {
+                    nim: nim,
+                    keterangan_seminar: keterangan_seminar
                 }
-            ],
-            where: {
-                nim: nim,
-                keterangan_seminar: keterangan_seminar
+            });
+        } else {
+            const idTrxSeminar = cekSeminar[0].id_trx_seminar
+            data = await TrxSeminarMhs.findOne({
+                attributes: ["id_trx_seminar", "nim", "keterangan_seminar", "url_path_pdf", "url_path_materi_ppt", "tgl_upload", "tgl_review"],
+                include: [
+                    {
+                        model: SeminarMhs,
+                        as: "dospem_tasis_mhs",
+                        attributes: ["id_seminar_mhs", "id_dospem_mhs", "tgl_detail_review", "status_persetujuan"],
+                        include: [
+                            {
+                                model: RefDosepemMhs,
+                                as: "dospem_t",
+                                attributes: ["keterangan_dospem", "nidn"],
+                                include: [
+                                    {
+                                        model: RefDosepem,
+                                        as: "dosen_mhs",
+                                        attributes: ["nama_dospem"]
+                                    }
+                                ],
+                            }
+                        ]
+                    }
+                ],
+                where: {
+                    id_trx_seminar: idTrxSeminar
+                }
+            });
+            const statusPersetujuan = data.dospem_tasis_mhs.map((item: any) => item.status_persetujuan);
+
+            // Cek apakah ada yang "tidak_setuju"
+            if (statusPersetujuan.includes("tidak setuju")) {
+                validationKelulusan = "tidak lulus";
             }
-        });
+
+            // Cek apakah kedua status "setuju"
+            if (statusPersetujuan.every((status: any) => status === "setuju")) {
+                validationKelulusan = "lulus";
+            }
+
+            // Cek apakah kedua status "belum disetujui"
+            if (statusPersetujuan.every((status: any) => status === "belum disetujui")) {
+                validationKelulusan = "belum ada keputusan";
+            }
+        }
+
         let validation = false
         if (data) validation = true
 
         const dataNew = {
             validation: validation,
+            validation_kelulusan: validationKelulusan,
             data_seminar: data
         }
         return dataNew;
@@ -710,23 +769,106 @@ const storeSidangAkhir = async (
             throw new CustomError(httpCode.badRequest, "Pastikan format tgl_upload YYYY-MM-DD HH:MM:SS")
         }
 
-        const cekSeminar = await TrxSeminarMhs.findOne({
-            attributes: ["id_trx_seminar", "nim", "url_path_pdf"],
-            where: {
-                nim: nim,
-                keterangan_seminar: keterangan_seminar
-            }
-        })
-        let storeTrxSeminar
-        if (cekSeminar) {
-            await removeFile(cekSeminar.url_path_pdf)
-            storeTrxSeminar = TrxSeminarMhs.update({
-                url_path_pdf: url_path_pdf
-            }, {
-                where: {
-                    id_trx_seminar: cekSeminar.id_trx_seminar
-                }
+        const cekSeminar: any = await db.query(`SELECT MAX(id_trx_seminar) id_trx_seminar, url_path_pdf
+        FROM trx_seminar_mhs 
+        WHERE nim = :nim
+        AND keterangan_seminar = :keterangan_seminar`,
+            {
+                replacements: { nim: nim, keterangan_seminar: keterangan_seminar },
+                type: QueryTypes.SELECT
             })
+        let storeTrxSeminar
+        if (cekSeminar.length !== 0) {
+            const checkPersetujuanDospem = await SeminarMhs.findAll({
+                attributes: ["status_persetujuan"],
+                where: {
+                    id_trx_seminar: cekSeminar[0].id_trx_seminar
+                }
+            });
+            const validationPersetujuan = checkPersetujuanDospem.some((i: any) => i.status_persetujuan === "belum disetujui")
+            if (validationPersetujuan === true) {
+                await removeFile(cekSeminar[0].url_path_pdf)
+                storeTrxSeminar = TrxSeminarMhs.update({
+                    url_path_pdf: url_path_pdf
+                }, {
+                    where: {
+                        id_trx_seminar: cekSeminar.id_trx_seminar
+                    }
+                })
+            } else {
+                const checkDospem = await RefDosepemMhs.findAll({
+                    attributes: ["id_dospem_mhs", "nidn", "status_persetujuan"],
+                    where: {
+                        nim: nim,
+                        status_persetujuan: "setuju"
+                    }
+                });
+
+                if (checkDospem.length < 2) {
+                    await removeFile(files.filename)
+                    throw new CustomError(httpCode.badRequest, "Dosen pembimbing belum ditetapkan atau belum diterima")
+                }
+
+                if (checkDospem.length > 2) {
+                    await removeFile(files.filename)
+                    throw new CustomError(httpCode.badRequest, "Ada kesalahan sistem saat penetapan dospem")
+                }
+
+                const payloadTrxSeminar: TrxSeminarMhsInput = {
+                    nim: nim,
+                    keterangan_seminar: keterangan_seminar,
+                    url_path_materi_ppt: '-',
+                    url_path_pdf: url_path_pdf,
+                    tgl_upload: tgl_upload
+                }
+
+                storeTrxSeminar = await TrxSeminarMhs.create(payloadTrxSeminar)
+
+                if (!storeTrxSeminar) {
+                    await removeFile(files.filename)
+                    throw new CustomError(httpCode.badRequest, "Gagal Upload[2]")
+                }
+
+                const getIdMaxTrx = await TrxSeminarMhs.findOne({
+                    attributes: [[fn('MAX', col('id_trx_seminar')), "id_trx_seminar"]],
+                    where: {
+                        nim: nim
+                    }
+                })
+
+                if (!getIdMaxTrx) {
+                    await removeFile(files.filename)
+                    throw new CustomError(httpCode.badRequest, "Gagal Upload Data[1]")
+                }
+
+                const idDospemArrNol = checkDospem[0].id_dospem_mhs
+                const idDospemArrSatu = checkDospem[1].id_dospem_mhs
+                const payloadRef = [
+                    {
+                        id_dospem_mhs: idDospemArrNol,
+                        id_trx_seminar: getIdMaxTrx.get("id_trx_seminar"),
+                    },
+                    {
+                        id_dospem_mhs: idDospemArrSatu,
+                        id_trx_seminar: getIdMaxTrx.get("id_trx_seminar"),
+                    }
+                ]
+
+                const storeRefSeminar = await SeminarMhs.bulkCreate(payloadRef)
+
+                if (!storeRefSeminar) {
+                    await removeFile(files.filename)
+                    throw new CustomError(httpCode.badRequest, "Gagal Upload[2]")
+                }
+
+                await RefTesisMhs.update({
+                    kode_status: "T11"
+                }, {
+                    where: {
+                        nim: nim
+                    }
+                })
+            }
         } else {
             const checkDospem = await RefDosepemMhs.findAll({
                 attributes: ["id_dospem_mhs", "nidn", "status_persetujuan"],
@@ -800,7 +942,6 @@ const storeSidangAkhir = async (
                     nim: nim
                 }
             })
-
         }
 
         return storeTrxSeminar;
