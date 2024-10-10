@@ -214,7 +214,7 @@ export const createUser = async (
             })
             if (!storeUserGroup) throw new CustomError(httpCode.badRequest, "Error gagal mendaftarkan user pada aplikasi")
         }
-        await RefUserSementara.destroy({ where: { email: req.headers.email } })
+        // await RefUserSementara.destroy({ where: { email: req.headers.email } })
         const dataUser = await users.getByNomorIndukUser(payload.nomor_induk)
         responseSuccess(res, httpCode.ok, "Berhasil Membuat Data", dataUser)
 

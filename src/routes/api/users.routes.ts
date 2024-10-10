@@ -7,6 +7,6 @@ import {
 import { checkTokenSementara } from "@middleware/authorization";
 const routes = express.Router();
 
-routes.post("/first-login", checkTokenSementara, validate(payloadUsersSchema), usersController.createUser);
+routes.post("/first-login", validate(payloadUsersSchema), usersController.createUser);
 
 export default routes;
