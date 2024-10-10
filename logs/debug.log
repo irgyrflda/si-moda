@@ -1,6 +1,6 @@
-[2024-10-04T17:39:11.104] [DEBUG] default - debug 1 :  {
-  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlyZ3lAZ21haWwuY29tIiwiaWF0IjoxNzI4MDM4MzI0LCJleHAiOjE3MjgwNDE5MjR9.ZkAd9btiWFWsiM2DSZ7OP4eaYuWkC5p_5FsP2VrCmKw',
-  refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlyZ3lAZ21haWwuY29tIiwiaWF0IjoxNzI4MDM4MzI0LCJleHAiOjE3Mjg2NDMxMjR9.KME3ePVACEJzBZLHQeB1l3Hpp2WSzsMyQteEgf06iG8',
+[2024-10-10T21:58:39.520] [DEBUG] default - debug 1 :  {
+  token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlyZ3lAZ21haWwuY29tIiwiaWF0IjoxNzI4NTcyMzAwLCJleHAiOjE3Mjg1NzU5MDB9.0Akdrd3XD4WUgZwNaDtjJrCfwIxlkEHc_b46cCaM77A',
+  refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlyZ3lAZ21haWwuY29tIiwiaWF0IjoxNzI4NTcyMzAwLCJleHAiOjE3MjkxNzcxMDB9.eBDbyQdvXbFXOTqz-HcEEPlW0v0WVzRV5PWBQ9fsRfQ',
   nama_user: 'Citra Dewi',
   password: '3314C9B7CB40BF689101BCBEFE593E7D',
   email_ecampus: undefined,
@@ -8,22 +8,22 @@
   uu: '2016003',
   nomor_induk: '2016003'
 }
-[2024-10-04T17:39:11.110] [DEBUG] default - debug 2 :  Users {
+[2024-10-10T21:58:39.529] [DEBUG] default - debug 2 :  Users {
   dataValues: {
-    token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlyZ3lAZ21haWwuY29tIiwiaWF0IjoxNzI4MDM4MzI0LCJleHAiOjE3MjgwNDE5MjR9.ZkAd9btiWFWsiM2DSZ7OP4eaYuWkC5p_5FsP2VrCmKw',
-    refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlyZ3lAZ21haWwuY29tIiwiaWF0IjoxNzI4MDM4MzI0LCJleHAiOjE3Mjg2NDMxMjR9.KME3ePVACEJzBZLHQeB1l3Hpp2WSzsMyQteEgf06iG8',
+    token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlyZ3lAZ21haWwuY29tIiwiaWF0IjoxNzI4NTcyMzAwLCJleHAiOjE3Mjg1NzU5MDB9.0Akdrd3XD4WUgZwNaDtjJrCfwIxlkEHc_b46cCaM77A',
+    refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlyZ3lAZ21haWwuY29tIiwiaWF0IjoxNzI4NTcyMzAwLCJleHAiOjE3MjkxNzcxMDB9.eBDbyQdvXbFXOTqz-HcEEPlW0v0WVzRV5PWBQ9fsRfQ',
     nama_user: 'Citra Dewi',
     password: '3314C9B7CB40BF689101BCBEFE593E7D',
     email_ecampus: undefined,
     email_google: 'irgy@gmail.com',
     uu: '2016003',
     nomor_induk: '2016003',
-    update_at: 2024-10-04T10:39:11.106Z,
-    created_at: 2024-10-04T10:39:11.106Z
+    update_at: 2024-10-10T14:58:39.523Z,
+    created_at: 2024-10-10T14:58:39.523Z
   },
   _previousDataValues: {
-    token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlyZ3lAZ21haWwuY29tIiwiaWF0IjoxNzI4MDM4MzI0LCJleHAiOjE3MjgwNDE5MjR9.ZkAd9btiWFWsiM2DSZ7OP4eaYuWkC5p_5FsP2VrCmKw',
-    refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlyZ3lAZ21haWwuY29tIiwiaWF0IjoxNzI4MDM4MzI0LCJleHAiOjE3Mjg2NDMxMjR9.KME3ePVACEJzBZLHQeB1l3Hpp2WSzsMyQteEgf06iG8',
+    token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlyZ3lAZ21haWwuY29tIiwiaWF0IjoxNzI4NTcyMzAwLCJleHAiOjE3Mjg1NzU5MDB9.0Akdrd3XD4WUgZwNaDtjJrCfwIxlkEHc_b46cCaM77A',
+    refresh_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlyZ3lAZ21haWwuY29tIiwiaWF0IjoxNzI4NTcyMzAwLCJleHAiOjE3MjkxNzcxMDB9.eBDbyQdvXbFXOTqz-HcEEPlW0v0WVzRV5PWBQ9fsRfQ',
     nama_user: 'Citra Dewi',
     password: '3314C9B7CB40BF689101BCBEFE593E7D',
     email_google: 'irgy@gmail.com',
@@ -32,8 +32,8 @@
     token_expired: undefined,
     email_ecampus: undefined,
     uc: undefined,
-    created_at: 2024-10-04T10:39:11.106Z,
-    update_at: 2024-10-04T10:39:11.106Z
+    created_at: 2024-10-10T14:58:39.523Z,
+    update_at: 2024-10-10T14:58:39.523Z
   },
   uniqno: 1,
   _changed: Set(0) {},
@@ -49,44 +49,4 @@
   isNewRecord: false,
   null: undefined
 }
-[2024-10-04T17:39:11.110] [DEBUG] default - debug 3
-[2024-10-04T17:40:17.778] [ERROR] default - error pengajuan :  CustomError: Status Tidak Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-tesis-mhs.service-web.ts:199:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-tesis-mhs.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 404,
-  status: 'error'
-}
-[2024-10-04T17:40:46.476] [ERROR] default - error pengajuan :  CustomError: Status Tidak Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-tesis-mhs.service-web.ts:199:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-tesis-mhs.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 404,
-  status: 'error'
-}
-[2024-10-04T17:41:21.275] [ERROR] default - error pengajuan :  CustomError: Mahasiswa Tidak Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-tesis-mhs.service-web.ts:199:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-tesis-mhs.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 404,
-  status: 'error'
-}
-[2024-10-04T17:41:41.238] [ERROR] default - error pengajuan :  CustomError: Mahasiswa Tidak Terdaftar
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-tesis-mhs.service-web.ts:199:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-tesis-mhs.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 404,
-  status: 'error'
-}
-[2024-10-04T17:43:10.067] [ERROR] default - error pengajuan :  CustomError: Internal server error.
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-tesis-mhs.service-web.ts:199:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-tesis-mhs.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 500,
-  status: 'error'
-}
+[2024-10-10T21:58:39.530] [DEBUG] default - debug 3

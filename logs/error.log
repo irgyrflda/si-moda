@@ -1,4 +1,134 @@
-[2024-10-09T00:00:43.634] [ERROR] error - Error chect token :  CustomError: Unauthorized token not match[0] 
+[2024-10-10T01:32:21.855] [ERROR] error - error upload Error: WHERE parameter "id_trx_seminar" has invalid "undefined" value
+[2024-10-10T01:32:21.856] [ERROR] error - Error: WHERE parameter "id_trx_seminar" has invalid "undefined" value
+    at MySQLQueryGenerator.whereItemQuery (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:2445:13)
+    at C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:2434:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:2432:35)
+    at MySQLQueryGenerator.whereQuery (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:2405:24)
+    at MySQLQueryGenerator.updateQuery (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:515:116)
+    at MySQLQueryInterface.bulkUpdate (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-interface.js:924:37)
+    at Function.update (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:3351:54)
+[2024-10-10T01:33:28.256] [ERROR] error - error upload Error: WHERE parameter "id_trx_seminar" has invalid "undefined" value
+[2024-10-10T01:33:28.257] [ERROR] error - Error: WHERE parameter "id_trx_seminar" has invalid "undefined" value
+    at MySQLQueryGenerator.whereItemQuery (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:2445:13)
+    at C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:2434:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:2432:35)
+    at MySQLQueryGenerator.whereQuery (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:2405:24)
+    at MySQLQueryGenerator.updateQuery (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:515:116)
+    at MySQLQueryInterface.bulkUpdate (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-interface.js:924:37)
+    at Function.update (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:3351:54)
+[2024-10-10T01:34:18.874] [ERROR] error - error upload Error: WHERE parameter "id_trx_seminar" has invalid "undefined" value
+[2024-10-10T01:34:18.875] [ERROR] error - Error: WHERE parameter "id_trx_seminar" has invalid "undefined" value
+    at MySQLQueryGenerator.whereItemQuery (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:2445:13)
+    at C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:2434:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:2432:35)
+    at MySQLQueryGenerator.whereQuery (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:2405:24)
+    at MySQLQueryGenerator.updateQuery (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:515:116)
+    at MySQLQueryInterface.bulkUpdate (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-interface.js:924:37)
+    at Function.update (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:3351:54)
+[2024-10-10T01:36:01.032] [ERROR] error - error upload Error: WHERE parameter "id_trx_seminar" has invalid "undefined" value
+[2024-10-10T01:36:01.034] [ERROR] error - Error: WHERE parameter "id_trx_seminar" has invalid "undefined" value
+    at MySQLQueryGenerator.whereItemQuery (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:2445:13)
+    at C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:2434:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:2432:35)
+    at MySQLQueryGenerator.whereQuery (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:2405:24)
+    at MySQLQueryGenerator.updateQuery (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:515:116)
+    at MySQLQueryInterface.bulkUpdate (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-interface.js:924:37)
+    at Function.update (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:3351:54)
+[2024-10-10T01:38:22.624] [ERROR] error - error upload Error: WHERE parameter "id_trx_seminar" has invalid "undefined" value
+[2024-10-10T01:38:22.625] [ERROR] error - Error: WHERE parameter "id_trx_seminar" has invalid "undefined" value
+    at MySQLQueryGenerator.whereItemQuery (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:2445:13)
+    at C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:2434:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:2432:35)
+    at MySQLQueryGenerator.whereQuery (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:2405:24)
+    at MySQLQueryGenerator.updateQuery (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-generator.js:515:116)
+    at MySQLQueryInterface.bulkUpdate (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\dialects\abstract\query-interface.js:924:37)
+    at Function.update (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\sequelize\src\model.js:3351:54)
+[2024-10-10T02:12:57.221] [ERROR] error - Error bimbingan :  CustomError: Internal server error.
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:365:19
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 500,
+  status: 'error'
+}
+[2024-10-10T02:12:57.268] [ERROR] error - CustomError: Internal server error.
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:365:19
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 500,
+  status: 'error'
+}
+[2024-10-10T02:13:37.494] [ERROR] error - Error bimbingan :  CustomError: Internal server error.
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:367:19
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 500,
+  status: 'error'
+}
+[2024-10-10T02:13:37.501] [ERROR] error - CustomError: Internal server error.
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:367:19
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 500,
+  status: 'error'
+}
+[2024-10-10T02:14:06.013] [ERROR] error - Error bimbingan :  CustomError: Internal server error.
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:367:19
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 500,
+  status: 'error'
+}
+[2024-10-10T02:14:06.015] [ERROR] error - CustomError: Internal server error.
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:367:19
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 500,
+  status: 'error'
+}
+[2024-10-10T02:14:36.271] [ERROR] error - Error bimbingan :  CustomError: Internal server error.
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:369:19
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 500,
+  status: 'error'
+}
+[2024-10-10T02:14:36.281] [ERROR] error - CustomError: Internal server error.
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:369:19
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 500,
+  status: 'error'
+}
+[2024-10-10T22:03:29.687] [ERROR] error - Error get data tesis :  CustomError: Data Tidak Ditemukan
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-tesis-mhs.service-web.ts:102:19
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-tesis-mhs.service-web.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 404,
+  status: 'error'
+}
+[2024-10-10T22:03:29.689] [ERROR] error - CustomError: Data Tidak Ditemukan
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-tesis-mhs.service-web.ts:102:19
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\ref-tesis-mhs.service-web.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 404,
+  status: 'error'
+}
+[2024-10-10T22:39:33.959] [ERROR] error - Error chect token :  CustomError: Unauthorized token not match[0] 
     at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:48:19
     at Generator.next (<anonymous>)
     at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
@@ -6,7 +136,7 @@
   code: 401,
   status: 'error'
 }
-[2024-10-09T00:00:43.639] [ERROR] error - CustomError: Unauthorized token not match[0] 
+[2024-10-10T22:39:33.963] [ERROR] error - CustomError: Unauthorized token not match[0] 
     at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:48:19
     at Generator.next (<anonymous>)
     at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
@@ -14,212 +144,51 @@
   code: 401,
   status: 'error'
 }
-[2024-10-09T00:01:21.346] [ERROR] error - error upload Error: tidak ada file yang di upload
-[2024-10-09T00:01:21.346] [ERROR] error - CustomError: tidak ada file yang di upload
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\mahasiswa\bimbingan-mhs.controller.ts:190:30
+[2024-10-10T22:39:40.973] [ERROR] error - Error post agenda :  CustomError: Mahasiswa Tidak Terdaftar
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:436:28
     at Generator.next (<anonymous>)
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\mahasiswa\bimbingan-mhs.controller.ts:8:71
-    at new Promise (<anonymous>)
-    at __awaiter (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\mahasiswa\bimbingan-mhs.controller.ts:4:12)
-    at uploadPdfSidangAkhir (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\mahasiswa\bimbingan-mhs.controller.ts:188:20)
-    at Layer.handle [as handle_request] (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\layer.js:95:5)
-    at next (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\router\route.js:144:13)
-    at done (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\multer\lib\make-middleware.js:45:7)
-    at indicateDone (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\multer\lib\make-middleware.js:49:68) {
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:28:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
   code: 400,
   status: 'error'
 }
-[2024-10-09T00:01:39.878] [ERROR] error - error upload Error: keterangan_seminar harus di isi sidang_akhir
-[2024-10-09T00:01:39.878] [ERROR] error - CustomError: keterangan_seminar harus di isi sidang_akhir
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\mahasiswa\bimbingan-mhs.controller.ts:206:19
+[2024-10-10T22:39:40.976] [ERROR] error - CustomError: Mahasiswa Tidak Terdaftar
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:436:28
     at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\mahasiswa\bimbingan-mhs.controller.ts:5:58) {
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\agenda\agenda.controller.ts:28:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
   code: 400,
   status: 'error'
 }
-[2024-10-09T00:02:04.197] [ERROR] error - error upload Error: keterangan_seminar harus di isi sidang_akhir
-[2024-10-09T00:02:04.198] [ERROR] error - CustomError: keterangan_seminar harus di isi sidang_akhir
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\mahasiswa\bimbingan-mhs.controller.ts:206:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\mahasiswa\bimbingan-mhs.controller.ts:5:58) {
-  code: 400,
-  status: 'error'
-}
-[2024-10-09T00:02:09.617] [ERROR] error - error upload TypeError: Cannot read properties of undefined (reading 'filename')
-[2024-10-09T00:02:09.617] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'filename')
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\mahasiswa\bimbingan-mhs.controller.ts:228:126
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\mahasiswa\bimbingan-mhs.controller.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)
-[2024-10-09T00:02:51.147] [ERROR] error - error upload TypeError: Cannot read properties of undefined (reading 'filename')
-[2024-10-09T00:02:51.147] [ERROR] error - TypeError: Cannot read properties of undefined (reading 'filename')
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\mahasiswa\bimbingan-mhs.controller.ts:228:126
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\mahasiswa\bimbingan-mhs.controller.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)
-[2024-10-09T00:05:03.982] [ERROR] error - error upload Error: Anda Belum Diperbolehkan Upload
-[2024-10-09T00:05:03.983] [ERROR] error - CustomError: Anda Belum Diperbolehkan Upload
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\mahasiswa\bimbingan-mhs.controller.ts:225:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\mahasiswa\bimbingan-mhs.controller.ts:5:58) {
-  code: 400,
-  status: 'error'
-}
-[2024-10-09T01:04:34.229] [ERROR] error - Error chect token :  CustomError: Unauthorized[0] User tidak ditemukan
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:44:19
+[2024-10-10T22:40:28.193] [ERROR] error - Error chect token :  CustomError: Unauthorized token not match[0] 
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:48:19
     at Generator.next (<anonymous>)
     at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
     at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 400,
+  code: 401,
   status: 'error'
 }
-[2024-10-09T01:04:34.236] [ERROR] error - CustomError: Unauthorized[0] User tidak ditemukan
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:44:19
+[2024-10-10T22:40:28.194] [ERROR] error - CustomError: Unauthorized token not match[0] 
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:48:19
     at Generator.next (<anonymous>)
     at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
     at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 400,
+  code: 401,
   status: 'error'
 }
-[2024-10-09T01:04:41.922] [ERROR] error - Error masukan seminar :  CustomError: Tidak ada masukan dospem
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-masukan.service-web.ts:102:19
+[2024-10-10T22:43:39.115] [ERROR] error - Error chect token :  CustomError: Unauthorized token not match[0] 
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:48:19
     at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-masukan.service-web.ts:28:58)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
     at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 404,
+  code: 401,
   status: 'error'
 }
-[2024-10-09T01:04:41.923] [ERROR] error - CustomError: Tidak ada masukan dospem
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-masukan.service-web.ts:102:19
+[2024-10-10T22:43:39.119] [ERROR] error - CustomError: Unauthorized token not match[0] 
+    at C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:48:19
     at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-masukan.service-web.ts:28:58)
+    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\middleware\authorization.ts:5:58)
     at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 404,
+  code: 401,
   status: 'error'
-}
-[2024-10-09T01:43:15.288] [ERROR] error - Error dospem controller :  CustomError: Internal server error.
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:255:19
-    at Generator.throw (<anonymous>)
-    at rejected (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:6:65)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 500,
-  status: 'error'
-}
-[2024-10-09T01:43:15.295] [ERROR] error - CustomError: Internal server error.
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:255:19
-    at Generator.throw (<anonymous>)
-    at rejected (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:6:65)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 500,
-  status: 'error'
-}
-[2024-10-09T01:44:00.383] [ERROR] error - Error dospem controller :  CustomError: Internal server error.
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:255:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 500,
-  status: 'error'
-}
-[2024-10-09T01:44:00.388] [ERROR] error - CustomError: Internal server error.
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:255:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 500,
-  status: 'error'
-}
-[2024-10-09T01:45:32.425] [ERROR] error - Error dospem controller :  CustomError: Internal server error.
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:255:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 500,
-  status: 'error'
-}
-[2024-10-09T01:45:32.431] [ERROR] error - CustomError: Internal server error.
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:255:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 500,
-  status: 'error'
-}
-[2024-10-09T15:19:25.299] [ERROR] error - Error dospem controller :  CustomError: Internal server error.
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:195:19
-    at Generator.throw (<anonymous>)
-    at rejected (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:6:65)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 500,
-  status: 'error'
-}
-[2024-10-09T15:19:25.305] [ERROR] error - CustomError: Internal server error.
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:195:19
-    at Generator.throw (<anonymous>)
-    at rejected (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:6:65)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 500,
-  status: 'error'
-}
-[2024-10-09T15:20:29.415] [ERROR] error - Error dospem controller :  CustomError: Internal server error.
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:195:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 500,
-  status: 'error'
-}
-[2024-10-09T15:20:29.421] [ERROR] error - CustomError: Internal server error.
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:195:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 500,
-  status: 'error'
-}
-[2024-10-09T15:21:15.224] [ERROR] error - Error dospem controller :  CustomError: Internal server error.
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:195:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 500,
-  status: 'error'
-}
-[2024-10-09T15:21:15.229] [ERROR] error - CustomError: Internal server error.
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:195:19
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\services\web\trx-bimbingan.service-web.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 500,
-  status: 'error'
-}
-[2024-10-09T17:01:07.282] [ERROR] error - error upload TypeError [ERR_INVALID_ARG_TYPE]: The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function PdfToBuffer
-[2024-10-09T17:01:07.283] [ERROR] error - TypeError: The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function PdfToBuffer
-    at Function.from (node:buffer:319:9)
-    at ServerResponse.send (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\response.js:193:22)
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\mahasiswa\dokumen-kelayakan.controller.ts:23:13
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\mahasiswa\dokumen-kelayakan.controller.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 'ERR_INVALID_ARG_TYPE'
-}
-[2024-10-09T17:01:29.804] [ERROR] error - error upload TypeError [ERR_INVALID_ARG_TYPE]: The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function PdfToBuffer
-[2024-10-09T17:01:29.805] [ERROR] error - TypeError: The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function PdfToBuffer
-    at Function.from (node:buffer:319:9)
-    at ServerResponse.send (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\response.js:193:22)
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\mahasiswa\dokumen-kelayakan.controller.ts:24:13
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\mahasiswa\dokumen-kelayakan.controller.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 'ERR_INVALID_ARG_TYPE'
-}
-[2024-10-09T17:01:30.924] [ERROR] error - error upload TypeError [ERR_INVALID_ARG_TYPE]: The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function PdfToBuffer
-[2024-10-09T17:01:30.924] [ERROR] error - TypeError: The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function PdfToBuffer
-    at Function.from (node:buffer:319:9)
-    at ServerResponse.send (C:\Users\irgyr\Documents\eksternal\si-moda\node_modules\express\lib\response.js:193:22)
-    at C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\mahasiswa\dokumen-kelayakan.controller.ts:24:13
-    at Generator.next (<anonymous>)
-    at fulfilled (C:\Users\irgyr\Documents\eksternal\si-moda\src\controllers\web\mahasiswa\dokumen-kelayakan.controller.ts:5:58)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
-  code: 'ERR_INVALID_ARG_TYPE'
 }

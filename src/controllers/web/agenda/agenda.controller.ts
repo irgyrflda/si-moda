@@ -39,7 +39,7 @@ export const getAgendaMhsByNimAndTahun = async (
         if (!getDataTesisMhs) throw new CustomError(httpCode.notFound, "Data Mahasiswa Tesis Tidak Ditemukan");
 
         const getAgendaMhs = await db.query(`SELECT a.nim, a.nidn, b.keterangan_dospem,
-        a.kategori_agenda, a.keterangan_bimbingan, a.status_persetujuan_jadwal,
+        a.kategori_agenda, a.keterangan_bimbingan, a.lokasi, a.status_persetujuan_jadwal,
         a.agenda_pertemuan, CAST(a.tgl_bimbingan AS CHAR) tgl_bimbingan
         FROM trx_agenda a
         LEFT JOIN ref_dospem_mhs b
@@ -70,6 +70,7 @@ export const getAgendaMhsByNimAndTahun = async (
 
                 existingDate.agenda.push({
                     jam,
+                    lokasi: item.lokasi,
                     title: item.kategori_agenda.toString(),
                     agenda_pertemuan: item.agenda_pertemuan,
                     status_persetujuan_jadwal: item.status_persetujuan_jadwal
@@ -104,7 +105,7 @@ export const getAgendaMhsByNimAndBulanTahun = async (
         if (!getDataTesisMhs) throw new CustomError(httpCode.notFound, "Data Mahasiswa Tesis Tidak Ditemukan");
 
         const getAgendaMhs = await db.query(`SELECT a.nim, a.nidn, b.keterangan_dospem,
-        a.kategori_agenda, a.keterangan_bimbingan, a.status_persetujuan_jadwal,
+        a.kategori_agenda, a.keterangan_bimbingan, a.lokasi, a.status_persetujuan_jadwal,
         a.agenda_pertemuan, CAST(a.tgl_bimbingan AS CHAR) tgl_bimbingan
         FROM trx_agenda a
         LEFT JOIN ref_dospem_mhs b
@@ -136,6 +137,7 @@ export const getAgendaMhsByNimAndBulanTahun = async (
 
                 existingDate.agenda.push({
                     jam,
+                    lokasi: item.lokasi,
                     title: item.kategori_agenda.toString(),
                     agenda_pertemuan: item.agenda_pertemuan,
                     status_persetujuan_jadwal: item.status_persetujuan_jadwal
@@ -172,7 +174,7 @@ export const getAgendaMhsByNimAndRangeTglBulanTahun = async (
         if (!getDataTesisMhs) throw new CustomError(httpCode.notFound, "Data Mahasiswa Tesis Tidak Ditemukan");
 
         const getAgendaMhs = await db.query(`SELECT a.nim, a.nidn, b.keterangan_dospem,
-        a.kategori_agenda, a.keterangan_bimbingan, a.status_persetujuan_jadwal,
+        a.kategori_agenda, a.keterangan_bimbingan, a.lokasi, a.status_persetujuan_jadwal,
         a.agenda_pertemuan, CAST(a.tgl_bimbingan AS CHAR) tgl_bimbingan
         FROM trx_agenda a
         LEFT JOIN ref_dospem_mhs b
@@ -206,6 +208,7 @@ export const getAgendaMhsByNimAndRangeTglBulanTahun = async (
 
                 existingDate.agenda.push({
                     jam,
+                    lokasi: item.lokasi,
                     title: item.kategori_agenda.toString(),
                     agenda_pertemuan: item.agenda_pertemuan,
                     status_persetujuan_jadwal: item.status_persetujuan_jadwal
@@ -239,7 +242,7 @@ export const getAgendaDsnByNidnAndTahun = async (
         if (!getDataTesisDsn) throw new CustomError(httpCode.notFound, "Data Dosepem pembimbing Tesis Tidak Ditemukan");
 
         const getAgendaDsn = await db.query(`SELECT a.nim, a.nidn, b.keterangan_dospem,
-        a.kategori_agenda, a.keterangan_bimbingan, a.status_persetujuan_jadwal,
+        a.kategori_agenda, a.keterangan_bimbingan, a.lokasi, a.status_persetujuan_jadwal,
         a.agenda_pertemuan, CAST(a.tgl_bimbingan AS CHAR) tgl_bimbingan
         FROM trx_agenda a
         LEFT JOIN ref_dospem_mhs b
@@ -270,6 +273,7 @@ export const getAgendaDsnByNidnAndTahun = async (
 
                 existingDate.agenda.push({
                     jam,
+                    lokasi: item.lokasi,
                     title: item.kategori_agenda.toString(),
                     agenda_pertemuan: item.agenda_pertemuan,
                     status_persetujuan_jadwal: item.status_persetujuan_jadwal
@@ -304,7 +308,7 @@ export const getAgendaDsnByNidnAndTahunBulan = async (
         if (!getDataTesisDsn) throw new CustomError(httpCode.notFound, "Data Dosepem pembimbing Tesis Tidak Ditemukan");
 
         const getAgendaDsn = await db.query(`SELECT a.nim, a.nidn, b.keterangan_dospem,
-        a.kategori_agenda, a.keterangan_bimbingan, a.status_persetujuan_jadwal,
+        a.kategori_agenda, a.keterangan_bimbingan, a.lokasi, a.lokasi, a.status_persetujuan_jadwal,
         a.agenda_pertemuan, CAST(a.tgl_bimbingan AS CHAR) tgl_bimbingan
         FROM trx_agenda a
         LEFT JOIN ref_dospem_mhs b
@@ -336,6 +340,7 @@ export const getAgendaDsnByNidnAndTahunBulan = async (
 
                 existingDate.agenda.push({
                     jam,
+                    lokasi: item.lokasi,
                     title: item.kategori_agenda.toString(),
                     agenda_pertemuan: item.agenda_pertemuan,
                     status_persetujuan_jadwal: item.status_persetujuan_jadwal
@@ -372,7 +377,7 @@ export const getAgendaDsnByNidnAndTahunBulanRangeTgl = async (
         if (!getDataTesisDsn) throw new CustomError(httpCode.notFound, "Data Dosepem pembimbing Tesis Tidak Ditemukan");
 
         const getAgendaDsn = await db.query(`SELECT a.nim, a.nidn, b.keterangan_dospem,
-        a.kategori_agenda, a.keterangan_bimbingan, a.status_persetujuan_jadwal,
+        a.kategori_agenda, a.keterangan_bimbingan, a.lokasi, a.status_persetujuan_jadwal,
         a.agenda_pertemuan, CAST(a.tgl_bimbingan AS CHAR) tgl_bimbingan
         FROM trx_agenda a
         LEFT JOIN ref_dospem_mhs b
@@ -406,6 +411,7 @@ export const getAgendaDsnByNidnAndTahunBulanRangeTgl = async (
 
                 existingDate.agenda.push({
                     jam,
+                    lokasi: item.lokasi,
                     title: item.kategori_agenda.toString(),
                     agenda_pertemuan: item.agenda_pertemuan,
                     status_persetujuan_jadwal: item.status_persetujuan_jadwal
@@ -445,6 +451,7 @@ export const storeAgendaPertemuanMhs = async (
                     nim: req.body.nim,
                     agenda_pertemuan: req.body.agenda_pertemuan,
                     keterangan_bimbingan: req.body.keterangan_bimbingan,
+                    lokasi: req.body.lokasi,
                     tgl_bimbingan: req.body.tgl_bimbingan,
                     nidn: i.nidn,
                     kategori_agenda: req.body.kategori_agenda,
@@ -491,6 +498,7 @@ export const storeAgendaPertemuanDsn = async (
                     nidn: req.body.nidn,
                     agenda_pertemuan: req.body.agenda_pertemuan,
                     keterangan_bimbingan: req.body.keterangan_bimbingan,
+                    lokasi: req.body.lokasi,
                     tgl_bimbingan: req.body.tgl_bimbingan,
                     nim: i.nim,
                     kategori_agenda: req.body.kategori_agenda,

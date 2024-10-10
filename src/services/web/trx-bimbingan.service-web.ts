@@ -272,7 +272,7 @@ const getDataSeminarByNimAndKeteranganSeminar = async (
             });
         let data: any
         let validationKelulusan: string = "belum ada keputusan"
-        if (cekSeminar.length === 0) {
+        if (!cekSeminar[0].id_trx_seminar) {
             data = await TrxSeminarMhs.findOne({
                 attributes: ["id_trx_seminar", "nim", "keterangan_seminar", "url_path_pdf", "url_path_materi_ppt", "tgl_upload", "tgl_review"],
                 include: [
@@ -778,7 +778,7 @@ const storeSidangAkhir = async (
                 type: QueryTypes.SELECT
             })
         let storeTrxSeminar
-        if (cekSeminar.length !== 0) {
+        if (cekSeminar[0].id_trx_seminar) {
             const checkPersetujuanDospem = await SeminarMhs.findAll({
                 attributes: ["status_persetujuan"],
                 where: {
@@ -792,7 +792,7 @@ const storeSidangAkhir = async (
                     url_path_pdf: url_path_pdf
                 }, {
                     where: {
-                        id_trx_seminar: cekSeminar.id_trx_seminar
+                        id_trx_seminar: cekSeminar[0].id_trx_seminar
                     }
                 })
             } else {

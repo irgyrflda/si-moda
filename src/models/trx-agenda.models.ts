@@ -28,6 +28,7 @@ interface ITrxAgendaAttributes {
     kategori_agenda: kategori_agenda;
     status_persetujuan_jadwal: status_persetujuan_jadwal;
     keterangan_bimbingan: string;
+    lokasi: string;
     tgl_bimbingan: Date;
     uc: string | null | undefined;
     uu: string | null | undefined;
@@ -38,7 +39,7 @@ interface ITrxAgendaAttributes {
 export type TrxAgendaOutput = Required<ITrxAgendaAttributes>;
 export type TrxAgendaInput = Optional<
     ITrxAgendaAttributes,
-    "nim" | "nidn" | "id_trx_agenda" | "status_persetujuan_jadwal" | "uc" | "uu" | "created_at" | "update_at"
+    "nim" | "nidn" | "id_trx_agenda" | "status_persetujuan_jadwal" | "lokasi" | "uc" | "uu" | "created_at" | "update_at"
 >;
 
 class TrxAgenda
@@ -51,6 +52,7 @@ class TrxAgenda
     declare kategori_agenda: kategori_agenda;
     declare status_persetujuan_jadwal: status_persetujuan_jadwal;
     declare keterangan_bimbingan: string;
+    declare lokasi: string;
     declare tgl_bimbingan: Date;
     declare uc: string | null | undefined;
     declare uu: string | null | undefined;
@@ -89,6 +91,10 @@ TrxAgenda.init(
         keterangan_bimbingan: {
             type: DataTypes.STRING,
             allowNull: false
+        },
+        lokasi: {
+            type: DataTypes.STRING,
+            allowNull: true
         },
         tgl_bimbingan: {
             type: DataTypes.STRING,
