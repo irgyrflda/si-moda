@@ -24,6 +24,12 @@ import SeminarMhs from "@models/ref-seminar-mhs.models";
 import RefDosepemMhs from "@models/ref-dospem-mhs.models";
 import BimbinganMhs from "@models/bimbingan-mhs.models";
 import db from "@config/database";
+import { PayloadUploadJsonDsnRequest, PayloadUploadJsonMhsRequest } from "@schema/users.schema";
+import path from "path";
+import fs from "fs";
+import dataMhs from "@public/data-dummy-mhs.json";
+import dataDsn from "@public/data-dummy-dsn.json";
+import RefDosepem from "@models/ref-dospem.models";
 
 export const login = async (
     req: Request,
@@ -231,26 +237,145 @@ export const deleteData = async (
 ): Promise<void> => {
     try {
         await db.query('SET FOREIGN_KEY_CHECKS = 0');
-        await TrxTopikUser.destroy({ truncate: true})
-        await TrxSeminarMhs.destroy({ truncate: true})
-        await TrxNotifikasi.destroy({ truncate: true})
-        await TrxMasukanSeminar.destroy({ truncate: true})
-        await TrxMasukanDsn.destroy({ truncate: true})
-        await TrxBimbinganMhs.destroy({ truncate: true})
-        await TrxAgenda.destroy({ truncate: true})
-        await RefUserSementara.destroy({ truncate: true})
-        await SeminarMhs.destroy({ truncate: true})
-        await RefDosepemMhs.destroy({ truncate: true})
-        await BimbinganMhs.destroy({ truncate: true})
-        await RefGroupUser.destroy({ truncate: true})
-        await RefTesisMhs.destroy({ truncate: true})
-        await Users.destroy({ truncate: true})
+        await TrxTopikUser.destroy({ truncate: true })
+        await TrxSeminarMhs.destroy({ truncate: true })
+        await TrxNotifikasi.destroy({ truncate: true })
+        await TrxMasukanSeminar.destroy({ truncate: true })
+        await TrxMasukanDsn.destroy({ truncate: true })
+        await TrxBimbinganMhs.destroy({ truncate: true })
+        await TrxAgenda.destroy({ truncate: true })
+        await RefUserSementara.destroy({ truncate: true })
+        await SeminarMhs.destroy({ truncate: true })
+        await RefDosepemMhs.destroy({ truncate: true })
+        await BimbinganMhs.destroy({ truncate: true })
+        await RefGroupUser.destroy({ truncate: true })
+        await RefTesisMhs.destroy({ truncate: true })
+        await Users.destroy({ truncate: true })
         await db.query('SET FOREIGN_KEY_CHECKS = 1');
 
         responseSuccess(res, httpCode.ok, "Berhasil Menghapus seluruh Data")
 
     } catch (error) {
         errorLogger.error("Error delete data : ", error)
+        next(error);
+    }
+};
+
+export const uploadDataMhs = async (
+    req: Request,
+    res: Response,
+    next: NextFunction
+): Promise<void> => {
+    try {
+        const email = req.headers.email
+        const checkRoleUser = await RefGroupUser.findOne({
+            attributes: ["kode_group"],
+            include: [
+                {
+                    model: Users,
+                    as: "user_group",
+                    attributes: ["nomor_induk"],
+                    where: {
+                        [Op.or]: [{ email_google: email }, { email_ecampus: email }]
+                    }
+                }
+            ],
+            where: {
+                kode_group: "G07"
+            }
+        });
+
+        if (!checkRoleUser) throw new CustomError(httpCode.badRequest, "Akses User Dibatasi: (hanya user tertentu yang dapat upload)")
+
+        const data: PayloadUploadJsonMhsRequest["body"] = req.body;
+        const filePath = path.join(__dirname, "..", "..", "..", "public", "data-dummy-mhs.json");
+        const dataTesisMhs = dataMhs;
+
+        dataTesisMhs.forEach((i) => {
+            const exists = data.some((o) => i.nomor_induk_mahasiswa === o.nomor_induk_mahasiswa)
+
+            if (!exists) {
+                data.push(i)
+            }
+        });
+
+        fs.writeFile(filePath, JSON.stringify(data, null, 2), (error) => {
+            if (error) {
+                throw new CustomError(httpCode.badRequest, "Gagal upload data")
+            }
+            responseSuccess(res, httpCode.ok, "Berhasil Upload Data")
+        });
+    } catch (error) {
+        errorLogger.error("Error upload data mhs : ", error)
+        next(error);
+    }
+};
+
+export const uploadDataDsn = async (
+    req: Request,
+    res: Response,
+    next: NextFunction
+): Promise<void> => {
+    try {
+
+        const email = req.headers.email
+        const checkRoleUser = await RefGroupUser.findOne({
+            attributes: ["kode_group"],
+            include: [
+                {
+                    model: Users,
+                    as: "user_group",
+                    attributes: ["nomor_induk"],
+                    where: {
+                        [Op.or]: [{ email_google: email }, { email_ecampus: email }]
+                    }
+                }
+            ],
+            where: {
+                kode_group: "G07"
+            }
+        });
+
+        if (!checkRoleUser) throw new CustomError(httpCode.badRequest, "Akses User Dibatasi: (hanya user tertentu yang dapat upload)")
+
+        const data: PayloadUploadJsonDsnRequest["body"] = req.body;
+        const filePath = path.join(__dirname, "..", "..", "..", "public", "data-dummy-dsn.json")
+        const dataDsnEksis = dataDsn;
+        dataDsnEksis.forEach((i) => {
+            const exists = data.some((o) => i.nomor_induk_dosen_nasional === o.nomor_induk_dosen_nasional)
+
+            if (!exists) {
+                data.push(i)
+            }
+        });
+        const dataDosenEksTable = await RefDosepem.findAll({
+            attributes: ["nidn"]
+        });
+
+        let dataDsnNew: any[] = []
+        data.forEach((i) => {
+            const exists = dataDosenEksTable.some((o) => i.nomor_induk_dosen_nasional === o.nidn)
+
+            if (!exists) {
+                dataDsnNew.push({
+                    nidn: i.nomor_induk_dosen_nasional,
+                    nama_dospem: i.nama
+                })
+            }
+        });
+
+        if (dataDsn.length !== 0) {
+            await RefDosepem.bulkCreate(dataDsnNew)
+        }
+
+        fs.writeFile(filePath, JSON.stringify(data, null, 2), (error) => {
+            if (error) {
+                throw new CustomError(httpCode.badRequest, "Gagal upload data")
+            }
+            responseSuccess(res, httpCode.ok, "Berhasil Upload Data")
+        });
+    } catch (error) {
+        errorLogger.error("Error upload data mhs : ", error)
         next(error);
     }
 };
